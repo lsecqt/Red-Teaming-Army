@@ -1,0 +1,111 @@
+{
+  "main": {
+    "id": "3a7f19e0acf567ca",
+    "type": "split",
+    "children": [
+      {
+        "id": "14128ffac3933ff6",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Programming And Scripting/C-Sharp/Process Injection/UpgradedProcessInjection.cs.md",
+            "mode": "source",
+            "source": true
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "eb160d1f3b3c7a28",
+    "type": "split",
+    "children": [
+      {
+        "id": "65addce4dee444f7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "501576cdaac8b9c6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "fdcd9712c3112afd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c46a980c6ac990b9",
+    "type": "split",
+    "children": [
+      {
+        "id": "44af92bea60d9c39",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3f286a170039047a",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "78774816e7fcc764",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Programming And Scripting/C-Sharp/Process Injection/UpgradedProcessInjection.cs.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "14128ffac3933ff6",
+  "lastOpenFiles": [
+    "Programming And Scripting/C-Sharp/Process Injection/SimpleProcessInjector.cs.md",
+    "Programming And Scripting/C-Sharp/Process Injection/InjectShellcodeIntoExplorer.cs.md",
+    "Red-Teaming/C2/Custom C2/Process Injection.md",
+    "Red-Teaming/C2/Custom C2/Client.cs.md",
+    "Red-Teaming/C2/Custom C2/Harbinger.cs.md",
+    "Red-Teaming/Red-Teaming.md",
+    "Reverse Engineering/Reverse Engineering.md",
+    "Programming And Scripting/JScript/SharpShooter/SharpShooter.md",
+    "Programming And Scripting/JScript/DotNetToJScript.md",
+    "Red-Teaming/C2/Custom C2/Stager Run.md"
+  ]
+}

@@ -1,0 +1,216 @@
+{
+  "main": {
+    "id": "3a7f19e0acf567ca",
+    "type": "split",
+    "children": [
+      {
+        "id": "7c9cca90a9151ac4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e73aff834e4867d2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Walkthroughs/Untitled.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "eb160d1f3b3c7a28",
+    "type": "split",
+    "children": [
+      {
+        "id": "65addce4dee444f7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "501576cdaac8b9c6",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "fdcd9712c3112afd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "rbcd",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "416fcb7918d0b98a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c46a980c6ac990b9",
+    "type": "split",
+    "children": [
+      {
+        "id": "44af92bea60d9c39",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3f286a170039047a",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "78774816e7fcc764",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Walkthroughs/Untitled.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "4e585ca7c013281f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Walkthroughs/Untitled.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "e9a0f4089a47b23b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "98aeaa8152f2e13d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency"
+              }
+            }
+          },
+          {
+            "id": "9dbfa5466f102180",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Walkthroughs/Untitled.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "templater-obsidian:Templater": false
+    }
+  },
+  "active": "e73aff834e4867d2",
+  "lastOpenFiles": [
+    "Walkthroughs/Untitled.md",
+    "Walkthroughs/index.yml",
+    "Walkthroughs/Walkthroughs.yml",
+    "Walkthroughs",
+    "New folder",
+    "Walkthroughs.yml",
+    "retype - Copy.yml",
+    "index.md.md",
+    "welcome.md",
+    "welcome.md.txt",
+    "New Text Document.txt",
+    "readme.md.md",
+    "Internal Pentest/AD/Attacks/Abusing ADCS/POC.md",
+    "Internal Pentest/Checklists/AD Lateral Movement Checklist.md",
+    "Red-Teaming/Defense Evasion/AV Evasion/ESET NOD32/Bypass 4 - Mythic + NativePayload_PE1.md",
+    "Red-Teaming/Defense Evasion/AV Evasion/ESET NOD32/Bypass 5 - Mythic + Shellcode Stager.md",
+    "API Pentesting/Enumerate Endpoints.md",
+    "test.md",
+    "Blue Teaming/Analyze Files/Scan implant with Pe-Sieve.md",
+    "Buffer Overflow/Buffer Overflow.md",
+    "Cloud Pentest/Azure/Azure Recon as Outsider.md",
+    "Cloud Pentest/Azure/Untitled.md",
+    "Cloud Pentest/Azure/Azure mindmap.md",
+    "Cloud Pentest/Azure/azure mmap.md",
+    "Templates/Technique.md",
+    "Templates/Tool.md",
+    "Templates/Gen_Note.md",
+    "qwr.md",
+    "qrw.md",
+    "rq.md",
+    "qwe 1.md",
+    "wqe.md",
+    "wqe 1.md",
+    "Templates/04 - Structural Elements",
+    "Templates",
+    "Attachments/Pasted image 20231127153452.png",
+    "Attachments/Pasted image 20231127153310.png",
+    "Attachments/test 1.png",
+    "Attachments/Pasted image 20231127105806.png",
+    "Attachments/test.png",
+    "Attachments/Pasted image 20231127105753.png",
+    "Attachments/Pasted image 20231026171945.png",
+    "Attachments/Pasted image 20231026171925.png",
+    "Attachments/Pasted image 20231006153755.png"
+  ]
+}

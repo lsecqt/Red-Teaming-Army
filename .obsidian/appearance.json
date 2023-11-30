@@ -1,0 +1,12 @@
+{
+  "baseFontSize": 16,
+  "cssTheme": "Border",
+  "theme": "obsidian",
+  "accentColor": "#bb3c11",
+  "interfaceFontFamily": "",
+  "textFontFamily": "",
+  "monospaceFontFamily": "",
+  "baseFontSizeAction": true,
+  "translucency": false,
+  "showViewHeader": true
+}

@@ -1,0 +1,10 @@
+{
+  "todoPageName": "todo",
+  "showChecked": true,
+  "groupBy": "tag",
+  "sortDirection": "old->new",
+  "ignoreFiles": "",
+  "includeFiles": "",
+  "lookAndFeel": "classic",
+  "_collapsedSections": []
+}

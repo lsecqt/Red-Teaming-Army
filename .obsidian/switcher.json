@@ -1,0 +1,9 @@
+{
+<<<<<<< HEAD
+  "showExistingOnly": false,
+=======
+  "showExistingOnly": true,
+>>>>>>> 169484a8f7e4432129364a7f897c8e370c24a5ad
+  "showAttachments": true,
+  "showAllFileTypes": false
+}

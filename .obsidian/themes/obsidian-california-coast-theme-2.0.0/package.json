@@ -1,0 +1,19 @@
+{
+  "name": "obsidian-california-coast-theme",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:mgmeyers/obsidian-california-coast-theme.git",
+  "author": "mgmeyers <matthew.gregory.meyers@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0"
+  },
+  "scripts": {
+    "build": "gulp css",
+    "dev": "gulp css:watch"
+  }
+}
