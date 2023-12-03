@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Walkthroughs/Untitled.md",
+                "file": "Malware Development/Weaponizing DLL Hijacking via DLL Proxying.md",
                 "mode": "source",
                 "source": true
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Walkthroughs/Untitled.md",
+                "file": "Malware Development/Weaponizing DLL Hijacking via DLL Proxying.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Walkthroughs/Untitled.md",
+                "file": "Malware Development/Weaponizing DLL Hijacking via DLL Proxying.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Walkthroughs/Untitled.md"
+                "file": "Malware Development/Weaponizing DLL Hijacking via DLL Proxying.md"
               }
             }
           }
@@ -168,17 +168,26 @@
   },
   "active": "e73aff834e4867d2",
   "lastOpenFiles": [
-    "Walkthroughs/Untitled.md",
-    "Walkthroughs/index.yml",
-    "Walkthroughs/Walkthroughs.yml",
-    "Walkthroughs",
-    "New folder",
-    "Walkthroughs.yml",
-    "retype - Copy.yml",
-    "index.md.md",
     "welcome.md",
-    "welcome.md.txt",
-    "New Text Document.txt",
+    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying.md",
+    "Web Pentesting/Untitled.md",
+    "Walkthroughs/Untitled.md",
+    "Malware Development/Untitled.md",
+    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying",
+    "Web Pentesting/index.yml",
+    "Web Pentesting",
+    "C2 copy/Untitled.md",
+    "C2 copy/index.yml",
+    "C2 copy",
+    "C2/Untitled.md",
+    "C2/index.yml",
+    "C2",
+    "Malware Development copy/Untitled.md",
+    "Malware Development copy/index.yml",
+    "Malware Development copy",
+    "Malware Development/index.yml",
+    "Walkthroughs copy/Untitled.md",
+    "index.md.md",
     "readme.md.md",
     "Internal Pentest/AD/Attacks/Abusing ADCS/POC.md",
     "Internal Pentest/Checklists/AD Lateral Movement Checklist.md",
@@ -195,14 +204,6 @@
     "Templates/Technique.md",
     "Templates/Tool.md",
     "Templates/Gen_Note.md",
-    "qwr.md",
-    "qrw.md",
-    "rq.md",
-    "qwe 1.md",
-    "wqe.md",
-    "wqe 1.md",
-    "Templates/04 - Structural Elements",
-    "Templates",
     "Attachments/Pasted image 20231127153452.png",
     "Attachments/Pasted image 20231127153310.png",
     "Attachments/test 1.png",

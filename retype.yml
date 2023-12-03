@@ -4,6 +4,8 @@ url: https://lsecqt.github.io/Red-Teaming-Army/
 branding:
   title: Red Teaming Army
   label: Docs
+
+      
 links:
 - text: Discord
   link: https://discord.gg/bgSpdheEgu
@@ -28,6 +30,10 @@ links:
 - text: Twitter
   link: https://twitter.com/lsecqt
   icon: Star
+
+- text: HackTheBox
+  link: https://app.hackthebox.com/users/292064
+  icon: package
 
 - text: Reddit
   link: https://www.reddit.com/user/lsecqt/
