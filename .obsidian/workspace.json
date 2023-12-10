@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Malware Development/Weaponizing DLL Hijacking via DLL Proxying.md",
+                "file": "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md",
                 "mode": "source",
                 "source": true
               }
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 349.5
   },
   "right": {
     "id": "c46a980c6ac990b9",
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Malware Development/Weaponizing DLL Hijacking via DLL Proxying.md",
+                "file": "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Malware Development/Weaponizing DLL Hijacking via DLL Proxying.md",
+                "file": "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Malware Development/Weaponizing DLL Hijacking via DLL Proxying.md"
+                "file": "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md"
               }
             }
           }
@@ -168,8 +168,27 @@
   },
   "active": "e73aff834e4867d2",
   "lastOpenFiles": [
+    "C2/asd.md",
+    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md",
+    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/shell.png",
+    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/running_normal.png",
+    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Spartacus.png",
+    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/ProxyingTheory.png",
+    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/calc_spawned.png",
+    "Pasted image 20231210095747.png",
+    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Not_Found.png",
+    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/ProcmonFilters.png",
+    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Not-Found.png",
+    "C2/retype.yml",
+    "Malware%20Development/Weaponizing%20DLL%20Hijacking%20via%20DLL%20Proxying/Pictures/modules.png.md",
+    "Malware%20Development/Weaponizing%20DLL%20Hijacking%20via%20DLL%20Proxying/Pictures",
+    "Malware%20Development/Weaponizing%20DLL%20Hijacking%20via%20DLL%20Proxying",
+    "Malware%20Development",
+    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Modules.png",
+    "C2/Test.md",
+    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Pictures",
+    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying",
     "welcome.md",
-    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying.md",
     "Web Pentesting/Untitled.md",
     "Walkthroughs/Untitled.md",
     "Malware Development/Untitled.md",
@@ -178,14 +197,7 @@
     "Web Pentesting",
     "C2 copy/Untitled.md",
     "C2 copy/index.yml",
-    "C2 copy",
-    "C2/Untitled.md",
-    "C2/index.yml",
-    "C2",
     "Malware Development copy/Untitled.md",
-    "Malware Development copy/index.yml",
-    "Malware Development copy",
-    "Malware Development/index.yml",
     "Walkthroughs copy/Untitled.md",
     "index.md.md",
     "readme.md.md",
@@ -200,18 +212,6 @@
     "Cloud Pentest/Azure/Azure Recon as Outsider.md",
     "Cloud Pentest/Azure/Untitled.md",
     "Cloud Pentest/Azure/Azure mindmap.md",
-    "Cloud Pentest/Azure/azure mmap.md",
-    "Templates/Technique.md",
-    "Templates/Tool.md",
-    "Templates/Gen_Note.md",
-    "Attachments/Pasted image 20231127153452.png",
-    "Attachments/Pasted image 20231127153310.png",
-    "Attachments/test 1.png",
-    "Attachments/Pasted image 20231127105806.png",
-    "Attachments/test.png",
-    "Attachments/Pasted image 20231127105753.png",
-    "Attachments/Pasted image 20231026171945.png",
-    "Attachments/Pasted image 20231026171925.png",
-    "Attachments/Pasted image 20231006153755.png"
+    "Cloud Pentest/Azure/azure mmap.md"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "version": "3.5.0",
-  "created": "2023-11-30T20:57:35Z",
+  "created": "2023-12-04T15:09:46Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -18,6 +18,9 @@
       "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\index.html"
     },
     {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\pictures\\modules.png"
+    },
+    {
       "path": "resources\\css\\retype.css"
     },
     {
@@ -33,8 +36,7 @@
       "path": "resources\\js\\lunr.js"
     },
     {
-      "path": "resources\\js\\prism.js",
-      "old": true
+      "path": "resources\\js\\prism.js"
     },
     {
       "path": "resources\\js\\retype.js"
