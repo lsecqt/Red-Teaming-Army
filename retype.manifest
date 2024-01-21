@@ -1,6 +1,6 @@
 {
   "version": "3.5.0",
-  "created": "2023-12-04T15:09:46Z",
+  "created": "2023-12-10T20:53:21Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -9,16 +9,45 @@
       "path": "404.html"
     },
     {
-      "path": "c2\\untitled\\index.html"
+      "path": "c2\\untitled\\index.html",
+      "old": true
     },
     {
       "path": "index.html"
     },
     {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\calc_spawned.png"
+    },
+    {
       "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\index.html"
     },
     {
-      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\pictures\\modules.png"
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\modules.png"
+    },
+    {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\not_found.png"
+    },
+    {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\pictures\\modules.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\procmonfilters.png"
+    },
+    {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\proxyingtheory.png"
+    },
+    {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\running_normal.png"
+    },
+    {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\shell.png"
+    },
+    {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\spartacus.png"
+    },
+    {
+      "path": "pasted-image-20231210095747.png"
     },
     {
       "path": "resources\\css\\retype.css"
