@@ -41,4 +41,10 @@ Since the Adalanche is go-written, the same code can be compiled for both window
 It is always a good idea to obfuscate the code and compile it yourself. Currently the tool does not get signatured but most likely this will change in the near future!
 !!!
 
-There is a difference on how the binary is executed, 
+Adalanche can be run directly, with no arguments if it is launched from domain joined windows machine. On the other hand it can also mimic [bloodhound.py](https://github.com/dirkjanm/BloodHound.py), scraping the Active Directory if correct credentials and env data is supplied. In both of the cases, Adalanche stores the gathered data in a folder called, ```data```. Now let's analyze the different methods on how to get it running!
+
+## Case 1: I am operating from a domain joined computer
+
+In this scenario it is enough to just download and execute the binary. This will perform all the scraping automatically, host it on ```127.0.0.1:8080``` and navigating your default browser to the web view.
+
+If everything went smooth, you should see something like this:
