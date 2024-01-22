@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md",
+                "file": "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md",
                 "mode": "source",
                 "source": true
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md",
+                "file": "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md",
+                "file": "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           },
@@ -143,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md"
+                "file": "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md"
               }
             }
           }
@@ -168,35 +170,38 @@
   },
   "active": "e73aff834e4867d2",
   "lastOpenFiles": [
-    "C2/asd.md",
+    "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/Unleashing the Power of Unconstrained Delegation.md",
+    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md",
+    "Active Directory/Enumeration/Visualizing ACLs with Adalanche",
+    "Active Directory/Enumeration/Untitled.md",
+    "Active Directory/Enumeration/index.yml",
+    "Active Directory/Enumeration",
+    "Active Directory/Attacks/index.yml",
+    "Active Directory/Attacks",
+    "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/intro.jpg",
+    "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/unconstrained_delegation.png",
+    "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/start_rubeus.png",
+    "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/spoolsample.png",
+    "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/klist.png",
+    "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/get-domaincomputer.png",
+    "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/dc_ticket_captured.png",
+    "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/bloodhound_unconstrained.png",
     "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md",
-    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/shell.png",
-    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/running_normal.png",
-    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Spartacus.png",
-    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/ProxyingTheory.png",
-    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/calc_spawned.png",
+    "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation",
+    "Active Directory/index.yml",
+    "welcome.md",
     "Pasted image 20231210095747.png",
-    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Not_Found.png",
-    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/ProcmonFilters.png",
-    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Not-Found.png",
+    "Active Directory",
+    "C2/asd.md",
+    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/shell.png",
     "C2/retype.yml",
     "Malware%20Development/Weaponizing%20DLL%20Hijacking%20via%20DLL%20Proxying/Pictures/modules.png.md",
     "Malware%20Development/Weaponizing%20DLL%20Hijacking%20via%20DLL%20Proxying/Pictures",
-    "Malware%20Development/Weaponizing%20DLL%20Hijacking%20via%20DLL%20Proxying",
-    "Malware%20Development",
-    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Modules.png",
     "C2/Test.md",
-    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Pictures",
-    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying",
-    "welcome.md",
     "Web Pentesting/Untitled.md",
     "Walkthroughs/Untitled.md",
     "Malware Development/Untitled.md",
-    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying",
-    "Web Pentesting/index.yml",
-    "Web Pentesting",
     "C2 copy/Untitled.md",
-    "C2 copy/index.yml",
     "Malware Development copy/Untitled.md",
     "Walkthroughs copy/Untitled.md",
     "index.md.md",
@@ -210,8 +215,6 @@
     "Blue Teaming/Analyze Files/Scan implant with Pe-Sieve.md",
     "Buffer Overflow/Buffer Overflow.md",
     "Cloud Pentest/Azure/Azure Recon as Outsider.md",
-    "Cloud Pentest/Azure/Untitled.md",
-    "Cloud Pentest/Azure/Azure mindmap.md",
-    "Cloud Pentest/Azure/azure mmap.md"
+    "Cloud Pentest/Azure/Untitled.md"
   ]
 }
