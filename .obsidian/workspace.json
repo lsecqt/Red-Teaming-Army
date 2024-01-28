@@ -176,8 +176,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "121f3211bbcb7054",
+  "active": "e73aff834e4867d2",
   "lastOpenFiles": [
+    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/default_queries_ldap.png",
+    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/default_queries.png",
+    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Screenshot from 2024-01-28 17-24-26.png",
+    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Screenshot from 2024-01-28 17-23-06.png",
     "Active Directory/Enumeration/Visualizing ACLs with Adalanche/adalanche_main_screen.png",
     "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Screenshot from 2024-01-27 17-39-55.png",
     "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/Unleashing the Power of Unconstrained Delegation.md",
@@ -193,14 +197,10 @@
     "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/start_rubeus.png",
     "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/spoolsample.png",
     "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/klist.png",
-    "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/get-domaincomputer.png",
-    "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/dc_ticket_captured.png",
-    "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/bloodhound_unconstrained.png",
     "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md",
     "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation",
     "Active Directory/index.yml",
     "welcome.md",
-    "Pasted image 20231210095747.png",
     "Active Directory",
     "C2/asd.md",
     "C2/retype.yml",

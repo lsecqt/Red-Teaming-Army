@@ -131,7 +131,7 @@ When you are ready to analyze the results and generate a web view, you can do so
 If everything is running as expected, you should again see the initial screen of Adalanche:
 ![Entry screen of adalanche](adalanche_main_screen.png)
 
-# Adalanche use cases
+# Adalanche Usage
 
 Adalanche web UI is divided into 3 parts:
 * Object explorer on the left
@@ -155,8 +155,8 @@ Compared to BloodHound, Adalanche is not using any database engines for storing 
 | No dependencies other then the Adalanche binary  | Storing files on the local FS can lead to super easy signatures  |
 | No collector / db engine version incompatibility | Requires additional efforts for setting up multi-user experience | 
 
-Adalanche comes with the following predefined options for visualizing nodes and searching for attack paths, which on their core are just LDAP queries.
+Adalanche comes with the following predefined LDAP queries for visualizing nodes and searching for attack paths:
 
-< PHOTO HERE >
+![](default_queries_ldap.png)
 
 From these, you may notice that a lot of the queries are actually already present in BloodHound (such as Kerberoastable users, DC Sync users and so on)
