@@ -144,10 +144,13 @@ On the Object explorer you can observe various objects, including present users,
 
 On the right you can tweak how the Adalanche should look like, but I personally did not spend much time on it since I was happy with the defaults.
 
-< PHOTO HERE >
+![](options.png)
 
 It is the LDAP querying tool where it gets interesting.
-Compared to BloodHound, Adalanche is not using any database engines for storing and analyzing the results. It is based entirely on LDAP to perform any visualization and analysis over the collected data, which is purely stored on the local file system. This behavior has its pros and cons such as :
+
+![](ldap_query_tool.png)
+
+Compared to BloodHound, Adalanche is not using any database engines for storing the results. It is based entirely on LDAP to perform any visualization and analysis over the collected data, which is purely stored on the local file system. To visualize the results, Adalanche uses web view, which can be configured with the option ```--bind '127.0.0.1:8080'```. This behavior has its pros and cons such as :
 
 | Pros                                             | Cons                                                             |
 | ------------------------------------------------ | ---------------------------------------------------------------- |
