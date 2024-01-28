@@ -174,6 +174,8 @@ One of the coolest parts about Adalanche, is that when you execute one of the qu
 
 ![Query showing Unconstrained Delegation non-DC machines](udq.png)
 
+Additionally, the ```Start Query```, ```Middle Query``` and ```End Query``` are query separators, which means, that you can implement your own custom nested queries for finding various attack paths, misconfigurations and vulnerabilities.
+
 Of course, one negative aspect would be that you need to be doing good with LDAP in order to implement anything custom and to get the most out of Adalanche, but on the other hand, I found out that the default queries are working pretty nice. While I find the output from some of them confusing, others like ```Who can change GPOs```, ```ESC1 vulnerable certificate templates``` and ```Who can dump SAM/SYSTEM``` can be extremely easy to understand and useful.
 
 Lets analyze the above executed query: ```(&(type=Computer)(userAccountControl:1.2.840.113556.1.4.803:=524288)(!userAccountControl:1.2.840.113556.1.4.803:=8192))``` which is designed to show all computers which are marked for Unconstrained Delegation, and are not Domain Controllers. While at first the output can be a little messy, it makes sense when you start reading the lines.
@@ -184,6 +186,12 @@ Similar to BloodHound, when you click on the paths between objects, you can get 
 
 By following the same logic, we can understand that the ```SQL02``` is marked for Unconstrained Delegation, because its node is bigger and marked in red, compared to other machine accounts in the graph:
 
-![](machine_accounts.png)
+![SQL02 machine in red](machine_accounts.png)
 
-Additionally, the orange links most of the times mean that the object is a member of specific group, while the white usually means some form of connection between objects which is not dangerous nor expl
+Additionally, the orange links most of the times mean that the object is a member of specific group, while the white usually means some form of connection between objects which is not dangerous nor exploitable.
+
+![User admin is a member of the Administrators group, visualized with orange link](admin_group.png)
+
+## Conclusion
+
+Now it is your turn to try out the tool and decide for yourself if it is worth it or not!
