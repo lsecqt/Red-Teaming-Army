@@ -178,6 +178,6 @@ Of course, one negative aspect would be that you need to be doing good with LDAP
 
 Lets analyze the above executed query: ```(&(type=Computer)(userAccountControl:1.2.840.113556.1.4.803:=524288)(!userAccountControl:1.2.840.113556.1.4.803:=8192))``` which is designed to show all computers which are marked for Unconstrained Delegation, and are not Domain Controllers. While at first the output can be a little messy, it makes sense when you start reading the lines.
 
-
+Similar to BloodHound, when you click on the paths between objects, you can get additional details about various attributes and relationships between the objects. For example. when you see a red link between nodes, Adalanche claims that it is 100% 
 
 
