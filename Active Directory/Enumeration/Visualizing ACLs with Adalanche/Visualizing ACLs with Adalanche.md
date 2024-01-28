@@ -182,6 +182,8 @@ Similar to BloodHound, when you click on the paths between objects, you can get 
 
 ![Ann Rogers has AllExtendedRights permissions over SQL02 machine](ann_permissions.png)
 
-By followingt
+By following the same logic, we can understand that the ```SQL02``` is marked for Unconstrained Delegation, because its node is bigger and marked in red, compared to other machine accounts in the graph:
 
+![](machine_accounts.png)
 
+Additionally, the orange links most of the times mean that the object is a member of specific group, while the white usually means some form of connection between objects which is not dangerous nor expl
