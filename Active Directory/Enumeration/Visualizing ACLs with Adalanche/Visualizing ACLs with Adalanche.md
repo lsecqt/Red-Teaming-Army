@@ -138,39 +138,39 @@ Adalanche UI is divided into 3 parts:
 * Nodes visualization settings on the right
 * LDAP querying tool centered on the bottom.
 
-On the Object explorer you can observe and analyze various objects, including present users, machines, GPOs and more.
+On the Object explorer you can observe and analyze various objects, including present users, their groups, machines, Active Directory configurations and more.
 
-![](object_explorer.png)
+![Object explorer](object_explorer.png)
 
 !!!
-The data from the object explorer is the raw data from LDAP
+The data from the object explorer is the raw data from the LDAP server.
 !!!
 
-On the right you can tweak how the Adalanche should look like, but I personally did not spend much time on it since I was happy with the defaults.
+On the right, you can tweak how the Adalanche should look like, but I personally did not spend much time on it since I was happy with the defaults.
 
-![](options.png)
+![Adalanche visual options](options.png)
 
 It is the LDAP querying tool where it gets interesting.
 
-![](ldap_query_tool.png)
+![LDAP query section](ldap_query_tool.png)
 
-Compared to BloodHound, Adalanche is not using any database engines for storing the results. It is based entirely on LDAP to perform any visualization and analysis over the collected data, which is purely stored on the local file system. To visualize the results, Adalanche uses web view, which can be configured with the option ```--bind '127.0.0.1:8080'```.
+Compared to BloodHound, Adalanche is not using any database engines for storing the results. It is based entirely on LDAP to perform any visualization and analysis over the collected data, which is purely stored on the local file system. To visualize the results, Adalanche uses web view, which can be configured with the option ```--bind 'IP:PORT'```.
 
 This behavior has its pros and cons such as :
 
-| Pros                                             | Cons                                                             |
-| ------------------------------------------------ | ---------------------------------------------------------------- |
-| Extremely easy to migrate and share              | Extremely easy to lose the data                                  |
-| No dependencies other then the Adalanche binary  | Storing files on the local FS can lead to super easy signatures  |
-| No collector / db engine version incompatibility | Requires additional efforts for setting up multi-user experience | 
+| Pros                                             | Cons                                                            |
+| ------------------------------------------------ | --------------------------------------------------------------- |
+| Extremely easy to migrate and share              | Extremely easy to lose the data                                 |
+| No dependencies other then the Adalanche binary  | Storing files on the local FS can lead to super easy signatures |
+| No collector / db engine version incompatibility | No Internet Explorer support, wont run smooth on old machines   | 
 
 Adalanche comes with the following predefined LDAP queries for visualizing nodes and searching for attack paths:
 
-![](default_queries_ldap.png)
+![Builtin LDAP queries](default_queries_ldap.png)
 
 From these, you may notice that a lot of the queries are actually familiar from BloodHound (such as Kerberoastable users, DC Sync users and so on). 
 
-One of the coolest parts about Adalanche, is that when you execute one of the sample queries, you get its raw syntax into the LDAP querying section, from where you can modify and update the query to suit your needs.
+One of the coolest parts about Adalanche, is that when you execute one of the queries, you get its raw syntax inside the LDAP querying section, from where you can modify and update the query to suit your needs.
 
 ![Query showing Unconstrained Delegation non-DC machines](udq.png)
 
