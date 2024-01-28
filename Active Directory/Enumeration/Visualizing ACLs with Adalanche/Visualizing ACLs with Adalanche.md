@@ -188,10 +188,21 @@ By following the same logic, we can understand that the ```SQL02``` is marked fo
 
 ![SQL02 machine in red](machine_accounts.png)
 
-Additionally, the orange links most of the times mean that the object is a member of specific group, while the white usually means some form of connection between objects which is not dangerous nor exploitable.
+Additionally, the orange links most of the times mean that the object is a member of specific group, while the white usually means some form of connection between objects which is not dangerous or exploitable.
 
 ![User admin is a member of the Administrators group, visualized with orange link](admin_group.png)
+
+With that, Adalanche has everything needed to find misconfigurations and vulnerabilities in the scope of the Active Directory. I know that there are a lot of features that are missing, compared to BloodHound, but still the essentials are here. One of the features I think Adalanche is lacking, is the exploitation docs on the node paths. Additionally, I found Adalanche hard to navigate and analyze specific single objects. Compared to BloodHound, where you can just type the objet into the search box, here you would need to use LDAP queries. For example, in order to find a specific user, you can use the following LDAP query: ```(&(objectCategory=person)(objectClass=user)(!sAMAccountName=john@domain.com))```
+
+< PHOTO HERE >
+
+Other features such as ```what can this node pwn``` and ```what can pwn this node``` I found to be extremely useful and practical. In a nutshell, I think Adalanche is pretty good at mapping attack paths based on misconfigurations and vulnerabilities, however, it has room for a lot of improvements.
 
 ## Conclusion
 
 Now it is your turn to try out the tool and decide for yourself if it is worth it or not!
+In my opinion, compared to BloodHound, Adalanche is worst at visuals but still can present useful information and real attack paths. While it can be initially confusing I think it is a great alternative which has its own pros and cons. I personally find the architecture pretty amazing and well done! The ability to be that flexible and evasive is something that must be credited, and we also need to acknowledge that the project is actively being developed and supported!
+
+< Photo of antiscanme >
+
+I highly encourage you to try it out on your own and decide wether it is useful in your cases.
