@@ -1,4 +1,4 @@
-# Visualizing ACLs with Adalanche 
+## Visualizing ACLs with Adalanche 
 
 I was always a fan of trying new tools in order to create a personal arsenal for edged cases. Recently, I found a tool called [Adalanche](https://github.com/lkarlslund/Adalanche), which is capable of enumerating and visualizing [ACLs](https://learn.microsoft.com/en-us/windows/win32/secauthz/access-control-lists) between entities in the scope of the [Active Directory](https://en.wikipedia.org/wiki/Active_Directory).
 
@@ -15,7 +15,7 @@ Also make sure to join my [Discord](https://discord.gg/bgSpdheEgu) where we shar
 
 And if you have further appreciation for my work, don't hesitate to become my [Patreon](https://www.patreon.com/Lsecqt)!
 
-# Why not just use BloodHound?
+## Why not just use BloodHound?
 
 Now here comes the question, why bother with Adalanche when I have BloodHound?
 
@@ -25,7 +25,7 @@ Additionally, as you might already know, [SharpHound](https://github.com/BloodHo
 
 On the other hand, Adalanche is a tool that can work as both a collector and a visualizer at the same time, while it is extremely evasive. So, let's get an idea of what it actually looks like.
 
-# Adalanche Overview
+## Adalanche Overview
 
 Adalanche is go-written tool for collecting and analyzing data from Active Directory. It is capable of extracting potential attack vectors such as [unconstrained delegation](https://lsecqt.github.io/Red-Teaming-Army/active-directory/unleashing-the-power-of-unconstrained-delegation/), outdated servers, users with administrative privileges and more. It is extremely fast and compatible with each modern Operating System (OS).
 
@@ -43,7 +43,7 @@ It is always a good idea to obfuscate the code and compile it yourself. Currentl
 
 Adalanche can be run directly, with no arguments if it is launched from domain joined windows machine. On the other hand it can also mimic [bloodhound.py](https://github.com/dirkjanm/BloodHound.py), scraping the Active Directory from a machine with network access to the Domain Controller. It then stores the gathered data into a folder called ```data```, which can be analyzed in the future. Now let's analyze the different methods on how to get it running!
 
-## Case 1: I am operating from a domain joined Windows computer
+### Case 1: I am operating from a domain joined Windows computer
 
 Adalanche is capable of detecting the context of the current user. In case you are operating from a domain joined machine, and from the context of a domain user, you do not need to supply any arguments! In this scenario it is enough to just download and execute the binary. This will perform all the scraping automatically, then Adalanche will automatically analyze the collected data and finally, it will host the results on ```127.0.0.1:8080``` while navigating your default browser to the web view.
 
@@ -51,7 +51,7 @@ If everything went smooth, you should see something like this:
 
 ![Entry screen of adalanche](adalanche_main_screen.png)
 
-## Case 2: I am operating from a host with VPN access and AD credentials
+### Case 2: I am operating from a host with VPN access and AD credentials
 
 Adalanche is also capable of scanning and extracting data from the Active Directory remotely.
 In this scenario, we are required to have network visibility to the LDAP servers as well as a valid pair of credentials for the Active Directory.
@@ -119,7 +119,7 @@ By following the options, this exemplary command can collect the data from the A
 After this command finishes, the ```data``` folder will be present in your current working directory.
 
 !!!
-Since all of the collected AD information is stored into that ```data``` folder, you can also zip and ship it somewhere else. Keep in mind that the dump can be analyzed offlane as soon as the Adalanche binary is present. 
+Since all of the collected AD information is stored into that ```data``` folder, you can also zip and ship it somewhere else. Keep in mind that the dump can be analyzed offline as soon as the Adalanche binary is present. As already mentioned, the same binary can be used for both collection and analyzing the data.
 !!!
 
 When you are ready to analyze the results and generate a web view, you can do so by running:
@@ -131,16 +131,20 @@ When you are ready to analyze the results and generate a web view, you can do so
 If everything is running as expected, you should again see the initial screen of Adalanche:
 ![Entry screen of adalanche](adalanche_main_screen.png)
 
-# Adalanche Usage
+## Adalanche Usage
 
-Adalanche web UI is divided into 3 parts:
+Adalanche UI is divided into 3 parts:
 * Object explorer on the left
 * Nodes visualization settings on the right
 * LDAP querying tool centered on the bottom.
 
-On the Object explorer you can observe various objects, including present users, machines, GPOs and more.
+On the Object explorer you can observe and analyze various objects, including present users, machines, GPOs and more.
 
 ![](object_explorer.png)
+
+!!!
+The data from the object explorer is the raw data from LDAP
+!!!
 
 On the right you can tweak how the Adalanche should look like, but I personally did not spend much time on it since I was happy with the defaults.
 
@@ -150,7 +154,9 @@ It is the LDAP querying tool where it gets interesting.
 
 ![](ldap_query_tool.png)
 
-Compared to BloodHound, Adalanche is not using any database engines for storing the results. It is based entirely on LDAP to perform any visualization and analysis over the collected data, which is purely stored on the local file system. To visualize the results, Adalanche uses web view, which can be configured with the option ```--bind '127.0.0.1:8080'```. This behavior has its pros and cons such as :
+Compared to BloodHound, Adalanche is not using any database engines for storing the results. It is based entirely on LDAP to perform any visualization and analysis over the collected data, which is purely stored on the local file system. To visualize the results, Adalanche uses web view, which can be configured with the option ```--bind '127.0.0.1:8080'```.
+
+This behavior has its pros and cons such as :
 
 | Pros                                             | Cons                                                             |
 | ------------------------------------------------ | ---------------------------------------------------------------- |
