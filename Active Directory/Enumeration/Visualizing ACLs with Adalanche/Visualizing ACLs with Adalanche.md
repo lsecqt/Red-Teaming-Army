@@ -140,7 +140,7 @@ Adalanche web UI is divided into 3 parts:
 
 On the Object explorer you can observe various objects, including present users, machines, GPOs and more.
 
-< PHOTO HERE >
+![](object_explorer.png)
 
 On the right you can tweak how the Adalanche should look like, but I personally did not spend much time on it since I was happy with the defaults.
 
