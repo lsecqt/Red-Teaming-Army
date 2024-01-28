@@ -176,6 +176,8 @@ One of the coolest parts about Adalanche, is that when you execute one of the qu
 
 Of course, one negative aspect would be that you need to be doing good with LDAP in order to implement anything custom and to get the most out of Adalanche, but on the other hand, I found out that the default queries are working pretty nice. While I find the output from some of them confusing, others like ```Who can change GPOs```, ```ESC1 vulnerable certificate templates``` and ```Who can dump SAM/SYSTEM``` can be extremely easy to understand and useful.
 
-Lets analyze one of the mentioned queries:
+Lets analyze the above executed query: ```(&(type=Computer)(userAccountControl:1.2.840.113556.1.4.803:=524288)(!userAccountControl:1.2.840.113556.1.4.803:=8192))``` which is designed to show all computers which are marked for Unconstrained Delegation, and are not Domain Controllers. While at first the output can be a little messy, it makes sense when you start reading the lines.
+
+
 
 
