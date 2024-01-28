@@ -148,13 +148,21 @@
                 "file": "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md"
               }
             }
+          },
+          {
+            "id": "121f3211bbcb7054",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -168,8 +176,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "e73aff834e4867d2",
+  "active": "121f3211bbcb7054",
   "lastOpenFiles": [
+    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/adalanche_main_screen.png",
+    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Screenshot from 2024-01-27 17-39-55.png",
     "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/Unleashing the Power of Unconstrained Delegation.md",
     "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md",
     "Active Directory/Enumeration/Visualizing ACLs with Adalanche",
@@ -193,7 +203,6 @@
     "Pasted image 20231210095747.png",
     "Active Directory",
     "C2/asd.md",
-    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/shell.png",
     "C2/retype.yml",
     "Malware%20Development/Weaponizing%20DLL%20Hijacking%20via%20DLL%20Proxying/Pictures/modules.png.md",
     "Malware%20Development/Weaponizing%20DLL%20Hijacking%20via%20DLL%20Proxying/Pictures",
@@ -214,7 +223,6 @@
     "test.md",
     "Blue Teaming/Analyze Files/Scan implant with Pe-Sieve.md",
     "Buffer Overflow/Buffer Overflow.md",
-    "Cloud Pentest/Azure/Azure Recon as Outsider.md",
-    "Cloud Pentest/Azure/Untitled.md"
+    "Cloud Pentest/Azure/Azure Recon as Outsider.md"
   ]
 }
