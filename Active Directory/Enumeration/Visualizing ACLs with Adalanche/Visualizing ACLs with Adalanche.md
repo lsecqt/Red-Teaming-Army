@@ -159,4 +159,4 @@ Adalanche comes with the following predefined LDAP queries for visualizing nodes
 
 ![](default_queries_ldap.png)
 
-From these, you may notice that a lot of the queries are actually already present in BloodHound (such as Kerberoastable users, DC Sync users and so on)
+From these, you may notice that a lot of the queries are actually familiar from BloodHound (such as Kerberoastable users, DC Sync users and so on). One of the coolest parts about Adalanche, is that when you execute one of the sample queries, you get its raw syntax into the LDAP querying section, from where you can actually modify and update the query to suit your needs.
