@@ -163,6 +163,6 @@ From these, you may notice that a lot of the queries are actually familiar from 
 
 One of the coolest parts about Adalanche, is that when you execute one of the sample queries, you get its raw syntax into the LDAP querying section, from where you can modify and update the query to suit your needs.
 
-![](udq.png)
+![Query showing Unconstrained Delegation non-DC machines](udq.png)
 
-Of course, one negative aspect would be that you need to be doing good with LDAP in order to implement anything custom, but on the other hand I found out the default queries to be working pretty nice.
+Of course, one negative aspect would be that you need to be doing good with LDAP in order to implement anything custom and to get the most out of Adalanche, but on the other hand, I found out that the default queries are working pretty nice. While I find the output from some of them confusing, others like ```Who can change GPOs```, ```ESC1 vulnerable certificate templates```  and ```Who can dump SAM/SYSTEM```
