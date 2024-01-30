@@ -192,7 +192,7 @@ Additionally, the orange links most of the times mean that the object is a membe
 
 ![User admin is a member of the Administrators group, visualized with orange link](admin_group.png)
 
-With that, Adalanche has everything needed to find misconfigurations and vulnerabilities in the scope of the Active Directory. I know that there are a lot of features that are missing, compared to BloodHound, but still the essentials are here. One of the features I think Adalanche is lacking, is the exploitation docs on the node paths. Additionally, I found Adalanche hard to navigate and analyze specific single objects. Compared to BloodHound, where you can just type the objet into the search box, here you would need to use LDAP queries. For example, in order to find a specific user, you can use the following LDAP query: ```(&(objectCategory=person)(objectClass=user)(!sAMAccountName=john@domain.com))```
+With that, Adalanche has everything needed to find misconfigurations and vulnerabilities in the scope of the Active Directory. I know that there are a lot of features that are missing, compared to BloodHound, but still the essentials are here. One of the features I think Adalanche is lacking, is the exploitation docs on the node paths. Additionally, I found Adalanche hard to navigate and analyze specific single objects. Compared to BloodHound, where you can just type the object into the search box, here you would need to use LDAP queries. For example, in order to find a specific user, you can use the following LDAP query: ```(&(objectCategory=person)(objectClass=user)(!sAMAccountName=john@domain.com))```
 
 < PHOTO HERE >
 
