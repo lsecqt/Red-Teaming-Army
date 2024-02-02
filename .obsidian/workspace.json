@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md",
+                "file": "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md",
                 "mode": "source",
                 "source": true
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md",
+                "file": "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md",
+                "file": "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md"
+                "file": "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md"
               }
             }
           },
@@ -178,26 +178,25 @@
   },
   "active": "e73aff834e4867d2",
   "lastOpenFiles": [
+    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md",
+    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md",
+    "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/Unleashing the Power of Unconstrained Delegation.md",
+    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/machine_accounts.png",
+    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/metadefender.png",
+    "Pasted image 20231210095747.png",
+    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Screenshot from 2024-02-02 08-59-23.png",
     "Active Directory/Enumeration/Visualizing ACLs with Adalanche/route.png",
     "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Screenshot from 2024-02-02 08-52-47.png",
     "Active Directory/Enumeration/Visualizing ACLs with Adalanche/emma_pwned.png",
     "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Screenshot from 2024-02-02 08-45-29.png",
     "Active Directory/Enumeration/Visualizing ACLs with Adalanche/emma_no_privilege.png",
     "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Screenshot from 2024-02-02 08-42-39.png",
-    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/pwnoptions.png",
-    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Screenshot from 2024-02-02 08-37-07.png",
-    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/user.png",
-    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/admin_group.png",
-    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/machine_accounts.png",
-    "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/Unleashing the Power of Unconstrained Delegation.md",
-    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md",
     "Active Directory/Enumeration/Visualizing ACLs with Adalanche",
     "Active Directory/Enumeration/Untitled.md",
     "Active Directory/Enumeration/index.yml",
     "Active Directory/Enumeration",
     "Active Directory/Attacks/index.yml",
     "Active Directory/Attacks",
-    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md",
     "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation",
     "Active Directory/index.yml",
     "welcome.md",

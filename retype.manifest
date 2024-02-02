@@ -1,12 +1,87 @@
 {
   "version": "3.5.0",
-  "created": "2023-12-10T20:53:21Z",
+  "created": "2024-02-02T07:10:19Z",
   "files": [
     {
       "path": ".nojekyll"
     },
     {
       "path": "404.html"
+    },
+    {
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/bloodhound_unconstrained.png"
+    },
+    {
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/dc_ticket_captured.png"
+    },
+    {
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/get-domaincomputer.png"
+    },
+    {
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/index.html"
+    },
+    {
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/intro.jpg"
+    },
+    {
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/klist.png"
+    },
+    {
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/spoolsample.png"
+    },
+    {
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/start_rubeus.png"
+    },
+    {
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/unconstrained_delegation.png"
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/adalanche_main_screen.png"
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/admin_group.png"
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/ann_permissions.png"
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/default_queries_ldap.png"
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/emma_no_privilege.png"
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/emma_pwned.png"
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/index.html"
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/ldap_query_tool.png"
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/machine_accounts.png"
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/metadefender.png"
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/object_explorer.png"
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/options.png"
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/pwnoptions.png"
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/route.png"
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/udq.png"
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/user.png"
     },
     {
       "path": "c2\\untitled\\index.html",
@@ -16,77 +91,166 @@
       "path": "index.html"
     },
     {
-      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\calc_spawned.png"
+      "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/calc_spawned.png"
     },
     {
-      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\index.html"
+      "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/index.html"
     },
     {
-      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\modules.png"
+      "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/modules.png"
     },
     {
-      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\not_found.png"
+      "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/not_found.png"
+    },
+    {
+      "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/procmonfilters.png"
+    },
+    {
+      "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/proxyingtheory.png"
+    },
+    {
+      "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/running_normal.png"
+    },
+    {
+      "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/shell.png"
+    },
+    {
+      "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/spartacus.png"
+    },
+    {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\calc_spawned.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\index.html",
+      "old": true
+    },
+    {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\modules.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\not_found.png",
+      "old": true
     },
     {
       "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\pictures\\modules.png",
       "old": true
     },
     {
-      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\procmonfilters.png"
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\procmonfilters.png",
+      "old": true
     },
     {
-      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\proxyingtheory.png"
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\proxyingtheory.png",
+      "old": true
     },
     {
-      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\running_normal.png"
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\running_normal.png",
+      "old": true
     },
     {
-      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\shell.png"
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\shell.png",
+      "old": true
     },
     {
-      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\spartacus.png"
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\spartacus.png",
+      "old": true
     },
     {
-      "path": "pasted-image-20231210095747.png"
+      "path": "pasted-image-20231210095747.png",
+      "old": true
     },
     {
-      "path": "resources\\css\\retype.css"
+      "path": "resources/css/retype.css"
     },
     {
-      "path": "resources\\fonts\\Inter-italic-latin-var.woff2"
+      "path": "resources/fonts/Inter-italic-latin-var.woff2"
     },
     {
-      "path": "resources\\fonts\\Inter-roman-latin-var.woff2"
+      "path": "resources/fonts/Inter-roman-latin-var.woff2"
     },
     {
-      "path": "resources\\js\\config.js"
+      "path": "resources/js/config.js"
     },
     {
-      "path": "resources\\js\\lunr.js"
+      "path": "resources/js/lunr.js"
     },
     {
-      "path": "resources\\js\\prism.js"
+      "path": "resources/js/prism.js"
     },
     {
-      "path": "resources\\js\\retype.js"
+      "path": "resources/js/retype.js"
     },
     {
-      "path": "resources\\js\\search.json"
+      "path": "resources/js/search.json"
     },
     {
-      "path": "resources\\lunr.js.LICENSE.txt"
+      "path": "resources/lunr.js.LICENSE.txt"
     },
     {
-      "path": "resources\\mermaid.js.LICENSE.txt"
+      "path": "resources/mermaid.js.LICENSE.txt"
     },
     {
-      "path": "resources\\prism.js.LICENSE.txt"
+      "path": "resources/prism.js.LICENSE.txt"
     },
     {
-      "path": "resources\\retype.js.LICENSE.txt"
+      "path": "resources/retype.js.LICENSE.txt"
     },
     {
-      "path": "resources\\retype.LICENSE.txt"
+      "path": "resources/retype.LICENSE.txt"
+    },
+    {
+      "path": "resources\\css\\retype.css",
+      "old": true
+    },
+    {
+      "path": "resources\\fonts\\Inter-italic-latin-var.woff2",
+      "old": true
+    },
+    {
+      "path": "resources\\fonts\\Inter-roman-latin-var.woff2",
+      "old": true
+    },
+    {
+      "path": "resources\\js\\config.js",
+      "old": true
+    },
+    {
+      "path": "resources\\js\\lunr.js",
+      "old": true
+    },
+    {
+      "path": "resources\\js\\prism.js",
+      "old": true
+    },
+    {
+      "path": "resources\\js\\retype.js",
+      "old": true
+    },
+    {
+      "path": "resources\\js\\search.json",
+      "old": true
+    },
+    {
+      "path": "resources\\lunr.js.LICENSE.txt",
+      "old": true
+    },
+    {
+      "path": "resources\\mermaid.js.LICENSE.txt",
+      "old": true
+    },
+    {
+      "path": "resources\\prism.js.LICENSE.txt",
+      "old": true
+    },
+    {
+      "path": "resources\\retype.js.LICENSE.txt",
+      "old": true
+    },
+    {
+      "path": "resources\\retype.LICENSE.txt",
+      "old": true
     },
     {
       "path": "robots.txt"

@@ -9,7 +9,7 @@ Mapping such attack vectors can be complicated without such tools, and while you
 
 While [BloodHound](https://github.com/BloodHoundAD/BloodHound) is my rank #1 tool for enumerating and visualizing the Active Directory, I was also thrilled to try Adalanche, mainly because of curiosity in terms of UI, practical use and evasiveness. Turned out that this tool might be a hidden gem! 
 
-I already deployed a video about this topic on my [channel](https://www.youtube.com/watch?v=PG2J0uILL1Q), so if you prefer watching a video instead of reading, feel welcomed!
+If you prefer watching a video instead of reading, I already deployed a video about the topic on my channel: [!embed](https://www.youtube.com/watch?v=KhVxglO2mcM)
 
 Also make sure to join my [Discord](https://discord.gg/bgSpdheEgu) where we share experience, knowledge and doing CTF together.
 
@@ -38,7 +38,7 @@ Now, let's get an idea of what Adalanche actually looks like.
 
 ## Adalanche Overview
 
-Adalanche is go-written tool for collecting and analyzing data from Active Directory. It is capable of extracting potential attack vectors such as [unconstrained delegation](https://lsecqt.github.io/Red-Teaming-Army/active-directory/unleashing-the-power-of-unconstrained-delegation/), ESC1, outdated servers, users with administrative privileges and more. It is extremely fast and compatible with each modern Operating System (OS).
+Adalanche is go-written tool for collecting and analyzing data from Active Directory. It is capable of extracting potential attack vectors such as [unconstrained delegation](https://lsecqt.github.io/Red-Teaming-Army/active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/), ESC1, outdated servers, users with administrative privileges and more. It is extremely fast and compatible with each modern Operating System (OS).
 
 One of the coolest features about Adalanche is that it is self-sufficient, which means, you do not need:
 - Database (like Neo4j)
@@ -232,6 +232,6 @@ In my opinion, compared to BloodHound, Adalanche is worst at visuals but still c
 
 While it can be initially confusing I think it is a great alternative which has its own pros and cons. I personally find the architecture pretty amazing and well done! The ability to be that flexible and evasive is something that must be credited, and we also need to acknowledge that the project is actively being developed and supported!
 
-< Photo of antiscanme >
+![Metadefender scan results](metadefender.png)
 
-I highly encourage you to try it out on your own and decide wether it is useful in your cases.
+I highly encourage you to try it out on your own and decide whether it is useful in your cases.
