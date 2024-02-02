@@ -205,11 +205,17 @@ Additionally, the orange links most of the times mean that the object is a membe
 
 ![User admin is a member of the Administrators group, visualized with orange link](admin_group.png)
 
-With that, Adalanche has everything needed to find misconfigurations and vulnerabilities in the scope of the Active Directory. I know that there are a lot of features that are missing, compared to BloodHound, but still the essentials are here. One of the features I think Adalanche is lacking, is the exploitation docs on the node paths. Additionally, I found Adalanche hard to navigate and analyze specific single objects. Compared to BloodHound, where you can just type the object into the search box, here you would need to use LDAP queries. For example, in order to find a specific user, you can use the following LDAP query: ```(&(objectCategory=person)(objectClass=user)(!sAMAccountName=john@domain.com))```
+With that, Adalanche has everything needed to find misconfigurations and vulnerabilities in the scope of the Active Directory. I know that there are a lot of features that are missing, compared to BloodHound, but still the essentials are here. One of the features I think Adalanche is lacking, is the exploitation docs on the node paths. Additionally, I found Adalanche hard to navigate and analyze specific single objects. Compared to BloodHound, where you can just type the object into the search box, here you would need to use LDAP queries. For example, in order to find a specific user, you can use the following LDAP query: ```(&(objectCategory=person)(objectClass=user)(sAMAccountName=username))```
 
-< PHOTO HERE >
+![Querying the user emma, visualizing all objects that can directly influence her.](user.png)
 
-Other features such as ```what can this node pwn``` and ```what can pwn this node``` I found to be extremely useful and practical. In a nutshell, I think Adalanche is pretty good at mapping attack paths based on misconfigurations and vulnerabilities, however, it has room for a lot of improvements.
+Other features such as ```what can this node pwn``` and ```what can pwn this node``` I found to be extremely useful and practical. These options can be utilized into setting up a target or a starting point.
+
+![](pwnoptions.png)
+
+The 
+
+In a nutshell, I think Adalanche is pretty good at mapping attack paths based on misconfigurations and vulnerabilities, however, it has room for a lot of improvements.
 
 ## Conclusion
 
