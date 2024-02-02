@@ -156,18 +156,18 @@ On the Object explorer you can observe and analyze various objects, including pr
 ![Object explorer](object_explorer.png)
 
 !!!
-The data from the object explorer is the raw data from the LDAP server.
+The data from the object explorer is the raw data from the LDAP server. Here you can find the values in various object fields, such as object description
 !!!
 
 On the right, you can tweak how the Adalanche should look like, but I personally did not spend much time on it since I was happy with the defaults.
 
 ![Adalanche visual options](options.png)
 
-It is the LDAP querying tool where it gets interesting.
+It is in the LDAP querying tool where it gets interesting.
 
 ![LDAP query section](ldap_query_tool.png)
 
-Compared to BloodHound, Adalanche is not using any database engines for storing the results. It is based entirely on LDAP to perform any visualization and analysis over the collected data, which is purely stored on the local file system. To visualize the results, Adalanche uses web view, which can be configured with the option ```--bind 'IP:PORT'```.
+Compared to BloodHound, Adalanche is not using any database engines for storing the results. It is based entirely on LDAP to perform any visualization and analysis over the collected data (which is purely stored on the local file system). To visualize the results, Adalanche uses web view, which can be configured with the option ```--bind 'IP:PORT'```.
 
 This behavior has its pros and cons such as :
 
@@ -193,15 +193,15 @@ Of course, one negative aspect would be that you need to be doing good with LDAP
 
 Lets analyze the above executed query: ```(&(type=Computer)(userAccountControl:1.2.840.113556.1.4.803:=524288)(!userAccountControl:1.2.840.113556.1.4.803:=8192))``` which is designed to show all computers which are marked for Unconstrained Delegation, and are not Domain Controllers. While at first the output can be a little messy, it makes sense when you start reading the lines.
 
-Similar to BloodHound, when you click on the paths between objects, you can get additional details about various attributes and relationships between the objects. For example. when you see a red link between nodes, Adalanche claims that there are dangerous permissions between them. 
+Similar to BloodHound, when you click on the paths between objects, you can get additional details about various attributes and relationships. It is not as informative as BloodHound(the path does not give exploitation guides), but still can be quite useful when you are already aware of the most common AD attacks. For example, when you see a red link between nodes, Adalanche claims that there are dangerous permissions between them. 
 
 ![Ann Rogers has AllExtendedRights permissions over SQL02 machine](ann_permissions.png)
 
 By following the same logic, we can understand that the ```SQL02``` is marked for Unconstrained Delegation, because its node is bigger and marked in red, compared to other machine accounts in the graph:
 
-![SQL02 machine in red](machine_accounts.png)
+![Exact query match in red, in this case SQL02 is allowed for Unconstrained Delegation](machine_accounts.png)
 
-Additionally, the orange links most of the times mean that the object is a member of specific group, while the white usually means some form of connection between objects which is not dangerous or exploitable.
+Additionally, the orange links most of the times mean that the object is a member of specific group, while the white usually means that there is some form of connection between objects which is not dangerous or exploitable.
 
 ![User admin is a member of the Administrators group, visualized with orange link](admin_group.png)
 
