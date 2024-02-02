@@ -25,17 +25,20 @@ The answer is very simple, it is always a good idea to have alternatives for spe
 
 Additionally, as you might already know, [SharpHound](https://github.com/BloodHoundAD/SharpHound) (The data collector for BloodHound) is extremely signatured by various security mechanisms. I am aware that the signatures and the behavioral detections can be bypassed but sometimes its not a trivial process. For Instance, it is possible to land into an environment that is extremely well network segmented, so that you cannot get a C2 implant to run and you should rely on some kind of workarounds such as bind shells on specific ports, which not all C2 framework actually supports. Additionally, its possible that the network is restricted in such way, that you cannot just execute the python collector.  On top of that, if the segmentation is combined with enforced endpoint protection, it can become even more challenging. This just makes the things more complicated and can effectively lose a day or two into just getting the basic AD enumeration.
 
-On the other hand, Adalanche is a tool that can work as both a collector and a visualizer at the same time, while it is extremely evasive. Imagining the previous restricted scenario, if Adalanche is execute from a compromised machine, or from one which has network access to the LDAP server,  it is less likely to get detected and blocked.
+On the other hand, Adalanche is a tool that can work as both a collector and a visualizer at the same time, while it is extremely evasive. Imagining the previous restricted scenario, if Adalanche is execute from a compromised machine with network access to the LDAP server,  it is less likely to get detected and blocked.
 
 !!!
-
+When operating from C2 framework, the Adalanche binary can be executed with any PE-execution module, if your C2 supports such!
 !!!
 
-So, let's get an idea of what it actually looks like.
+[BIG DISCLAIMER]
+I am aware that there are always various workarounds for all scenarios. The goal of this blog is not to question them, but to discuss and analyze the Adalanche tool.
+
+Now, let's get an idea of what Adalanche actually looks like.
 
 ## Adalanche Overview
 
-Adalanche is go-written tool for collecting and analyzing data from Active Directory. It is capable of extracting potential attack vectors such as [unconstrained delegation](https://lsecqt.github.io/Red-Teaming-Army/active-directory/unleashing-the-power-of-unconstrained-delegation/), outdated servers, users with administrative privileges and more. It is extremely fast and compatible with each modern Operating System (OS).
+Adalanche is go-written tool for collecting and analyzing data from Active Directory. It is capable of extracting potential attack vectors such as [unconstrained delegation](https://lsecqt.github.io/Red-Teaming-Army/active-directory/unleashing-the-power-of-unconstrained-delegation/), ESC1, outdated servers, users with administrative privileges and more. It is extremely fast and compatible with each modern Operating System (OS).
 
 One of the coolest features about Adalanche is that it is self-sufficient, which means, you do not need:
 - Database (like Neo4j)
@@ -46,14 +49,16 @@ All you need is the [compiled binary](https://github.com/lkarlslund/Adalanche/re
 Since the Adalanche is go-written, the same code can be compiled for both windows and *nix systems. 
 
 !!!
-It is always a good idea to obfuscate the code and compile it yourself. Currently the tool does not get signatured but most likely this will change in the near future!
+It is always a good idea to obfuscate the code and compile it yourself. Currently (January, 2024) the tool does not get signatured but most likely this will change in the near future!
 !!!
 
-Adalanche can be run directly, with no arguments if it is launched from domain joined windows machine. On the other hand it can also mimic [bloodhound.py](https://github.com/dirkjanm/BloodHound.py), scraping the Active Directory from a machine with network access to the Domain Controller. It then stores the gathered data into a folder called ```data```, which can be analyzed in the future. Now let's analyze the different methods on how to get it running!
+Adalanche can be run directly, with no arguments if it is launched from a domain joined windows machine. On the other hand it can also mimic [bloodhound.py](https://github.com/dirkjanm/BloodHound.py), scraping the LDAP from a machine with network access to the Domain Controller. It then stores the gathered data into a folder called ```data```, which can be analyzed in the future. Now let's analyze the different methods on how to get it running!
 
 ### Case 1: I am operating from a domain joined Windows computer
 
-Adalanche is capable of detecting the context of the current user. In case you are operating from a domain joined machine, and from the context of a domain user, you do not need to supply any arguments! In this scenario it is enough to just download and execute the binary. This will perform all the scraping automatically, then Adalanche will automatically analyze the collected data and finally, it will host the results on ```127.0.0.1:8080``` while navigating your default browser to the web view.
+Adalanche is capable of detecting the context of the current user. In case you are operating from a domain joined machine, and from the context of a domain user, you do not need to supply any arguments! In this scenario it is enough to just download and execute the binary. 
+
+This will perform all the scraping automatically, then Adalanche will automatically analyze the collected data and finally, it will host the results on ```127.0.0.1:8080``` while navigating your default browser to the web view.
 
 If everything went smooth, you should see something like this:
 
@@ -62,14 +67,14 @@ If everything went smooth, you should see something like this:
 ### Case 2: I am operating from a host with VPN access and AD credentials
 
 Adalanche is also capable of scanning and extracting data from the Active Directory remotely.
-In this scenario, we are required to have network visibility to the LDAP servers as well as a valid pair of credentials for the Active Directory.
+In this scenario, it is required to have network visibility to the LDAP servers as well as a valid pair of credentials for the Active Directory.
 
 The Adalanche binary can now be used in 2 modes:
 - collect
 - analyze
 
 The first mode will perform the data collection via querying the LDAP service. After completion, again, all of the results will be stored in a folder called ```data``` unless you specify something different. 
-All of the needed options can be found on the [docs](https://github.com/lkarlslund/Adalanche) or by running
+All of the needed options can be found on the [docs](https://github.com/lkarlslund/Adalanche) or by running:
 ```
 ./adalanche help collect activedirectory
 
@@ -121,7 +126,7 @@ Global Flags:
 
 By following the options, this exemplary command can collect the data from the Active Directory:
 ```
-./adalanche collect activedirectory --tlsmode tls --ignorecert --domain domain.local --authdomain DOMAIN --username joe --password joepass
+./adalanche collect activedirectory --tlsmode tls --ignorecert --domain domain.local --authdomain DOMAIN --username joe --password joepass --server DCIP
 ```
 
 After this command finishes, the ```data``` folder will be present in your current working directory.
