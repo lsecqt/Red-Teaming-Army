@@ -2,7 +2,7 @@
 
 I was always a fan of trying new tools in order to create a personal arsenal for edged cases. Recently, I found a tool called [Adalanche](https://github.com/lkarlslund/Adalanche), which is capable of enumerating and visualizing [ACLs](https://learn.microsoft.com/en-us/windows/win32/secauthz/access-control-lists) between entities in the scope of the [Active Directory](https://en.wikipedia.org/wiki/Active_Directory).
 
-Usually, Active Directory misconfigurations can be found within the ACLs, and they can often lead to obtaining domain administrative privileges by chaining several lateral movement and privilege escalation techniques together. A very simple example for that can be a vulnerable [ADCS](https://learn.microsoft.com/en-us/windows-server/identity/ad-cs/active-directory-certificate-services-overview) server to [ESC1](https://www.blackhillsinfosec.com/abusing-active-directory-certificate-services-part-one/) attack. 
+Usually, Active Directory misconfigurations can be found within the ACLs, and they can often lead to obtaining domain administrative privileges by chaining various lateral movement or privilege escalation techniques together. A very simple example for that can be a vulnerable [ADCS](https://learn.microsoft.com/en-us/windows-server/identity/ad-cs/active-directory-certificate-services-overview) server to [ESC1](https://www.blackhillsinfosec.com/abusing-active-directory-certificate-services-part-one/) attack. 
 Another example could be finding out that the current owned user is local administrator on some machine and after data exfiltration, you find domain admin credentials.
 
 Mapping such attack vectors can be complicated without such tools, and while you should not be dependant of them, they are here to help, and they certainly do!
@@ -13,7 +13,9 @@ I already deployed a video about this topic on my [channel](https://www.youtube.
 
 Also make sure to join my [Discord](https://discord.gg/bgSpdheEgu) where we share experience, knowledge and doing CTF together.
 
+!!!
 And if you have further appreciation for my work, don't hesitate to become my [Patreon](https://www.patreon.com/Lsecqt)!
+!!!
 
 ## Why not just use BloodHound?
 
@@ -21,9 +23,15 @@ Now here comes the question, why bother with Adalanche when I have BloodHound?
 
 The answer is very simple, it is always a good idea to have alternatives for specific tools. Also, alternatives creates competition and this is a fundamental process of improving both of the sides, so its a win = win situation.
 
-Additionally, as you might already know, [SharpHound](https://github.com/BloodHoundAD/SharpHound) (The data collector for BloodHound) is extremely signatured by various security mechanisms. I am aware that the signatures and the behavioral detections can be bypassed but sometimes its not a trivial process. For Instance it is possible to land into an environment that is extremely well network segmented, so that you cannot get a C2 implant to run or you should rely on some kind of bind shells on specific ports, which not all C2 framework actually supports. Additionally, if the segmentation is combined with enforced endpoint protection, it can become super challenging to execute SharpHound and collect data.
+Additionally, as you might already know, [SharpHound](https://github.com/BloodHoundAD/SharpHound) (The data collector for BloodHound) is extremely signatured by various security mechanisms. I am aware that the signatures and the behavioral detections can be bypassed but sometimes its not a trivial process. For Instance, it is possible to land into an environment that is extremely well network segmented, so that you cannot get a C2 implant to run and you should rely on some kind of workarounds such as bind shells on specific ports, which not all C2 framework actually supports. Additionally, its possible that the network is restricted in such way, that you cannot just execute the python collector.  On top of that, if the segmentation is combined with enforced endpoint protection, it can become even more challenging. This just makes the things more complicated and can effectively lose a day or two into just getting the basic AD enumeration.
 
-On the other hand, Adalanche is a tool that can work as both a collector and a visualizer at the same time, while it is extremely evasive. So, let's get an idea of what it actually looks like.
+On the other hand, Adalanche is a tool that can work as both a collector and a visualizer at the same time, while it is extremely evasive. Imagining the previous restricted scenario, if Adalanche is execute from a compromised machine, or from one which has network access to the LDAP server,  it is less likely to get detected and blocked.
+
+!!!
+
+!!!
+
+So, let's get an idea of what it actually looks like.
 
 ## Adalanche Overview
 
