@@ -213,14 +213,24 @@ Other features such as ```what can this node pwn``` and ```what can pwn this nod
 
 ![](pwnoptions.png)
 
-The 
+The whole idea of these options is to find attack paths to or from specific objects.
 
-In a nutshell, I think Adalanche is pretty good at mapping attack paths based on misconfigurations and vulnerabilities, however, it has room for a lot of improvements.
+In this scenario, our user emma does not have direct dangerous and abusable ACLs toward any object in the domain.
+![Results from ```What can this node pwn?``` query](emma_no_privilege.png)
+
+However, various objects can effectively influence and control emma:
+![Results from ```Who can pwn this node?``` query](emma_pwned.png)
+
+Additionally, the options ```Set as route target``` and ```Route to target``` can be used to effectively display the attack path:
+
+![Results from setting emma as a target and running ```Route to target``` from Enterprise Admins group node](route.png)
 
 ## Conclusion
 
 Now it is your turn to try out the tool and decide for yourself if it is worth it or not!
-In my opinion, compared to BloodHound, Adalanche is worst at visuals but still can present useful information and real attack paths. While it can be initially confusing I think it is a great alternative which has its own pros and cons. I personally find the architecture pretty amazing and well done! The ability to be that flexible and evasive is something that must be credited, and we also need to acknowledge that the project is actively being developed and supported!
+In my opinion, compared to BloodHound, Adalanche is worst at visuals but still can present useful information and real attack paths. 
+
+While it can be initially confusing I think it is a great alternative which has its own pros and cons. I personally find the architecture pretty amazing and well done! The ability to be that flexible and evasive is something that must be credited, and we also need to acknowledge that the project is actively being developed and supported!
 
 < Photo of antiscanme >
 
