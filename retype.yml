@@ -1,6 +1,7 @@
 input: .
 output: .retype
 url: https://lsecqt.github.io/Red-Teaming-Army/
+favicon: static/favicon.png
 branding:
   title: Red Teaming Army
   label: Docs
