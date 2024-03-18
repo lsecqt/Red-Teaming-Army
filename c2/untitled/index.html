@@ -4,39 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Red-Teaming-Army">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.764069952823">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.5.0.755017785325">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.5.0">
 
     <!-- Primary Meta Tags -->
-    <title>Visualizing ACLs with Adalanche</title>
-    <meta name="title" content="Visualizing ACLs with Adalanche">
-    <meta name="description" content="I was always a fan of trying new tools in order to create a personal arsenal for edged cases. Recently, I found a tool called ">
+    <title>Untitled</title>
+    <meta name="title" content="Untitled">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://lsecqt.github.io/Red-Teaming-Army/active-directory/enumeration/visualizing-acls-with-adalanche/">
+    <link rel="canonical" href="https://lsecqt.github.io/Red-Teaming-Army/c2/untitled/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lsecqt.github.io/Red-Teaming-Army/active-directory/enumeration/visualizing-acls-with-adalanche/">
-    <meta property="og:title" content="Visualizing ACLs with Adalanche">
-    <meta property="og:description" content="I was always a fan of trying new tools in order to create a personal arsenal for edged cases. Recently, I found a tool called ">
+    <meta property="og:url" content="https://lsecqt.github.io/Red-Teaming-Army/c2/untitled/">
+    <meta property="og:title" content="Untitled">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://lsecqt.github.io/Red-Teaming-Army/active-directory/enumeration/visualizing-acls-with-adalanche/">
-    <meta property="twitter:title" content="Visualizing ACLs with Adalanche">
-    <meta property="twitter:description" content="I was always a fan of trying new tools in order to create a personal arsenal for edged cases. Recently, I found a tool called ">
+    <meta property="twitter:url" content="https://lsecqt.github.io/Red-Teaming-Army/c2/untitled/">
+    <meta property="twitter:title" content="Untitled">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
-    <link href="../../../favicon.ico" rel="icon">
-    <link href="../../../resources/css/retype.css?v=3.5.0.764069952823" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.5.0.755017785325" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../../resources/js/config.js?v=3.5.0.764069952823" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../../resources/js/lunr.js?v=3.5.0.764069952823" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.5.0.755017785325" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.5.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.5.0.755017785325" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -51,7 +47,7 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="docs-site-logo" href="../../../" class="flex items-center leading-snug text-xl">
+                        <a id="docs-site-logo" href="../../" class="flex items-center leading-snug text-xl">
                             <span class="dark:text-white font-semibold line-clamp-1 md:line-clamp-2">Red Teaming Army</span>
                         </a><span class="hidden px-2 py-1 ml-4 text-sm font-semibold leading-none text-root-logo-label-text bg-root-logo-label-bg rounded-sm md:inline-block">Docs</span>
                     </div>
@@ -319,373 +315,12 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="visualizing-acls-with-adalanche" class="break-words">
+<doc-anchor-target id="untitled" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#visualizing-acls-with-adalanche">#</doc-anchor-trigger>
-        <span>Visualizing ACLs with Adalanche</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#untitled">#</doc-anchor-trigger>
+        <span>Untitled</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="visualizing-acls-with-adalanche">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#visualizing-acls-with-adalanche">#</doc-anchor-trigger>
-        <span>Visualizing ACLs with Adalanche</span>
-    </h2>
-</doc-anchor-target>
-<p>I was always a fan of trying new tools in order to create a personal arsenal for edged cases. Recently, I found a tool called <a href="https://github.com/lkarlslund/Adalanche">Adalanche</a>, which is capable of enumerating and visualizing <a href="https://learn.microsoft.com/en-us/windows/win32/secauthz/access-control-lists">ACLs</a> between entities in the scope of the <a href="https://en.wikipedia.org/wiki/Active_Directory">Active Directory</a>.</p>
-<p>Usually, Active Directory misconfigurations can be found within the ACLs, and they can often lead to obtaining domain administrative privileges by chaining various lateral movement or privilege escalation techniques together. A very simple example for that can be a vulnerable <a href="https://learn.microsoft.com/en-us/windows-server/identity/ad-cs/active-directory-certificate-services-overview">ADCS</a> server to <a href="https://www.blackhillsinfosec.com/abusing-active-directory-certificate-services-part-one/">ESC1</a> attack.
-Another example could be finding out that the current owned user is local administrator on some machine and after data exfiltration, you find domain admin credentials.</p>
-<p>Mapping such attack vectors can be complicated without such tools, and while you should not be dependant of them, they are here to help, and they certainly do!</p>
-<p>While <a href="https://github.com/BloodHoundAD/BloodHound">BloodHound</a> is my rank #1 tool for enumerating and visualizing the Active Directory, I was also thrilled to try Adalanche, mainly because of curiosity in terms of UI, practical use and evasiveness. Turned out that this tool might be a hidden gem!</p>
-<p>If you prefer watching a video instead of reading, I already deployed a video about the topic on my channel: 
-<figure>
-    <div class="relative w-full mb-6 overflow-hidden pt-9/16">
-        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/KhVxglO2mcM" allowfullscreen></iframe>
-    </div>
-</figure>
-</p>
-<p>Also make sure to join my <a href="https://discord.gg/bgSpdheEgu">Discord</a> where we share experience, knowledge and doing CTF together.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>And if you have further appreciation for my work, don&#x27;t hesitate to become my <a href="https://www.patreon.com/Lsecqt">Patreon</a>!</p>
-        </div>
-    </div>
-</div>
-<doc-anchor-target id="why-not-just-use-bloodhound">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#why-not-just-use-bloodhound">#</doc-anchor-trigger>
-        <span>Why not just use BloodHound?</span>
-    </h2>
-</doc-anchor-target>
-<p>Now here comes the question, why bother with Adalanche when I have BloodHound?</p>
-<p>The answer is very simple, it is always a good idea to have alternatives for specific tools. Also, alternatives creates competition and this is a fundamental process of improving both of the sides, so its a win = win situation.</p>
-<p>Additionally, as you might already know, <a href="https://github.com/BloodHoundAD/SharpHound">SharpHound</a> (The data collector for BloodHound) is extremely signatured by various security mechanisms. I am aware that the signatures and the behavioral detections can be bypassed but sometimes its not a trivial process. For Instance, it is possible to land into an environment that is extremely well network segmented, so that you cannot get a C2 implant to run and you should rely on some kind of workarounds such as bind shells on specific ports, which not all C2 framework actually supports. Additionally, its possible that the network is restricted in such way, that you cannot just execute the python collector.  On top of that, if the segmentation is combined with enforced endpoint protection, it can become even more challenging. This just makes the things more complicated and can effectively lose a day or two into just getting the basic AD enumeration.</p>
-<p>On the other hand, Adalanche is a tool that can work as both a collector and a visualizer at the same time, while it is extremely evasive. Imagining the previous restricted scenario, if Adalanche is execute from a compromised machine with network access to the LDAP server,  it is less likely to get detected and blocked.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>When operating from C2 framework, the Adalanche binary can be executed with any PE-execution module, if your C2 supports such!</p>
-        </div>
-    </div>
-</div>
-<p>[BIG DISCLAIMER]
-I am aware that there are always various workarounds for all scenarios. The goal of this blog is not to question them, but to discuss and analyze the Adalanche tool.</p>
-<p>Now, let&#x27;s get an idea of what Adalanche actually looks like.</p>
-<doc-anchor-target id="adalanche-overview">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#adalanche-overview">#</doc-anchor-trigger>
-        <span>Adalanche Overview</span>
-    </h2>
-</doc-anchor-target>
-<p>Adalanche is go-written tool for collecting and analyzing data from Active Directory. It is capable of extracting potential attack vectors such as <a href="https://lsecqt.github.io/Red-Teaming-Army/active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/">unconstrained delegation</a>, ESC1, outdated servers, users with administrative privileges and more. It is extremely fast and compatible with each modern Operating System (OS).</p>
-<p>One of the coolest features about Adalanche is that it is self-sufficient, which means, you do not need:</p>
-<ul>
-<li>Database (like Neo4j)</li>
-<li>Specific engine or runtime installed (like dotnet runtime)</li>
-<li>Additional software (like a web server)</li>
-</ul>
-<p>All you need is the <a href="https://github.com/lkarlslund/Adalanche/releases">compiled binary</a> and luck that you are in a vulnerable environment.
-Since the Adalanche is go-written, the same code can be compiled for both windows and *nix systems.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>It is always a good idea to obfuscate the code and compile it yourself. Currently (January, 2024) the tool does not get signatured but most likely this will change in the near future!</p>
-        </div>
-    </div>
-</div>
-<p>Adalanche can be run directly, with no arguments if it is launched from a domain joined windows machine. On the other hand it can also mimic <a href="https://github.com/dirkjanm/BloodHound.py">bloodhound.py</a>, scraping the LDAP from a machine with network access to the Domain Controller. It then stores the gathered data into a folder called <code v-pre>data</code>, which can be analyzed in the future. Now let&#x27;s analyze the different methods on how to get it running!</p>
-<doc-anchor-target id="case-1-i-am-operating-from-a-domain-joined-windows-computer">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#case-1-i-am-operating-from-a-domain-joined-windows-computer">#</doc-anchor-trigger>
-        <span>Case 1: I am operating from a domain joined Windows computer</span>
-    </h3>
-</doc-anchor-target>
-<p>Adalanche is capable of detecting the context of the current user. In case you are operating from a domain joined machine, and from the context of a domain user, you do not need to supply any arguments! In this scenario it is enough to just download and execute the binary.</p>
-<p>This will perform all the scraping automatically, then Adalanche will automatically analyze the collected data and finally, it will host the results on <code v-pre>127.0.0.1:8080</code> while navigating your default browser to the web view.</p>
-<p>If everything went smooth, you should see something like this:</p>
-<p><figure class="content-center">
-    <img src="adalanche_main_screen.png" alt="Entry screen of adalanche">
-    <figcaption class="caption">Entry screen of adalanche</figcaption>
-</figure>
-</p>
-<doc-anchor-target id="case-2-i-am-operating-from-a-host-with-vpn-access-and-ad-credentials">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#case-2-i-am-operating-from-a-host-with-vpn-access-and-ad-credentials">#</doc-anchor-trigger>
-        <span>Case 2: I am operating from a host with VPN access and AD credentials</span>
-    </h3>
-</doc-anchor-target>
-<p>Adalanche is also capable of scanning and extracting data from the Active Directory remotely.
-In this scenario, it is required to have network visibility to the LDAP servers as well as a valid pair of credentials for the Active Directory.</p>
-<p>The Adalanche binary can now be used in 2 modes:</p>
-<ul>
-<li>collect</li>
-<li>analyze</li>
-</ul>
-<p>The first mode will perform the data collection via querying the LDAP service. After completion, again, all of the results will be stored in a folder called <code v-pre>data</code> unless you specify something different.
-All of the needed options can be found on the <a href="https://github.com/lkarlslund/Adalanche">docs</a> or by running:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">./adalanche help collect activedirectory
-
-11:24:06.425  INFORMA  Adalanche Open Source v2024.1.11 (commit 0161570), (c) 2020-2024 Lars Karlslund, This program comes with ABSOLUTELY NO WARRANTY
-Collects information from Active Directory
-
-Usage:
-  adalanche collect activedirectory [flags]
-
-Flags:
-      --adexplorerboost         Boost ADexplorer performance by using loading the binary file into RAM before decoding it (default true)
-      --adexplorerfile string   Import AD objects from SysInternals ADexplorer dump
-      --attributes string       Comma seperated list of attributes to get, * = all, or a comma seperated list of attribute names (expert) (default &quot;*&quot;)
-      --authdomain string       domain for authentication, if using ntlm auth
-      --authmode string         Bind mode: unauth/anonymous, basic/simple, digest/md5, kerberoscache, ntlm, ntlmpth (password is hash), negotiate/sspi (default &quot;ntlm&quot;)
-      --autodetect              Try to autodetect as much as we can, this will use environment variables and DNS to make this easy (default true)
-      --configuration string    Collect Active Directory Configuration (default &quot;auto&quot;)
-      --domain string           domain suffix to analyze (contoso.local, auto-detected if not supplied)
-      --gpopath string          Override path to GPOs, useful for non Windows OS'es with mounted drive (/mnt/policies/ or similar), but will break ACL feature
-      --gpos string             Collect Group Policy file contents (default &quot;auto&quot;)
-  -h, --help                    help for activedirectory
-      --ignorecert              Disable certificate checks
-      --ldapdebug               Enable LDAP debugging
-      --nosacl                  Request data with NO SACL flag, allows normal users to dump ntSecurityDescriptor field (default true)
-      --objects string          Collect Active Directory Objects (users, groups etc) (default &quot;auto&quot;)
-      --other string            Collect other Active Directory contexts (typically integrated DNS zones) (default &quot;auto&quot;)
-      --pagesize int            Number of objects per request to collect (increase for performance, but some DCs have limits) (default 1000)
-      --password string         password to connect with ex. --password hunter42 (use ! for blank password)
-      --port int                LDAP port to connect to (389 or 636 typical, -1 for auto based on tlsmode) (default -1)
-      --purgeolddata            Purge existing data from the datapath if connection to DC is successfull
-      --schema string           Collect Active Directory Schema (default &quot;auto&quot;)
-      --server stringArray      DC to connect to, use IP or full hostname ex. -dc=&quot;dc.contoso.local&quot;, random DC is auto-detected if not supplied
-      --tlsmode string          Transport mode (TLS, StartTLS, NoTLS) (default &quot;NoTLS&quot;)
-      --username string         username to connect with (someuser@contoso.local)
-
-Global Flags:
-      --cpuprofile                Save CPU profile from start to end of processing in datapath
-      --cpuprofiletimeout int32   CPU profiling timeout in seconds (0 means no timeout)
-      --datapath string           folder to store and read data (default &quot;data&quot;)
-      --embeddedprofiler          Start embedded Go profiler on localhost:6060
-      --fgtrace                   Save CPU trace start to end of processing in datapath
-      --logfile string            File to log to
-      --logfilelevel string       Log file log level (default &quot;info&quot;)
-      --loglevel string           Console log level (default &quot;info&quot;)
-      --logzerotime               Logged timestamps start from zero when program launches
-11:24:06.436  INFORMA  Terminating successfully
-</code></pre>
-</doc-codeblock></div>
-<p>By following the options, this exemplary command can collect the data from the Active Directory:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">./adalanche collect activedirectory --tlsmode tls --ignorecert --domain domain.local --authdomain DOMAIN --username joe --password joepass --server DCIP</code></pre>
-</doc-codeblock></div>
-<p>After this command finishes, the <code v-pre>data</code> folder will be present in your current working directory.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>Since all of the collected AD information is stored into that <code v-pre>data</code> folder, you can also zip and ship it somewhere else. Keep in mind that the dump can be analyzed offline as soon as the Adalanche binary is present. As already mentioned, the same binary can be used for both collection and analyzing the data.</p>
-        </div>
-    </div>
-</div>
-<p>When you are ready to analyze the results and generate a web view, you can do so by running:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre class="language-none"><code v-pre class="language-none">./adalanche analyze</code></pre>
-</doc-codeblock></div>
-<p>If everything is running as expected, you should again see the initial screen of Adalanche:
-<figure class="content-center">
-    <img src="adalanche_main_screen.png" alt="Entry screen of adalanche">
-    <figcaption class="caption">Entry screen of adalanche</figcaption>
-</figure>
-</p>
-<doc-anchor-target id="adalanche-usage">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#adalanche-usage">#</doc-anchor-trigger>
-        <span>Adalanche Usage</span>
-    </h2>
-</doc-anchor-target>
-<p>Adalanche UI is divided into 3 parts:</p>
-<ul>
-<li>Object explorer on the left</li>
-<li>Nodes visualization settings on the right</li>
-<li>LDAP querying tool centered on the bottom.</li>
-</ul>
-<p>On the Object explorer you can observe and analyze various objects, including present users, their groups, machines, Active Directory configurations and more.</p>
-<p><figure class="content-center">
-    <img src="object_explorer.png" alt="Object explorer">
-    <figcaption class="caption">Object explorer</figcaption>
-</figure>
-</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>The data from the object explorer is the raw data from the LDAP server. Here you can find the values in various object fields, such as object description</p>
-        </div>
-    </div>
-</div>
-<p>On the right, you can tweak how the Adalanche should look like, but I personally did not spend much time on it since I was happy with the defaults.</p>
-<p><figure class="content-center">
-    <img src="options.png" alt="Adalanche visual options">
-    <figcaption class="caption">Adalanche visual options</figcaption>
-</figure>
-</p>
-<p>It is in the LDAP querying tool where it gets interesting.</p>
-<p><figure class="content-center">
-    <img src="ldap_query_tool.png" alt="LDAP query section">
-    <figcaption class="caption">LDAP query section</figcaption>
-</figure>
-</p>
-<p>Compared to BloodHound, Adalanche is not using any database engines for storing the results. It is based entirely on LDAP to perform any visualization and analysis over the collected data (which is purely stored on the local file system). To visualize the results, Adalanche uses web view, which can be configured with the option <code v-pre>--bind 'IP:PORT'</code>.</p>
-<p>This behavior has its pros and cons such as :</p>
-<div class="table-wrapper scrollbar overflow-hidden">
-<table class="comfortable">
-<thead>
-<tr>
-<th>Pros</th>
-<th>Cons</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Extremely easy to migrate and share</td>
-<td>Extremely easy to lose the data</td>
-</tr>
-<tr>
-<td>No dependencies other then the Adalanche binary</td>
-<td>Storing files on the local FS can lead to super easy signatures</td>
-</tr>
-<tr>
-<td>No collector / db engine version incompatibility</td>
-<td>No Internet Explorer support, wont run smooth on old machines</td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>Adalanche comes with the following predefined LDAP queries for visualizing nodes and searching for attack paths:</p>
-<p><figure class="content-center">
-    <img src="default_queries_ldap.png" alt="Builtin LDAP queries">
-    <figcaption class="caption">Builtin LDAP queries</figcaption>
-</figure>
-</p>
-<p>From these, you may notice that a lot of the queries are actually familiar from BloodHound (such as Kerberoastable users, DC Sync users and so on).</p>
-<p>One of the coolest parts about Adalanche, is that when you execute one of the queries, you get its raw syntax inside the LDAP querying section, from where you can modify and update the query to suit your needs.</p>
-<p><figure class="content-center">
-    <img src="udq.png" alt="Query showing Unconstrained Delegation non-DC machines">
-    <figcaption class="caption">Query showing Unconstrained Delegation non-DC machines</figcaption>
-</figure>
-</p>
-<p>Additionally, the <code v-pre>Start Query</code>, <code v-pre>Middle Query</code> and <code v-pre>End Query</code> are query separators, which means, that you can implement your own custom nested queries for finding various attack paths, misconfigurations and vulnerabilities.</p>
-<p>Of course, one negative aspect would be that you need to be doing good with LDAP in order to implement anything custom and to get the most out of Adalanche, but on the other hand, I found out that the default queries are working pretty nice. While I find the output from some of them confusing, others like <code v-pre>Who can change GPOs</code>, <code v-pre>ESC1 vulnerable certificate templates</code> and <code v-pre>Who can dump SAM/SYSTEM</code> can be extremely easy to understand and useful.</p>
-<p>Lets analyze the above executed query: <code v-pre>(&amp;(type=Computer)(userAccountControl:1.2.840.113556.1.4.803:=524288)(!userAccountControl:1.2.840.113556.1.4.803:=8192))</code> which is designed to show all computers which are marked for Unconstrained Delegation, and are not Domain Controllers. While at first the output can be a little messy, it makes sense when you start reading the lines.</p>
-<p>Similar to BloodHound, when you click on the paths between objects, you can get additional details about various attributes and relationships. It is not as informative as BloodHound(the path does not give exploitation guides), but still can be quite useful when you are already aware of the most common AD attacks. For example, when you see a red link between nodes, Adalanche claims that there are dangerous permissions between them.</p>
-<p><figure class="content-center">
-    <img src="ann_permissions.png" alt="Ann Rogers has AllExtendedRights permissions over SQL02 machine">
-    <figcaption class="caption">Ann Rogers has AllExtendedRights permissions over SQL02 machine</figcaption>
-</figure>
-</p>
-<p>By following the same logic, we can understand that the <code v-pre>SQL02</code> is marked for Unconstrained Delegation, because its node is bigger and marked in red, compared to other machine accounts in the graph:</p>
-<p><figure class="content-center">
-    <img src="machine_accounts.png" alt="Exact query match in red, in this case SQL02 is allowed for Unconstrained Delegation">
-    <figcaption class="caption">Exact query match in red, in this case SQL02 is allowed for Unconstrained Delegation</figcaption>
-</figure>
-</p>
-<p>Additionally, the orange links most of the times mean that the object is a member of specific group, while the white usually means that there is some form of connection between objects which is not dangerous or exploitable.</p>
-<p><figure class="content-center">
-    <img src="admin_group.png" alt="User admin is a member of the Administrators group, visualized with orange link">
-    <figcaption class="caption">User admin is a member of the Administrators group, visualized with orange link</figcaption>
-</figure>
-</p>
-<p>With that, Adalanche has everything needed to find misconfigurations and vulnerabilities in the scope of the Active Directory. I know that there are a lot of features that are missing, compared to BloodHound, but still the essentials are here. One of the features I think Adalanche is lacking, is the exploitation docs on the node paths. Additionally, I found Adalanche hard to navigate and analyze specific single objects. Compared to BloodHound, where you can just type the object into the search box, here you would need to use LDAP queries. For example, in order to find a specific user, you can use the following LDAP query: <code v-pre>(&amp;(objectCategory=person)(objectClass=user)(sAMAccountName=username))</code></p>
-<p><figure class="content-center">
-    <img src="user.png" alt="Querying the user emma, visualizing all objects that can directly influence her.">
-    <figcaption class="caption">Querying the user emma, visualizing all objects that can directly influence her.</figcaption>
-</figure>
-</p>
-<p>Other features such as <code v-pre>what can this node pwn</code> and <code v-pre>what can pwn this node</code> I found to be extremely useful and practical. These options can be utilized into setting up a target or a starting point.</p>
-<p><figure class="content-center">
-    <img src="pwnoptions.png" alt="">
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<p>The whole idea of these options is to find attack paths to or from specific objects.</p>
-<p>In this scenario, our user emma does not have direct dangerous and abusable ACLs toward any object in the domain.
-<figure class="content-center">
-    <img src="emma_no_privilege.png" alt="Results from What can this node pwn? query">
-    <figcaption class="caption">Results from <code v-pre>What can this node pwn?</code> query</figcaption>
-</figure>
-</p>
-<p>However, various objects can effectively influence and control emma:
-<figure class="content-center">
-    <img src="emma_pwned.png" alt="Results from Who can pwn this node? query">
-    <figcaption class="caption">Results from <code v-pre>Who can pwn this node?</code> query</figcaption>
-</figure>
-</p>
-<p>Additionally, the options <code v-pre>Set as route target</code> and <code v-pre>Route to target</code> can be used to effectively display the attack path:</p>
-<p><figure class="content-center">
-    <img src="route.png" alt="Results from setting emma as a target and running Route to target from Enterprise Admins group node">
-    <figcaption class="caption">Results from setting emma as a target and running <code v-pre>Route to target</code> from Enterprise Admins group node</figcaption>
-</figure>
-</p>
-<doc-anchor-target id="conclusion">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#conclusion">#</doc-anchor-trigger>
-        <span>Conclusion</span>
-    </h2>
-</doc-anchor-target>
-<p>Now it is your turn to try out the tool and decide for yourself if it is worth it or not!
-In my opinion, compared to BloodHound, Adalanche is worst at visuals but still can present useful information and real attack paths.</p>
-<p>While it can be initially confusing I think it is a great alternative which has its own pros and cons. I personally find the architecture pretty amazing and well done! The ability to be that flexible and evasive is something that must be credited, and we also need to acknowledge that the project is actively being developed and supported!</p>
-<p><figure class="content-center">
-    <img src="metadefender.png" alt="Metadefender scan results">
-    <figcaption class="caption">Metadefender scan results</figcaption>
-</figure>
-</p>
-<p>I highly encourage you to try it out on your own and decide whether it is useful in your cases.</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -695,20 +330,20 @@ In my opinion, compared to BloodHound, Adalanche is worst at visuals but still c
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../../active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Unleashing the Power of Unconstrained Delegation</span>
+                                                <span class="block mt-1">Welcome</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../../malware-development/executing-csharp-assemblies-from-c-code/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../malware-development/weaponizing-dll-hijacking-via-dll-proxying/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Executing C​Sharp Assemblies from C code</span>
+                                                <span class="block mt-1">Weaponizing DLL Hijacking via DLL Proxying</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -723,7 +358,7 @@ In my opinion, compared to BloodHound, Adalanche is worst at visuals but still c
                                     <ul class="flex flex-wrap items-center text-sm">
                                     </ul>
                                 </div>
-                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2024. All rights reserved.</p></div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2023. All rights reserved.</p></div>
                             </footer>
                         </div>
                     </div>
@@ -752,6 +387,6 @@ In my opinion, compared to BloodHound, Adalanche is worst at visuals but still c
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Visualizing ACLs with Adalanche", level: 3, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Untitled", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
