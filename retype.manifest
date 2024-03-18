@@ -1,6 +1,6 @@
 {
   "version": "3.5.0",
-  "created": "2024-02-02T07:10:19Z",
+  "created": "2024-03-18T09:39:14Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -89,6 +89,57 @@
     },
     {
       "path": "index.html"
+    },
+    {
+      "path": "malware-development/executing-csharp-assemblies-from-c-code/index.html"
+    },
+    {
+      "path": "malware-development/executing-csharp-assemblies-from-c-code/processhacker.png"
+    },
+    {
+      "path": "malware-development/executing-csharp-assemblies-from-c-code/rubeus.png"
+    },
+    {
+      "path": "malware-development/executing-csharp-assemblies-from-c-code/rubeus2.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/bp.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/execute.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/generateshellcode.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/gptshellcode.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/index.html"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/processes.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/rawbin.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/scantrigger.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/shell.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/step1.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/step2.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/step3.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/workflow.png"
     },
     {
       "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/calc_spawned.png"
@@ -257,6 +308,9 @@
     },
     {
       "path": "sitemap.xml.gz"
+    },
+    {
+      "path": "static/favicon.ico"
     },
     {
       "path": "walkthroughs\\untitled\\index.html",

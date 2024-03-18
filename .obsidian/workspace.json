@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Malware Development/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics.md",
+                "file": "Malware Development/Executing CSharp Assemblies from C code/Executing CSharp Assemblies from C code.md",
                 "mode": "source",
                 "source": true
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5
+    "width": 349.5,
+    "collapsed": true
   },
   "right": {
     "id": "c46a980c6ac990b9",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Malware Development/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics.md",
+                "file": "Malware Development/Executing CSharp Assemblies from C code/Executing CSharp Assemblies from C code.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Malware Development/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics.md",
+                "file": "Malware Development/Executing CSharp Assemblies from C code/Executing CSharp Assemblies from C code.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Malware Development/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics.md"
+                "file": "Malware Development/Executing CSharp Assemblies from C code/Executing CSharp Assemblies from C code.md"
               }
             }
           },
@@ -178,6 +179,18 @@
   },
   "active": "e73aff834e4867d2",
   "lastOpenFiles": [
+    "Malware Development/Executing CSharp Assemblies from C code/rubeus2.png",
+    "rubeus2.png",
+    "Pasted image 20240316212922.png",
+    "Malware Development/Executing CSharp Assemblies from C code/processhacker.png",
+    "processhacker.png",
+    "Pasted image 20240316212448.png",
+    "Malware Development/Executing CSharp Assemblies from C code/rubeus.png",
+    "rubeus.png",
+    "Pasted image 20240316212313.png",
+    "Malware Development/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics.md",
+    "Malware Development/Executing CSharp Assemblies from C code/Executing CSharp Assemblies from C code.md",
+    "Malware Development/Executing CSharp Assemblies from C code",
     "static/favicon.ico",
     "static",
     "favicon.ico",
@@ -186,14 +199,6 @@
     "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/Unleashing the Power of Unconstrained Delegation.md",
     "Active Directory/Enumeration/Visualizing ACLs with Adalanche/machine_accounts.png",
     "Active Directory/Enumeration/Visualizing ACLs with Adalanche/metadefender.png",
-    "Pasted image 20231210095747.png",
-    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Screenshot from 2024-02-02 08-59-23.png",
-    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/route.png",
-    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Screenshot from 2024-02-02 08-52-47.png",
-    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/emma_pwned.png",
-    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Screenshot from 2024-02-02 08-45-29.png",
-    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/emma_no_privilege.png",
-    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Screenshot from 2024-02-02 08-42-39.png",
     "Active Directory/Enumeration/Visualizing ACLs with Adalanche",
     "Active Directory/Enumeration/Untitled.md",
     "Active Directory/Enumeration/index.yml",
@@ -201,9 +206,7 @@
     "Active Directory/Attacks/index.yml",
     "Active Directory/Attacks",
     "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation",
-    "Active Directory/index.yml",
     "welcome.md",
-    "Active Directory",
     "C2/asd.md",
     "Malware%20Development/Weaponizing%20DLL%20Hijacking%20via%20DLL%20Proxying/Pictures/modules.png.md",
     "C2/Test.md",
@@ -221,8 +224,6 @@
     "Red-Teaming/Defense Evasion/AV Evasion/ESET NOD32/Bypass 5 - Mythic + Shellcode Stager.md",
     "API Pentesting/Enumerate Endpoints.md",
     "test.md",
-    "Blue Teaming/Analyze Files/Scan implant with Pe-Sieve.md",
-    "Buffer Overflow/Buffer Overflow.md",
-    "Cloud Pentest/Azure/Azure Recon as Outsider.md"
+    "Blue Teaming/Analyze Files/Scan implant with Pe-Sieve.md"
   ]
 }
