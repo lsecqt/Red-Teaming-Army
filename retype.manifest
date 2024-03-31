@@ -1,6 +1,6 @@
 {
   "version": "3.5.0",
-  "created": "2024-03-18T09:39:14Z",
+  "created": "2024-03-31T11:17:05Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -89,6 +89,36 @@
     },
     {
       "path": "index.html"
+    },
+    {
+      "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/hosting.png"
+    },
+    {
+      "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/index.html"
+    },
+    {
+      "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/ls.png"
+    },
+    {
+      "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/nothreat.png"
+    },
+    {
+      "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/ntlmv2.png"
+    },
+    {
+      "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/scan.png"
+    },
+    {
+      "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/scanner.png"
+    },
+    {
+      "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/shell.png"
+    },
+    {
+      "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/shelltwo.png"
+    },
+    {
+      "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/staged.png"
     },
     {
       "path": "malware-development/executing-csharp-assemblies-from-c-code/index.html"

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Malware Development/Executing CSharp Assemblies from C code/Executing CSharp Assemblies from C code.md",
+                "file": "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/Beyond Detection SMB Staging for Antivirus Evasion.md",
                 "mode": "source",
                 "source": true
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5,
-    "collapsed": true
+    "width": 349.5
   },
   "right": {
     "id": "c46a980c6ac990b9",
@@ -94,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Malware Development/Executing CSharp Assemblies from C code/Executing CSharp Assemblies from C code.md",
+                "file": "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/Beyond Detection SMB Staging for Antivirus Evasion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Malware Development/Executing CSharp Assemblies from C code/Executing CSharp Assemblies from C code.md",
+                "file": "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/Beyond Detection SMB Staging for Antivirus Evasion.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Malware Development/Executing CSharp Assemblies from C code/Executing CSharp Assemblies from C code.md"
+                "file": "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/Beyond Detection SMB Staging for Antivirus Evasion.md"
               }
             }
           },
@@ -179,17 +178,24 @@
   },
   "active": "e73aff834e4867d2",
   "lastOpenFiles": [
-    "Malware Development/Executing CSharp Assemblies from C code/rubeus2.png",
-    "rubeus2.png",
-    "Pasted image 20240316212922.png",
-    "Malware Development/Executing CSharp Assemblies from C code/processhacker.png",
-    "processhacker.png",
-    "Pasted image 20240316212448.png",
-    "Malware Development/Executing CSharp Assemblies from C code/rubeus.png",
-    "rubeus.png",
-    "Pasted image 20240316212313.png",
-    "Malware Development/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics.md",
+    "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/shelltwo.png",
+    "Malware Development/Beyond Detection - Mastering SMB Staging Techniques for Antivirus Evasion/shell2.png",
+    "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/nothreat.png",
+    "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/scanner.png",
+    "Malware Development/Beyond Detection - Mastering SMB Staging Techniques for Antivirus Evasion/scanner.png.crdownload",
+    "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/scan.png",
+    "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/shell.png",
+    "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/ntlmv2.png",
+    "Pasted image 20240331110114.png",
+    "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/ls.png",
+    "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/hosting.png",
+    "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/Beyond Detection SMB Staging for Antivirus Evasion.md",
+    "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/staged.png",
+    "Malware Development/Beyond Detection - Mastering SMB Staging Techniques for Antivirus Evasion/staged.png.crdownload",
+    "Malware Development/Beyond Detection - Mastering SMB Staging Techniques for Antivirus Evasion/stageless.png.crdownload",
     "Malware Development/Executing CSharp Assemblies from C code/Executing CSharp Assemblies from C code.md",
+    "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion",
+    "Malware Development/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics.md",
     "Malware Development/Executing CSharp Assemblies from C code",
     "static/favicon.ico",
     "static",
@@ -197,15 +203,9 @@
     "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md",
     "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md",
     "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/Unleashing the Power of Unconstrained Delegation.md",
-    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/machine_accounts.png",
-    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/metadefender.png",
     "Active Directory/Enumeration/Visualizing ACLs with Adalanche",
     "Active Directory/Enumeration/Untitled.md",
     "Active Directory/Enumeration/index.yml",
-    "Active Directory/Enumeration",
-    "Active Directory/Attacks/index.yml",
-    "Active Directory/Attacks",
-    "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation",
     "welcome.md",
     "C2/asd.md",
     "Malware%20Development/Weaponizing%20DLL%20Hijacking%20via%20DLL%20Proxying/Pictures/modules.png.md",
@@ -223,7 +223,6 @@
     "Red-Teaming/Defense Evasion/AV Evasion/ESET NOD32/Bypass 4 - Mythic + NativePayload_PE1.md",
     "Red-Teaming/Defense Evasion/AV Evasion/ESET NOD32/Bypass 5 - Mythic + Shellcode Stager.md",
     "API Pentesting/Enumerate Endpoints.md",
-    "test.md",
-    "Blue Teaming/Analyze Files/Scan implant with Pe-Sieve.md"
+    "test.md"
   ]
 }
