@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Malware Development/Malware Development with C - Basic Persistence/Malware Development with C - Basic Persistence.md",
+                "file": "welcome.md",
                 "mode": "source",
                 "source": true
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Malware Development/Malware Development with C - Basic Persistence/Malware Development with C - Basic Persistence.md",
+                "file": "welcome.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Malware Development/Malware Development with C - Basic Persistence/Malware Development with C - Basic Persistence.md",
+                "file": "welcome.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Malware Development/Malware Development with C - Basic Persistence/Malware Development with C - Basic Persistence.md"
+                "file": "welcome.md"
               }
             }
           },
@@ -178,6 +178,7 @@
   },
   "active": "e73aff834e4867d2",
   "lastOpenFiles": [
+    "Malware Development/Malware Development with C - Basic Persistence/Malware Development with C - Basic Persistence.md",
     "favicon.ico",
     "Malware Development/Malware Development with C - Basic Persistence/modified_run.png",
     "Malware Development/Malware Development with C - Basic Persistence/powershell2.png",
@@ -185,7 +186,6 @@
     "Malware Development/Malware Development with C - Basic Persistence/modified_shell.png",
     "Malware Development/Malware Development with C - Basic Persistence/default_shell.png",
     "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/Beyond Detection SMB Staging for Antivirus Evasion.md",
-    "Malware Development/Malware Development with C - Basic Persistence/Malware Development with C - Basic Persistence.md",
     "Malware Development/Malware Development with C - Basic Persistence",
     "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/shelltwo.png",
     "Malware Development/Beyond Detection - Mastering SMB Staging Techniques for Antivirus Evasion/shell2.png",

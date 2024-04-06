@@ -1,7 +1,7 @@
 
-# Welcome
+# Red Teaming Army
 
-## Red Teaming Army
+## Welcome
 
 This is my personal blog space. The main idea of this platform is to allow me to share my knowledge in Red Teaming and Penetration Testing. Feel free to use the file navigation in order to view the present blogposts, or use the recursive search to find something specific of your needs!
 
