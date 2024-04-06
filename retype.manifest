@@ -1,6 +1,6 @@
 {
   "version": "3.5.0",
-  "created": "2024-03-31T11:17:05Z",
+  "created": "2024-04-06T19:38:12Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -170,6 +170,24 @@
     },
     {
       "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/workflow.png"
+    },
+    {
+      "path": "malware-development/malware-development-with-c---basic-persistence/default_shell.png"
+    },
+    {
+      "path": "malware-development/malware-development-with-c---basic-persistence/index.html"
+    },
+    {
+      "path": "malware-development/malware-development-with-c---basic-persistence/modified_run.png"
+    },
+    {
+      "path": "malware-development/malware-development-with-c---basic-persistence/modified_shell.png"
+    },
+    {
+      "path": "malware-development/malware-development-with-c---basic-persistence/powershell.png"
+    },
+    {
+      "path": "malware-development/malware-development-with-c---basic-persistence/powershell2.png"
     },
     {
       "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/calc_spawned.png"
