@@ -1,6 +1,6 @@
 {
   "version": "3.5.0",
-  "created": "2024-04-06T19:38:12Z",
+  "created": "2024-04-25T20:12:55Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -89,6 +89,27 @@
     },
     {
       "path": "index.html"
+    },
+    {
+      "path": "malware-development/basic-process-injection/index.html"
+    },
+    {
+      "path": "malware-development/basic-process-injection/msfvenom.png"
+    },
+    {
+      "path": "malware-development/basic-process-injection/process_hacker2_thread.png"
+    },
+    {
+      "path": "malware-development/basic-process-injection/process_hacker2.png"
+    },
+    {
+      "path": "malware-development/basic-process-injection/process_injection_workflow.png"
+    },
+    {
+      "path": "malware-development/basic-process-injection/shell.png"
+    },
+    {
+      "path": "malware-development/basic-process-injection/wallpaper.jpg"
     },
     {
       "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/hosting.png"
@@ -259,6 +280,9 @@
     {
       "path": "pasted-image-20231210095747.png",
       "old": true
+    },
+    {
+      "path": "pasted-image-20240425183953.png"
     },
     {
       "path": "resources/css/retype.css"

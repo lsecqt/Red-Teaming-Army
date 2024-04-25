@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "welcome.md",
+                "file": "Malware Development/Basic Process Injection/Basic Process Injection.md",
                 "mode": "source",
                 "source": true
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "welcome.md",
+                "file": "Malware Development/Basic Process Injection/Basic Process Injection.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "welcome.md",
+                "file": "Malware Development/Basic Process Injection/Basic Process Injection.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "welcome.md"
+                "file": "Malware Development/Basic Process Injection/Basic Process Injection.md"
               }
             }
           },
@@ -178,21 +178,25 @@
   },
   "active": "e73aff834e4867d2",
   "lastOpenFiles": [
+    "Malware Development/Basic Process Injection/shell.png",
+    "Malware Development/Basic Process Injection/msfvenom.png",
+    "Malware Development/Basic Process Injection/process_injection_workflow.png",
+    "Pasted image 20240425183953.png",
+    "Malware Development/Basic Process Injection/process_hacker2_thread.png",
+    "Malware Development/Basic Process Injection/process_hacker2.png",
+    "Malware Development/Basic Process Injection/wallpaper.jpg",
+    "welcome.md",
+    "Malware Development/Basic Process Injection/Basic Process Injection.md",
+    "Malware Development/Basic Process Injection",
     "Malware Development/Malware Development with C - Basic Persistence/Malware Development with C - Basic Persistence.md",
     "favicon.ico",
     "Malware Development/Malware Development with C - Basic Persistence/modified_run.png",
     "Malware Development/Malware Development with C - Basic Persistence/powershell2.png",
     "Malware Development/Malware Development with C - Basic Persistence/powershell.png",
     "Malware Development/Malware Development with C - Basic Persistence/modified_shell.png",
-    "Malware Development/Malware Development with C - Basic Persistence/default_shell.png",
     "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/Beyond Detection SMB Staging for Antivirus Evasion.md",
     "Malware Development/Malware Development with C - Basic Persistence",
-    "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/shelltwo.png",
-    "Malware Development/Beyond Detection - Mastering SMB Staging Techniques for Antivirus Evasion/shell2.png",
-    "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/nothreat.png",
-    "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/scanner.png",
     "Malware Development/Beyond Detection - Mastering SMB Staging Techniques for Antivirus Evasion/scanner.png.crdownload",
-    "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/scan.png",
     "Malware Development/Beyond Detection - Mastering SMB Staging Techniques for Antivirus Evasion/staged.png.crdownload",
     "Malware Development/Beyond Detection - Mastering SMB Staging Techniques for Antivirus Evasion/stageless.png.crdownload",
     "Malware Development/Executing CSharp Assemblies from C code/Executing CSharp Assemblies from C code.md",
@@ -204,9 +208,7 @@
     "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md",
     "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md",
     "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/Unleashing the Power of Unconstrained Delegation.md",
-    "Active Directory/Enumeration/Visualizing ACLs with Adalanche",
     "Active Directory/Enumeration/Untitled.md",
-    "welcome.md",
     "C2/asd.md",
     "Malware%20Development/Weaponizing%20DLL%20Hijacking%20via%20DLL%20Proxying/Pictures/modules.png.md",
     "C2/Test.md",
@@ -221,7 +223,6 @@
     "Internal Pentest/AD/Attacks/Abusing ADCS/POC.md",
     "Internal Pentest/Checklists/AD Lateral Movement Checklist.md",
     "Red-Teaming/Defense Evasion/AV Evasion/ESET NOD32/Bypass 4 - Mythic + NativePayload_PE1.md",
-    "Red-Teaming/Defense Evasion/AV Evasion/ESET NOD32/Bypass 5 - Mythic + Shellcode Stager.md",
-    "API Pentesting/Enumerate Endpoints.md"
+    "Red-Teaming/Defense Evasion/AV Evasion/ESET NOD32/Bypass 5 - Mythic + Shellcode Stager.md"
   ]
 }
