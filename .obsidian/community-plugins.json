@@ -9,10 +9,11 @@
   "cm-editor-syntax-highlight-obsidian",
   "obsidian-admonition",
   "cycle-through-panes",
-  "oz-image-plugin",
   "templater-obsidian",
   "obsidian-style-settings",
   "obsidian-minimal-settings",
   "obsidian-contextual-typography",
-  "obsidian-languagetool-plugin"
+  "obsidian-languagetool-plugin",
+  "oz-image-plugin",
+  "obsidian-image-toolkit"
 ]

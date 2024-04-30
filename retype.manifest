@@ -1,6 +1,6 @@
 {
   "version": "3.5.0",
-  "created": "2024-04-25T20:12:55Z",
+  "created": "2024-04-30T15:23:01Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -82,6 +82,48 @@
     },
     {
       "path": "active-directory/enumeration/visualizing-acls-with-adalanche/user.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/bot_offline.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/bot_online.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/bot_permissions.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/callback.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/channelid.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/commands.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/empty_server.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/empty.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/index.html"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/message_toggle.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/portmaster.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/readiness.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/settings_menu.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/wallpaper.jpg"
     },
     {
       "path": "c2\\untitled\\index.html",
@@ -282,7 +324,8 @@
       "old": true
     },
     {
-      "path": "pasted-image-20240425183953.png"
+      "path": "pasted-image-20240425183953.png",
+      "old": true
     },
     {
       "path": "resources/css/retype.css"
