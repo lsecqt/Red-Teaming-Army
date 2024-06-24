@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "C2/Utilizing Discord as C2 Traffic Broker/Utilizing Discord as C2 Traffic Broker.md",
+                "file": "Active Directory/Unleashing the Power of Unconstrained Delegation/Unleashing the Power of Unconstrained Delegation.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          },
+          {
+            "id": "39d21d97444bab55",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Active Directory/Compromising MSSQL Databases by Relaying/Compromising MSSQL Databases by Relaying.md",
                 "mode": "source",
                 "source": true
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -48,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rbcd",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "C2/Utilizing Discord as C2 Traffic Broker/Utilizing Discord as C2 Traffic Broker.md",
+                "file": "Active Directory/Compromising MSSQL Databases by Relaying/Compromising MSSQL Databases by Relaying.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +123,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "C2/Utilizing Discord as C2 Traffic Broker/Utilizing Discord as C2 Traffic Broker.md",
+                "file": "Active Directory/Compromising MSSQL Databases by Relaying/Compromising MSSQL Databases by Relaying.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +158,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "C2/Utilizing Discord as C2 Traffic Broker/Utilizing Discord as C2 Traffic Broker.md"
+                "file": "Active Directory/Compromising MSSQL Databases by Relaying/Compromising MSSQL Databases by Relaying.md"
               }
             }
           },
@@ -176,21 +189,27 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "e73aff834e4867d2",
+  "active": "39d21d97444bab55",
   "lastOpenFiles": [
+    "Active Directory/Compromising MSSQL Databases by Relaying/whoami.png",
+    "Active Directory/Compromising MSSQL Databases by Relaying/mssqlshell.png",
+    "Active Directory/Compromising MSSQL Databases by Relaying/relay.png",
+    "Active Directory/Compromising MSSQL Databases by Relaying/ntlmv2.png",
+    "Active Directory/Compromising MSSQL Databases by Relaying/config_domain_user.png",
+    "Active Directory/Compromising MSSQL Databases by Relaying/config_service_user.png",
+    "Active Directory/Unleashing the Power of Unconstrained Delegation/Unleashing the Power of Unconstrained Delegation.md",
+    "Active Directory/Compromising MSSQL Databases by Relaying/Compromising MSSQL Databases by Relaying.md",
+    "Active Directory/Compromising MSSQL Databases by Relaying/shell.png",
+    "Active Directory/Compromising MSSQL Databases by Relaying/connect.png",
+    "Active Directory/Compromising MSSQL Databases by Relaying/enum.png",
+    "Active Directory/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md",
+    "Active Directory/Compromising MSSQL Databases by Relaying/mssql_chart.jpg",
+    "Active Directory/Compromising MSSQL Databases by Relaying/mssql_chart.jpg.crdownload",
+    "C2/Utilizing Discord as C2 Traffic Broker/Utilizing Discord as C2 Traffic Broker.md",
+    "Active Directory/Compromising MSSQL Databases by Relaying",
     "C2/index.yml~",
     "C2/Utilizing Discord as C2 Traffic Broker/portmaster.png",
-    "C2/Utilizing Discord as C2 Traffic Broker/empty.png",
-    "C2/Utilizing Discord as C2 Traffic Broker/commands.png",
-    "C2/Utilizing Discord as C2 Traffic Broker/callback.png",
-    "C2/Utilizing Discord as C2 Traffic Broker/bot_online.png",
-    "C2/Utilizing Discord as C2 Traffic Broker/channelId.png",
-    "C2/Utilizing Discord as C2 Traffic Broker/readiness.png",
-    "C2/Utilizing Discord as C2 Traffic Broker/bot_offline.png",
-    "C2/Utilizing Discord as C2 Traffic Broker/bot_permissions.png",
-    "C2/Utilizing Discord as C2 Traffic Broker/message_toggle.png",
     "Malware Development/Basic Process Injection/Basic Process Injection.md",
-    "C2/Utilizing Discord as C2 Traffic Broker/Utilizing Discord as C2 Traffic Broker.md",
     "C2/Utilizing Discord as C2 Traffic Broker",
     "welcome.md",
     "Malware Development/Basic Process Injection",
@@ -202,13 +221,8 @@
     "Malware Development/Beyond Detection - Mastering SMB Staging Techniques for Antivirus Evasion/staged.png.crdownload",
     "Malware Development/Beyond Detection - Mastering SMB Staging Techniques for Antivirus Evasion/stageless.png.crdownload",
     "Malware Development/Executing CSharp Assemblies from C code/Executing CSharp Assemblies from C code.md",
-    "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion",
     "Malware Development/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics.md",
-    "Malware Development/Executing CSharp Assemblies from C code",
-    "static/favicon.ico",
     "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md",
-    "Active Directory/Enumeration/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md",
-    "Active Directory/Attacks/Unleashing the Power of Unconstrained Delegation/Unleashing the Power of Unconstrained Delegation.md",
     "Active Directory/Enumeration/Untitled.md",
     "C2/asd.md",
     "Malware%20Development/Weaponizing%20DLL%20Hijacking%20via%20DLL%20Proxying/Pictures/modules.png.md",
@@ -222,7 +236,6 @@
     "index.md.md",
     "readme.md.md",
     "Internal Pentest/AD/Attacks/Abusing ADCS/POC.md",
-    "Internal Pentest/Checklists/AD Lateral Movement Checklist.md",
-    "Red-Teaming/Defense Evasion/AV Evasion/ESET NOD32/Bypass 4 - Mythic + NativePayload_PE1.md"
+    "Internal Pentest/Checklists/AD Lateral Movement Checklist.md"
   ]
 }

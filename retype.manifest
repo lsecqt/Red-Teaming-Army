@@ -1,6 +1,6 @@
 {
   "version": "3.5.0",
-  "created": "2024-04-30T15:23:01Z",
+  "created": "2024-06-24T14:52:50Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -9,79 +9,212 @@
       "path": "404.html"
     },
     {
-      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/bloodhound_unconstrained.png"
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/bloodhound_unconstrained.png",
+      "old": true
     },
     {
-      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/dc_ticket_captured.png"
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/dc_ticket_captured.png",
+      "old": true
     },
     {
-      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/get-domaincomputer.png"
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/get-domaincomputer.png",
+      "old": true
     },
     {
-      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/index.html"
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/index.html",
+      "old": true
     },
     {
-      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/intro.jpg"
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/intro.jpg",
+      "old": true
     },
     {
-      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/klist.png"
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/klist.png",
+      "old": true
     },
     {
-      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/spoolsample.png"
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/spoolsample.png",
+      "old": true
     },
     {
-      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/start_rubeus.png"
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/start_rubeus.png",
+      "old": true
     },
     {
-      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/unconstrained_delegation.png"
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/unconstrained_delegation.png",
+      "old": true
     },
     {
-      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/adalanche_main_screen.png"
+      "path": "active-directory/compromising-mssql-databases-by-relaying/config_domain_user.png"
     },
     {
-      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/admin_group.png"
+      "path": "active-directory/compromising-mssql-databases-by-relaying/config_service_user.png"
     },
     {
-      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/ann_permissions.png"
+      "path": "active-directory/compromising-mssql-databases-by-relaying/connect.png"
     },
     {
-      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/default_queries_ldap.png"
+      "path": "active-directory/compromising-mssql-databases-by-relaying/enum.png"
     },
     {
-      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/emma_no_privilege.png"
+      "path": "active-directory/compromising-mssql-databases-by-relaying/index.html"
     },
     {
-      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/emma_pwned.png"
+      "path": "active-directory/compromising-mssql-databases-by-relaying/mssql_chart.jpg"
     },
     {
-      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/index.html"
+      "path": "active-directory/compromising-mssql-databases-by-relaying/mssqlshell.png"
     },
     {
-      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/ldap_query_tool.png"
+      "path": "active-directory/compromising-mssql-databases-by-relaying/ntlmv2.png"
     },
     {
-      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/machine_accounts.png"
+      "path": "active-directory/compromising-mssql-databases-by-relaying/relay.png"
     },
     {
-      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/metadefender.png"
+      "path": "active-directory/compromising-mssql-databases-by-relaying/shell.png"
     },
     {
-      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/object_explorer.png"
+      "path": "active-directory/compromising-mssql-databases-by-relaying/whoami.png"
     },
     {
-      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/options.png"
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/adalanche_main_screen.png",
+      "old": true
     },
     {
-      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/pwnoptions.png"
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/admin_group.png",
+      "old": true
     },
     {
-      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/route.png"
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/ann_permissions.png",
+      "old": true
     },
     {
-      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/udq.png"
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/default_queries_ldap.png",
+      "old": true
     },
     {
-      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/user.png"
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/emma_no_privilege.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/emma_pwned.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/index.html",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/ldap_query_tool.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/machine_accounts.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/metadefender.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/object_explorer.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/options.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/pwnoptions.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/route.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/udq.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/user.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/unleashing-the-power-of-unconstrained-delegation/bloodhound_unconstrained.png"
+    },
+    {
+      "path": "active-directory/unleashing-the-power-of-unconstrained-delegation/dc_ticket_captured.png"
+    },
+    {
+      "path": "active-directory/unleashing-the-power-of-unconstrained-delegation/get-domaincomputer.png"
+    },
+    {
+      "path": "active-directory/unleashing-the-power-of-unconstrained-delegation/index.html"
+    },
+    {
+      "path": "active-directory/unleashing-the-power-of-unconstrained-delegation/intro.jpg"
+    },
+    {
+      "path": "active-directory/unleashing-the-power-of-unconstrained-delegation/klist.png"
+    },
+    {
+      "path": "active-directory/unleashing-the-power-of-unconstrained-delegation/spoolsample.png"
+    },
+    {
+      "path": "active-directory/unleashing-the-power-of-unconstrained-delegation/start_rubeus.png"
+    },
+    {
+      "path": "active-directory/unleashing-the-power-of-unconstrained-delegation/unconstrained_delegation.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/adalanche_main_screen.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/admin_group.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/ann_permissions.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/default_queries_ldap.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/emma_no_privilege.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/emma_pwned.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/index.html"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/ldap_query_tool.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/machine_accounts.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/metadefender.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/object_explorer.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/options.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/pwnoptions.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/route.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/udq.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/user.png"
     },
     {
       "path": "c2/utilizing-discord-as-c2-traffic-broker/bot_offline.png"
