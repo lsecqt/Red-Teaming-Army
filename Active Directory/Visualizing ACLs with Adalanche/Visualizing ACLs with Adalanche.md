@@ -9,7 +9,7 @@ Mapping such attack vectors can be complicated without such tools, and while you
 
 While [BloodHound](https://github.com/BloodHoundAD/BloodHound) is my rank #1 tool for enumerating and visualizing the Active Directory, I was also thrilled to try Adalanche, mainly because of curiosity in terms of UI, practical use and evasiveness. Turned out that this tool might be a hidden gem! 
 
-If you prefer watching a video instead of reading, I already deployed a video about the topic on my channel: [!embed](https://www.youtube.com/watch?v=KhVxglO2mcM)
+If you prefer watching a video instead of reading, I already deployed a video about the topic on my channel: [!embed](https://www.youtube.com/watch?v=PG2J0uILL1Q)
 
 Also make sure to join my [Discord](https://discord.gg/bgSpdheEgu) where we share experience, knowledge and doing CTF together.
 
