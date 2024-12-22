@@ -16,7 +16,9 @@
                 "file": "Active Directory/Unleashing the Power of Unconstrained Delegation/Unleashing the Power of Unconstrained Delegation.md",
                 "mode": "source",
                 "source": true
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Unleashing the Power of Unconstrained Delegation"
             }
           },
           {
@@ -25,10 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md",
+                "file": "Networking/Redirecting Traffic From Windows via SharpRedirect/Redirecting Traffic From Windows via SharpRedirect.md",
                 "mode": "source",
                 "source": true
-              }
+              },
+              "icon": "lucide-file",
+              "title": "Redirecting Traffic From Windows via SharpRedirect"
             }
           }
         ],
@@ -52,7 +56,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -61,13 +67,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "embed",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -75,14 +83,17 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 349.5
+    "width": 349.5,
+    "collapsed": true
   },
   "right": {
     "id": "c46a980c6ac990b9",
@@ -97,7 +108,9 @@
             "type": "leaf",
             "state": {
               "type": "calendar",
-              "state": {}
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
             }
           },
           {
@@ -106,7 +119,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Active Directory/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md",
+                "file": "Networking/Redirecting Traffic From Windows via SharpRedirect/Redirecting Traffic From Windows via SharpRedirect.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +127,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Redirecting Traffic From Windows via SharpRedirect"
             }
           },
           {
@@ -123,10 +138,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Active Directory/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md",
+                "file": "Networking/Redirecting Traffic From Windows via SharpRedirect/Redirecting Traffic From Windows via SharpRedirect.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Redirecting Traffic From Windows via SharpRedirect"
             }
           },
           {
@@ -137,7 +154,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -149,7 +168,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           },
           {
@@ -158,8 +179,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Active Directory/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md"
-              }
+                "file": "Networking/Redirecting Traffic From Windows via SharpRedirect/Redirecting Traffic From Windows via SharpRedirect.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Redirecting Traffic From Windows via SharpRedirect"
             }
           },
           {
@@ -167,15 +190,17 @@
             "type": "leaf",
             "state": {
               "type": "advanced-tables-toolbar",
-              "state": {}
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
             }
           }
-        ],
-        "currentTab": 6
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -191,35 +216,38 @@
   },
   "active": "39d21d97444bab55",
   "lastOpenFiles": [
-    "Active Directory/Compromising MSSQL Databases by Relaying/Compromising MSSQL Databases by Relaying.md",
-    "Active Directory/Compromising MSSQL Databases by Relaying/whoami.png",
-    "Active Directory/Compromising MSSQL Databases by Relaying/mssqlshell.png",
-    "Active Directory/Compromising MSSQL Databases by Relaying/relay.png",
-    "Active Directory/Compromising MSSQL Databases by Relaying/ntlmv2.png",
-    "Active Directory/Compromising MSSQL Databases by Relaying/config_domain_user.png",
-    "Active Directory/Compromising MSSQL Databases by Relaying/config_service_user.png",
+    "Networking/Redirecting Traffic From Windows via SharpRedirect/external_redirector_graph.png",
+    "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/Beyond Detection SMB Staging for Antivirus Evasion.md",
+    "Networking/Redirecting Traffic From Windows via SharpRedirect/Redirecting Traffic From Windows via SharpRedirect.md",
+    "Malware Development/Executing CSharp Assemblies from C code/Executing CSharp Assemblies from C code.md",
+    "Malware Development/Basic Process Injection/Basic Process Injection.md",
+    "Malware Development/Malware Development with C - Basic Persistence/Malware Development with C - Basic Persistence.md",
     "Active Directory/Unleashing the Power of Unconstrained Delegation/Unleashing the Power of Unconstrained Delegation.md",
-    "Active Directory/Compromising MSSQL Databases by Relaying/shell.png",
-    "Active Directory/Compromising MSSQL Databases by Relaying/connect.png",
-    "Active Directory/Compromising MSSQL Databases by Relaying/enum.png",
-    "Active Directory/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md",
-    "Active Directory/Compromising MSSQL Databases by Relaying/mssql_chart.jpg",
-    "Active Directory/Compromising MSSQL Databases by Relaying/mssql_chart.jpg.crdownload",
+    "Networking/Redirecting Traffic From Windows via SharpRedirect/callback.png",
+    "Networking/Redirecting Traffic From Windows via SharpRedirect/new_beacon.png",
+    "Networking/Redirecting Traffic From Windows via SharpRedirect/starting_redirector.png",
+    "Networking/Redirecting Traffic From Windows via SharpRedirect/demo.png",
+    "Networking/Redirecting Traffic From Windows via SharpRedirect/internal_redirector_graph.png",
+    "Networking/Redirecting Traffic From Windows via SharpRedirect/internal_redirector.png",
+    "Networking/Redirecting Traffic From Windows via SharpRedirect/Redirection Internal.png",
+    "Networking/Redirecting Traffic From Windows via SharpRedirect/internal_redirection.png",
+    "Networking/Redirecting Traffic From Windows via SharpRedirect/external_redirector.png",
+    "Networking/Redirecting Traffic From Windows via SharpRedirect/external_redirection.png",
+    "Networking/Redirecting Traffic From Windows via SharpRedirect/Untitled.canvas",
     "C2/Utilizing Discord as C2 Traffic Broker/Utilizing Discord as C2 Traffic Broker.md",
+    "Networking/Redirecting Traffic From Windows via SharpRedirect",
+    "Networking/index.yml",
+    "Networking",
+    "Active Directory/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md",
+    "Active Directory/Compromising MSSQL Databases by Relaying/Compromising MSSQL Databases by Relaying.md",
+    "Active Directory/Compromising MSSQL Databases by Relaying/mssql_chart.jpg.crdownload",
     "Active Directory/Compromising MSSQL Databases by Relaying",
     "C2/index.yml~",
-    "Malware Development/Basic Process Injection/Basic Process Injection.md",
     "C2/Utilizing Discord as C2 Traffic Broker",
     "welcome.md",
     "Malware Development/Basic Process Injection",
-    "Malware Development/Malware Development with C - Basic Persistence/Malware Development with C - Basic Persistence.md",
     "favicon.ico",
-    "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/Beyond Detection SMB Staging for Antivirus Evasion.md",
     "Malware Development/Malware Development with C - Basic Persistence",
-    "Malware Development/Beyond Detection - Mastering SMB Staging Techniques for Antivirus Evasion/scanner.png.crdownload",
-    "Malware Development/Beyond Detection - Mastering SMB Staging Techniques for Antivirus Evasion/staged.png.crdownload",
-    "Malware Development/Beyond Detection - Mastering SMB Staging Techniques for Antivirus Evasion/stageless.png.crdownload",
-    "Malware Development/Executing CSharp Assemblies from C code/Executing CSharp Assemblies from C code.md",
     "Malware Development/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics.md",
     "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md",
     "Active Directory/Enumeration/Untitled.md",
@@ -234,7 +262,6 @@
     "Walkthroughs copy/Untitled.md",
     "index.md.md",
     "readme.md.md",
-    "Internal Pentest/AD/Attacks/Abusing ADCS/POC.md",
-    "Internal Pentest/Checklists/AD Lateral Movement Checklist.md"
+    "Internal Pentest/AD/Attacks/Abusing ADCS/POC.md"
   ]
 }
