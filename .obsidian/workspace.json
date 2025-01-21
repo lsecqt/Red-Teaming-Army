@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory/Unleashing the Power of Unconstrained Delegation/Unleashing the Power of Unconstrained Delegation.md",
+                "file": "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/The Most Powerful Malware Analysis Tool You NEED in 2025.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Unleashing the Power of Unconstrained Delegation"
-            }
-          },
-          {
-            "id": "39d21d97444bab55",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Networking/Redirecting Traffic From Windows via SharpRedirect/Redirecting Traffic From Windows via SharpRedirect.md",
-                "mode": "source",
-                "source": true
-              },
-              "icon": "lucide-file",
-              "title": "Redirecting Traffic From Windows via SharpRedirect"
+              "title": "The Most Powerful Malware Analysis Tool You NEED in 2025"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -92,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 349.5,
-    "collapsed": true
+    "width": 349.5
   },
   "right": {
     "id": "c46a980c6ac990b9",
@@ -214,25 +198,30 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "39d21d97444bab55",
+  "active": "e73aff834e4867d2",
   "lastOpenFiles": [
-    "Networking/Redirecting Traffic From Windows via SharpRedirect/external_redirector_graph.png",
-    "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/Beyond Detection SMB Staging for Antivirus Evasion.md",
-    "Networking/Redirecting Traffic From Windows via SharpRedirect/Redirecting Traffic From Windows via SharpRedirect.md",
-    "Malware Development/Executing CSharp Assemblies from C code/Executing CSharp Assemblies from C code.md",
-    "Malware Development/Basic Process Injection/Basic Process Injection.md",
+    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/pidscan.png",
+    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/scanprocess.png",
     "Malware Development/Malware Development with C - Basic Persistence/Malware Development with C - Basic Persistence.md",
+    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/The Most Powerful Malware Analysis Tool You NEED in 2025.md",
+    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/huntsbmet.png",
+    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/patriotmet.png",
+    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/monetamet.png",
+    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/pesievemet.png",
+    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/yaramet.png",
+    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/met.png",
+    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/yara2.png",
+    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/dynamicsummary.png",
+    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/usercontext.png",
+    "Attachments",
     "Active Directory/Unleashing the Power of Unconstrained Delegation/Unleashing the Power of Unconstrained Delegation.md",
-    "Networking/Redirecting Traffic From Windows via SharpRedirect/callback.png",
-    "Networking/Redirecting Traffic From Windows via SharpRedirect/new_beacon.png",
-    "Networking/Redirecting Traffic From Windows via SharpRedirect/starting_redirector.png",
-    "Networking/Redirecting Traffic From Windows via SharpRedirect/demo.png",
-    "Networking/Redirecting Traffic From Windows via SharpRedirect/internal_redirector_graph.png",
-    "Networking/Redirecting Traffic From Windows via SharpRedirect/internal_redirector.png",
-    "Networking/Redirecting Traffic From Windows via SharpRedirect/Redirection Internal.png",
-    "Networking/Redirecting Traffic From Windows via SharpRedirect/internal_redirection.png",
-    "Networking/Redirecting Traffic From Windows via SharpRedirect/external_redirector.png",
-    "Networking/Redirecting Traffic From Windows via SharpRedirect/external_redirection.png",
+    "Networking/Redirecting Traffic From Windows via SharpRedirect/Redirecting Traffic From Windows via SharpRedirect.md",
+    "Malware Development/Basic Process Injection/Basic Process Injection.md",
+    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md",
+    "Malware Development/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics.md",
+    "Malware Development/Executing CSharp Assemblies from C code/Executing CSharp Assemblies from C code.md",
+    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025",
+    "Malware Development/Beyond Detection SMB Staging for Antivirus Evasion/Beyond Detection SMB Staging for Antivirus Evasion.md",
     "Networking/Redirecting Traffic From Windows via SharpRedirect/Untitled.canvas",
     "C2/Utilizing Discord as C2 Traffic Broker/Utilizing Discord as C2 Traffic Broker.md",
     "Networking/Redirecting Traffic From Windows via SharpRedirect",
@@ -246,10 +235,6 @@
     "C2/Utilizing Discord as C2 Traffic Broker",
     "welcome.md",
     "Malware Development/Basic Process Injection",
-    "favicon.ico",
-    "Malware Development/Malware Development with C - Basic Persistence",
-    "Malware Development/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics.md",
-    "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md",
     "Active Directory/Enumeration/Untitled.md",
     "C2/asd.md",
     "Malware%20Development/Weaponizing%20DLL%20Hijacking%20via%20DLL%20Proxying/Pictures/modules.png.md",
@@ -261,7 +246,6 @@
     "Malware Development copy/Untitled.md",
     "Walkthroughs copy/Untitled.md",
     "index.md.md",
-    "readme.md.md",
-    "Internal Pentest/AD/Attacks/Abusing ADCS/POC.md"
+    "readme.md.md"
   ]
 }

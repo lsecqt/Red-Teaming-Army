@@ -211,7 +211,7 @@ When setting up redirection for your penetration testing operations, it is **cri
 ### Demo
 
 To showcase the tool I have prepared the following lab setup:
-![](demo.png)
+![Demo Lab](demo.png)
 
 In this case I have compromised the SQL01 server which is allowed from the firewall to connect to outbound servers. I dumped credentials and found a valid DA pair. Trying to obtain a C2 callback from the DC fails since it is not allowed from the firewall for outbound communication. 
 
@@ -221,11 +221,11 @@ Let's start SharpRedirect on SQL01:
 .\SharpRedirect.exe 443 192.168.0.157 443
 ```
 
-![](starting_redirector.png)
+![Starting SharpRedirect from PowerShell](starting_redirector.png)
 
 With the redirector setup now I need to generate new beacon with modified target host. During this demo I used Mythic C2 and my Haunt C2 Powershell Agent.
 
-![](new_beacon.png)
+![Creating new C2 Beacon with modified target host IP](new_beacon.png)
 
 !!!
 Here is the moment to say special thanks to my [Patreon Sponsors](https://www.patreon.com/Lsecqt). If you also have deeper appreciation for my work, feel free to support me and by doing so you will get access to my private packer (ShadowBurn), my private C2 Agent (Haunt) and more projects that I am sure you will find handy! Thank you once again!
@@ -233,7 +233,7 @@ Here is the moment to say special thanks to my [Patreon Sponsors](https://www.pa
 
 After making all of the preparation and after executing the new PowerShell beacon via `wmiexec`, I receive the fully functioning C2 callback.
 
-![](callback.png)
+![New callback present](callback.png)
 
 
 ## Conclusion
