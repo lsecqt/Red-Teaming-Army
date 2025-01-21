@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="turbo-root" content="/Red-Teaming-Army">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.788180626879">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.6.0.790788822259">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.6.0">
@@ -32,12 +32,12 @@
     <script data-cfasync="false">(function () { var el = document.documentElement, m = localStorage.getItem("doc_theme"), wm = window.matchMedia; if (m === "dark" || (!m && wm && wm("(prefers-color-scheme: dark)").matches)) { el.classList.add("dark") } else { el.classList.remove("dark") } })();</script>
 
     <link href="../../favicon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.6.0.788180626879" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.6.0.790788822259" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.788180626879" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.6.0.790788822259" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.788180626879" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.6.0.788180626879" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.6.0.790788822259" data-turbo-eval="false" defer></script>
+    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.6.0.790788822259" defer></script>
 </head>
 <body>
     <div id="docs-app" class="relative text-base antialiased text-gray-700 bg-white font-body dark:bg-dark-850 dark:text-dark-300">
@@ -574,8 +574,8 @@ await Task.WhenAll(forwardTask, backwardTask);</code></pre>
 </doc-anchor-target>
 <p>To showcase the tool I have prepared the following lab setup:
 <figure class="content-center">
-    <img src="demo.png" alt="">
-    <figcaption class="caption"></figcaption>
+    <img src="demo.png" alt="Demo Lab">
+    <figcaption class="caption">Demo Lab</figcaption>
 </figure>
 </p>
 <p>In this case I have compromised the SQL01 server which is allowed from the firewall to connect to outbound servers. I dumped credentials and found a valid DA pair. Trying to obtain a C2 callback from the DC fails since it is not allowed from the firewall for outbound communication.</p>
@@ -584,14 +584,14 @@ await Task.WhenAll(forwardTask, backwardTask);</code></pre>
 <pre class="language-powershell"><code v-pre class="language-powershell">.\SharpRedirect.exe 443 192.168.0.157 443</code></pre>
 </doc-codeblock></div>
 <p><figure class="content-center">
-    <img src="starting_redirector.png" alt="">
-    <figcaption class="caption"></figcaption>
+    <img src="starting_redirector.png" alt="Starting SharpRedirect from PowerShell">
+    <figcaption class="caption">Starting SharpRedirect from PowerShell</figcaption>
 </figure>
 </p>
 <p>With the redirector setup now I need to generate new beacon with modified target host. During this demo I used Mythic C2 and my Haunt C2 Powershell Agent.</p>
 <p><figure class="content-center">
-    <img src="new_beacon.png" alt="">
-    <figcaption class="caption"></figcaption>
+    <img src="new_beacon.png" alt="Creating new C2 Beacon with modified target host IP">
+    <figcaption class="caption">Creating new C2 Beacon with modified target host IP</figcaption>
 </figure>
 </p>
 <div class="flex mb-6">
@@ -613,8 +613,8 @@ await Task.WhenAll(forwardTask, backwardTask);</code></pre>
 </div>
 <p>After making all of the preparation and after executing the new PowerShell beacon via <code v-pre>wmiexec</code>, I receive the fully functioning C2 callback.</p>
 <p><figure class="content-center">
-    <img src="callback.png" alt="">
-    <figcaption class="caption"></figcaption>
+    <img src="callback.png" alt="New callback present">
+    <figcaption class="caption">New callback present</figcaption>
 </figure>
 </p>
 <doc-anchor-target id="conclusion">
@@ -656,7 +656,7 @@ await Task.WhenAll(forwardTask, backwardTask);</code></pre>
                                     <ul class="flex flex-wrap items-center text-sm">
                                     </ul>
                                 </div>
-                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2024. All rights reserved.</p></div>
+                                <div class="docs-copyright py-2 text-gray-500 dark:text-dark-350 text-sm leading-relaxed"><p>© Copyright 2025. All rights reserved.</p></div>
                             </footer>
                         </div>
                     </div>
