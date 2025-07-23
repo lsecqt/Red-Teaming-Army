@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://lsecqt.github.io/Red-Teaming-Army/sitemap.xml.gz

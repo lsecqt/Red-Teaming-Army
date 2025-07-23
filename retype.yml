@@ -1,0 +1,44 @@
+input: .
+output: .retype
+url: https://lsecqt.github.io/Red-Teaming-Army/
+favicon: static/favicon.png
+branding:
+  title: Red Teaming Army
+  label: Docs
+
+      
+links:
+- text: Discord
+  link: https://discord.gg/bgSpdheEgu
+  icon: rocket
+
+- text: Patreon
+  link: https://www.patreon.com/Lsecqt
+  icon: Heart-fill
+
+- text: Buy Me A Coffee
+  link: https://www.buymeacoffee.com/lsecqt
+  icon: feed-heart
+
+- text: YouTube
+  link: https://www.youtube.com/@Lsecqt
+  icon: device-camera-video
+
+- text: GitHub
+  link: https://github.com/lsecqt/
+  icon: mark-github
+
+- text: Twitter
+  link: https://twitter.com/lsecqt
+  icon: Star
+
+- text: HackTheBox
+  link: https://app.hackthebox.com/users/292064
+  icon: package
+
+- text: Reddit
+  link: https://www.reddit.com/user/lsecqt/
+  icon: copilot
+
+footer:
+  copyright: "&copy; Copyright {{ year }}. All rights reserved."

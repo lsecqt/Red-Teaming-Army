@@ -1,0 +1,1280 @@
+{
+  "version": "3.11.0",
+  "created": "2025-07-23T16:19:07Z",
+  "files": [
+    {
+      "path": ".nojekyll"
+    },
+    {
+      "path": "404.html"
+    },
+    {
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/bloodhound_unconstrained.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/dc_ticket_captured.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/get-domaincomputer.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/index.html",
+      "old": true
+    },
+    {
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/intro.jpg",
+      "old": true
+    },
+    {
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/klist.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/spoolsample.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/start_rubeus.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/unconstrained_delegation.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/compromising-mssql-databases-by-relaying/config_domain_user.png"
+    },
+    {
+      "path": "active-directory/compromising-mssql-databases-by-relaying/config_service_user.png"
+    },
+    {
+      "path": "active-directory/compromising-mssql-databases-by-relaying/connect.png"
+    },
+    {
+      "path": "active-directory/compromising-mssql-databases-by-relaying/enum.png"
+    },
+    {
+      "path": "active-directory/compromising-mssql-databases-by-relaying/index.html"
+    },
+    {
+      "path": "active-directory/compromising-mssql-databases-by-relaying/mssql_chart.jpg"
+    },
+    {
+      "path": "active-directory/compromising-mssql-databases-by-relaying/mssqlshell.png"
+    },
+    {
+      "path": "active-directory/compromising-mssql-databases-by-relaying/ntlmv2.png"
+    },
+    {
+      "path": "active-directory/compromising-mssql-databases-by-relaying/relay.png"
+    },
+    {
+      "path": "active-directory/compromising-mssql-databases-by-relaying/shell.png"
+    },
+    {
+      "path": "active-directory/compromising-mssql-databases-by-relaying/whoami.png"
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/adalanche_main_screen.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/admin_group.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/ann_permissions.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/default_queries_ldap.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/emma_no_privilege.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/emma_pwned.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/index.html",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/ldap_query_tool.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/machine_accounts.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/metadefender.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/object_explorer.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/options.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/pwnoptions.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/route.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/udq.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/enumeration/visualizing-acls-with-adalanche/user.png",
+      "old": true
+    },
+    {
+      "path": "active-directory/unleashing-the-power-of-unconstrained-delegation/bloodhound_unconstrained.png"
+    },
+    {
+      "path": "active-directory/unleashing-the-power-of-unconstrained-delegation/dc_ticket_captured.png"
+    },
+    {
+      "path": "active-directory/unleashing-the-power-of-unconstrained-delegation/get-domaincomputer.png"
+    },
+    {
+      "path": "active-directory/unleashing-the-power-of-unconstrained-delegation/index.html"
+    },
+    {
+      "path": "active-directory/unleashing-the-power-of-unconstrained-delegation/intro.jpg"
+    },
+    {
+      "path": "active-directory/unleashing-the-power-of-unconstrained-delegation/klist.png"
+    },
+    {
+      "path": "active-directory/unleashing-the-power-of-unconstrained-delegation/spoolsample.png"
+    },
+    {
+      "path": "active-directory/unleashing-the-power-of-unconstrained-delegation/start_rubeus.png"
+    },
+    {
+      "path": "active-directory/unleashing-the-power-of-unconstrained-delegation/unconstrained_delegation.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/adalanche_main_screen.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/admin_group.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/ann_permissions.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/default_queries_ldap.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/emma_no_privilege.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/emma_pwned.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/index.html"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/ldap_query_tool.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/machine_accounts.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/metadefender.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/object_explorer.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/options.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/pwnoptions.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/route.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/udq.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/user.png"
+    },
+    {
+      "path": "active-directory\\compromising-mssql-databases-by-relaying\\config_domain_user.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\compromising-mssql-databases-by-relaying\\config_service_user.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\compromising-mssql-databases-by-relaying\\connect.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\compromising-mssql-databases-by-relaying\\enum.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\compromising-mssql-databases-by-relaying\\index.html",
+      "old": true
+    },
+    {
+      "path": "active-directory\\compromising-mssql-databases-by-relaying\\mssql_chart.jpg",
+      "old": true
+    },
+    {
+      "path": "active-directory\\compromising-mssql-databases-by-relaying\\mssqlshell.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\compromising-mssql-databases-by-relaying\\ntlmv2.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\compromising-mssql-databases-by-relaying\\relay.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\compromising-mssql-databases-by-relaying\\shell.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\compromising-mssql-databases-by-relaying\\whoami.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\unleashing-the-power-of-unconstrained-delegation\\bloodhound_unconstrained.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\unleashing-the-power-of-unconstrained-delegation\\dc_ticket_captured.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\unleashing-the-power-of-unconstrained-delegation\\get-domaincomputer.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\unleashing-the-power-of-unconstrained-delegation\\index.html",
+      "old": true
+    },
+    {
+      "path": "active-directory\\unleashing-the-power-of-unconstrained-delegation\\intro.jpg",
+      "old": true
+    },
+    {
+      "path": "active-directory\\unleashing-the-power-of-unconstrained-delegation\\klist.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\unleashing-the-power-of-unconstrained-delegation\\spoolsample.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\unleashing-the-power-of-unconstrained-delegation\\start_rubeus.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\unleashing-the-power-of-unconstrained-delegation\\unconstrained_delegation.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\visualizing-acls-with-adalanche\\adalanche_main_screen.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\visualizing-acls-with-adalanche\\admin_group.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\visualizing-acls-with-adalanche\\ann_permissions.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\visualizing-acls-with-adalanche\\default_queries_ldap.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\visualizing-acls-with-adalanche\\emma_no_privilege.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\visualizing-acls-with-adalanche\\emma_pwned.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\visualizing-acls-with-adalanche\\index.html",
+      "old": true
+    },
+    {
+      "path": "active-directory\\visualizing-acls-with-adalanche\\ldap_query_tool.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\visualizing-acls-with-adalanche\\machine_accounts.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\visualizing-acls-with-adalanche\\metadefender.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\visualizing-acls-with-adalanche\\object_explorer.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\visualizing-acls-with-adalanche\\options.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\visualizing-acls-with-adalanche\\pwnoptions.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\visualizing-acls-with-adalanche\\route.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\visualizing-acls-with-adalanche\\udq.png",
+      "old": true
+    },
+    {
+      "path": "active-directory\\visualizing-acls-with-adalanche\\user.png",
+      "old": true
+    },
+    {
+      "path": "attachments/b6220478-e721-4324-ab28-430dd8f24d38.png"
+    },
+    {
+      "path": "attachments/pasted-image-20250723185040.png"
+    },
+    {
+      "path": "attachments/pasted-image-20250723185054.png"
+    },
+    {
+      "path": "attachments/pasted-image-20250723185230.png"
+    },
+    {
+      "path": "attachments/pasted-image-20250723185241.png"
+    },
+    {
+      "path": "attachments/pasted-image-20250723185255.png"
+    },
+    {
+      "path": "attachments/pasted-image-20250723185300.png"
+    },
+    {
+      "path": "attachments/pasted-image-20250723185304.png"
+    },
+    {
+      "path": "attachments/pasted-image-20250723185420.png"
+    },
+    {
+      "path": "attachments\\b6220478-e721-4324-ab28-430dd8f24d38.png",
+      "old": true
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/bot_offline.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/bot_online.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/bot_permissions.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/callback.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/channelid.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/commands.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/empty_server.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/empty.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/index.html"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/message_toggle.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/portmaster.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/readiness.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/settings_menu.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/wallpaper.jpg"
+    },
+    {
+      "path": "c2\\untitled\\index.html",
+      "old": true
+    },
+    {
+      "path": "c2\\utilizing-discord-as-c2-traffic-broker\\bot_offline.png",
+      "old": true
+    },
+    {
+      "path": "c2\\utilizing-discord-as-c2-traffic-broker\\bot_online.png",
+      "old": true
+    },
+    {
+      "path": "c2\\utilizing-discord-as-c2-traffic-broker\\bot_permissions.png",
+      "old": true
+    },
+    {
+      "path": "c2\\utilizing-discord-as-c2-traffic-broker\\callback.png",
+      "old": true
+    },
+    {
+      "path": "c2\\utilizing-discord-as-c2-traffic-broker\\channelid.png",
+      "old": true
+    },
+    {
+      "path": "c2\\utilizing-discord-as-c2-traffic-broker\\commands.png",
+      "old": true
+    },
+    {
+      "path": "c2\\utilizing-discord-as-c2-traffic-broker\\empty_server.png",
+      "old": true
+    },
+    {
+      "path": "c2\\utilizing-discord-as-c2-traffic-broker\\empty.png",
+      "old": true
+    },
+    {
+      "path": "c2\\utilizing-discord-as-c2-traffic-broker\\index.html",
+      "old": true
+    },
+    {
+      "path": "c2\\utilizing-discord-as-c2-traffic-broker\\message_toggle.png",
+      "old": true
+    },
+    {
+      "path": "c2\\utilizing-discord-as-c2-traffic-broker\\portmaster.png",
+      "old": true
+    },
+    {
+      "path": "c2\\utilizing-discord-as-c2-traffic-broker\\readiness.png",
+      "old": true
+    },
+    {
+      "path": "c2\\utilizing-discord-as-c2-traffic-broker\\settings_menu.png",
+      "old": true
+    },
+    {
+      "path": "c2\\utilizing-discord-as-c2-traffic-broker\\wallpaper.jpg",
+      "old": true
+    },
+    {
+      "path": "index.html"
+    },
+    {
+      "path": "malware-development/basic-process-injection/index.html"
+    },
+    {
+      "path": "malware-development/basic-process-injection/msfvenom.png"
+    },
+    {
+      "path": "malware-development/basic-process-injection/process_hacker2_thread.png"
+    },
+    {
+      "path": "malware-development/basic-process-injection/process_hacker2.png"
+    },
+    {
+      "path": "malware-development/basic-process-injection/process_injection_workflow.png"
+    },
+    {
+      "path": "malware-development/basic-process-injection/shell.png"
+    },
+    {
+      "path": "malware-development/basic-process-injection/wallpaper.jpg"
+    },
+    {
+      "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/hosting.png"
+    },
+    {
+      "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/index.html"
+    },
+    {
+      "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/ls.png"
+    },
+    {
+      "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/nothreat.png"
+    },
+    {
+      "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/ntlmv2.png"
+    },
+    {
+      "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/scan.png"
+    },
+    {
+      "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/scanner.png"
+    },
+    {
+      "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/shell.png"
+    },
+    {
+      "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/shelltwo.png"
+    },
+    {
+      "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/staged.png"
+    },
+    {
+      "path": "malware-development/executing-csharp-assemblies-from-c-code/index.html"
+    },
+    {
+      "path": "malware-development/executing-csharp-assemblies-from-c-code/processhacker.png"
+    },
+    {
+      "path": "malware-development/executing-csharp-assemblies-from-c-code/rubeus.png"
+    },
+    {
+      "path": "malware-development/executing-csharp-assemblies-from-c-code/rubeus2.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/bp.png",
+      "old": true
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/execute.png",
+      "old": true
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/generateshellcode.png",
+      "old": true
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/gptshellcode.png",
+      "old": true
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/index.html",
+      "old": true
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/processes.png",
+      "old": true
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/rawbin.png",
+      "old": true
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/scantrigger.png",
+      "old": true
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/shell.png",
+      "old": true
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/step1.png",
+      "old": true
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/step2.png",
+      "old": true
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/step3.png",
+      "old": true
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer---a-stealthy-maneuver-in-evasion-tactics/workflow.png",
+      "old": true
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/bp.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/execute.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/generateshellcode.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/gptshellcode.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/index.html"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/processes.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/rawbin.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/scantrigger.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/shell.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/step1.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/step2.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/step3.png"
+    },
+    {
+      "path": "malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/workflow.png"
+    },
+    {
+      "path": "malware-development/malware-development-with-c---basic-persistence/default_shell.png",
+      "old": true
+    },
+    {
+      "path": "malware-development/malware-development-with-c---basic-persistence/index.html",
+      "old": true
+    },
+    {
+      "path": "malware-development/malware-development-with-c---basic-persistence/modified_run.png",
+      "old": true
+    },
+    {
+      "path": "malware-development/malware-development-with-c---basic-persistence/modified_shell.png",
+      "old": true
+    },
+    {
+      "path": "malware-development/malware-development-with-c---basic-persistence/powershell.png",
+      "old": true
+    },
+    {
+      "path": "malware-development/malware-development-with-c---basic-persistence/powershell2.png",
+      "old": true
+    },
+    {
+      "path": "malware-development/malware-development-with-c-basic-persistence/default_shell.png"
+    },
+    {
+      "path": "malware-development/malware-development-with-c-basic-persistence/index.html"
+    },
+    {
+      "path": "malware-development/malware-development-with-c-basic-persistence/modified_run.png"
+    },
+    {
+      "path": "malware-development/malware-development-with-c-basic-persistence/modified_shell.png"
+    },
+    {
+      "path": "malware-development/malware-development-with-c-basic-persistence/powershell.png"
+    },
+    {
+      "path": "malware-development/malware-development-with-c-basic-persistence/powershell2.png"
+    },
+    {
+      "path": "malware-development/staging-vs-stageless-payloads-what-is-better/index.html"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/checkplz.png"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/dllimports.png"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/dynamicsummary.png"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/entropysection.png"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/entry.png"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/huntsbmet.png"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/imports.png"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/index.html"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/met.png"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/monetamet.png"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/patriotmet.png"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/pesievemet.png"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/pidscan.png"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/scanprocess.png"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/static.png"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/upload.png"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/upload2.png"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/usercontext.png"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/wallpaper.jpg"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/yara2.png"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/yaramet.png"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/yaras.png"
+    },
+    {
+      "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/calc_spawned.png"
+    },
+    {
+      "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/index.html"
+    },
+    {
+      "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/modules.png"
+    },
+    {
+      "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/not_found.png"
+    },
+    {
+      "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/procmonfilters.png"
+    },
+    {
+      "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/proxyingtheory.png"
+    },
+    {
+      "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/running_normal.png"
+    },
+    {
+      "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/shell.png"
+    },
+    {
+      "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/spartacus.png"
+    },
+    {
+      "path": "malware-development\\basic-process-injection\\index.html",
+      "old": true
+    },
+    {
+      "path": "malware-development\\basic-process-injection\\msfvenom.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\basic-process-injection\\process_hacker2_thread.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\basic-process-injection\\process_hacker2.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\basic-process-injection\\process_injection_workflow.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\basic-process-injection\\shell.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\basic-process-injection\\wallpaper.jpg",
+      "old": true
+    },
+    {
+      "path": "malware-development\\beyond-detection-smb-staging-for-antivirus-evasion\\hosting.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\beyond-detection-smb-staging-for-antivirus-evasion\\index.html",
+      "old": true
+    },
+    {
+      "path": "malware-development\\beyond-detection-smb-staging-for-antivirus-evasion\\ls.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\beyond-detection-smb-staging-for-antivirus-evasion\\nothreat.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\beyond-detection-smb-staging-for-antivirus-evasion\\ntlmv2.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\beyond-detection-smb-staging-for-antivirus-evasion\\scan.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\beyond-detection-smb-staging-for-antivirus-evasion\\scanner.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\beyond-detection-smb-staging-for-antivirus-evasion\\shell.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\beyond-detection-smb-staging-for-antivirus-evasion\\shelltwo.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\beyond-detection-smb-staging-for-antivirus-evasion\\staged.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\executing-csharp-assemblies-from-c-code\\index.html",
+      "old": true
+    },
+    {
+      "path": "malware-development\\executing-csharp-assemblies-from-c-code\\processhacker.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\executing-csharp-assemblies-from-c-code\\rubeus.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\executing-csharp-assemblies-from-c-code\\rubeus2.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics\\bp.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics\\execute.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics\\generateshellcode.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics\\gptshellcode.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics\\index.html",
+      "old": true
+    },
+    {
+      "path": "malware-development\\leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics\\processes.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics\\rawbin.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics\\scantrigger.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics\\shell.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics\\step1.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics\\step2.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics\\step3.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics\\workflow.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\malware-development-with-c-basic-persistence\\default_shell.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\malware-development-with-c-basic-persistence\\index.html",
+      "old": true
+    },
+    {
+      "path": "malware-development\\malware-development-with-c-basic-persistence\\modified_run.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\malware-development-with-c-basic-persistence\\modified_shell.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\malware-development-with-c-basic-persistence\\powershell.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\malware-development-with-c-basic-persistence\\powershell2.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\checkplz.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\dllimports.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\dynamicsummary.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\entropysection.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\entry.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\huntsbmet.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\imports.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\index.html",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\met.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\monetamet.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\patriotmet.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\pesievemet.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\pidscan.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\scanprocess.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\static.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\upload.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\upload2.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\usercontext.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\wallpaper.jpg",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\yara2.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\yaramet.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\the-most-powerful-malware-analysis-tool-you-need-in-2025\\yaras.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\calc_spawned.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\index.html",
+      "old": true
+    },
+    {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\modules.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\not_found.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\pictures\\modules.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\procmonfilters.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\proxyingtheory.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\running_normal.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\shell.png",
+      "old": true
+    },
+    {
+      "path": "malware-development\\weaponizing-dll-hijacking-via-dll-proxying\\spartacus.png",
+      "old": true
+    },
+    {
+      "path": "networking/redirecting-traffic-from-windows-via-sharpredirect/callback.png"
+    },
+    {
+      "path": "networking/redirecting-traffic-from-windows-via-sharpredirect/demo.png"
+    },
+    {
+      "path": "networking/redirecting-traffic-from-windows-via-sharpredirect/external_redirection.png"
+    },
+    {
+      "path": "networking/redirecting-traffic-from-windows-via-sharpredirect/external_redirector_graph.png"
+    },
+    {
+      "path": "networking/redirecting-traffic-from-windows-via-sharpredirect/external_redirector.png"
+    },
+    {
+      "path": "networking/redirecting-traffic-from-windows-via-sharpredirect/graph.png"
+    },
+    {
+      "path": "networking/redirecting-traffic-from-windows-via-sharpredirect/index.html"
+    },
+    {
+      "path": "networking/redirecting-traffic-from-windows-via-sharpredirect/internal_redirection.png"
+    },
+    {
+      "path": "networking/redirecting-traffic-from-windows-via-sharpredirect/internal_redirector_graph.png"
+    },
+    {
+      "path": "networking/redirecting-traffic-from-windows-via-sharpredirect/new_beacon.png"
+    },
+    {
+      "path": "networking/redirecting-traffic-from-windows-via-sharpredirect/sharpredirect.webp"
+    },
+    {
+      "path": "networking/redirecting-traffic-from-windows-via-sharpredirect/starting_redirector.png"
+    },
+    {
+      "path": "networking\\redirecting-traffic-from-windows-via-sharpredirect\\callback.png",
+      "old": true
+    },
+    {
+      "path": "networking\\redirecting-traffic-from-windows-via-sharpredirect\\demo.png",
+      "old": true
+    },
+    {
+      "path": "networking\\redirecting-traffic-from-windows-via-sharpredirect\\external_redirection.png",
+      "old": true
+    },
+    {
+      "path": "networking\\redirecting-traffic-from-windows-via-sharpredirect\\external_redirector_graph.png",
+      "old": true
+    },
+    {
+      "path": "networking\\redirecting-traffic-from-windows-via-sharpredirect\\external_redirector.png",
+      "old": true
+    },
+    {
+      "path": "networking\\redirecting-traffic-from-windows-via-sharpredirect\\graph.png",
+      "old": true
+    },
+    {
+      "path": "networking\\redirecting-traffic-from-windows-via-sharpredirect\\index.html",
+      "old": true
+    },
+    {
+      "path": "networking\\redirecting-traffic-from-windows-via-sharpredirect\\internal_redirection.png",
+      "old": true
+    },
+    {
+      "path": "networking\\redirecting-traffic-from-windows-via-sharpredirect\\internal_redirector_graph.png",
+      "old": true
+    },
+    {
+      "path": "networking\\redirecting-traffic-from-windows-via-sharpredirect\\new_beacon.png",
+      "old": true
+    },
+    {
+      "path": "networking\\redirecting-traffic-from-windows-via-sharpredirect\\sharpredirect.webp",
+      "old": true
+    },
+    {
+      "path": "networking\\redirecting-traffic-from-windows-via-sharpredirect\\starting_redirector.png",
+      "old": true
+    },
+    {
+      "path": "pasted-image-20231210095747.png",
+      "old": true
+    },
+    {
+      "path": "pasted-image-20240425183953.png",
+      "old": true
+    },
+    {
+      "path": "resources/css/retype.css"
+    },
+    {
+      "path": "resources/fonts/Inter-italic-latin-var.woff2"
+    },
+    {
+      "path": "resources/fonts/Inter-roman-latin-var.woff2"
+    },
+    {
+      "path": "resources/js/config.js"
+    },
+    {
+      "path": "resources/js/lunr.js"
+    },
+    {
+      "path": "resources/js/prism.js"
+    },
+    {
+      "path": "resources/js/retype.js"
+    },
+    {
+      "path": "resources/js/search.json"
+    },
+    {
+      "path": "resources/lunr.js.LICENSE.txt"
+    },
+    {
+      "path": "resources/mermaid.js.LICENSE.txt"
+    },
+    {
+      "path": "resources/prism.js.LICENSE.txt"
+    },
+    {
+      "path": "resources/retype.js.LICENSE.txt"
+    },
+    {
+      "path": "resources/retype.LICENSE.txt"
+    },
+    {
+      "path": "resources\\css\\retype.css",
+      "old": true
+    },
+    {
+      "path": "resources\\fonts\\Inter-italic-latin-var.woff2",
+      "old": true
+    },
+    {
+      "path": "resources\\fonts\\Inter-roman-latin-var.woff2",
+      "old": true
+    },
+    {
+      "path": "resources\\js\\config.js",
+      "old": true
+    },
+    {
+      "path": "resources\\js\\lunr.js",
+      "old": true
+    },
+    {
+      "path": "resources\\js\\prism.js",
+      "old": true
+    },
+    {
+      "path": "resources\\js\\retype.js",
+      "old": true
+    },
+    {
+      "path": "resources\\js\\search.json",
+      "old": true
+    },
+    {
+      "path": "resources\\lunr.js.LICENSE.txt",
+      "old": true
+    },
+    {
+      "path": "resources\\mermaid.js.LICENSE.txt",
+      "old": true
+    },
+    {
+      "path": "resources\\prism.js.LICENSE.txt",
+      "old": true
+    },
+    {
+      "path": "resources\\retype.js.LICENSE.txt",
+      "old": true
+    },
+    {
+      "path": "resources\\retype.LICENSE.txt",
+      "old": true
+    },
+    {
+      "path": "robots.txt"
+    },
+    {
+      "path": "sitemap.xml.gz"
+    },
+    {
+      "path": "static/favicon.ico"
+    },
+    {
+      "path": "static\\favicon.ico",
+      "old": true
+    },
+    {
+      "path": "walkthroughs\\untitled\\index.html",
+      "old": true
+    }
+  ]
+}
