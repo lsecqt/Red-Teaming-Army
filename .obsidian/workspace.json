@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Infrastructure/Setting up Mythic C2/Setting up Mythic C2.md",
+                "file": "Malware Development/Staging vs Stageless payloads - What Is Better?/Staging vs Stageless payloads - What Is Better?.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Setting up Mythic C2"
+              "title": "Staging vs Stageless payloads - What Is Better?"
             }
           }
         ]
@@ -201,6 +201,14 @@
   },
   "active": "e73aff834e4867d2",
   "lastOpenFiles": [
+    "Infrastructure/Setting up Mythic C2/Setting up Mythic C2.md",
+    "Malware Development/Staging vs Stageless payloads - What Is Better?/Staging vs Stageless payloads - What Is Better?.md",
+    "\"/Infrastructure/Setting.md",
+    "\"/Infrastructure",
+    "\"",
+    "Infrastructure/Setting.md",
+    "guides/getting-started.md",
+    "guides",
     "Attachments/Pasted image 20250723204607.png",
     "Attachments/Pasted image 20250723204452.png",
     "Attachments/Pasted image 20250723204441.png",
@@ -209,8 +217,6 @@
     "Attachments/Pasted image 20250723203212.png",
     "Attachments/Pasted image 20250723202604.png",
     "Malware Development/Basic Process Injection/Basic Process Injection.md",
-    "Infrastructure/Setting up Mythic C2/Setting up Mythic C2.md",
-    "Malware Development/Staging vs Stageless payloads - What Is Better?/Staging vs Stageless payloads - What Is Better?.md",
     "Infrastructure/Setting up Mythic C2",
     "Infrastructure/index.yml",
     "Infrastructure",
@@ -218,7 +224,6 @@
     "Attachments/Pasted image 20250723185420.png",
     "Attachments/Pasted image 20250723185304.png",
     "Attachments/Pasted image 20250723185300.png",
-    "Attachments/Pasted image 20250723185255.png",
     "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/The Most Powerful Malware Analysis Tool You NEED in 2025.md",
     "Malware Development/Staging vs Stageless payloads - What Is Better?",
     "Attachments",
@@ -232,11 +237,8 @@
     "Networking/Redirecting Traffic From Windows via SharpRedirect/Untitled.canvas",
     "C2/Utilizing Discord as C2 Traffic Broker/Utilizing Discord as C2 Traffic Broker.md",
     "Networking/Redirecting Traffic From Windows via SharpRedirect",
-    "Networking/index.yml",
-    "Networking",
     "Active Directory/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md",
     "Active Directory/Compromising MSSQL Databases by Relaying/Compromising MSSQL Databases by Relaying.md",
-    "Active Directory/Compromising MSSQL Databases by Relaying/mssql_chart.jpg.crdownload",
     "welcome.md",
     "Active Directory/Enumeration/Untitled.md",
     "C2/asd.md",
@@ -245,8 +247,6 @@
     "Web Pentesting/Untitled.md",
     "Walkthroughs/Untitled.md",
     "Malware Development/Untitled.md",
-    "C2 copy/Untitled.md",
-    "Malware Development copy/Untitled.md",
-    "Walkthroughs copy/Untitled.md"
+    "C2 copy/Untitled.md"
   ]
 }

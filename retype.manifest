@@ -1,6 +1,6 @@
 {
   "version": "3.11.0",
-  "created": "2025-07-23T16:23:49Z",
+  "created": "2025-07-23T17:53:45Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -388,6 +388,27 @@
       "path": "attachments/pasted-image-20250723185420.png"
     },
     {
+      "path": "attachments/pasted-image-20250723202604.png"
+    },
+    {
+      "path": "attachments/pasted-image-20250723203212.png"
+    },
+    {
+      "path": "attachments/pasted-image-20250723203442.png"
+    },
+    {
+      "path": "attachments/pasted-image-20250723204102.png"
+    },
+    {
+      "path": "attachments/pasted-image-20250723204441.png"
+    },
+    {
+      "path": "attachments/pasted-image-20250723204452.png"
+    },
+    {
+      "path": "attachments/pasted-image-20250723204607.png"
+    },
+    {
       "path": "attachments\\b6220478-e721-4324-ab28-430dd8f24d38.png",
       "old": true
     },
@@ -495,6 +516,9 @@
     },
     {
       "path": "index.html"
+    },
+    {
+      "path": "infrastructure/setting-up-mythic-c2/index.html"
     },
     {
       "path": "malware-development/basic-process-injection/index.html"
