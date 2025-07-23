@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Malware Development/Staging vs Stageless payloads - What Is Better?/Staging vs Stageless payloads - What Is Better?.md",
+                "file": "Infrastructure/Setting up Mythic C2/Setting up Mythic C2.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Staging vs Stageless payloads - What Is Better?"
+              "title": "Setting up Mythic C2"
             }
           }
         ]
@@ -199,28 +199,31 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "501576cdaac8b9c6",
+  "active": "e73aff834e4867d2",
   "lastOpenFiles": [
+    "Attachments/Pasted image 20250723204607.png",
+    "Attachments/Pasted image 20250723204452.png",
+    "Attachments/Pasted image 20250723204441.png",
+    "Attachments/Pasted image 20250723204102.png",
+    "Attachments/Pasted image 20250723203442.png",
+    "Attachments/Pasted image 20250723203212.png",
+    "Attachments/Pasted image 20250723202604.png",
+    "Malware Development/Basic Process Injection/Basic Process Injection.md",
+    "Infrastructure/Setting up Mythic C2/Setting up Mythic C2.md",
+    "Malware Development/Staging vs Stageless payloads - What Is Better?/Staging vs Stageless payloads - What Is Better?.md",
+    "Infrastructure/Setting up Mythic C2",
     "Infrastructure/index.yml",
     "Infrastructure",
     "Malware Development/Malware Development with C - Basic Persistence/Malware Development with C - Basic Persistence.md",
-    "Malware Development/Staging vs Stageless payloads - What Is Better?/Staging vs Stageless payloads - What Is Better?.md",
     "Attachments/Pasted image 20250723185420.png",
     "Attachments/Pasted image 20250723185304.png",
     "Attachments/Pasted image 20250723185300.png",
     "Attachments/Pasted image 20250723185255.png",
-    "Attachments/Pasted image 20250723185241.png",
-    "Attachments/Pasted image 20250723185230.png",
-    "Attachments/Pasted image 20250723185054.png",
-    "Attachments/Pasted image 20250723185040.png",
     "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/The Most Powerful Malware Analysis Tool You NEED in 2025.md",
     "Malware Development/Staging vs Stageless payloads - What Is Better?",
-    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/pidscan.png",
-    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/scanprocess.png",
     "Attachments",
     "Active Directory/Unleashing the Power of Unconstrained Delegation/Unleashing the Power of Unconstrained Delegation.md",
     "Networking/Redirecting Traffic From Windows via SharpRedirect/Redirecting Traffic From Windows via SharpRedirect.md",
-    "Malware Development/Basic Process Injection/Basic Process Injection.md",
     "Malware Development/Weaponizing DLL Hijacking via DLL Proxying/Weaponizing DLL Hijacking via DLL Proxying.md",
     "Malware Development/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics/Leveraging the Direct Pointer - A Stealthy Maneuver in Evasion Tactics.md",
     "Malware Development/Executing CSharp Assemblies from C code/Executing CSharp Assemblies from C code.md",
@@ -234,8 +237,6 @@
     "Active Directory/Visualizing ACLs with Adalanche/Visualizing ACLs with Adalanche.md",
     "Active Directory/Compromising MSSQL Databases by Relaying/Compromising MSSQL Databases by Relaying.md",
     "Active Directory/Compromising MSSQL Databases by Relaying/mssql_chart.jpg.crdownload",
-    "Active Directory/Compromising MSSQL Databases by Relaying",
-    "C2/index.yml~",
     "welcome.md",
     "Active Directory/Enumeration/Untitled.md",
     "C2/asd.md",
@@ -246,7 +247,6 @@
     "Malware Development/Untitled.md",
     "C2 copy/Untitled.md",
     "Malware Development copy/Untitled.md",
-    "Walkthroughs copy/Untitled.md",
-    "index.md.md"
+    "Walkthroughs copy/Untitled.md"
   ]
 }

