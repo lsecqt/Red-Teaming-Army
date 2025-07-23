@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/The Most Powerful Malware Analysis Tool You NEED in 2025.md",
+                "file": "Malware Development/Staging vs Stageless payloads - What Is Better?/Staging vs Stageless payloads - What Is Better?.md",
                 "mode": "source",
-                "source": true
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "The Most Powerful Malware Analysis Tool You NEED in 2025"
+              "title": "Staging vs Stageless payloads - What Is Better?"
             }
           }
         ]
@@ -40,7 +40,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -93,8 +94,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -175,8 +176,8 @@
             "state": {
               "type": "advanced-tables-toolbar",
               "state": {},
-              "icon": "spreadsheet",
-              "title": "Advanced Tables"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           }
         ]
@@ -200,19 +201,21 @@
   },
   "active": "e73aff834e4867d2",
   "lastOpenFiles": [
+    "Attachments/Pasted image 20250723185420.png",
+    "Attachments/Pasted image 20250723185304.png",
+    "Attachments/Pasted image 20250723185300.png",
+    "Attachments/Pasted image 20250723185255.png",
+    "Attachments/Pasted image 20250723185241.png",
+    "Attachments/Pasted image 20250723185230.png",
+    "Attachments/Pasted image 20250723185054.png",
+    "Attachments/Pasted image 20250723185040.png",
+    "Malware Development/Malware Development with C - Basic Persistence/Malware Development with C - Basic Persistence.md",
+    "Malware Development/Staging vs Stageless payloads - What Is Better?/Staging vs Stageless payloads - What Is Better?.md",
+    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/The Most Powerful Malware Analysis Tool You NEED in 2025.md",
+    "Malware Development/Staging vs Stageless payloads - What Is Better?",
     "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/pidscan.png",
     "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/scanprocess.png",
-    "Malware Development/Malware Development with C - Basic Persistence/Malware Development with C - Basic Persistence.md",
-    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/The Most Powerful Malware Analysis Tool You NEED in 2025.md",
     "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/huntsbmet.png",
-    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/patriotmet.png",
-    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/monetamet.png",
-    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/pesievemet.png",
-    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/yaramet.png",
-    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/met.png",
-    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/yara2.png",
-    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/dynamicsummary.png",
-    "Malware Development/The Most Powerful Malware Analysis Tool You NEED in 2025/usercontext.png",
     "Attachments",
     "Active Directory/Unleashing the Power of Unconstrained Delegation/Unleashing the Power of Unconstrained Delegation.md",
     "Networking/Redirecting Traffic From Windows via SharpRedirect/Redirecting Traffic From Windows via SharpRedirect.md",
@@ -234,7 +237,6 @@
     "C2/index.yml~",
     "C2/Utilizing Discord as C2 Traffic Broker",
     "welcome.md",
-    "Malware Development/Basic Process Injection",
     "Active Directory/Enumeration/Untitled.md",
     "C2/asd.md",
     "Malware%20Development/Weaponizing%20DLL%20Hijacking%20via%20DLL%20Proxying/Pictures/modules.png.md",
@@ -245,7 +247,6 @@
     "C2 copy/Untitled.md",
     "Malware Development copy/Untitled.md",
     "Walkthroughs copy/Untitled.md",
-    "index.md.md",
-    "readme.md.md"
+    "index.md.md"
   ]
 }

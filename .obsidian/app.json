@@ -1,6 +1,6 @@
 {
   "readableLineLength": false,
-  "livePreview": false,
+  "livePreview": true,
   "attachmentFolderPath": "Attachments",
   "alwaysUpdateLinks": true,
   "promptDelete": false
