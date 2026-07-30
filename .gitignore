@@ -1,0 +1,13 @@
+# Retype build output
+.retype/
+
+# Obsidian workspace files
+.obsidian/
+
+# Node / Retype local install artefacts
+node_modules/
+package.json
+package-lock.json
+
+# Claude Code brief — kept locally, never published, never committed
+CLAUDE.md

@@ -1,10 +1,23 @@
 input: .
 output: .retype
 url: https://lsecqt.github.io/Red-Teaming-Army/
-favicon: static/favicon.png
+favicon: static/favicon.ico
+
+meta:
+  head: |
+    <link rel="apple-touch-icon" sizes="180x180" href="/Red-Teaming-Army/static/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Red-Teaming-Army/static/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Red-Teaming-Army/static/favicon-16x16.png">
+    <link rel="manifest" href="/Red-Teaming-Army/static/site.webmanifest">
+
+exclude:
+  - CLAUDE.md
+  - .obsidian/**
+
 branding:
   title: Red Teaming Army
   label: Docs
+  logo: static/logo.png
 
       
 links:

@@ -1,6 +1,6 @@
 {
-  "version": "3.11.0",
-  "created": "2025-07-26T16:39:56Z",
+  "version": "4.6.0",
+  "created": "2026-07-30T20:55:12Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -43,6 +43,9 @@
     {
       "path": "active-directory/attacks/unleashing-the-power-of-unconstrained-delegation/unconstrained_delegation.png",
       "old": true
+    },
+    {
+      "path": "active-directory/compromising-mssql-databases-by-relaying/compromising-mssql-databases-by-relaying.md"
     },
     {
       "path": "active-directory/compromising-mssql-databases-by-relaying/config_domain_user.png"
@@ -169,6 +172,9 @@
       "path": "active-directory/unleashing-the-power-of-unconstrained-delegation/unconstrained_delegation.png"
     },
     {
+      "path": "active-directory/unleashing-the-power-of-unconstrained-delegation/unleashing-the-power-of-unconstrained-delegation.md"
+    },
+    {
       "path": "active-directory/visualizing-acls-with-adalanche/adalanche_main_screen.png"
     },
     {
@@ -215,6 +221,48 @@
     },
     {
       "path": "active-directory/visualizing-acls-with-adalanche/user.png"
+    },
+    {
+      "path": "active-directory/visualizing-acls-with-adalanche/visualizing-acls-with-adalanche.md"
+    },
+    {
+      "path": "active-directory/you-dont-need-mimikatz-for-dcsync-anymore-(sharpdcsync)/agent_dcsync_all.png"
+    },
+    {
+      "path": "active-directory/you-dont-need-mimikatz-for-dcsync-anymore-(sharpdcsync)/csc_compile.png"
+    },
+    {
+      "path": "active-directory/you-dont-need-mimikatz-for-dcsync-anymore-(sharpdcsync)/dcsync_with_token.png"
+    },
+    {
+      "path": "active-directory/you-dont-need-mimikatz-for-dcsync-anymore-(sharpdcsync)/defender_on.png"
+    },
+    {
+      "path": "active-directory/you-dont-need-mimikatz-for-dcsync-anymore-(sharpdcsync)/execute_assembly_fail.png"
+    },
+    {
+      "path": "active-directory/you-dont-need-mimikatz-for-dcsync-anymore-(sharpdcsync)/haunt_execute_assembly.png"
+    },
+    {
+      "path": "active-directory/you-dont-need-mimikatz-for-dcsync-anymore-(sharpdcsync)/impacket_secretsdump.png"
+    },
+    {
+      "path": "active-directory/you-dont-need-mimikatz-for-dcsync-anymore-(sharpdcsync)/index.html"
+    },
+    {
+      "path": "active-directory/you-dont-need-mimikatz-for-dcsync-anymore-(sharpdcsync)/lab_diagram.png"
+    },
+    {
+      "path": "active-directory/you-dont-need-mimikatz-for-dcsync-anymore-(sharpdcsync)/mythic_beacon.png"
+    },
+    {
+      "path": "active-directory/you-dont-need-mimikatz-for-dcsync-anymore-(sharpdcsync)/sharpdcsync_ondisk.png"
+    },
+    {
+      "path": "active-directory/you-dont-need-mimikatz-for-dcsync-anymore-(sharpdcsync)/you-dont-need-mimikatz-for-dcsync-anymore-(sharpdcsync).md"
+    },
+    {
+      "path": "active-directory/you-dont-need-mimikatz-for-dcsync-anymore-(sharpdcsync)/zip_password.png"
     },
     {
       "path": "active-directory\\compromising-mssql-databases-by-relaying\\config_domain_user.png",
@@ -361,115 +409,152 @@
       "old": true
     },
     {
-      "path": "attachments/b6220478-e721-4324-ab28-430dd8f24d38.png"
+      "path": "attachments/b6220478-e721-4324-ab28-430dd8f24d38.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250723185040.png"
+      "path": "attachments/pasted-image-20250723185040.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250723185054.png"
+      "path": "attachments/pasted-image-20250723185054.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250723185230.png"
+      "path": "attachments/pasted-image-20250723185230.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250723185241.png"
+      "path": "attachments/pasted-image-20250723185241.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250723185255.png"
+      "path": "attachments/pasted-image-20250723185255.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250723185300.png"
+      "path": "attachments/pasted-image-20250723185300.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250723185304.png"
+      "path": "attachments/pasted-image-20250723185304.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250723185420.png"
+      "path": "attachments/pasted-image-20250723185420.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250723202604.png"
+      "path": "attachments/pasted-image-20250723202604.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250723203212.png"
+      "path": "attachments/pasted-image-20250723203212.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250723203442.png"
+      "path": "attachments/pasted-image-20250723203442.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250723204102.png"
+      "path": "attachments/pasted-image-20250723204102.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250723204441.png"
+      "path": "attachments/pasted-image-20250723204441.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250723204452.png"
+      "path": "attachments/pasted-image-20250723204452.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250723204607.png"
+      "path": "attachments/pasted-image-20250723204607.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250726190910.png"
+      "path": "attachments/pasted-image-20250726190910.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250726191208.png"
+      "path": "attachments/pasted-image-20250726191208.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250726191255.png"
+      "path": "attachments/pasted-image-20250726191255.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250726191300.png"
+      "path": "attachments/pasted-image-20250726191300.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250726191351.png"
+      "path": "attachments/pasted-image-20250726191351.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250726191422.png"
+      "path": "attachments/pasted-image-20250726191422.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250726191445.png"
+      "path": "attachments/pasted-image-20250726191445.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250726191544.png"
+      "path": "attachments/pasted-image-20250726191544.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250726191634.png"
+      "path": "attachments/pasted-image-20250726191634.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250726191750.png"
+      "path": "attachments/pasted-image-20250726191750.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250726191911.png"
+      "path": "attachments/pasted-image-20250726191911.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250726192027.png"
+      "path": "attachments/pasted-image-20250726192027.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250726192100.png"
+      "path": "attachments/pasted-image-20250726192100.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250726192138.png"
+      "path": "attachments/pasted-image-20250726192138.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250726192247.png"
+      "path": "attachments/pasted-image-20250726192247.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250726192258.png"
+      "path": "attachments/pasted-image-20250726192258.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250726192339.png"
+      "path": "attachments/pasted-image-20250726192339.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250726192559.png"
+      "path": "attachments/pasted-image-20250726192559.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250726192718.png"
+      "path": "attachments/pasted-image-20250726192718.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250726193016.png"
+      "path": "attachments/pasted-image-20250726193016.png",
+      "old": true
     },
     {
-      "path": "attachments/pasted-image-20250726193039.png"
+      "path": "attachments/pasted-image-20250726193039.png",
+      "old": true
     },
     {
       "path": "attachments\\b6220478-e721-4324-ab28-430dd8f24d38.png",
@@ -513,6 +598,9 @@
     },
     {
       "path": "c2/utilizing-discord-as-c2-traffic-broker/settings_menu.png"
+    },
+    {
+      "path": "c2/utilizing-discord-as-c2-traffic-broker/utilizing-discord-as-c2-traffic-broker.md"
     },
     {
       "path": "c2/utilizing-discord-as-c2-traffic-broker/wallpaper.jpg"
@@ -578,13 +666,28 @@
       "old": true
     },
     {
+      "path": "favicon.ico"
+    },
+    {
       "path": "index.html"
     },
     {
       "path": "infrastructure/setting-up-hmailserver-as-internal-mail-server/index.html"
     },
     {
+      "path": "infrastructure/setting-up-hmailserver-as-internal-mail-server/setting-up-hmailserver-as-internal-mail-server.md"
+    },
+    {
       "path": "infrastructure/setting-up-mythic-c2/index.html"
+    },
+    {
+      "path": "infrastructure/setting-up-mythic-c2/setting-up-mythic-c2.md"
+    },
+    {
+      "path": "llms.txt"
+    },
+    {
+      "path": "malware-development/basic-process-injection/basic-process-injection.md"
     },
     {
       "path": "malware-development/basic-process-injection/index.html"
@@ -606,6 +709,9 @@
     },
     {
       "path": "malware-development/basic-process-injection/wallpaper.jpg"
+    },
+    {
+      "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/beyond-detection-smb-staging-for-antivirus-evasion.md"
     },
     {
       "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/hosting.png"
@@ -636,6 +742,9 @@
     },
     {
       "path": "malware-development/beyond-detection-smb-staging-for-antivirus-evasion/staged.png"
+    },
+    {
+      "path": "malware-development/executing-csharp-assemblies-from-c-code/executing-csharp-assemblies-from-c-code.md"
     },
     {
       "path": "malware-development/executing-csharp-assemblies-from-c-code/index.html"
@@ -717,6 +826,9 @@
       "path": "malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/index.html"
     },
     {
+      "path": "malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics.md"
+    },
+    {
       "path": "malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/processes.png"
     },
     {
@@ -771,6 +883,9 @@
       "path": "malware-development/malware-development-with-c-basic-persistence/index.html"
     },
     {
+      "path": "malware-development/malware-development-with-c-basic-persistence/malware-development-with-c-basic-persistence.md"
+    },
+    {
       "path": "malware-development/malware-development-with-c-basic-persistence/modified_run.png"
     },
     {
@@ -784,6 +899,9 @@
     },
     {
       "path": "malware-development/staging-vs-stageless-payloads-what-is-better/index.html"
+    },
+    {
+      "path": "malware-development/staging-vs-stageless-payloads-what-is-better/staging-vs-stageless-payloads-what-is-better.md"
     },
     {
       "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/checkplz.png"
@@ -829,6 +947,9 @@
     },
     {
       "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/static.png"
+    },
+    {
+      "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/the-most-powerful-malware-analysis-tool-you-need-in-2025.md"
     },
     {
       "path": "malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/upload.png"
@@ -877,6 +998,9 @@
     },
     {
       "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/spartacus.png"
+    },
+    {
+      "path": "malware-development/weaponizing-dll-hijacking-via-dll-proxying/weaponizing-dll-hijacking-via-dll-proxying.md"
     },
     {
       "path": "malware-development\\basic-process-injection\\index.html",
@@ -1197,6 +1321,9 @@
       "path": "networking/redirecting-traffic-from-windows-via-sharpredirect/new_beacon.png"
     },
     {
+      "path": "networking/redirecting-traffic-from-windows-via-sharpredirect/redirecting-traffic-from-windows-via-sharpredirect.md"
+    },
+    {
       "path": "networking/redirecting-traffic-from-windows-via-sharpredirect/sharpredirect.webp"
     },
     {
@@ -1251,6 +1378,12 @@
       "old": true
     },
     {
+      "path": "package-lock.json"
+    },
+    {
+      "path": "package.json"
+    },
+    {
       "path": "pasted-image-20231210095747.png",
       "old": true
     },
@@ -1269,6 +1402,9 @@
     },
     {
       "path": "resources/js/config.js"
+    },
+    {
+      "path": "resources/js/instagram.js"
     },
     {
       "path": "resources/js/lunr.js"
@@ -1353,10 +1489,34 @@
       "path": "robots.txt"
     },
     {
-      "path": "sitemap.xml.gz"
+      "path": "sitemap.xml"
+    },
+    {
+      "path": "static/android-chrome-192x192.png"
+    },
+    {
+      "path": "static/android-chrome-512x512.png"
+    },
+    {
+      "path": "static/apple-touch-icon.png"
+    },
+    {
+      "path": "static/favicon-16x16.png"
+    },
+    {
+      "path": "static/favicon-32x32.png"
     },
     {
       "path": "static/favicon.ico"
+    },
+    {
+      "path": "static/favicon.png"
+    },
+    {
+      "path": "static/logo.png"
+    },
+    {
+      "path": "static/site.webmanifest"
     },
     {
       "path": "static\\favicon.ico",
@@ -1365,6 +1525,9 @@
     {
       "path": "walkthroughs\\untitled\\index.html",
       "old": true
+    },
+    {
+      "path": "welcome.md"
     }
   ]
 }
