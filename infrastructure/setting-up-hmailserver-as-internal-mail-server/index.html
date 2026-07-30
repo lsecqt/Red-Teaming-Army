@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="color-scheme" content="light dark">
     <meta name="turbo-root" content="/Red-Teaming-Army">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838760110064">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="4.6.0.838760570294">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 4.6.0">
@@ -39,11 +39,11 @@
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
     <link id="retype-favicon" rel="icon" href="../../static/favicon.ico" />
-    <link href="../../resources/css/retype.css?v=4.6.0.838760110064" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=4.6.0.838760570294" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.838760110064" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.838760570294" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.838760110064" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.838760570294" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -306,7 +306,7 @@ By supporting my work on <a href="https://www.patreon.com/Lsecqt">Patreon</a> yo
 <h2 id="installing-hmailserver">Installing hMailServer</h2>
 <p>My environment looks like this:</p>
 <figure class="content-center">
-    <img src="pasted-image-20250726190910.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726190910.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 <p>Here, the <code translate="no" v-pre>lsec.local</code> domain is inside a dedicated Active Directory and network managed by the PFSense firewall and yes, everything is virtualized from the <code translate="no" v-pre>PC</code>. I did not want to shoot up a new server just for mail purposes (mainly because of resources) but rather use one of the DCs. In this case, <code translate="no" v-pre>DC01</code>.</p>
@@ -330,58 +330,58 @@ By supporting my work on <a href="https://www.patreon.com/Lsecqt">Patreon</a> yo
 <p>So first things first, lets download hMailServer: <a href="https://www.hmailserver.com/download">https://www.hmailserver.com/download</a></p>
 <p>It does not matter where you will download it. The installation steps are super trivial (next -&gt; next -&gt; finish). By default, hMailServer will be installed in <code translate="no" v-pre>C:\\Program Files(x86\\hMailServer</code></p>
 <figure class="content-center">
-    <img src="pasted-image-20250726191208.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726191208.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 <p>The next step is important if you want to use a dedicated database for it, however I went for the first option because of simplicity. This will setup a small database onto the DC itself, which hMailServer will constantly use.</p>
 <figure class="content-center">
-    <img src="pasted-image-20250726191300.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726191300.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 <p>Then, you need to setup your password for accessing the hMailServer admin console:</p>
 <figure class="content-center">
-    <img src="pasted-image-20250726191351.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726191351.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 <p>And then you are done! If everything went fine (and I am sure it will) you should see this:</p>
 <figure class="content-center">
-    <img src="pasted-image-20250726191422.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726191422.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 <p>Here, you can edit the default <code translate="no" v-pre>localhost</code> connection or add a new one. I used the <code translate="no" v-pre>DC01</code> as a hostname since this is the real hostname of my Domain Controller:</p>
 <figure class="content-center">
-    <img src="pasted-image-20250726191445.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726191445.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 <p>After you login to the console, you should configure a domain. My internal AD domain is called <code translate="no" v-pre>lsec.local</code> so I will use the same name here:</p>
 <figure class="content-center">
-    <img src="pasted-image-20250726191544.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726191544.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 <p>After you add your domain, on the left pane, you should see the <code translate="no" v-pre>Accounts</code> tab. From there we can either add a local mail account or use present AD account. I found hMailServer to be extremely easy when it comes to account creation and authorization concepts:</p>
 <figure class="content-center">
-    <img src="pasted-image-20250726191634.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726191634.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 <p>Here, in order to add an AD account, simply right click onto the Accounts tab -&gt; Add AD account:</p>
 <figure class="content-center">
-    <img src="pasted-image-20250726192027.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726192027.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 <p>Then simply specify your Domain and the corresponding user account:</p>
 <figure class="content-center">
-    <img src="pasted-image-20250726192100.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726192100.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 <p>After this step, it is recommended to go to your DNS settings (on the DC) and add an MX record for your mail server:</p>
 <figure class="content-center">
-    <img src="pasted-image-20250726191750.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726191750.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 <h2 id="installing-email-client">Installing Email Client</h2>
 <p>For the purpose of this demo, I use ThunderBird because of its simplicity, but feel free to improvise. You can download ThunderBird from here: <a href="https://www.thunderbird.net/en-US/thunderbird/all/">https://www.thunderbird.net/en-US/thunderbird/all/</a> and it can run on any platform. Again, the installation of ThunderBird is trivial. After installing, you can then try to connect using the local or AD account you created during the previous steps:</p>
 <figure class="content-center">
-    <img src="pasted-image-20250726192718.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726192718.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 <div class="flex mb-6">
@@ -403,17 +403,17 @@ By supporting my work on <a href="https://www.patreon.com/Lsecqt">Patreon</a> yo
 </div>
 <p>If you are unable to connect using your mail client and see something like this:</p>
 <figure class="content-center">
-    <img src="pasted-image-20250726191911.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726191911.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 <p>Then its highly possible that you are auto-blocked from the hMailServer. To resolve it, navigate to hMailServer admin console -&gt; Settings -&gt; Advanced -&gt; IP Ranges. There you will see if there is a lockout and you can simply delete it:</p>
 <figure class="content-center">
-    <img src="pasted-image-20250726192258.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726192258.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 <p>It is also advised to create a new IP Ranges rule to allow emails from specific hosts or subnets:</p>
 <figure class="content-center">
-    <img src="pasted-image-20250726192339.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726192339.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 <p>Now to test the email server and clients, I will use my kali and the <code translate="no" v-pre>sendemail</code> utility. Ideally for future phishing campaigns I will setup GoPhish (<a href="https://github.com/gophish/gophish">https://github.com/gophish/gophish</a>) to handle that, but here we are not yet talking about phishing, but rather the infrastructural perspective.</p>
@@ -422,12 +422,12 @@ By supporting my work on <a href="https://www.patreon.com/Lsecqt">Patreon</a> yo
 <pre translate="no" class="language-none"><code v-pre class="language-none">sendemail -f &lt;from@domain.com&gt; -t &lt;to@domain.com&gt; -s &lt;DomainServer IP / DNS&gt; -xu &lt;username&gt; -xp &lt;password&gt;</code></pre>
 </doc-codeblock></div>
 <figure class="content-center">
-    <img src="pasted-image-20250726193039.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726193039.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 <p>And finally, we can send / receive emails:</p>
 <figure class="content-center">
-    <img src="pasted-image-20250726193016.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
+    <img src="../../attachments/pasted-image-20250726193016.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
     <figcaption class="caption"></figcaption>
 </figure>
 <p>Hope this was useful, if so consider a <a href="https://www.youtube.com/@Lsecqt">sub</a> or a <a href="https://www.patreon.com/c/Lsecqt">support</a></p>

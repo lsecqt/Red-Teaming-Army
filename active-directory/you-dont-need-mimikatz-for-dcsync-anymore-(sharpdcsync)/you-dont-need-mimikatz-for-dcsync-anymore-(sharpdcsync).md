@@ -137,7 +137,7 @@ First in Mythic. I already have a beacon, and I can just spin up a fresh callbac
 
 ![Fresh beacon in Mythic](mythic_beacon.png)
 
-From there it is the standard execute assembly flow. Here I am using my Havoc agent, and I want to say a massive thanks to my patrons whose support makes this content possible. Inside the agent I:
+From there it is the standard execute assembly flow. Here I am using my Haunt agent, and I want to say a massive thanks to my patrons whose support makes this content possible. Inside the agent I:
 
 1. Register the file to the server with a register file call, so I do not have to specify it every time.
 2. Load the execute assembly function.
@@ -145,7 +145,7 @@ From there it is the standard execute assembly flow. Here I am using my Havoc ag
 
 The callback comes back quickly with all the hashes.
 
-![Running SharpDCSync via execute assembly in Havoc](haunt_execute_assembly.png)
+![Running SharpDCSync via execute assembly in Haunt](haunt_execute_assembly.png)
 
 !!!
 This is not tied to any one framework. Whether you run Mythic, Sliver, Havoc or anything else, they all support execute assembly, so you can get to the same result with slightly different syntax.
