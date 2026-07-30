@@ -1,0 +1,36 @@
+﻿# Red Teaming Army
+
+> This is my personal blog space. The main idea of this platform is to allow me to share my knowledge in Red Teaming and Penetration Testing. Feel free to use the file navigation in order to view the present blogposts, or use the recursive search to find something specific of your needs!
+
+- [Red Teaming Army](https://lsecqt.github.io/Red-Teaming-Army/welcome.md): Red Teaming Army
+
+## Active Directory
+
+- [Compromising MSSQL Databases by Relaying](https://lsecqt.github.io/Red-Teaming-Army/active-directory/compromising-mssql-databases-by-relaying/compromising-mssql-databases-by-relaying.md): Database security must be guaranteed in the connected digital world of today. Many firms choose Microsoft SQL Server (MSSQL) because of its strong feature set and integration capabilities.
+- [Unleashing the Power of Unconstrained Delegation](https://lsecqt.github.io/Red-Teaming-Army/active-directory/unleashing-the-power-of-unconstrained-delegation/unleashing-the-power-of-unconstrained-delegation.md): In the world of Active Directory, a lot of attacks are based on delegation misconfigurations. Depending on the context, they may allow the attacker to laterally move across the network, achieve local / domain privilege escalation or even compromise the Domain Controller (DC).
+- [Visualizing ACLs with Adalanche](https://lsecqt.github.io/Red-Teaming-Army/active-directory/visualizing-acls-with-adalanche/visualizing-acls-with-adalanche.md): I was always a fan of trying new tools in order to create a personal arsenal for edged cases. Recently, I found a tool called Adalanche, which is capable of enumerating and visualizing ACLs between entities in the scope of the Active Directory.
+- [You Don't Need Mimikatz for DCSync Anymore (SharpDCSync)](https://lsecqt.github.io/Red-Teaming-Army/active-directory/you-dont-need-mimikatz-for-dcsync-anymore-(sharpdcsync)/you-dont-need-mimikatz-for-dcsync-anymore-(sharpdcsync).md): The end goal of most Active Directory penetration tests is a DCSync attack. If you can pull it off, you can dump the hashes of every user in the domain, which means you effectively own it.
+
+## C2
+
+- [Utilizing Discord as C2 Traffic Broker](https://lsecqt.github.io/Red-Teaming-Army/c2/utilizing-discord-as-c2-traffic-broker/utilizing-discord-as-c2-traffic-broker.md): In the realm of cybersecurity, the landscape is constantly evolving, with threat actors devising new methods to infiltrate systems and compromise data. One such method I recently decided to test is the use of Discord bots for Command and Control (C2) traffic brokerage.
+
+## Infrastructure
+
+- [Setting up hMailServer as internal mail server](https://lsecqt.github.io/Red-Teaming-Army/infrastructure/setting-up-hmailserver-as-internal-mail-server/setting-up-hmailserver-as-internal-mail-server.md): Did you ever wanted to have an internal mail server so you can setup and test your Phishing infrastructure? I got you here!
+- [Setting up Mythic C2](https://lsecqt.github.io/Red-Teaming-Army/infrastructure/setting-up-mythic-c2/setting-up-mythic-c2.md): This documentation will go through installation and configuration part for Mythic C2.
+
+## Malware Development
+
+- [Basic Process Injection with C](https://lsecqt.github.io/Red-Teaming-Army/malware-development/basic-process-injection/basic-process-injection.md): Greetings, fellow red teamers and cybersecurity enthusiasts! Today, I'm thrilled to write about one well known but still utilized technique - process injection.
+- [Beyond Detection SMB Staging for Antivirus Evasion](https://lsecqt.github.io/Red-Teaming-Army/malware-development/beyond-detection-smb-staging-for-antivirus-evasion/beyond-detection-smb-staging-for-antivirus-evasion.md): In the ongoing cat-and-mouse game between cyber attackers and defenders, the battleground has shifted from traditional malware tactics to more sophisticated methods of infiltration.
+- [Executing CSharp Assemblies from C code](https://lsecqt.github.io/Red-Teaming-Army/malware-development/executing-csharp-assemblies-from-c-code/executing-csharp-assemblies-from-c-code.md): The integration of native C code with managed C# assemblies opens up a realm of possibilities, allowing malware developers to leverage the strengths of both worlds within a single application.
+- [Leveraging the Direct Pointer A Stealthy Maneuver in Evasion Tactics](https://lsecqt.github.io/Red-Teaming-Army/malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics.md): In the ever-evolving landscape of cybersecurity, evasion techniques play a critical role in circumventing the watchful eyes of antivirus (AV) and endpoint detection and response (EDR) systems.
+- [Malware Development with C - Establishing Persistence](https://lsecqt.github.io/Red-Teaming-Army/malware-development/malware-development-with-c-basic-persistence/malware-development-with-c-basic-persistence.md): Welcome, fellow cybersecurity enthusiasts! Today, let's embark on a journey into malware development once again, and more specifically - establishing persistence.
+- [Staging vs Stageless payloads - Which one is Better?](https://lsecqt.github.io/Red-Teaming-Army/malware-development/staging-vs-stageless-payloads-what-is-better/staging-vs-stageless-payloads-what-is-better.md): In this documentation, we will explore the differences between staged and stageless payloads. In my recent video, I demonstrated how to use the Mythic C2 framework to successfully bypass Windows Defender — not through obfuscation or encryption, but purely by leveraging payload staging over SMB.
+- [The Most Powerful Malware Analysis Tool You NEED in 2025](https://lsecqt.github.io/Red-Teaming-Army/malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/the-most-powerful-malware-analysis-tool-you-need-in-2025.md): As a penetration tester, I'm always on the lookout for tools that can make malware analysis more efficient, precise, and accessible. Having good malware analysis is beneficial for making your payloads more evasive.
+- [Weaponizing DLL Hijacking via DLL Proxying](https://lsecqt.github.io/Red-Teaming-Army/malware-development/weaponizing-dll-hijacking-via-dll-proxying/weaponizing-dll-hijacking-via-dll-proxying.md): Dynamic Link Library (DLL) is a collection of code that can be shared across multiple processes in Windows. A process imports a DLL when it needs to use functions or resources externally provided by it.
+
+## Networking
+
+- [Redirecting Traffic From Windows via SharpRedirect](https://lsecqt.github.io/Red-Teaming-Army/networking/redirecting-traffic-from-windows-via-sharpredirect/redirecting-traffic-from-windows-via-sharpredirect.md): As penetration testers, we constantly find ourselves battling for discretion and efficiency in our operations. The ability to mask infrastructure or move through networks seamlessly is a necessity.
