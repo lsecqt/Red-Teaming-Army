@@ -13,6 +13,7 @@
 
 ## C2
 
+- [Bypassing Egress Firewalls with a Sliver C2 Redirector](https://lsecqt.github.io/Red-Teaming-Army/c2/bypassing-egress-firewalls-with-a-sliver-c2-redirector/bypassing-egress-firewalls-with-a-sliver-c2-redirector.md): You land on an internal box, drop your beacon, and nothing calls back. You check twice, generate again, still nothing. The host is fine, the payload is fine, the C2 is fine.
 - [Utilizing Discord as C2 Traffic Broker](https://lsecqt.github.io/Red-Teaming-Army/c2/utilizing-discord-as-c2-traffic-broker/utilizing-discord-as-c2-traffic-broker.md): In the realm of cybersecurity, the landscape is constantly evolving, with threat actors devising new methods to infiltrate systems and compromise data. One such method I recently decided to test is the use of Discord bots for Command and Control (C2) traffic brokerage.
 
 ## Infrastructure
