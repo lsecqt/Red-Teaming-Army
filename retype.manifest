@@ -1,6 +1,6 @@
 {
   "version": "4.6.0",
-  "created": "2026-07-30T21:02:52Z",
+  "created": "2026-08-03T19:01:24Z",
   "files": [
     {
       "path": ".nojekyll"
@@ -522,6 +522,36 @@
     {
       "path": "attachments\\b6220478-e721-4324-ab28-430dd8f24d38.png",
       "old": true
+    },
+    {
+      "path": "c2/bypassing-egress-firewalls-with-a-sliver-c2-redirector/beacon_callback.png"
+    },
+    {
+      "path": "c2/bypassing-egress-firewalls-with-a-sliver-c2-redirector/beacon_download.png"
+    },
+    {
+      "path": "c2/bypassing-egress-firewalls-with-a-sliver-c2-redirector/beacon_generated.png"
+    },
+    {
+      "path": "c2/bypassing-egress-firewalls-with-a-sliver-c2-redirector/bypassing-egress-firewalls-with-a-sliver-c2-redirector.md"
+    },
+    {
+      "path": "c2/bypassing-egress-firewalls-with-a-sliver-c2-redirector/demo_overview.png"
+    },
+    {
+      "path": "c2/bypassing-egress-firewalls-with-a-sliver-c2-redirector/index.html"
+    },
+    {
+      "path": "c2/bypassing-egress-firewalls-with-a-sliver-c2-redirector/portforwarder_help.png"
+    },
+    {
+      "path": "c2/bypassing-egress-firewalls-with-a-sliver-c2-redirector/portforwarder_running.png"
+    },
+    {
+      "path": "c2/bypassing-egress-firewalls-with-a-sliver-c2-redirector/session_list.png"
+    },
+    {
+      "path": "c2/bypassing-egress-firewalls-with-a-sliver-c2-redirector/sliver_wizard.png"
     },
     {
       "path": "c2/utilizing-discord-as-c2-traffic-broker/bot_offline.png"

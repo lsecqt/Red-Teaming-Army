@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Active Directory/You Dont Need Mimikatz for DCSync Anymore (SharpDCSync)/You Dont Need Mimikatz for DCSync Anymore (SharpDCSync).md",
+                "file": "C2/Bypassing Egress Firewalls with a Sliver C2 Redirector/Bypassing Egress Firewalls with a Sliver C2 Redirector.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "You Dont Need Mimikatz for DCSync Anymore (SharpDCSync)"
+              "title": "Bypassing Egress Firewalls with a Sliver C2 Redirector"
             }
           }
         ]
@@ -202,18 +202,21 @@
   },
   "active": "e73aff834e4867d2",
   "lastOpenFiles": [
+    "C2/Bypassing Egress Firewalls with a Sliver C2 Redirector/session_list.png",
+    "C2/Bypassing Egress Firewalls with a Sliver C2 Redirector/beacon_callback.png",
+    "C2/Bypassing Egress Firewalls with a Sliver C2 Redirector/portforwarder_running.png",
+    "C2/Bypassing Egress Firewalls with a Sliver C2 Redirector/beacon_download.png",
+    "C2/Bypassing Egress Firewalls with a Sliver C2 Redirector/beacon_generated.png",
+    "C2/Bypassing Egress Firewalls with a Sliver C2 Redirector/sliver_wizard.png",
+    "C2/Bypassing Egress Firewalls with a Sliver C2 Redirector/portforwarder_help.png",
+    "C2/Bypassing Egress Firewalls with a Sliver C2 Redirector/demo_overview.png",
+    "Active Directory/You Dont Need Mimikatz for DCSync Anymore (SharpDCSync)/You Dont Need Mimikatz for DCSync Anymore (SharpDCSync).md",
+    "C2/Bypassing Egress Firewalls with a Sliver C2 Redirector/Bypassing Egress Firewalls with a Sliver C2 Redirector.md.tmp.52204.a0b40d0dace8",
     "retype.yml.tmp.167382.af905676fba2",
     "deploy",
     "Active Directory/You Dont Need Mimikatz for DCSync Anymore (SharpDCSync)/dcsync_with_token.png",
     "Active Directory/You Dont Need Mimikatz for DCSync Anymore (SharpDCSync)/execute_assembly_fail.png",
     "Active Directory/You Dont Need Mimikatz for DCSync Anymore (SharpDCSync)/agent_dcsync_all.png",
-    "Active Directory/You Dont Need Mimikatz for DCSync Anymore (SharpDCSync)/haunt_execute_assembly.png",
-    "Active Directory/You Dont Need Mimikatz for DCSync Anymore (SharpDCSync)/mythic_beacon.png",
-    "Active Directory/You Dont Need Mimikatz for DCSync Anymore (SharpDCSync)/sharpdcsync_ondisk.png",
-    "Active Directory/You Dont Need Mimikatz for DCSync Anymore (SharpDCSync)/defender_on.png",
-    "Active Directory/You Dont Need Mimikatz for DCSync Anymore (SharpDCSync)/zip_password.png",
-    "Active Directory/You Dont Need Mimikatz for DCSync Anymore (SharpDCSync)/csc_compile.png",
-    "Active Directory/You Dont Need Mimikatz for DCSync Anymore (SharpDCSync)/lab_diagram.png",
     "retype.yml.tmp.167382.cc308453b5b5",
     "static/site.webmanifest.tmp.167382.8a3b38c6b415",
     "static/site.webmanifest",
@@ -221,8 +224,6 @@
     "retype.yml.tmp.167382.c8ac8a23a16a",
     "package.json",
     "package-lock.json",
-    "node_modules/retypeapp-linux-x64/bin/LICENSE/yamldotnet.LICENSE.txt",
-    "node_modules/retypeapp-linux-x64/bin/LICENSE/scriban.LICENSE.txt",
     "node_modules/retypeapp-linux-x64/README.md",
     "node_modules/retypeapp/README.md",
     "Infrastructure/Setting up hMailServer as internal mail server/Setting up hMailServer as internal mail server.md",
@@ -247,7 +248,6 @@
     "welcome.md",
     "Active Directory/Enumeration/Untitled.md",
     "C2/asd.md",
-    "Malware%20Development/Weaponizing%20DLL%20Hijacking%20via%20DLL%20Proxying/Pictures/modules.png.md",
-    "C2/Test.md"
+    "Malware%20Development/Weaponizing%20DLL%20Hijacking%20via%20DLL%20Proxying/Pictures/modules.png.md"
   ]
 }
